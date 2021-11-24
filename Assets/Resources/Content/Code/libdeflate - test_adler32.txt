@@ -1,0 +1,6 @@
+static void
+test_adler32(const void *buffer, size_t size, u32 initial_value)
+{
+  test_checksums(buffer, size, "Adler-32",
+           adler32_libdeflate, adler32_zlib, initial_value);
+}

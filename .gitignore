@@ -1,0 +1,16 @@
+*~
+*.log
+*.sln
+Builds/
+*.csproj
+*.blend[0-9]
+*.blend[0-9].meta
+*[Ee]xpanded[Ii]tems*
+Assets/Scenes/*/*/Lightmap*.png*
+Assets/Scenes/*/*/Lightmap*.exr*
+UIElementsSchema/
+obj/
+Temp/
+Logs/
+.idea/
+Library/

@@ -1,0 +1,1 @@
+Universal algebra (sometimes called general algebra) is the field of mathematics that studies algebraic structures themselves, not examples ("models") of algebraic structures. For instance, rather than take particular groups as the object of study, in universal algebra one takes the class of groups as an object of study.

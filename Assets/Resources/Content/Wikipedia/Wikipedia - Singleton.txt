@@ -1,0 +1,1 @@
+In mathematics, a singleton, also known as a unit set, is a set with exactly one element. For example, the set {null} is a singleton containing the element null.

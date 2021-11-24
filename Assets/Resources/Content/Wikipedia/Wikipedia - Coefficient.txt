@@ -1,0 +1,1 @@
+In mathematics, a coefficient is a multiplicative factor in some term of a polynomial, a series, or any expression; it is usually a number, but may be any expression (including variables such as a, b and c). When the coefficients are variables, they are often called parameters.

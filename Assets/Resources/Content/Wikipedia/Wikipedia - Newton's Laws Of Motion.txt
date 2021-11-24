@@ -1,0 +1,5 @@
+Newton's laws of motion are three laws of classical mechanics that describe the relationship between the motion of an object and the forces acting on it. These laws can be paraphrased as follows:
+
+Law 1: A body continues in its state of rest, or in uniform motion in a straight line, unless acted upon by a force.
+Law 2: A body acted upon by a force moves in such a manner that the time rate of change of momentum equals the force.
+Law 3: If two bodies exert forces on each other, these forces are equal in magnitude and opposite in direction.

@@ -1,0 +1,1 @@
+In mathematical logic, Russell's paradox (also known as Russell's antinomy), is a set-theoretic paradox discovered by the British philosopher and mathematician Bertrand Russell in 1901. Russell's paradox shows that every set theory that contains an unrestricted comprehension principle leads to contradictions.

@@ -1,0 +1,1 @@
+A computer font is implemented as a digital data file containing a set of graphically related glyphs. A computer font is designed and created using a font editor. A computer font specifically designed for the computer screen, and not for printing, is a screen font.
