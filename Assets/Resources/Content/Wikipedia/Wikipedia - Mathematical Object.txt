@@ -1,0 +1,1 @@
+A mathematical object is an abstract concept arising in mathematics. In the usual language of mathematics, an object is anything that has been (or could be) formally defined, and with which one may do deductive reasoning and mathematical proofs. Typically, a mathematical object can be a value that can be assigned to a variable, and therefore can be involved in formulas.

@@ -1,0 +1,11 @@
+while (!(step = iterator.next()).done) {
+    child = step.value;
+    nextName = nextNamePrefix + getElementKey(child, ii++);
+    subtreeCount += mapIntoArray(
+        child,
+        array,
+        escapedPrefix,
+        nextName,
+        callback,
+    );
+}

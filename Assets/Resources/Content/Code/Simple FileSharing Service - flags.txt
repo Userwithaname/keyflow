@@ -1,0 +1,10 @@
+let flags = [
+    self.flags.public,
+    self.flags.protected,
+    self.flags.no_preview,
+    false,
+    false,
+    false,
+    false,
+    false,
+];

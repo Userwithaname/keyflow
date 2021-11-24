@@ -1,0 +1,1 @@
+In universal algebra and in model theory, a structure consists of a set along with a collection of finitary operations and relations that are defined on it.

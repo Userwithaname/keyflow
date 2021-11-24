@@ -1,0 +1,9 @@
+
+export function canHydrateSuspenseInstance(
+    instance: HydratableInstance,
+): null | SuspenseInstance {
+    if (instance.nodeType !== COMMENT_NODE) {
+        return null;
+    }
+    return ((instance: any): SuspenseInstance);
+}

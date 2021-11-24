@@ -1,0 +1,7 @@
+pub fn to_hljs(&self) -> Option<&'static str> {
+    if let FileType::Code(i) = self {
+        highlightjs_rs::from_id(*i as usize)
+    } else {
+        None
+    }
+}
