@@ -5,45 +5,46 @@ Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Isomorphism
-Content/Wikipedia/Wikipedia - Computer Graphics
+Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Improvement
-Content/Wikipedia/Wkipedia - Theorem
+Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Graphene
-Content/Wikipedia/Wikipedia - Inetria
-Content/Wikipedia/Wikipedia - Computer Mouse
+Content/Wikipedia/Wikipedia - Inertia
+Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Tesseract
-Content/Wikipedia/Wikipedia - Fourier Transform
+Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Mathematics
-Content/Wikipedia/Wikipedia -Arithmetic Mean
-Content/Wikipedia/Wikipedia - Inverse-Square Law
+Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Tension (physics)
+Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Fungus
-Content/Wikipedia/Wikipedia - Mathematical Object
+Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Atom
-Content/Wikipedia/Wikipedia - n-sphere
+Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Solid
-Content/Wikipedia/Wikipedia - Drag
+Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Median
-Content/Wikipedia/Wikipedia - Newton's Laws Of Motion
-Content/Wikipedia/Wikipedia - Dyson Sphere
+Content/Wikipedia/Wikipedia - Newton's laws of motion
+Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - String Theory
+Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Gravity

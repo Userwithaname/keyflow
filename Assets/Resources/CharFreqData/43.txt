@@ -3,38 +3,42 @@ Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Sun
-Content/Wikipedia/Wikipedia - Plasma
+Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Equator
-Content/Wikipedia/Wkipedia - Dot Product
+Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Mass
+Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Wikipedia
-Content/Wikipedia/Wikipedia - Quantom Mechanics
+Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Puzzle
-Content/Wikipedia/Wikipedia - Mathematical Object
+Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Crystal
-Content/Wikipedia/Wikipedia - Paradex
+Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Quaternion
-Content/Wikipedia/Wikipedia - n-sphere
+Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Literature
+Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Algae
-Content/Wikipedia/Wikipedia - Newton's Laws Of Motion
+Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Fiction
-Content/Wikipedia/Wikipedia - Fleating-Point Arithmetic
+Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - String Theory
+Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Language

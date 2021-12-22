@@ -5,12 +5,15 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dimension
-Content/Wikipedia/Wikipedia - Euclidean Vector
+Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Interpolation
-Content/Wikipedia/Wikipedia - Universal Algebra
+Content/Wikipedia/Wikipedia - Hexadecimal
+Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Vitamin
@@ -18,45 +21,47 @@ Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Equator
-Content/Wikipedia/Wkipedia - Dot Product
+Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Land
-Content/Wikipedia/Wikipedia - Mathematical Structure
+Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Coefficient
+Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Proton
-Content/Wikipedia/Wikipedia - Computer Mouse
-Content/Wikipedia/Wikipedia - Drag
-Content/Wikipedia/Wikipedia - Russell's Paradox
-Content/Wikipedia/Wikipedia - Liquid-Crystal Display
+Content/Wikipedia/Wikipedia - Computer mouse
+Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Frequency
-Content/Wikipedia/Wikipedia -Arithmetic Mean
-Content/Wikipedia/Wikipedia - Alphabeth
+Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Fungus
-Content/Wikipedia/Wikipedia - Mathematical Object
-Content/Wikipedia/Wikipedia - Fleating-Point Arithmetic
+Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Algae
-Content/Wikipedia/Wikipedia - n-sphere
-Content/Wikipedia/Wikipedia - Plasma
+Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - Mathematical Optimization
+Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Gravity
-Content/Wikipedia/Wikipedia - Fourier Transform
+Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Pareidolia

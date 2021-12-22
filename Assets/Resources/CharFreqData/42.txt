@@ -1,6 +1,7 @@
-Content/Wikipedia/Wikipedia - Egyptian Hieroclyphs
+Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Quaternion
-Content/Wikipedia/Wikipedia - Histery
+Content/Wikipedia/Wikipedia - Byte
+Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Homeomorphism

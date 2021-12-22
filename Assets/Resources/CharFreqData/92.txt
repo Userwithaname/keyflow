@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Science
@@ -8,22 +9,23 @@ Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Illusion
-Content/Wikipedia/Wikipedia - Computer Graphics
+Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Sleep
-Content/Wikipedia/Wikipedia - Mathematical Optimization
+Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Elasticity (physics)
-Content/Wikipedia/Wikipedia - Liquid-Crystal Display
+Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Black Hole
-Content/Wikipedia/Wikipedia - Alphabeth
-Content/Wikipedia/Wikipedia - Dyson Sphere
+Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - Galaxy
+Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Atom
-Content/Wikipedia/Wikipedia - n-sphere
-Content/Wikipedia/Wikipedia - Histery
+Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Star

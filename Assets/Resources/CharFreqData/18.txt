@@ -1,12 +1,13 @@
 Content/Wikipedia/Wikipedia - Equator
-Content/Wikipedia/Wikipedia - Egyptian Hieroclyphs
+Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Light
+Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Atom
-Content/Wikipedia/Wikipedia - Computer Keyboard
-Content/Wikipedia/Wikipedia - Russell's Paradox
+Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System

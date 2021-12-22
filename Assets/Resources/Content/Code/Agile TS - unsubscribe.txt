@@ -1,6 +1,0 @@
-public unsubscribe(subscriptionContainer: SubscriptionContainer): void {
-    if (this.subscribedTo.has(subscriptionContainer)) {
-        this.subscribedTo.delete(subscriptionContainer);
-        subscriptionContainer.subscribers.delete(this);
-    }
-}

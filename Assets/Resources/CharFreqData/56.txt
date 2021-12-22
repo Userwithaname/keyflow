@@ -1,4 +1,4 @@
 Content/Wikipedia/Wikipedia - Velocity
-Content/Wikipedia/Wikipedia - Euclidean Vector
+Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Virus

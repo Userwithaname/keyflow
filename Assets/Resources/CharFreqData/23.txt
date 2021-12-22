@@ -1,3 +1,4 @@
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Algae

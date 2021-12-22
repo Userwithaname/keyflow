@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Orbit
-Content/Wikipedia/Wikipedia - Alphabeth
+Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Class (set theory)

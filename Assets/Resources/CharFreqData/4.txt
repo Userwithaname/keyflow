@@ -1,13 +1,15 @@
 Content/Wikipedia/Wikipedia - Percentage
+Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Proton
-Content/Wikipedia/Wikipedia - Universal Algebra
+Content/Wikipedia/Wikipedia - Universal algebra
+Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - n-sphere
-Content/Wikipedia/Wikipedia - Histery
+Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Average
-Content/Wikipedia/Wkipedia - Dot Product
+Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Music

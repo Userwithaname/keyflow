@@ -1,13 +1,15 @@
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Manifold
+Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Quaternion
-Content/Wikipedia/Wikipedia - Error Correction
+Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Fiction

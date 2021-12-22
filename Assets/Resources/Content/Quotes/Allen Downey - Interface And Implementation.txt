@@ -1,1 +1,0 @@
-After you deploy a new class, you might discover a better implementation. If other parts of the program are using your class, it might be time-consuming and error-prone to change the interface. But if you designed the interface carefully, you can change the implementation without changing the interface, which means that other parts of the program don't have to change.
