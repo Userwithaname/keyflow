@@ -1,8 +1,8 @@
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dither
-Content/Wikipedia/Wikipedia - Liquid-Crystal Display
+Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Fungus
-Content/Wikipedia/Wkipedia - Dot Product
+Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System

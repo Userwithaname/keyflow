@@ -2,4 +2,4 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Light
-Content/Wikipedia/Wikipedia - Computer Keyboard
+Content/Wikipedia/Wikipedia - Computer keyboard

@@ -1,9 +1,0 @@
-return {
-      info: {
-        count,
-        pages,
-        next: page >= pages ? null : page + 1,
-        prev: page < 2 ? null : page - 1,
-      },
-      results: results,
-};

@@ -1,8 +1,0 @@
-queueFindAllUpdate = useCallback(() => {
-    clearTimeout(queued_find_all_update);
-    // Update the number of matches on the page
-    queued_find_all_update = setTimeout(() => {
-        // Tell the findAll component to re-search the currentDoc
-        setSearchOpenDoc(true);
-    }, 1000);
-}, [])

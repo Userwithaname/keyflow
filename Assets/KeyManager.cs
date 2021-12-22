@@ -44,7 +44,7 @@ public class KeyManager:MonoBehaviour{
 	List<DailyData> dailyData=new List<DailyData>();
 	public static float averageAccuracy,averageWPM,topWPM;
 	public static float charPracticeDifficulty=.62f;	// 1: Completely random, 0: Only the worst character in either speed or accuracy
-	public static float quoteDifficulty=.35f;
+	public static float quoteDifficulty=.42f;
 	
 	void Start(){
 		instance=this;
@@ -59,7 +59,7 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[i].seekTime=instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
 			instance.confidenceDatabase[i].keyName=trackedKeys[i];
 			#if UNITY_EDITOR
-				instance.confidenceDatabase[i].name="Element "+i+": "+(trackedKeys[i].ToString());
+				instance.confidenceDatabase[i].name="Element "+i+": "+trackedKeys[i];
 			#endif
 		}
 		
@@ -121,6 +121,8 @@ public class KeyManager:MonoBehaviour{
 		PlayerPrefs.SetFloat("Average Acc",averageAccuracy);
 		PlayerPrefs.SetFloat("Average WPM",averageWPM);
 		PlayerPrefs.SetFloat("Top WPM",topWPM);
+		
+		Typing.instance.Save();
 	}
 	
 	public static int GetKeyIndex(char key){
@@ -308,6 +310,8 @@ public class KeyManager:MonoBehaviour{
 			Typing.curPracticeIndex=keyIndex;
 		}
 		float random=quoteDifficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-quoteDifficulty);
+		if(random<quoteDifficulty-.5f)
+			random=quoteDifficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-quoteDifficulty);
 		// float random=Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,5)?1f-Mathf.Sqrt(Random.Range(0f,1f)):Random.Range(0f,1f);
 		string targetQuote=quotes[Mathf.Min(Mathf.FloorToInt(random*quotes.Length),quotes.Length-1)];
 		string newQuote=targetQuote.Split('/')[^1];

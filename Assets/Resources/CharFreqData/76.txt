@@ -1,38 +1,42 @@
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Adjective
-Content/Wikipedia/Wikipedia - Inetria
+Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Unimodality
-Content/Wikipedia/Wikipedia - Mathematical Object
+Content/Wikipedia/Wikipedia - Acceleration
+Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Constellation
-Content/Wikipedia/Wikipedia - Universal Algebra
+Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Velocity
-Content/Wikipedia/Wikipedia - Euclidean Vector
+Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Topology
+Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
-Content/Wikipedia/Wikipedia - String Theory
+Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
-Content/Wikipedia/Wikipedia - Drag
+Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Gravity
-Content/Wikipedia/Wkipedia - Dot Product
+Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Color
-Content/Wikipedia/Wikipedia - Error Correction
+Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Star
-Content/Wikipedia/Wikipedia - Newton's Laws Of Motion
+Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Class (set theory)

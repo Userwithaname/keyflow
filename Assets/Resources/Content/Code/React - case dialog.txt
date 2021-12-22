@@ -1,4 +1,0 @@
-case 'dialog':
-      listenToNonDelegatedEvent('cancel', domElement);
-      listenToNonDelegatedEvent('close', domElement);
-      break;

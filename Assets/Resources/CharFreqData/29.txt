@@ -5,8 +5,8 @@ Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Tension (physics)
-Content/Wikipedia/Wikipedia - Alphabeth
+Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Elasticity (physics)
-Content/Wikipedia/Wikipedia - Fleating-Point Arithmetic
+Content/Wikipedia/Wikipedia - Floating-point arithmetic

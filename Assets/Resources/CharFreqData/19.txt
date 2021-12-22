@@ -1,15 +1,16 @@
+Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Sea
-Content/Wikipedia/Wikipedia - Russell's Paradox
+Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Wikipedia
-Content/Wikipedia/Wikipedia - Egyptian Hieroclyphs
+Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Equator
-Content/Wikipedia/Wikipedia - Computer Keyboard
+Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Quaternion
-Content/Wikipedia/Wikipedia - n-sphere
+Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Virus
-Content/Wikipedia/Wikipedia - Newton's Laws Of Motion
+Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Algae

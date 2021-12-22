@@ -1,10 +1,13 @@
-Content/Wikipedia/Wikipedia - Singleton
-Content/Wikipedia/Wikipedia - Fourier Transform
+Content/Wikipedia/Wikipedia - Singleton (mathematics)
+Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Attenuation
-Content/Wikipedia/Wikipedia - Universal Algebra
+Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Frequency
-Content/Wikipedia/Wikipedia - Fleating-Point Arithmetic
+Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Floating-point arithmetic
+Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Food

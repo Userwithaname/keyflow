@@ -1,4 +1,0 @@
-public <T extends Enum<T>> JSONObject put(String key, T enumvalue) throws JSONException {
-    obj.add(key, enumvalue == null ? JsonNull.INSTANCE : new JsonPrimitive(enumvalue.name()));
-    return this;
-}

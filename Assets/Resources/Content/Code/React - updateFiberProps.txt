@@ -1,6 +1,0 @@
-export function updateFiberProps(
-    node: Instance | TextInstance | SuspenseInstance,
-    props: Props,
-): void {
-    (node: any)[internalPropsKey] = props;
-}

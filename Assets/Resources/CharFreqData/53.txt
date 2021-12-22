@@ -2,12 +2,13 @@ Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Visual Language
-Content/Wikipedia/Wikipedia - Plasma
+Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - String Theory
+Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Algae

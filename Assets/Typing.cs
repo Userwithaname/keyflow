@@ -23,15 +23,13 @@ public class Typing : MonoBehaviour {
 	 *			A string of random characters for the user to type out
 	 */
 	/*
-	 * TODO: Settings menu (for choosing filters, difficulty slider, etc)
-	 * TODO: Personalized lesson type filters (eg, exclude code, quote, etc.)
-	 *
 	 * TODO: Progress tracking (save the average accuracy/speed for each day, draw a graph that the user can check whenever they want)
 	 * TODO: Qutoe progress tracking (show a graph of how the speed/accuracy varied over time during the current quote)
+	 *
+	 * TODO: Create a UI to make all colors configurable
 	 */
-	
-	//TODO: Make all colors configurable (or even just a brightness slider for individual categories (background elements like the score, quote text, entered quote text, etc))
-	//TODO: Auto-fade background elements while typing, reveal when mouse is moved or input field is unfocused (maybe a smooth, slow, non-linear transition to make it feel cinematic and awesome)
+
+	public static Typing instance;
 	
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
@@ -45,7 +43,7 @@ public class Typing : MonoBehaviour {
 	public static string quoteTitle;
 	public TMP_InputField textDisplay;
 	public TMP_Text lessonInfo,WPMInfo,averageWPMInfo,quoteInfo;
-	public Color caretColor=Color.white,caretErrorColor=Color.red;
+	public Button quoteInfoButton;
 	
 	public GameObject settingsUI;
 	public Toggle practiceUppercase,
@@ -54,38 +52,100 @@ public class Typing : MonoBehaviour {
 	              practiceWhitespace,
 	              showIncorrectCharacters;
 	public Slider charVarietySlider,quoteDifficultySlider;
+	public RectTransform textTransform;
+	
+	public Image backgroundImage,fadeImage;
+	[Range(0,1)]public float defaultFade=0f,fadeAmount=.5f;
+	float backgroundFade;	// 0 to 1
+	bool fade,lastFade;
+	Vector3 lastMousePos;
+	Color targetFadeColor=new Color(0,0,0,0);
+	
+	RectTransform caretTransform;
+	Vector3 initialTextPos,initialCaretPos;
+	
+	[Serializable]public struct Theme{
+		public string name;
+		public Color backgroundColor,
+		             textColorUI,
+		             textColorQuote,
+		             textColorError,
+		             textColorWarning,
+		             textColorCorrect,
+		             caretColor,
+		             caretColorError,
+		             improvementColor,
+		             regressionColor,
+		             buttonColor,
+		             iconColor;
+		[NonSerialized]
+		public string textColorErrorTag,
+		              textColorWarningTag,
+		              textColorCorrectTag,
+		              improvementColorTag,
+		              regressionColorTag;
+	}
+	public int selectedTheme;
+	public Theme[] themes;
 	
 	int hitCount,missCount;
 	
 	bool showMenu;
 	
-	public RectTransform textTransform;
-	RectTransform caretTransform;
-	Vector3 initialTextPos,initialCaretPos;
-	
 	void Start(){
-		// if(Resources.Load("CharFreqData/1.txt")==null){
-		// 	Debug.LogError("Something went wrong while loading resources");
-		// 	Application.Quit();
-		// 	return;
-		// }
-		
 		Application.targetFrameRate=Screen.currentResolution.refreshRate;
 		
-		practiceUppercase.isOn=KeyManager.includeUppercase;
-		practiceNumbers.isOn=KeyManager.includeNumbers;
-		practiceSymbols.isOn=KeyManager.includeSymbols;
+		practiceUppercase.isOn=KeyManager.includeUppercase=PlayerPrefs.GetInt("includeUppercase",KeyManager.includeUppercase?1:0)==1;
+		practiceNumbers.isOn=KeyManager.includeNumbers=PlayerPrefs.GetInt("includeNumbers",KeyManager.includeNumbers?1:0)==1;
+		practiceSymbols.isOn=KeyManager.includeSymbols=PlayerPrefs.GetInt("includeSymbols",KeyManager.includeSymbols?1:0)==1;
+		charVarietySlider.value=KeyManager.charPracticeDifficulty=PlayerPrefs.GetFloat("charPracticeDifficulty",KeyManager.charPracticeDifficulty);
+		quoteDifficultySlider.value=KeyManager.quoteDifficulty=PlayerPrefs.GetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
+		showIncorrectCharacters.isOn=PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn?1:0)==1;
+		selectedTheme=PlayerPrefs.GetInt("selectedTheme",selectedTheme);
 		
-		charVarietySlider.value=KeyManager.charPracticeDifficulty;
-		quoteDifficultySlider.value=KeyManager.quoteDifficulty;
+		UpdateTheme();
 		
 		//TODO: Function for practicing multiple characters together (for example, quotes that appear in lists 'a' and 'b', and score highly)
 		initialTextPos=textTransform.localPosition;
 		caretTransform=textTransform.parent.Find("Caret").GetComponent<RectTransform>();
 		initialCaretPos=caretTransform.localPosition;
+		instance=this;
 		NextLesson();
 	}
+	public void Save(){
+		PlayerPrefs.SetInt("includeUppercase",KeyManager.includeUppercase?1:0);
+		PlayerPrefs.SetInt("includeNumbers",KeyManager.includeNumbers?1:0);
+		PlayerPrefs.SetInt("includeSymbols",KeyManager.includeSymbols?1:0);
+		PlayerPrefs.SetFloat("charPracticeDifficulty",KeyManager.charPracticeDifficulty);
+		PlayerPrefs.SetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
+		PlayerPrefs.SetInt("showTypos",showIncorrectCharacters.isOn?1:0);
+		PlayerPrefs.SetInt("selectedTheme",selectedTheme);
+	}
 	
+	void UpdateTheme(){
+		textDisplay.GetComponentInChildren<TMP_Text>().color=themes[selectedTheme].textColorQuote;
+		var quoteInfoColors=quoteInfoButton.colors;
+		lessonInfo.color=WPMInfo.color=averageWPMInfo.color=quoteInfoColors.normalColor=quoteInfoColors.selectedColor=themes[selectedTheme].textColorUI;
+		quoteInfoButton.colors=quoteInfoColors;
+		targetFadeColor=backgroundImage.color=fadeImage.color=themes[selectedTheme].backgroundColor;
+		
+		themes[selectedTheme].textColorErrorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorError)+">";
+		themes[selectedTheme].textColorWarningTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorWarning)+">";
+		themes[selectedTheme].textColorCorrectTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorCorrect)+">";
+		themes[selectedTheme].improvementColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].improvementColor)+">";
+		themes[selectedTheme].regressionColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].regressionColor)+">";
+		
+		ResetLesson();	// Because the score colors only get set once, when the quote is completed, so they won't update for the current quote
+	}
+	public void ChangeTheme(int theme){
+		selectedTheme=theme;
+		UpdateTheme();
+	}
+
+	private void OnApplicationFocus(bool hasFocus){
+		if(!hasFocus&&!done) ResetLesson();
+	}
+
 	public void NextLesson(){
 		textTransform.localPosition=initialTextPos;
 		caretTransform.localPosition=initialCaretPos;
@@ -98,12 +158,19 @@ public class Typing : MonoBehaviour {
 		UpdateCurrentPracticeUI();
 		hitCount=missCount=0;
 		input=lastInput="";
-		incorrect=done=false;
 		lastFrameIncorrect=true;
+		incorrect=done=fade=false;
 		textDisplay.readOnly=false;
 		seekTime=wordTime=totalTestTime=0;
 		loc=lastLength=lastMaxLength=-1;
 		// EventSystem.current.SetSelectedGameObject(textDisplayObject);
+	}
+	public void OpenWikiPage(){
+		if(quoteTitle==null)
+			return;
+		string wikiPage="https://en.wikipedia.org/wiki/"+quoteTitle.Split("Wikipedia - ")[^1].Replace(' ','_');
+		Debug.Log(wikiPage);
+		Application.OpenURL(wikiPage);
 	}
 	bool settingsOpen;
 	public void ToggleSettingsUI(){
@@ -128,29 +195,29 @@ public class Typing : MonoBehaviour {
 		
 		// const string improvementColor="<color=#208020>",
 		//              regressionColor="<color=#802020>";
-		const string improvementColor="<color=#28a028>",
-		             regressionColor="<color=#a02828>";
+		// const string improvementColor="<color=#40ff40>",
+		//              regressionColor="<color=#ff4040>";
 		
 		if(comparisonIndex>-1){
 			KeyManager.KeyConfidenceData compare=KeyManager.instance.confidenceDatabase[comparisonIndex];
 			float diff=(float)Math.Round(updatedCharPractice.seekTime*1000-curCharPractice.seekTime*1000,3);
 			curCharacterSeekTime=diff<=0?
-			                     improvementColor+curCharacterSeekTime+" ("+diff+")</color>":
-			                     regressionColor+curCharacterSeekTime+" (+"+diff+")</color>";
+			                     themes[selectedTheme].improvementColorTag+curCharacterSeekTime+" ("+diff+")</color>":
+			                     themes[selectedTheme].regressionColorTag+curCharacterSeekTime+" (+"+diff+")</color>";
 			diff=(float)Math.Round(updatedCharPractice.nextKeySeekTime*1000-curCharPractice.nextKeySeekTime*1000,3);
 			curCharacterNextSeekTime=diff<=0?
-			                     improvementColor+curCharacterNextSeekTime+" ("+diff+")</color>":
-			                     regressionColor+curCharacterNextSeekTime+" (+"+diff+")</color>";
+			                     themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime+" ("+diff+")</color>":
+			                     themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime+" (+"+diff+")</color>";
 			diff=(float)Math.Round(updatedCharPractice.wpm-curCharPractice.wpm,3);
 			curCharacterWPM=diff>=0?
-			                     improvementColor+curCharacterWPM+" (+"+diff+")</color>":
-			                     regressionColor+curCharacterWPM+" ("+diff+")</color>";
+			                     themes[selectedTheme].improvementColorTag+curCharacterWPM+" (+"+diff+")</color>":
+			                     themes[selectedTheme].regressionColorTag+curCharacterWPM+" ("+diff+")</color>";
 			float newAccuracy=(float)updatedCharPractice.hits/(updatedCharPractice.hits+updatedCharPractice.misses)*100;
 			diff=(float)Math.Round(newAccuracy-(float)curCharPractice.hits/(curCharPractice.hits+curCharPractice.misses)*100,3);
 			if(float.IsNaN(diff)) diff=newAccuracy;
 			curCharacterAccuracy=diff>=0?
-			                     improvementColor+curCharacterAccuracy+" (+"+diff+")</color>":
-			                     regressionColor+curCharacterAccuracy+" ("+diff+")</color>";
+			                     themes[selectedTheme].improvementColorTag+curCharacterAccuracy+" (+"+diff+")</color>":
+			                     themes[selectedTheme].regressionColorTag+curCharacterAccuracy+" ("+diff+")</color>";
 		}
 		curCharPractice=updatedCharPractice;
 		
@@ -178,12 +245,12 @@ public class Typing : MonoBehaviour {
 			WPMInfo.text=
 				"Accuracy: "+
 					(accuracy>=oldAverageAccuracy?
-						improvementColor+Math.Round(accuracy,2)+"% (+"+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>":
-						regressionColor+Math.Round(accuracy,2)+"% ("+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>")+
+						themes[selectedTheme].improvementColorTag+Math.Round(accuracy,2)+"% (+"+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>":
+						themes[selectedTheme].regressionColorTag+Math.Round(accuracy,2)+"% ("+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>")+
 				"\nSpeed: "+
 					(wpm>=oldAverageSpeed?
-						improvementColor+Math.Round(wpm,2)+" WPM ("+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>":
-						regressionColor+Math.Round(wpm,2)+" WPM ("+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>")+
+						themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)+" WPM (+"+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>":
+						themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)+" WPM ("+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>")+
 				"\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+
 				(seconds<10?"0":"")+seconds+':'+
 				((float)Math.Round(totalTestTime-Mathf.FloorToInt(totalTestTime),3)%1).ToString().Split('.')[^1];
@@ -191,15 +258,15 @@ public class Typing : MonoBehaviour {
 			averageWPMInfo.text=
 				"Average Accuracy: "+
 					(KeyManager.averageAccuracy>=oldAverageAccuracy?
-						improvementColor+Math.Round(KeyManager.averageAccuracy,2)+"% (+"+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>":
-						regressionColor+Math.Round(KeyManager.averageAccuracy,2)+"% ("+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>")+
+						themes[selectedTheme].improvementColorTag+Math.Round(KeyManager.averageAccuracy,2)+"% (+"+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>":
+						themes[selectedTheme].regressionColorTag+Math.Round(KeyManager.averageAccuracy,2)+"% ("+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>")+
 				"\nAverage Speed: "+
 					(KeyManager.averageWPM>=oldAverageSpeed?
-						improvementColor+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM (+"+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>":
-						regressionColor+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM ("+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>")+
+						themes[selectedTheme].improvementColorTag+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM (+"+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>":
+						themes[selectedTheme].regressionColorTag+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM ("+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>")+
 				"\nTop Speed: "+
 					(KeyManager.topWPM>oldTopSpeed?
-						improvementColor+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+"  WPM(+"+(KeyManager.topWPM-oldTopSpeed)+")</color>":
+						themes[selectedTheme].improvementColorTag+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+"  WPM(+"+(KeyManager.topWPM-oldTopSpeed)+")</color>":
 						(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM");
 		}else{	
 			averageWPMInfo.text=
@@ -228,8 +295,6 @@ public class Typing : MonoBehaviour {
 		}
 		
 		SetTextColor();
-		
-		//TODO: Different font and alignment for the Code category
 	}
 	
 	public void FocusInputField(){
@@ -242,7 +307,7 @@ public class Typing : MonoBehaviour {
 	bool lastFrameIncorrect=true;
 	void SetTextColor(){
 		int cappedLoc=Mathf.Min(loc+1,text.Length);
-		string content=(incorrect?"<color=#806000>":"<color=#808080>")+text.Insert(cappedLoc,"</color>");
+		string content=(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)+text.Insert(cappedLoc,"</color>");
 		if(incorrect){
 			int lengthDiff=content.Length-text.Length;
 			
@@ -267,7 +332,7 @@ public class Typing : MonoBehaviour {
 						}
 					}
 				}
-				content=content.Insert(cappedLoc+lengthDiff,"<color=red><u>"+new string(chars)+"</u></color>");
+				content=content.Insert(cappedLoc+lengthDiff,themes[selectedTheme].textColorErrorTag+"<u>"+new string(chars)+"</u></color>");
 			}else{
 				int incorrectStart=cappedLoc+lengthDiff,
 				    incorrectEnd=Mathf.Min(input.Length,text.Length)+lengthDiff;
@@ -300,9 +365,9 @@ public class Typing : MonoBehaviour {
 	}
 	
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.Escape)){	//BUG: Doesn't work if the input field is focused
-			NextLesson();
-		}
+		// if(Input.GetKeyDown(KeyCode.Escape)){	//BUG: Doesn't work if the input field is focused
+		// 	NextLesson();
+		// }
 		
 		SetTextColor();
 		// int cappedLoc=Mathf.Min(loc+1,text.Length);
@@ -316,10 +381,12 @@ public class Typing : MonoBehaviour {
 		// textDisplay.caretPosition=Mathf.Min(input.Length,text.Length);
 		
 		if(lastFrameIncorrect!=incorrect){
-			textDisplay.caretColor=incorrect?caretErrorColor:caretColor;
+			// textDisplay.caretColor=incorrect?caretErrorColor:caretColor;
+			textDisplay.caretColor=incorrect?themes[selectedTheme].caretColorError:themes[selectedTheme].caretColor;
 			lastFrameIncorrect=incorrect;
 		}
 		
+		FadeUpdate();
 		if(done) return;
 		int seconds=Mathf.FloorToInt(totalTestTime%60);
 		float accuracy=(float)hitCount/(hitCount+missCount)*100;
@@ -328,6 +395,11 @@ public class Typing : MonoBehaviour {
 			"Accuracy: "+Mathf.RoundToInt(accuracy)+"%"+
 			"\nSpeed: "+(totalTestTime==0?"-":Mathf.RoundToInt(loc/totalTestTime*60/5))+" WPM"+
 		   "\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+(seconds<10?"0":"")+seconds;
+		
+		if(Input.mousePosition!=lastMousePos){
+			fade=false;
+			lastMousePos=Input.mousePosition;
+		}
 	}
 	void LateUpdate(){
 		incorrect=!text.StartsWith(input);
@@ -347,6 +419,8 @@ public class Typing : MonoBehaviour {
 			return;
 		}
 		
+		if(totalTestTime>0||length>0)
+			fade=true;
 		incorrect=false;
 		if(loc>length-1)
 			loc=length-1;
@@ -385,9 +459,8 @@ public class Typing : MonoBehaviour {
 				break;
 			}
 		}
-		
+
 		incorrect=!text.StartsWith(input);
-		//TODO: Autofill tabs/spaces after a newline or another tab/space (for code snippets)
 		
 		lastLength=input.Length;
 		// if(!incorrect&&lastLength>lastMaxLength)
@@ -397,9 +470,25 @@ public class Typing : MonoBehaviour {
 		if(incorrect||input.Length<text.Length)	return;
 		// KeyManager.RemoveHitsAndMisses(curPracticeIndex);
 		done=textDisplay.readOnly=true;
+		if(done)	fade=false;
 		UpdateCurrentPracticeUI(curPracticeIndex);
 		UnfocusInputField();
-		KeyManager.Save();
+		// KeyManager.Save();
+	}
+	void FadeUpdate(){
+		if(fade!=lastFade){
+			backgroundFade=fade?backgroundFade*backgroundFade*backgroundFade:Mathf.Sqrt(Mathf.Sqrt(backgroundFade));
+			Cursor.visible=!fade;
+			lastFade=fade;
+		}
+		if(fade){
+			targetFadeColor.a=Mathf.Sqrt(backgroundFade)*(fadeAmount-defaultFade)+defaultFade;
+			backgroundFade=Mathf.Clamp01(backgroundFade+Time.deltaTime*2f);
+		}else{
+			targetFadeColor.a=backgroundFade*backgroundFade*(fadeAmount-defaultFade)+defaultFade;
+			backgroundFade=Mathf.Clamp01(backgroundFade-Time.deltaTime*2f);
+		}
+		fadeImage.color=targetFadeColor;
 	}
 	
 	public void AllowCapitalLetters(){
