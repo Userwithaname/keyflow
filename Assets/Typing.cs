@@ -99,8 +99,8 @@ public class Typing : MonoBehaviour {
 	
 	bool showGraph,lastShowGraph;
 	float graphBlend;
-	Vector3 defaultGraphScale,
-	        expandedGraphScale=new Vector3(1,8,1);
+	float defaultGraphHeight,
+	      expandedGraphHeight=400;
 	float[] wpmGraph,
 	        accuracyGraph,
 	        timeGraph,
@@ -123,7 +123,7 @@ public class Typing : MonoBehaviour {
 		darkModeButton.SetActive(selectedTheme!=0);
 		
 		textDisplayText=textDisplay.GetComponentInChildren<TMP_Text>();
-		defaultGraphScale=graph.rectTransform.localScale;
+		defaultGraphHeight=graph.rectTransform.rect.height;
 		
 		UpdateTheme();
 		
@@ -152,6 +152,7 @@ public class Typing : MonoBehaviour {
 		targetFadeColor=backgroundImage.color=fadeImage.color=themes[selectedTheme].backgroundColor;
 		
 		graph.color=themes[selectedTheme].textColorCorrect;
+		graph.selectionColor=themes[selectedTheme].textColorUI;
 		
 		themes[selectedTheme].textColorErrorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorError)+">";
 		themes[selectedTheme].textColorWarningTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorWarning)+">";
@@ -425,15 +426,7 @@ public class Typing : MonoBehaviour {
 		}
 		
 		SetTextColor();
-		// int cappedLoc=Mathf.Min(loc+1,text.Length);
-		// string content=(incorrect?"<color=#806000>":"<color=#808080>")+text.Insert(cappedLoc,"</color>");
-		// if(incorrect){
-		// 	int lengthDiff=content.Length-text.Length;
-		// 	content=content.Insert(Mathf.Min(input.Length,text.Length)+lengthDiff,"</color>").Insert(cappedLoc+lengthDiff,"<color=red>");
-		// 	// content=content.Insert(cappedLoc+lengthDiff,"<color=#C00000>"+input.Remove(0,loc+1)+"</color>");
-		// }
-		// textDisplay.text=content;
-		// textDisplay.caretPosition=Mathf.Min(input.Length,text.Length);
+		GraphUpdate();
 		
 		if(lastFrameIncorrect!=incorrect){
 			// textDisplay.caretColor=incorrect?caretErrorColor:caretColor;
@@ -441,8 +434,7 @@ public class Typing : MonoBehaviour {
 			lastFrameIncorrect=incorrect;
 		}
 		
-		if(showGraph!=lastShowGraph||graphBlend>0||graphBlend<1)
-			GraphUpdate();
+		
 		if(fade!=lastFade||backgroundFade>0||backgroundFade<1)
 			FadeUpdate();
 		if(done) return;
@@ -568,36 +560,39 @@ public class Typing : MonoBehaviour {
 			lastFade=fade;
 		}
 		if(fade){
-			targetFadeColor.a=Mathf.Sqrt(backgroundFade)*(fadeAmount-defaultFade)+defaultFade;
 			backgroundFade=Mathf.Clamp01(backgroundFade+Time.deltaTime*2f);
+			targetFadeColor.a=Mathf.Sqrt(backgroundFade)*(fadeAmount-defaultFade)+defaultFade;
 		}else{
-			targetFadeColor.a=backgroundFade*backgroundFade*(fadeAmount-defaultFade)+defaultFade;
 			backgroundFade=Mathf.Clamp01(backgroundFade-Time.deltaTime*2f);
+			targetFadeColor.a=backgroundFade*backgroundFade*(fadeAmount-defaultFade)+defaultFade;
 		}
 		fadeImage.color=targetFadeColor;
 	}
 	void GraphUpdate(){
-		if(showGraph!=lastShowGraph){
-			graphBlend=showGraph?graphBlend*graphBlend*graphBlend:Mathf.Sqrt(Mathf.Sqrt(graphBlend));
-			lastShowGraph=showGraph;
+		if(showGraph!=lastShowGraph||graphBlend>0||graphBlend<1){
+			if(showGraph!=lastShowGraph){
+				graphBlend=showGraph?graphBlend*graphBlend*graphBlend:Mathf.Sqrt(Mathf.Sqrt(graphBlend));
+				lastShowGraph=showGraph;
+			}
+			float curBlend;
+			if(showGraph){
+				graphBlend=Mathf.Clamp01(graphBlend+Time.deltaTime*2f);
+				curBlend=Mathf.Sqrt(graphBlend);
+			}else{
+				graphBlend=Mathf.Clamp01(graphBlend-Time.deltaTime*2f);
+				curBlend=graphBlend*graphBlend;
+			}
+			Color textColor=textDisplayText.color;
+			textColor.a=1f-curBlend;
+			textDisplayText.color=textColor;
+			
+			graph.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,expandedGraphHeight,curBlend));
+			
+			graph.expandedBlend=curBlend;
 		}
-		float curBlend;
-		if(showGraph){
-			curBlend=Mathf.Sqrt(graphBlend);
-			graphBlend=Mathf.Clamp01(graphBlend+Time.deltaTime*2f);
-		}else{
-			curBlend=graphBlend*graphBlend;
-			graphBlend=Mathf.Clamp01(graphBlend-Time.deltaTime*2f);
+		if(done&&graph.hoverIndex>-1){
+			//TODO: Make a new UI text and write info for the currently selected point: timeGraph[hoverIndex], wpmGraph, accuracyGraph, etc  
 		}
-		Color textColor=textDisplayText.color;
-		textColor.a=1f-curBlend;
-		textDisplayText.color=textColor;
-		
-		//TODO: Better scaling and positioning (respect window size)
-		Vector3 targetScale=Vector3.Lerp(defaultGraphScale,expandedGraphScale,curBlend);
-		graph.rectTransform.localScale=targetScale;
-		
-		graph.expandedBlend=curBlend;
 	}
 	
 	public void AllowCapitalLetters(){

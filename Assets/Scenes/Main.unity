@@ -6262,7 +6262,11 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  selectionColor:
+    serializedVersion: 2
+    rgba: 4278190335
   lineWidth: 2
+  selectionSize: 5
   fillArea: 1
   valueScale: 1
   values:
@@ -6277,6 +6281,7 @@ MonoBehaviour:
   - 0.6666667
   - 1
   currentIndex: -1
+  expandedBlend: 0
 --- !u!222 &2060483230
 CanvasRenderer:
   m_ObjectHideFlags: 0
