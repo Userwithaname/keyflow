@@ -32,6 +32,7 @@ public class Typing : MonoBehaviour {
 	public static Typing instance;
 	
 	public DrawGraph graph;
+	public TMP_Text graphInfo;
 	
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
@@ -93,20 +94,22 @@ public class Typing : MonoBehaviour {
 	public int selectedTheme,lastSelectedTheme;
 	public Theme[] themes;
 	
-	int hitCount,missCount;
+	public bool showGraphWhenDone=true;
 	
-	bool showMenu;
-	
+	int lastHoverIndex=-1;
 	bool showGraph,lastShowGraph;
 	float graphBlend;
-	float defaultGraphHeight,
-	      expandedGraphHeight=400;
+	float defaultGraphHeight;
 	float[] wpmGraph,
 	        accuracyGraph,
 	        timeGraph,
 	        fullWordWpmGraph;	//TODO: Create properly sized array and store the full-word speeds for each word typed (I was thinking this part of the graph should be drawn with sharp, 90 degree angles (vertical/horizontal), instead of the usual diagonal ones) Hover caption could be something like 'Full-word speed: 10 WPM ("square ")'
 	//TODO: Idea: After completing the lesson, allow moving the caret in the quote text, and display the recorded stats at the caret position
 	//TODO: Idea: Record all keypresses and store times, allow viewing replay of the lesson
+	
+	int hitCount,missCount;
+	
+	bool showMenu;
 
 	void Start(){
 		Application.targetFrameRate=Screen.currentResolution.refreshRate;
@@ -147,27 +150,24 @@ public class Typing : MonoBehaviour {
 	void UpdateTheme(){
 		textDisplayText.color=themes[selectedTheme].textColorQuote;
 		var quoteInfoColors=quoteInfoButton.colors;
-		lessonInfo.color=WPMInfo.color=averageWPMInfo.color=quoteInfoColors.normalColor=quoteInfoColors.selectedColor=themes[selectedTheme].textColorUI;
+		lessonInfo.color=WPMInfo.color=averageWPMInfo.color=quoteInfoColors.normalColor=quoteInfoColors.selectedColor=graphInfo.color=themes[selectedTheme].textColorUI;
 		quoteInfoButton.colors=quoteInfoColors;
 		targetFadeColor=backgroundImage.color=fadeImage.color=themes[selectedTheme].backgroundColor;
 		
 		graph.color=themes[selectedTheme].textColorCorrect;
-		graph.selectionColor=themes[selectedTheme].textColorUI;
+		graph.diamondColor=themes[selectedTheme].textColorUI;
 		
 		themes[selectedTheme].textColorErrorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorError)+">";
 		themes[selectedTheme].textColorWarningTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorWarning)+">";
 		themes[selectedTheme].textColorCorrectTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorCorrect)+">";
 		themes[selectedTheme].improvementColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].improvementColor)+">";
 		themes[selectedTheme].regressionColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].regressionColor)+">";
-		
-		//TODO: Don't reset lesson, store the index to the previous theme instead, and replace the color code strings
-		// ResetLesson();	// Because the score colors only get set once, when the quote is completed, so they won't update for the current quote
-		
+
 		WPMInfo.text=WPMInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
-		averageWPMInfo.text=averageWPMInfo.text.
-			Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
+		averageWPMInfo.text=averageWPMInfo.text
+			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
 		lessonInfo.text=lessonInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
@@ -194,10 +194,12 @@ public class Typing : MonoBehaviour {
 	}
 	public void ResetLesson(){
 		done=false;
+		ToggleGraphUI(false);
 		wpmGraph=new float[text.Length-1];
 		accuracyGraph=new float[text.Length-1];
 		timeGraph=new float[text.Length-1];
 		
+		lastHoverIndex=-1;
 		graph.values=wpmGraph;
 		graph.valueScale=1;
 		graph.times=timeGraph;
@@ -219,6 +221,9 @@ public class Typing : MonoBehaviour {
 		//TODO: When there is no graph data available for the quote (e.g. not finished typing), show the daily progress instead (always show a tab for the daily progress as well). If there is no data at all, display a message explaining that
 		
 		showGraph=done&&!showGraph;
+	}
+	public void ToggleGraphUI(bool show){
+		showGraph=show;
 	}
 	public void OpenWikiPage(){
 		if(quoteTitle==null)
@@ -550,6 +555,8 @@ public class Typing : MonoBehaviour {
 		}
 		KeyManager.RemoveHitsAndMisses(charOccurrences/2);
 		UpdateCurrentPracticeUI(curPracticeIndex);
+		if(showGraphWhenDone)
+			ToggleGraphUI(true);
 		UnfocusInputField();
 		// KeyManager.Save();
 	}
@@ -586,12 +593,34 @@ public class Typing : MonoBehaviour {
 			textColor.a=1f-curBlend;
 			textDisplayText.color=textColor;
 			
-			graph.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,expandedGraphHeight,curBlend));
+			textColor=graphInfo.color;
+			textColor.a=curBlend;
+			graphInfo.color=textColor;
+			
+			graph.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
 			
 			graph.expandedBlend=curBlend;
 		}
-		if(done&&graph.hoverIndex>-1){
-			//TODO: Make a new UI text and write info for the currently selected point: timeGraph[hoverIndex], wpmGraph, accuracyGraph, etc  
+		if(done){
+			if(graph.hoverIndex!=lastHoverIndex){
+				if(graph.hoverIndex>-1){
+					lastHoverIndex=graph.hoverIndex;
+					int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
+					graphInfo.text=
+						"Graph Info:"+
+						"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+
+							(seconds<10?"0":"")+seconds+':'+
+							((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1]+
+						"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
+						"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
+					// Full-Word: 0 WPM ("potato ")
+					// Seek Time ('a'): 0 ms";
+				}else{
+					graphInfo.text=
+						"Graph Info:"+
+						"\n\n-- Move your mouse over the graph to show details --";
+				}
+			}
 		}
 	}
 	
