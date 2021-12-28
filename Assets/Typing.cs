@@ -31,6 +31,8 @@ public class Typing : MonoBehaviour {
 
 	public static Typing instance;
 	
+	public DrawGraph graph;
+	
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
 	       input="",
@@ -42,6 +44,7 @@ public class Typing : MonoBehaviour {
 	public static int curPracticeIndex;
 	public static string quoteTitle;
 	public TMP_InputField textDisplay;
+	TMP_Text textDisplayText;
 	public TMP_Text lessonInfo,WPMInfo,averageWPMInfo,quoteInfo;
 	public Button quoteInfoButton;
 	
@@ -53,6 +56,8 @@ public class Typing : MonoBehaviour {
 	              showIncorrectCharacters;
 	public Slider charVarietySlider,quoteDifficultySlider;
 	public RectTransform textTransform;
+	public GameObject lightModeButton,
+	                  darkModeButton;
 	
 	public Image backgroundImage,fadeImage;
 	[Range(0,1)]public float defaultFade=0f,fadeAmount=.5f;
@@ -85,13 +90,24 @@ public class Typing : MonoBehaviour {
 		              improvementColorTag,
 		              regressionColorTag;
 	}
-	public int selectedTheme;
+	public int selectedTheme,lastSelectedTheme;
 	public Theme[] themes;
 	
 	int hitCount,missCount;
 	
 	bool showMenu;
 	
+	bool showGraph,lastShowGraph;
+	float graphBlend;
+	Vector3 defaultGraphScale,
+	        expandedGraphScale=new Vector3(1,8,1);
+	float[] wpmGraph,
+	        accuracyGraph,
+	        timeGraph,
+	        fullWordWpmGraph;	//TODO: Create properly sized array and store the full-word speeds for each word typed (I was thinking this part of the graph should be drawn with sharp, 90 degree angles (vertical/horizontal), instead of the usual diagonal ones) Hover caption could be something like 'Full-word speed: 10 WPM ("square ")'
+	//TODO: Idea: After completing the lesson, allow moving the caret in the quote text, and display the recorded stats at the caret position
+	//TODO: Idea: Record all keypresses and store times, allow viewing replay of the lesson
+
 	void Start(){
 		Application.targetFrameRate=Screen.currentResolution.refreshRate;
 		
@@ -102,6 +118,12 @@ public class Typing : MonoBehaviour {
 		quoteDifficultySlider.value=KeyManager.quoteDifficulty=PlayerPrefs.GetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
 		showIncorrectCharacters.isOn=PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn?1:0)==1;
 		selectedTheme=PlayerPrefs.GetInt("selectedTheme",selectedTheme);
+		
+		lightModeButton.SetActive(selectedTheme==0);
+		darkModeButton.SetActive(selectedTheme!=0);
+		
+		textDisplayText=textDisplay.GetComponentInChildren<TMP_Text>();
+		defaultGraphScale=graph.rectTransform.localScale;
 		
 		UpdateTheme();
 		
@@ -123,11 +145,13 @@ public class Typing : MonoBehaviour {
 	}
 	
 	void UpdateTheme(){
-		textDisplay.GetComponentInChildren<TMP_Text>().color=themes[selectedTheme].textColorQuote;
+		textDisplayText.color=themes[selectedTheme].textColorQuote;
 		var quoteInfoColors=quoteInfoButton.colors;
 		lessonInfo.color=WPMInfo.color=averageWPMInfo.color=quoteInfoColors.normalColor=quoteInfoColors.selectedColor=themes[selectedTheme].textColorUI;
 		quoteInfoButton.colors=quoteInfoColors;
 		targetFadeColor=backgroundImage.color=fadeImage.color=themes[selectedTheme].backgroundColor;
+		
+		graph.color=themes[selectedTheme].textColorCorrect;
 		
 		themes[selectedTheme].textColorErrorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorError)+">";
 		themes[selectedTheme].textColorWarningTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorWarning)+">";
@@ -135,9 +159,23 @@ public class Typing : MonoBehaviour {
 		themes[selectedTheme].improvementColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].improvementColor)+">";
 		themes[selectedTheme].regressionColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].regressionColor)+">";
 		
-		ResetLesson();	// Because the score colors only get set once, when the quote is completed, so they won't update for the current quote
+		//TODO: Don't reset lesson, store the index to the previous theme instead, and replace the color code strings
+		// ResetLesson();	// Because the score colors only get set once, when the quote is completed, so they won't update for the current quote
+		
+		WPMInfo.text=WPMInfo.text
+			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+		averageWPMInfo.text=averageWPMInfo.text.
+			Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+		lessonInfo.text=lessonInfo.text
+			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+		textDisplay.text=textDisplay.text
+			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
 	}
 	public void ChangeTheme(int theme){
+		if(theme!=selectedTheme) lastSelectedTheme=selectedTheme;
 		selectedTheme=theme;
 		UpdateTheme();
 	}
@@ -155,6 +193,17 @@ public class Typing : MonoBehaviour {
 	}
 	public void ResetLesson(){
 		done=false;
+		wpmGraph=new float[text.Length-1];
+		accuracyGraph=new float[text.Length-1];
+		timeGraph=new float[text.Length-1];
+		
+		graph.values=wpmGraph;
+		graph.valueScale=1;
+		graph.times=timeGraph;
+		graph.timeScale=1;
+		graph.currentIndex=-1;
+		graph.SetVerticesDirty();
+		
 		UpdateCurrentPracticeUI();
 		hitCount=missCount=0;
 		input=lastInput="";
@@ -164,6 +213,11 @@ public class Typing : MonoBehaviour {
 		seekTime=wordTime=totalTestTime=0;
 		loc=lastLength=lastMaxLength=-1;
 		// EventSystem.current.SetSelectedGameObject(textDisplayObject);
+	}
+	public void ToggleGraphUI(){
+		//TODO: When there is no graph data available for the quote (e.g. not finished typing), show the daily progress instead (always show a tab for the daily progress as well). If there is no data at all, display a message explaining that
+		
+		showGraph=done&&!showGraph;
 	}
 	public void OpenWikiPage(){
 		if(quoteTitle==null)
@@ -229,8 +283,8 @@ public class Typing : MonoBehaviour {
 			"\nFull-Word: "+curCharacterWPM+
 			"\nAccuracy: "+curCharacterAccuracy;
 		
-		float wpm=loc/totalTestTime*60/5;
-		float accuracy=(float)hitCount/(hitCount+missCount)*100;
+		wpm=loc/totalTestTime*60/5;
+		accuracy=(float)hitCount/(hitCount+missCount)*100;
 		float oldAverageAccuracy=KeyManager.averageAccuracy;
 		float oldAverageSpeed=KeyManager.averageWPM;
 		float oldTopSpeed=KeyManager.topWPM;
@@ -327,7 +381,7 @@ public class Typing : MonoBehaviour {
 							break;
 						}
 						case '\n':{
-							chars[i]='␣';
+							chars[i]='↵';
 							break;
 						}
 					}
@@ -351,7 +405,7 @@ public class Typing : MonoBehaviour {
 							break;
 						}
 						case '\n':{
-							chars[i]='␣';
+							chars[i]='↵';
 							break;
 						}
 					}
@@ -364,10 +418,11 @@ public class Typing : MonoBehaviour {
 		textDisplay.caretPosition=Mathf.Min(input.Length,text.Length);
 	}
 	
+	float accuracy,wpm;
 	void Update(){
-		// if(Input.GetKeyDown(KeyCode.Escape)){	//BUG: Doesn't work if the input field is focused
-		// 	NextLesson();
-		// }
+		if(done&&(Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Escape))){
+			NextLesson();
+		}
 		
 		SetTextColor();
 		// int cappedLoc=Mathf.Min(loc+1,text.Length);
@@ -386,14 +441,18 @@ public class Typing : MonoBehaviour {
 			lastFrameIncorrect=incorrect;
 		}
 		
-		FadeUpdate();
+		if(showGraph!=lastShowGraph||graphBlend>0||graphBlend<1)
+			GraphUpdate();
+		if(fade!=lastFade||backgroundFade>0||backgroundFade<1)
+			FadeUpdate();
 		if(done) return;
 		int seconds=Mathf.FloorToInt(totalTestTime%60);
-		float accuracy=(float)hitCount/(hitCount+missCount)*100;
+		accuracy=(float)hitCount/(hitCount+missCount)*100;
+		wpm=loc/totalTestTime*60/5;
 		if(hitCount+missCount==0) accuracy=100;
 		WPMInfo.text=
 			"Accuracy: "+Mathf.RoundToInt(accuracy)+"%"+
-			"\nSpeed: "+(totalTestTime==0?"-":Mathf.RoundToInt(loc/totalTestTime*60/5))+" WPM"+
+			"\nSpeed: "+(totalTestTime==0?"-":Mathf.RoundToInt(wpm))+" WPM"+
 		   "\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+(seconds<10?"0":"")+seconds;
 		
 		if(Input.mousePosition!=lastMousePos){
@@ -402,6 +461,8 @@ public class Typing : MonoBehaviour {
 		}
 	}
 	void LateUpdate(){
+		graph.timeScale=totalTestTime;
+		graph.SetVerticesDirty();
 		incorrect=!text.StartsWith(input);
 		switch(lastMaxLength){
 			case >= 0 when input.Length<text.Length||incorrect:{
@@ -419,6 +480,7 @@ public class Typing : MonoBehaviour {
 			return;
 		}
 		
+		
 		if(totalTestTime>0||length>0)
 			fade=true;
 		incorrect=false;
@@ -433,8 +495,22 @@ public class Typing : MonoBehaviour {
 			if(inputChar==compareChar){
 				hitCount++;
 				loc++;
-				if(loc>lastMaxLength)
+				if(loc>lastMaxLength){
 					lastMaxLength=loc;
+					accuracyGraph[Mathf.Max(0,loc-1)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
+					wpmGraph[Mathf.Max(0,loc-1)]=wpm=loc/totalTestTime*60/5;
+					timeGraph[Mathf.Max(0,loc-1)]=totalTestTime;
+					
+					graph.values=wpmGraph;
+					if(graph.valueScale<wpm){
+						graph.valueScale=wpm;
+					}
+					graph.times=timeGraph;
+					graph.timeScale=totalTestTime;
+					graph.currentIndex=loc-1;
+					
+					// graph.SetVerticesDirty();
+				}
 				KeyManager.RegisterKeyHit(keyIndex);
 				if(loc>0&&input[loc]!=input[loc-1]){
 					KeyManager.UpdateSeekTime(keyIndex,seekTime);
@@ -456,9 +532,13 @@ public class Typing : MonoBehaviour {
 				missCount++;
 				KeyManager.RegisterKeyMiss(keyIndex);
 				incorrect=true;
+				
+				accuracy=(float)hitCount/(hitCount+missCount)*100;
+				
 				break;
 			}
 		}
+		wpm=loc/totalTestTime*60/5;
 
 		incorrect=!text.StartsWith(input);
 		
@@ -470,7 +550,13 @@ public class Typing : MonoBehaviour {
 		if(incorrect||input.Length<text.Length)	return;
 		// KeyManager.RemoveHitsAndMisses(curPracticeIndex);
 		done=textDisplay.readOnly=true;
-		if(done)	fade=false;
+		fade=false;
+		int charOccurrences=0;
+		for(int i=0;i<input.Length;i++){
+			if(input[i]==curCharacterPractice)
+				charOccurrences++;
+		}
+		KeyManager.RemoveHitsAndMisses(charOccurrences/2);
 		UpdateCurrentPracticeUI(curPracticeIndex);
 		UnfocusInputField();
 		// KeyManager.Save();
@@ -490,6 +576,29 @@ public class Typing : MonoBehaviour {
 		}
 		fadeImage.color=targetFadeColor;
 	}
+	void GraphUpdate(){
+		if(showGraph!=lastShowGraph){
+			graphBlend=showGraph?graphBlend*graphBlend*graphBlend:Mathf.Sqrt(Mathf.Sqrt(graphBlend));
+			lastShowGraph=showGraph;
+		}
+		float curBlend;
+		if(showGraph){
+			curBlend=Mathf.Sqrt(graphBlend);
+			graphBlend=Mathf.Clamp01(graphBlend+Time.deltaTime*2f);
+		}else{
+			curBlend=graphBlend*graphBlend;
+			graphBlend=Mathf.Clamp01(graphBlend-Time.deltaTime*2f);
+		}
+		Color textColor=textDisplayText.color;
+		textColor.a=1f-curBlend;
+		textDisplayText.color=textColor;
+		
+		//TODO: Better scaling and positioning (respect window size)
+		Vector3 targetScale=Vector3.Lerp(defaultGraphScale,expandedGraphScale,curBlend);
+		graph.rectTransform.localScale=targetScale;
+		
+		graph.expandedBlend=curBlend;
+	}
 	
 	public void AllowCapitalLetters(){
 		KeyManager.includeUppercase=practiceUppercase.isOn;
@@ -506,4 +615,10 @@ public class Typing : MonoBehaviour {
 	public void UpdateQuoteDifficulty(){
 		KeyManager.quoteDifficulty=quoteDifficultySlider.value;
 	}
+	public void ResetKeyData(){
+		KeyManager.InitializeKeyDatabase();
+	}
+	
+	//TODO: Make a proper UI plan and redesign the settings menu
+	// Also consider where the progress graph will be drawn, if that is to be implemented
 }

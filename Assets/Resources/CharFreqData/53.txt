@@ -1,12 +1,18 @@
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Hypothesis
-Content/Wikipedia/Wikipedia - Visual Language
+Content/Wikipedia/Wikipedia - Visual language
+Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth

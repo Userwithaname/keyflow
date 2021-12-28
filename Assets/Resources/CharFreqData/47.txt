@@ -4,11 +4,13 @@ Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy

@@ -2,13 +2,17 @@ Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dimension
+Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Art
+Content/Wikipedia/Wikipedia - Fluid dynamics
+Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Hexadecimal
@@ -20,11 +24,17 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Color
+Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Mass
@@ -42,12 +52,17 @@ Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Arithmetic Mean
-Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Velocity
+Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
+Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - N-sphere
@@ -56,12 +71,17 @@ Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Mathematical optimization
+Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Pareidolia

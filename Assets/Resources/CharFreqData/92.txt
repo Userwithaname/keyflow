@@ -6,6 +6,7 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Illusion
@@ -15,19 +16,25 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Mathematical optimization
+Content/Wikipedia/Wikipedia - Union (set theory)
+Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Black Hole
-Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Galaxy
-Content/Wikipedia/Wikipedia - Dyson sphere
+Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - Wave

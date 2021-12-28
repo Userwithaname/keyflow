@@ -1,1 +1,2 @@
+Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Quaternion

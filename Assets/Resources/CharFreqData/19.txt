@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere

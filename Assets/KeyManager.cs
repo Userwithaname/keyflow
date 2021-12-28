@@ -43,8 +43,8 @@ public class KeyManager:MonoBehaviour{
 	}
 	List<DailyData> dailyData=new List<DailyData>();
 	public static float averageAccuracy,averageWPM,topWPM;
-	public static float charPracticeDifficulty=.62f;	// 1: Completely random, 0: Only the worst character in either speed or accuracy
-	public static float quoteDifficulty=.42f;
+	public static float charPracticeDifficulty=.7f;	// 1: Completely random, 0: Only the worst character in either speed or accuracy
+	public static float quoteDifficulty=.45f;
 	
 	void Start(){
 		instance=this;
@@ -53,7 +53,7 @@ public class KeyManager:MonoBehaviour{
 		
 		// GetKeyIndexes("abcAbd".ToLower());
 	}
-	static void InitializeKeyDatabase(){
+	public static void InitializeKeyDatabase(){
 		instance.confidenceDatabase=new KeyConfidenceData[trackedKeys.Length];
 		for(int i=0;i<trackedKeys.Length;i++){
 			instance.confidenceDatabase[i].seekTime=instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
@@ -142,7 +142,6 @@ public class KeyManager:MonoBehaviour{
 		 * remove duplicates
 		 * loop through the 'instance.confidenceDatabase' and look for the next sorted match
 		 */
-		// keys=keys.ToLower();
 		List<char> sorted=new List<char>();
 		for(int i=0;i<keys.Length;i++){
 			sorted.Add(keys[i]);
@@ -165,17 +164,18 @@ public class KeyManager:MonoBehaviour{
 	}
 
 	public static bool IsAlphaNumericIndex(int index){
-		if(index>=lowercaseStart&&index<=lowercaseEnd)	return true;
-		if(index>=capitalStart&&index<=capitalEnd)		return true;
-		if(index>=numbersStart&&index<=numbersEnd)		return true;
-		return false;
+		return 
+			index>=lowercaseStart&&index<=lowercaseEnd||
+			index>=capitalStart&&index<=capitalEnd||
+			index>=numbersStart&&index<=numbersEnd;
 	}
 
+	//TODO: Function for lowering the hit/miss count without changing the ratio (e.g. divide by the same value, ratio might still change a bit because the numbers are integers)
 	public static void RemoveHitsAndMisses(int keyIndex,int amount=1){
 		if(instance.confidenceDatabase[keyIndex].hits<10)
 			return;
-		instance.confidenceDatabase[keyIndex].hits=Mathf.Max(0,instance.confidenceDatabase[keyIndex].hits-1);
-		instance.confidenceDatabase[keyIndex].misses=Mathf.Max(0,instance.confidenceDatabase[keyIndex].misses-1);
+		instance.confidenceDatabase[keyIndex].hits=Mathf.Max(0,instance.confidenceDatabase[keyIndex].hits-amount);
+		instance.confidenceDatabase[keyIndex].misses=Mathf.Max(0,instance.confidenceDatabase[keyIndex].misses-amount);
 	}
 	public static void RegisterKeyHit(int keyIndex){
 		instance.confidenceDatabase[keyIndex].hits++;
@@ -186,14 +186,14 @@ public class KeyManager:MonoBehaviour{
 	
 	public static void UpdateSeekTime(int index,float seekTime){
 		if(instance.confidenceDatabase[index].seekTime<10000){
-			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.27f);
+			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.125f);
 		}else{
 			instance.confidenceDatabase[index].seekTime=seekTime;
 		}
 	}
 	public static void UpdateNextKeySeekTime(int index,float seekTime){
 		if(instance.confidenceDatabase[index].nextKeySeekTime<10000){
-			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.27f);
+			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.125f);
 		}else{
 			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
@@ -206,7 +206,7 @@ public class KeyManager:MonoBehaviour{
 				instance.confidenceDatabase[i].wpm=wpm;
 				continue;
 			}
-			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.8f/word.Length);
+			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.75f/word.Length);
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
 		//TODO: Track top-speed
@@ -310,8 +310,10 @@ public class KeyManager:MonoBehaviour{
 			Typing.curPracticeIndex=keyIndex;
 		}
 		float random=quoteDifficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-quoteDifficulty);
-		if(random<quoteDifficulty-.5f)
-			random=quoteDifficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-quoteDifficulty);
+		if(random<Mathf.Pow(Mathf.Max(0,quoteDifficulty-.3f)/(1f-.3f),2)*.75f){
+			float random2=quoteDifficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-quoteDifficulty);
+			random=random2>random||Random.Range(0f,1f)<.1f?random2:random;
+		}
 		// float random=Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,5)?1f-Mathf.Sqrt(Random.Range(0f,1f)):Random.Range(0f,1f);
 		string targetQuote=quotes[Mathf.Min(Mathf.FloorToInt(random*quotes.Length),quotes.Length-1)];
 		string newQuote=targetQuote.Split('/')[^1];

@@ -32,7 +32,6 @@ public class QuoteDataGenerator:EditorWindow{
 				// "Content/Code",
 				// "Content/Quotes",
 				"Content/Wikipedia",
-				"Content/Wikipedia - Checked Links",
 				// "Content/Non-English",
 			}){
 			foreach(TextAsset t in Resources.LoadAll<TextAsset>(path)){

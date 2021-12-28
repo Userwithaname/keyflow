@@ -1,0 +1,1 @@
+In digital imaging, a pixel, pel, or picture element is the smallest addressable element in a raster image, or the smallest addressable element in an all points addressable display device; so it is the smallest controllable element of a picture represented on the screen.

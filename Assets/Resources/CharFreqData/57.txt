@@ -4,4 +4,6 @@ Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Gas

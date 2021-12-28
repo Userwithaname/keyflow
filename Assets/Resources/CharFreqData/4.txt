@@ -1,9 +1,16 @@
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Hexadecimal
+Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Proton
+Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -13,3 +20,4 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Backlash (engineering)
