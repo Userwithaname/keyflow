@@ -194,15 +194,14 @@ public class Typing : MonoBehaviour {
 	}
 	public void ResetLesson(){
 		done=false;
-		ToggleGraphUI(false);
-		wpmGraph=new float[text.Length-1];
-		accuracyGraph=new float[text.Length-1];
-		timeGraph=new float[text.Length-1];
 		
+		ToggleGraphUI(false);
+		graph.values=wpmGraph=new float[text.Length-1];
+		graph.accuracy=accuracyGraph=new float[text.Length-1];
+		graph.misses=new int[text.Length-1];
+		graph.times=timeGraph=new float[text.Length-1];
 		lastHoverIndex=-1;
-		graph.values=wpmGraph;
 		graph.valueScale=1;
-		graph.times=timeGraph;
 		graph.timeScale=1;
 		graph.currentIndex=-1;
 		graph.SetVerticesDirty();
@@ -294,8 +293,8 @@ public class Typing : MonoBehaviour {
 		float oldAverageAccuracy=KeyManager.averageAccuracy;
 		float oldAverageSpeed=KeyManager.averageWPM;
 		float oldTopSpeed=KeyManager.topWPM;
-		if(wpm>KeyManager.topWPM) KeyManager.topWPM=wpm;
 		if(done){
+			if(wpm>KeyManager.topWPM) KeyManager.topWPM=wpm;
 			if(accuracy>0)
 				KeyManager.averageAccuracy=Mathf.Lerp(KeyManager.averageAccuracy,accuracy,KeyManager.averageAccuracy>0?.333f:1);
 			if(wpm>0)
@@ -503,6 +502,7 @@ public class Typing : MonoBehaviour {
 						graph.valueScale=wpm;
 					}
 					graph.times=timeGraph;
+					graph.accuracy=accuracyGraph;
 					graph.timeScale=totalTestTime;
 					graph.currentIndex=loc-1;
 					
@@ -526,11 +526,12 @@ public class Typing : MonoBehaviour {
 
 				seekTime=0;
 			}else{
+				accuracyGraph[Mathf.Max(0,loc)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
+				graph.accuracy=accuracyGraph;
+				graph.misses[loc]++;
 				missCount++;
 				KeyManager.RegisterKeyMiss(keyIndex);
 				incorrect=true;
-				
-				accuracy=(float)hitCount/(hitCount+missCount)*100;
 				
 				break;
 			}
@@ -601,26 +602,23 @@ public class Typing : MonoBehaviour {
 			
 			graph.expandedBlend=curBlend;
 		}
-		if(done){
-			if(graph.hoverIndex!=lastHoverIndex){
-				if(graph.hoverIndex>-1){
-					lastHoverIndex=graph.hoverIndex;
-					int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
-					graphInfo.text=
-						"Graph Info:"+
-						"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+
-							(seconds<10?"0":"")+seconds+':'+
-							((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1]+
-						"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
-						"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
-					// Full-Word: 0 WPM ("potato ")
-					// Seek Time ('a'): 0 ms";
-				}else{
-					graphInfo.text=
-						"Graph Info:"+
-						"\n\n-- Move your mouse over the graph to show details --";
-				}
-			}
+		if(!done||graph.hoverIndex==lastHoverIndex) return;
+		if(graph.hoverIndex>-1){
+			lastHoverIndex=graph.hoverIndex;
+			int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
+			graphInfo.text=
+				"Graph Info:"+
+				"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+
+					(seconds<10?"0":"")+seconds+':'+
+					((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1]+
+				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
+				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
+			// Full-Word: 0 WPM ("potato ")
+			// Seek Time ('a'): 0 ms";
+		}else{
+			graphInfo.text=
+				"Graph Info:"+
+				"\n\n-- Move your mouse over the graph to show details --";
 		}
 	}
 	
