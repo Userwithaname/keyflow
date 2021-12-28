@@ -1,0 +1,1 @@
+Arity is the number of arguments or operands taken by a function or operation in logic, mathematics, and computer science. In mathematics, arity may also be named rank, but this word can have many other meanings in mathematics. In logic and philosophy, it is also called adicity and degree. In linguistics, it is usually named valency.

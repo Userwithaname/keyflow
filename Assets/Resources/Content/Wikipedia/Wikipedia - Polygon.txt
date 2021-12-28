@@ -1,0 +1,1 @@
+In geometry, a polygon is a plane figure that is described by a finite number of straight line segments connected to form a closed polygonal chain (or polygonal circuit). The bounded plane region, the bounding circuit, or the two together, may be called a polygon.

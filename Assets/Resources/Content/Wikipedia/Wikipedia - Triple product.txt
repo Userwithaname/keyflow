@@ -1,0 +1,1 @@
+In geometry and algebra, the triple product is a product of three 3-dimensional vectors, usually Euclidean vectors. The name "triple product" is used for two different products, the scalar-valued scalar triple product and, less often, the vector-valued vector triple product.

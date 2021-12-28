@@ -1,6 +1,8 @@
 Content/Wikipedia/Wikipedia - Algebra
+Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Coefficient
+Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Percentage
@@ -9,4 +11,6 @@ Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
+Content/Wikipedia/Wikipedia - Wave

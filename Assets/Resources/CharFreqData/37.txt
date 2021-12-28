@@ -2,6 +2,9 @@ Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - HTTP cookie
+Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Astronomy

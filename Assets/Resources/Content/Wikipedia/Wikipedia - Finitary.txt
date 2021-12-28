@@ -1,0 +1,1 @@
+In mathematics and logic, an operation is finitary if it has finite arity, i.e. if it has a finite number of input values. Similarly, an infinitary operation is one with an infinite number of input values.

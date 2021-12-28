@@ -15,6 +15,8 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Velocity
+Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Topology
@@ -22,22 +24,29 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Pareidolia
+Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Error detection and correction
+Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Virus

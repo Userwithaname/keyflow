@@ -1,0 +1,1 @@
+In set theory, the union of a collection of sets is the set of all elements in the collection. It is one of the fundamental operations through which sets can be combined and related to each other. A nullary union refers to a union of zero (0} sets and it is by definition equal to the empty set.

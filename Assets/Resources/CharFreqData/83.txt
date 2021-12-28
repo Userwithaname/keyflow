@@ -13,42 +13,55 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Tesseract
+Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Algae

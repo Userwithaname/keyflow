@@ -1,0 +1,1 @@
+An elastic modulus (also known as modulus of elasticity) is a quantity that measures an object or substance's resistance to being deformed elastically (i.e., non-permanently) when a stress is applied to it. The elastic modulus of an object is defined as the slope of its stress-strain curve in the elastic deformation region: A stiffer material will have a higher elastic modulus.
