@@ -5,7 +5,9 @@ Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Percentage
+Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Russell's paradox

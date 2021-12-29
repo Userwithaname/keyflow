@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Computer font
@@ -40,6 +41,7 @@ Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Anthropology
+Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
@@ -48,6 +50,7 @@ Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Void (astronomy)
+Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Archaea
@@ -60,6 +63,7 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Adjective
@@ -82,6 +86,7 @@ Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Vector field
+Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Constellation
@@ -109,6 +114,7 @@ Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Solid
@@ -119,22 +125,29 @@ Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mass
+Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Power law
+Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Proton
+Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Hexadecimal
@@ -145,6 +158,7 @@ Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Neutron
@@ -169,6 +183,8 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - HTTP cookie

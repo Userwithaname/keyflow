@@ -106,45 +106,6 @@ public class DrawGraph:Graphic{
 			}
 		}
 		
-		int vertexCount=vh.currentVertCount;
-		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){	//BUG: Doesn't work
-			if(misses[i]==0) continue;
-			
-			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);
-			
-			vertex.color=Typing.instance.themes[Typing.instance.selectedTheme].textColorError*new Color(1,1,1,expandedBlend*.5f);
-			// vertex.color=Color.red;
-			
-			float offset=selectionSize*expandedBlend*2;
-			Vector3 diagonal=new Vector3(offset/2,offset/2);
-			
-			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)+diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)+offset)-diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
-			vh.AddVert(vertex);
-			
-			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
-			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
-			
-			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)-offset)+diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)+offset)-diagonal;
-			vh.AddVert(vertex);
-			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
-			vh.AddVert(vertex);
-			
-			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
-			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
-			
-			vertexCount+=8;
-		}
-		
 		if(hoverIndex>-1){
 			Color32 inactiveColor=vertex.color;
 			inactiveColor.a=0;
@@ -182,6 +143,46 @@ public class DrawGraph:Graphic{
 			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
+		}
+		
+		return;
+		int vertexCount=vh.currentVertCount;
+		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){	//BUG: Doesn't work
+			if(misses[i]==0) continue;
+			
+			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);
+			
+			vertex.color=Typing.instance.themes[Typing.instance.selectedTheme].textColorError*new Color(1,1,1,expandedBlend*.5f);
+			// vertex.color=Color.red;
+			
+			float offset=selectionSize*expandedBlend*2;
+			Vector3 diagonal=new Vector3(offset/2,offset/2);
+			
+			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)+diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)+offset)-diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
+			vh.AddVert(vertex);
+			
+			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
+			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
+			
+			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)-offset)+diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)+offset)-diagonal;
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
+			vh.AddVert(vertex);
+			
+			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
+			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
+			
+			vertexCount+=8;
 		}
 		
 		//TODO: Draw error rate curve (or do the MonkeyType thing and draw x-es where errors occur (or just a triangle if you are lazy))

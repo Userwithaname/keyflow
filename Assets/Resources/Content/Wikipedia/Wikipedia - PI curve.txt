@@ -1,0 +1,1 @@
+The PI (or photosynthesis-irradiance) curve is a graphical representation of the empirical relationship between solar irradiance and photosynthesis. A derivation of the Michaelis-Menten curve, it shows the generally positive correlation between light intensity and photosynthetic rate. It is a plot of photosynthetic rate as a function of light intensity (irradiance).

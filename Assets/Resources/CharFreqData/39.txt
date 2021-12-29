@@ -12,6 +12,8 @@ Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Bacteria
+Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Star
@@ -24,6 +26,7 @@ Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Gravity

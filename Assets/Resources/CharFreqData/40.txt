@@ -11,6 +11,7 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Kinetic energy

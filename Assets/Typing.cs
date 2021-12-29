@@ -513,9 +513,6 @@ public class Typing : MonoBehaviour {
 					KeyManager.UpdateSeekTime(keyIndex,seekTime);
 					KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
 				}
-				// else{
-				// 	quoteInfo.text="";
-				// }
 				if(!KeyManager.IsAlphaNumericIndex(keyIndex)&&length>lastMaxLength||input.Length==text.Length){
 					//TODO: Save all word WPMs to an array, show them as a raw speed graph at the end of the game (also track real WPM in the same way)
 					//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)

@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dither
@@ -30,8 +31,10 @@ Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy

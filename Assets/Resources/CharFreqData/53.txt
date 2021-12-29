@@ -1,5 +1,7 @@
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Serial comma
@@ -10,6 +12,7 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Artificial intelligence

@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Homeomorphism
+Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -9,6 +10,7 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Linearity
@@ -21,6 +23,7 @@ Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Inertia
@@ -32,6 +35,7 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
@@ -68,9 +72,11 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Algae
+Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Flight
@@ -84,6 +90,7 @@ Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Morpheme
+Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Pareidolia
@@ -95,9 +102,12 @@ Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Bacteria
+Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Food
+Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Linguistics
@@ -105,6 +115,7 @@ Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Plant
+Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Jitter
@@ -120,6 +131,8 @@ Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Orbit
+Content/Wikipedia/Wikipedia - Tidal acceleration
+Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Syntax
@@ -131,6 +144,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Torque
@@ -143,6 +157,7 @@ Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Elastic modulus
