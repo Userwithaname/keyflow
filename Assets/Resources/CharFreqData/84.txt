@@ -42,6 +42,7 @@ Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Drag (physics)
@@ -54,6 +55,7 @@ Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Fourier transform
@@ -78,6 +80,7 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Universe
@@ -92,6 +95,7 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Plasma (physics)
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Russell's paradox
@@ -113,6 +117,7 @@ Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Flight
@@ -141,7 +146,9 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Power law
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Theory
@@ -188,6 +195,7 @@ Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Bicameral mentality

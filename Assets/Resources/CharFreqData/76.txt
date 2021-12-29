@@ -12,6 +12,7 @@ Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Jitter
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Plan

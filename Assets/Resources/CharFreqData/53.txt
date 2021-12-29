@@ -3,9 +3,11 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Ratio

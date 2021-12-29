@@ -66,8 +66,10 @@ Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Archaeology
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Wave
@@ -75,6 +77,7 @@ Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Sound
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Photosynthesis
@@ -89,6 +92,7 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Vegetable
@@ -147,6 +151,7 @@ Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Power law
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Zipf's law
@@ -165,9 +170,11 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Linguistics
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Syntax
@@ -176,6 +183,7 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Quantum mechanics

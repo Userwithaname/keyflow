@@ -1,7 +1,9 @@
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Class (set theory)

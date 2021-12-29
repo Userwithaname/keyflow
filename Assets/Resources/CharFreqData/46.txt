@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Artificial intelligence

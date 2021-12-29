@@ -10,6 +10,7 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Moon
@@ -23,6 +24,7 @@ Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Astronomy

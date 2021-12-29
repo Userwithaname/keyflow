@@ -24,7 +24,9 @@ Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Quantum mechanics
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Jitter
@@ -37,6 +39,7 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Backlash (engineering)

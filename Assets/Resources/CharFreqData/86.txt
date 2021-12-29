@@ -65,6 +65,7 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Quaternion
@@ -73,6 +74,7 @@ Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Proton
@@ -110,6 +112,7 @@ Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -142,14 +145,17 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Frequency
@@ -194,6 +200,7 @@ Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Molecule
@@ -209,6 +216,7 @@ Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Pareidolia
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Fungus

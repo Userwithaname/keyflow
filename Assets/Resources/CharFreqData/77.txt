@@ -13,6 +13,7 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Jitter
@@ -21,9 +22,11 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Water

@@ -20,6 +20,7 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Physics
@@ -114,6 +115,7 @@ Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Archaeology
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Percentage
@@ -140,6 +142,7 @@ Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Wikipedia
@@ -147,7 +150,9 @@ Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Natural science
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Drag (physics)
@@ -179,6 +184,7 @@ Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Vector field
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Triple product
@@ -189,6 +195,7 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Moon
@@ -208,6 +215,7 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Orbit

@@ -49,6 +49,8 @@ Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Expression (computer science)

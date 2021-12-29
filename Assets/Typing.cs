@@ -598,7 +598,7 @@ public class Typing : MonoBehaviour {
 			graphInfo.color=textColor;
 			
 			graph.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
-			
+
 			graph.expandedBlend=curBlend;
 		}
 		if(!done||graph.hoverIndex==lastHoverIndex) return;
