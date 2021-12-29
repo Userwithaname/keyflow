@@ -17,6 +17,8 @@ Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Manifold
@@ -24,6 +26,7 @@ Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Average
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Data binning
@@ -39,6 +42,7 @@ Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Land
@@ -60,7 +64,9 @@ Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - River
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Computer graphics
@@ -69,6 +75,7 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Graphene
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Quantum mechanics
@@ -102,6 +109,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Theorem
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Science
@@ -142,11 +150,13 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Homeomorphism
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Percentage

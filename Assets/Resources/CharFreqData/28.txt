@@ -7,4 +7,5 @@ Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Artificial intelligence

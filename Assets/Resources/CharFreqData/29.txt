@@ -1,3 +1,4 @@
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Topology

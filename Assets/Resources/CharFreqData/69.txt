@@ -16,12 +16,14 @@ Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Notation
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Dot product
@@ -32,6 +34,7 @@ Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Quantum mechanics
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -49,6 +52,7 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Dimension
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Photography
@@ -67,6 +71,7 @@ Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Artificial intelligence
@@ -90,10 +95,12 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Sound
@@ -104,6 +111,7 @@ Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Deflection (engineering)
@@ -138,12 +146,14 @@ Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Food
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Seismic wave

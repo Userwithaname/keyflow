@@ -63,6 +63,7 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Tension (physics)
@@ -77,6 +78,7 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Randomness
@@ -94,9 +96,12 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Water
@@ -162,11 +167,14 @@ Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Literature
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Quantum mechanics
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Science
@@ -182,6 +190,7 @@ Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Computer graphics
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Liquid-crystal display
@@ -205,5 +214,6 @@ Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Perception

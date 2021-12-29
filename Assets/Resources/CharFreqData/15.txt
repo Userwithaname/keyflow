@@ -17,6 +17,7 @@ Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Tension (physics)
@@ -49,6 +50,7 @@ Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Enzyme kinetics
@@ -60,9 +62,12 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Language

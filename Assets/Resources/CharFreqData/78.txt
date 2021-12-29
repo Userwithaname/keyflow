@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Atom
@@ -30,6 +31,7 @@ Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Aperture
@@ -39,6 +41,7 @@ Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Polygon
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Randomness
@@ -69,6 +72,7 @@ Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Biology
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Gas
@@ -82,6 +86,7 @@ Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Food
@@ -102,6 +107,7 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
@@ -146,11 +152,14 @@ Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Notation
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Euclidean vector
@@ -203,5 +212,6 @@ Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Fourier transform
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Isomorphism

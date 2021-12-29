@@ -296,10 +296,14 @@ public class Typing : MonoBehaviour {
 		if(done){
 			if(wpm>KeyManager.topWPM) KeyManager.topWPM=wpm;
 			if(accuracy>0)
-				KeyManager.averageAccuracy=Mathf.Lerp(KeyManager.averageAccuracy,accuracy,KeyManager.averageAccuracy>0?.333f:1);
+				KeyManager.averageAccuracy=Mathf.Lerp(KeyManager.averageAccuracy,accuracy,KeyManager.averageAccuracy>0?.12f:1);
 			if(wpm>0)
-				KeyManager.averageWPM=Mathf.Lerp(KeyManager.averageWPM,wpm,KeyManager.averageWPM>0?.333f:1);
+				KeyManager.averageWPM=Mathf.Lerp(KeyManager.averageWPM,wpm,KeyManager.averageWPM>0?.12f:1);
 			int seconds=Mathf.FloorToInt(totalTestTime%60);
+			string fractions=((float)Math.Round(totalTestTime-Mathf.FloorToInt(totalTestTime),3)%1).ToString().Split('.')[^1];
+			for(int i=fractions.Length;i<3;i++){
+				fractions+='0';
+			}
 			if(float.IsNaN(accuracy)) accuracy=100;
 			WPMInfo.text=
 				"Accuracy: "+
@@ -310,9 +314,7 @@ public class Typing : MonoBehaviour {
 					(wpm>=oldAverageSpeed?
 						themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)+" WPM (+"+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>":
 						themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)+" WPM ("+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>")+
-				"\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+
-				(seconds<10?"0":"")+seconds+':'+
-				((float)Math.Round(totalTestTime-Mathf.FloorToInt(totalTestTime),3)%1).ToString().Split('.')[^1];
+				"\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions;
 			
 			averageWPMInfo.text=
 				"Average Accuracy: "+
@@ -525,7 +527,7 @@ public class Typing : MonoBehaviour {
 			}else{
 				accuracyGraph[Mathf.Max(0,loc)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
 				graph.accuracy=accuracyGraph;
-				graph.misses[loc]++;
+				graph.misses[Mathf.Max(0,loc)]++;
 				missCount++;
 				KeyManager.RegisterKeyMiss(keyIndex);
 				incorrect=true;
@@ -600,19 +602,22 @@ public class Typing : MonoBehaviour {
 			graph.expandedBlend=curBlend;
 		}
 		if(!done||graph.hoverIndex==lastHoverIndex) return;
-		if(graph.hoverIndex>-1){
+		if(graph.hoverIndex!=-1){	//TODO: Turn the graph info text into a tooltip at the mouse position, or better, write text at the graph's height for that particular stat (but make sure the text won't overlap) 
 			lastHoverIndex=graph.hoverIndex;
 			int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
+			string fractions=((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1];
+			for(int i=fractions.Length;i<3;i++){
+				fractions+='0';
+			}
 			graphInfo.text=
 				"Graph Info:"+
-				"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+
-					(seconds<10?"0":"")+seconds+':'+
-					((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1]+
+				"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
 				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
 				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
 			// Full-Word: 0 WPM ("potato ")
 			// Seek Time ('a'): 0 ms";
 		}else{
+			lastHoverIndex=-1;
 			graphInfo.text=
 				"Graph Info:"+
 				"\n\n-- Move your mouse over the graph to show details --";

@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -69,6 +70,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Frequency
@@ -98,6 +100,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
@@ -151,23 +154,28 @@ Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Vegetable
@@ -182,6 +190,7 @@ Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - HTTP cookie
@@ -204,6 +213,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Bicameral mentality

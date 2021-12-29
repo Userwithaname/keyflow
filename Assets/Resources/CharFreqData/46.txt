@@ -7,8 +7,10 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Gravity

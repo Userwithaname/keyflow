@@ -48,6 +48,7 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Kinetic energy
@@ -71,11 +72,14 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Universal algebra
@@ -88,6 +92,7 @@ Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Pattern
@@ -157,6 +162,7 @@ Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Visual language
@@ -176,11 +182,13 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Natural science
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Morpheme
@@ -196,6 +204,7 @@ Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Coefficient
@@ -205,5 +214,6 @@ Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Fluid dynamics
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - HTTP cookie

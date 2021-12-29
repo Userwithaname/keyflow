@@ -24,6 +24,7 @@ Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Data
@@ -46,6 +47,7 @@ Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
@@ -76,12 +78,14 @@ Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Data binning
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Vitamin
@@ -94,11 +98,13 @@ Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Algae
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Pareidolia
@@ -109,6 +115,7 @@ Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Graphene
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia
@@ -127,6 +134,7 @@ Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Computer graphics
@@ -137,6 +145,7 @@ Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Plan
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Convention (norm)
@@ -178,6 +187,7 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Cosmos
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Randomness

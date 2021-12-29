@@ -186,14 +186,14 @@ public class KeyManager:MonoBehaviour{
 	
 	public static void UpdateSeekTime(int index,float seekTime){
 		if(instance.confidenceDatabase[index].seekTime<10000){
-			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.125f);
+			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
 		}else{
 			instance.confidenceDatabase[index].seekTime=seekTime;
 		}
 	}
 	public static void UpdateNextKeySeekTime(int index,float seekTime){
 		if(instance.confidenceDatabase[index].nextKeySeekTime<10000){
-			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.125f);
+			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
 		}else{
 			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
@@ -206,7 +206,7 @@ public class KeyManager:MonoBehaviour{
 				instance.confidenceDatabase[i].wpm=wpm;
 				continue;
 			}
-			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.75f/word.Length);
+			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.45f/(word.Length/3+1));
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
 		//TODO: Track top-speed

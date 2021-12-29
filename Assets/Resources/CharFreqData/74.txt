@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Anthropology
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Exercise
@@ -103,6 +104,7 @@ Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Lake
@@ -120,9 +122,12 @@ Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Polygon
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Arity
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Universe
@@ -143,6 +148,7 @@ Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Liquid
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Euclidean vector
@@ -159,6 +165,7 @@ Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Percentage
@@ -185,6 +192,7 @@ Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Bacteria
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Land
@@ -199,7 +207,9 @@ Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Computer font
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Quantization (signal processing)

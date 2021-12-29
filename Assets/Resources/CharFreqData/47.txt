@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -13,6 +14,7 @@ Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Error detection and correction

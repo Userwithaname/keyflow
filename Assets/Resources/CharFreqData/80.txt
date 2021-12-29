@@ -12,6 +12,7 @@ Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Error detection and correction
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Anthropology
@@ -40,7 +41,9 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Computer font
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Torque
@@ -82,6 +85,7 @@ Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Astronomy
@@ -140,6 +144,7 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Wave
@@ -149,6 +154,8 @@ Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Skewness
+Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Elastic modulus
@@ -180,8 +187,10 @@ Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Soil
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Tidal acceleration
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Spectrum
@@ -189,6 +198,7 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Archaeology
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Algebra

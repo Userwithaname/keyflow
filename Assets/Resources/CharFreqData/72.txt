@@ -57,6 +57,8 @@ Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Archaeology
@@ -71,6 +73,7 @@ Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Force
@@ -119,6 +122,7 @@ Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Visual language
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Mathematical object
@@ -135,6 +139,7 @@ Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Flight
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Weather
@@ -159,11 +164,13 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Chemistry
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Star
@@ -173,6 +180,7 @@ Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
@@ -201,5 +209,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - HTTP cookie
