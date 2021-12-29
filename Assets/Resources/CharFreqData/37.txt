@@ -1,3 +1,4 @@
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Liquid-crystal display
@@ -9,5 +10,6 @@ Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)

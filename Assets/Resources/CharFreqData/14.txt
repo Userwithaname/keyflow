@@ -67,6 +67,7 @@ Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Vector field
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Physics
@@ -91,8 +92,10 @@ Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Notation
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Bacteria
@@ -124,6 +127,7 @@ Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dimension
@@ -134,18 +138,21 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Adjective
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Operation (mathematics)
@@ -153,12 +160,14 @@ Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Algebra
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Deep learning
@@ -185,6 +194,7 @@ Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Morpheme
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Light

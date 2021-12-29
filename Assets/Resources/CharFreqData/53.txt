@@ -13,9 +13,12 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth

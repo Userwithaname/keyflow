@@ -53,6 +53,7 @@ Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Crystal
@@ -108,6 +109,7 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Vegetable
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Sound
@@ -123,6 +125,7 @@ Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Computer mouse
@@ -141,6 +144,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Morpheme
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Tesseract
@@ -159,6 +163,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Visual language
@@ -178,6 +183,7 @@ Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Orbital inclination
@@ -189,6 +195,7 @@ Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Perception
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Structure
@@ -199,9 +206,11 @@ Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Data binning
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Vector field

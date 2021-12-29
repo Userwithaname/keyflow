@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
@@ -22,6 +23,7 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Structure
@@ -49,6 +51,7 @@ Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Isotropy
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - System
@@ -57,6 +60,7 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Universal algebra
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Temperature
@@ -71,6 +75,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Liquid
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Star
@@ -114,6 +119,7 @@ Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Mathematical structure
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
@@ -132,6 +138,7 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Probability
@@ -143,10 +150,12 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -193,6 +202,7 @@ Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Inertia
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Artificial intelligence

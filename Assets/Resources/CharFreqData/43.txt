@@ -44,9 +44,12 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Average
+Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Algae

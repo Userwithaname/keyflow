@@ -12,5 +12,7 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Algae

@@ -32,6 +32,7 @@ Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Theorem
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Average
@@ -67,7 +68,9 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Algae

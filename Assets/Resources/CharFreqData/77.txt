@@ -70,6 +70,7 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Notation
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Dot product
@@ -78,7 +79,9 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Wave

@@ -15,6 +15,7 @@ public class DrawGraph:Graphic{
 	[System.NonSerialized]public int currentIndex;
 	[System.NonSerialized]public int hoverIndex=-1;
 	[System.NonSerialized]public float expandedBlend;
+	public bool mouseOverGraph;
 	float width,height;
 
 	protected override void OnPopulateMesh(VertexHelper vh){
@@ -28,18 +29,21 @@ public class DrawGraph:Graphic{
 		if(currentIndex<2||values.Length<=1)
 			return;
 		
-		float mouseHoverPos=Input.mousePosition.x-rectTransform.position.x;
+		Vector3 rtPos=rectTransform.position;
+		Vector3 mouseHoverPos=Input.mousePosition;
+		mouseHoverPos.x-=rtPos.x;
 		float lowestHoverDiff=999;
-		hoverIndex=-1;
 		float hoverPointX=0;
+		hoverIndex=-1;
+		mouseOverGraph=mouseHoverPos.x>-10&&mouseHoverPos.x<width+10&&mouseHoverPos.y<rtPos.y+height+10&&mouseHoverPos.y>rtPos.y-10;
 		for(int i=0;i<values.Length;i++){
 			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);
-			if(expandedBlend>0.00001f){
-				float diff=Mathf.Abs(mouseHoverPos-currentPosX);
+			if(expandedBlend>0.00001f&&mouseOverGraph){
+				float diff=Mathf.Abs(mouseHoverPos.x-currentPosX);
 				if(diff<=lowestHoverDiff){
 					hoverPointX=currentPosX;
 					lowestHoverDiff=diff;
-					hoverIndex=i;	//TODO: Only select a point if the mouse is hovering over the graph (within the RectTransform boundaries)
+					hoverIndex=i;
 				}
 			}
 			if(i==0) continue;
@@ -106,6 +110,7 @@ public class DrawGraph:Graphic{
 			}
 		}
 		
+		// Draw diamond and line at cursor X position
 		if(hoverIndex>-1){
 			Color32 inactiveColor=vertex.color;
 			inactiveColor.a=0;
@@ -143,20 +148,35 @@ public class DrawGraph:Graphic{
 			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
+			
+			vertex.color*=new Color(1,1,1,.5f);
+			
+			vertex.position=new Vector3(hoverPointX-selectionSize/8,hoverPointY);
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(hoverPointX+selectionSize/8,hoverPointY);
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(hoverPointX+selectionSize/8,height);
+			vh.AddVert(vertex);
+			vertex.position=new Vector3(hoverPointX-selectionSize/8,height);
+			vh.AddVert(vertex);
+			
+			vertCount+=4;
+			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
+			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 		}
 		
-		return;
+		// Draw errors
 		int vertexCount=vh.currentVertCount;
-		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){	//BUG: Doesn't work
+		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){
 			if(misses[i]==0) continue;
 			
 			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);
 			
-			vertex.color=Typing.instance.themes[Typing.instance.selectedTheme].textColorError*new Color(1,1,1,expandedBlend*.5f);
+			vertex.color=Typing.instance.themes[Typing.instance.selectedTheme].textColorError;
 			// vertex.color=Color.red;
 			
-			float offset=selectionSize*expandedBlend*2;
-			Vector3 diagonal=new Vector3(offset/2,offset/2);
+			float offset=selectionSize*expandedBlend/1.5f;
+			Vector3 diagonal=new Vector3(-offset/4,offset/4);
 			
 			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
 			vh.AddVert(vertex);
@@ -167,8 +187,11 @@ public class DrawGraph:Graphic{
 			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
 			vh.AddVert(vertex);
 			
-			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
-			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
+			vh.AddTriangle(vertexCount+1,vertexCount+0,vertexCount+2);
+			vh.AddTriangle(vertexCount+2,vertexCount+1,vertexCount+3);
+			vertexCount+=4;
+			
+			diagonal.x=-diagonal.x;
 			
 			vertex.position=new Vector3(currentPosX+offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
 			vh.AddVert(vertex);
@@ -179,10 +202,9 @@ public class DrawGraph:Graphic{
 			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)+offset)+diagonal;
 			vh.AddVert(vertex);
 			
-			vh.AddTriangle(vertexCount+0,vertexCount+1,vertexCount+2);
-			vh.AddTriangle(vertexCount+2,vertexCount+3,vertexCount+3);
-			
-			vertexCount+=8;
+			vh.AddTriangle(vertexCount+1,vertexCount+0,vertexCount+2);
+			vh.AddTriangle(vertexCount+2,vertexCount+1,vertexCount+3);
+			vertexCount+=4;
 		}
 		
 		//TODO: Draw error rate curve (or do the MonkeyType thing and draw x-es where errors occur (or just a triangle if you are lazy))

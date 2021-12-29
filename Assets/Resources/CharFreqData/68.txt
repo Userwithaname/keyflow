@@ -32,6 +32,7 @@ Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Force
@@ -59,6 +60,7 @@ Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Notation
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Astronomy
@@ -131,6 +133,7 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Art
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Dot product
@@ -138,6 +141,8 @@ Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Physics
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Operation (mathematics)
@@ -147,6 +152,8 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Aperture
+Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Galaxy
@@ -167,15 +174,18 @@ Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Quantum mechanics
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Quantization (signal processing)

@@ -50,6 +50,7 @@ Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Aperture
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - River
@@ -81,6 +82,7 @@ Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Orbit
@@ -143,6 +145,7 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Notation
@@ -156,13 +159,16 @@ Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -170,6 +176,7 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Color
@@ -191,12 +198,15 @@ Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Wave

@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Acceleration
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Randomness
@@ -32,6 +33,8 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Star
@@ -39,3 +42,4 @@ Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Prism

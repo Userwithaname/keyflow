@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Sound
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Linguistics
@@ -11,6 +12,7 @@ Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Soil
@@ -28,6 +30,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Photosynthesis
@@ -76,10 +79,12 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Adjective
@@ -102,6 +107,7 @@ Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Dither
@@ -120,6 +126,7 @@ Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - River
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Histogram
@@ -145,6 +152,7 @@ Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Algae
@@ -191,6 +199,7 @@ Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Probability
@@ -207,3 +216,4 @@ Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Weight
+Content/Wikipedia/Wikipedia - Compiler

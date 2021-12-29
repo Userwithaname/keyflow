@@ -39,5 +39,6 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Wave

@@ -8,9 +8,12 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Randomness
+Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Linearity
@@ -18,6 +21,7 @@ Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Liquid
+Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Color
@@ -28,6 +32,7 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Anthropology
+Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Computer mouse
@@ -37,6 +42,7 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Topology
@@ -51,6 +57,7 @@ Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Chemistry
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Inverse-square law
@@ -94,11 +101,13 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Pareidolia
+Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Graphene
+Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Star
@@ -147,6 +156,7 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Mass

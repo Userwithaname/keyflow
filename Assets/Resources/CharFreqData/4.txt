@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Serial comma
@@ -17,10 +18,13 @@ Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Average
+Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Prism
