@@ -1,7 +1,7 @@
 *~
 *.log
 *.sln
-Builds/
+Builds/Keyflow*
 *.csproj
 *.blend[0-9]
 *.blend[0-9].meta
