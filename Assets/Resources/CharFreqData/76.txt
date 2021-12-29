@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Adjective
+Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Structure
@@ -12,6 +13,7 @@ Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Velocity
@@ -37,6 +39,7 @@ Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Color
@@ -47,6 +50,7 @@ Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Virus

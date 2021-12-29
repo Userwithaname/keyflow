@@ -4,6 +4,7 @@ Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Sea
@@ -63,6 +64,8 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Tradition
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere

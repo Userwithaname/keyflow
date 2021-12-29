@@ -6,6 +6,7 @@ Builds/
 *.blend[0-9]
 *.blend[0-9].meta
 *[Ee]xpanded[Ii]tems*
+Assets_Excluded/butler*/
 Assets/Scenes/*/*/Lightmap*.png*
 Assets/Scenes/*/*/Lightmap*.exr*
 UIElementsSchema/

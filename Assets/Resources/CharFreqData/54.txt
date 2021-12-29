@@ -7,9 +7,11 @@ Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Computer graphics
+Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Triple product
@@ -46,6 +48,7 @@ Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Kinetic energy
@@ -53,9 +56,12 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Food
+Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Vegetable
+Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
