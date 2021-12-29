@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Randomness
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Natural science
@@ -27,11 +28,13 @@ Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Dream
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Visual language
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Arity
@@ -41,6 +44,7 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Expression (computer science)
@@ -72,6 +76,7 @@ Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Improvement
@@ -117,6 +122,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Land
@@ -127,6 +133,7 @@ Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Music
@@ -191,6 +198,7 @@ Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Spectrum

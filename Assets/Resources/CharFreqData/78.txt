@@ -60,10 +60,13 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Alphabet
+Content/Wikipedia/Wikipedia - Rainbow
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Photography
@@ -112,6 +115,7 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Arity
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Astronomy
@@ -134,7 +138,9 @@ Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Psychoacoustics
@@ -176,6 +182,7 @@ Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Language
@@ -210,6 +217,7 @@ Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Adjective
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Statement (computer science)

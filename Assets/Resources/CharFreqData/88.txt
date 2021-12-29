@@ -16,6 +16,7 @@ Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Sound
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Visual language
@@ -30,6 +31,7 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Flight
@@ -47,6 +49,7 @@ Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Arithmetic Mean
@@ -114,6 +117,7 @@ Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Jitter
@@ -127,6 +131,7 @@ Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Aperture
@@ -152,6 +157,7 @@ Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Dyson sphere
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Fluid dynamics
@@ -178,6 +184,7 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Syntax

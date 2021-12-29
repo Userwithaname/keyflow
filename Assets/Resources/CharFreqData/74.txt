@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Light
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Photograph
@@ -27,6 +28,7 @@ Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Topology
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Probability
@@ -50,6 +52,7 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Psychoacoustics
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Star
@@ -76,6 +79,7 @@ Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Mass
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Spectrum
@@ -102,6 +106,7 @@ Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Image
@@ -112,6 +117,7 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Art
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Dyson sphere
@@ -140,6 +146,7 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Frequency
@@ -194,6 +201,7 @@ Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Pixel

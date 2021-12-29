@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -14,6 +15,7 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Wave
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Morpheme
@@ -34,14 +36,17 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Art
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Topology
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Puzzle
@@ -86,6 +91,7 @@ Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
@@ -97,6 +103,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Theory
@@ -148,6 +155,7 @@ Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Psychoacoustics
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Chemistry

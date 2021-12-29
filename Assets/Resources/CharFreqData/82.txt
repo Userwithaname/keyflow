@@ -17,12 +17,14 @@ Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Typing
@@ -94,6 +96,7 @@ Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Morpheme
@@ -102,6 +105,7 @@ Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Coefficient
@@ -109,12 +113,14 @@ Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Visual language
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Tension (physics)
@@ -199,10 +205,12 @@ Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Physics
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Sun

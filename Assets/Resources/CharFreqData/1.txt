@@ -36,6 +36,7 @@ Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Skewness
@@ -73,6 +74,7 @@ Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Coefficient
@@ -93,6 +95,7 @@ Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Archaeology
@@ -102,6 +105,7 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Tesseract
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Plant
@@ -140,6 +144,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Linearity
@@ -157,6 +162,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Mathematical optimization
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Photograph
@@ -166,6 +172,8 @@ Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Expression (computer science)

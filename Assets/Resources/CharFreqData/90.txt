@@ -18,6 +18,7 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Art
@@ -52,6 +53,7 @@ Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Morpheme
@@ -76,6 +78,7 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia

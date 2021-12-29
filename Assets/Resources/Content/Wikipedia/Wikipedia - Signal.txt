@@ -1,0 +1,1 @@
+In signal processing, a signal is a function that conveys information about a phenomenon. In electronics and telecommunications, it refers to any time varying voltage, current, or electromagnetic wave that carries information. A signal may also be defined as an observable change in a quality such as quantity.

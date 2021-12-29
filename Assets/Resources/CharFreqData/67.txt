@@ -13,6 +13,7 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Coefficient
+Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
@@ -44,6 +45,7 @@ Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Algae
@@ -81,6 +83,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Poetry
+Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Histogram
@@ -122,6 +125,7 @@ Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Linguistics
+Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Literature
@@ -150,6 +154,7 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - PI curve
@@ -194,10 +199,13 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Light
