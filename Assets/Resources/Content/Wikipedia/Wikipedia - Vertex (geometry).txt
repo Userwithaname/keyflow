@@ -1,0 +1,1 @@
+In geometry, a vertex (in plural form: vertices or vertexes), often denoted by letters such as P, Q, R, S, is a point where two or more curves, lines, or edges meet. As a consequence of this definition, the point where two lines meet to form an angle and the corners of polygons and polyhedra are vertices.

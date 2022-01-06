@@ -11,6 +11,7 @@ public class DrawGraph:Graphic{
 	public float timeScale;
 	public float[] accuracy; 
 	public int[] misses;
+	public float[] seekTimes;
 	public float[] times;
 	[System.NonSerialized]public int currentIndex;
 	[System.NonSerialized]public int hoverIndex=-1;
@@ -53,6 +54,16 @@ public class DrawGraph:Graphic{
 			float textProgress=(float)currentIndex/(values.Length-1);
 			vertex.color=color;
 			
+			/*
+			 * Idea: For non-filled (line) graphs, always 'pivot' around the outer (pointy) end of the line angle
+			 *
+			 * For example:
+			 * If a line goes up and then down, the start of the down line should pivot around the top vertex
+			 * If a line geos down and then up, then pivot around the bottom vertex
+			 * Doing so would also prevent the need for the extra triangle which currently fills the gap between the two lines
+			 * It may also be a good idea to offset both the top and the bottom vertices in such a way that the true value is in the center, and they are equally distant form that value
+			 */
+			
 			// Top left		 (0)
 			Vector3 topLeft=vertex.position=new Vector3(previousPosX*textProgress,height*values[i-1]/valueScale);
 			if(i==1){
@@ -75,8 +86,9 @@ public class DrawGraph:Graphic{
 			}
 			
 			// Bottom right (3) (2) (1)
-			vertex.position=new Vector3(currentPosX*textProgress,height*values[i]/valueScale)-offsetDir;
-			if(fillArea) vertex.position.y=0;
+			vertex.position=fillArea?
+				new Vector3(currentPosX*textProgress,0):
+				new Vector3(currentPosX*textProgress,height*values[i]/valueScale)-offsetDir;
 			vh.AddVert(vertex);
 
 			switch(i){
@@ -207,8 +219,8 @@ public class DrawGraph:Graphic{
 			vertexCount+=4;
 		}
 		
-		//TODO: Draw error rate curve (or do the MonkeyType thing and draw x-es where errors occur (or just a triangle if you are lazy))
-		
+		//TODO: Draw a curve for the individual key seek times
+
 		//TODO: Draw another curve for the "full-word" speed, but draw it "sharply" (as in, no diagonal lines, just horizontal and vertical)
 		/*
 		 * To implement the "sharp" lines, create an extra quad (two triangles) at both ends of each line, with the size of 'lineWidth'
@@ -216,5 +228,13 @@ public class DrawGraph:Graphic{
 		 * (Join top+bottom or bottom+top depending on if the value is greater or lower. Or just have them overlap.)
 		 */
 		// May also scale the alpha color of that curve by the 'expandedBlend' value, so it doesn't make the mini-graph look too busy
+	}
+}
+public class Graph{	//TODO: Make an array of instances of this class and utilize OOP to draw the graphs in a loop
+	public float lineWidth=5;
+	public bool fillArea;
+	public VertexHelper DrawGraph(VertexHelper vh){
+		
+		return vh;
 	}
 }

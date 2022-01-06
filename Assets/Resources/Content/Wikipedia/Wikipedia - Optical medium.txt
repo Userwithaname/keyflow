@@ -1,0 +1,1 @@
+An optical medium is material through which electromagnetic waves propagate. It is a form of transmission medium. The permittivity and permeability of the medium define how electromagnetic waves propagate in it.

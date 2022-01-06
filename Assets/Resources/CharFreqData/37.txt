@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Syntax
@@ -11,5 +12,6 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)

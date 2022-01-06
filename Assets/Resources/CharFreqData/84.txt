@@ -6,21 +6,28 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - River
+Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Pitch (resin)
+Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Compiler
@@ -29,13 +36,16 @@ Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Illusion
+Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Pattern
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Sleep
@@ -48,7 +58,10 @@ Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Torque
+Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Abstract Art
+Content/Wikipedia/Wikipedia - Ray tracing (physics)
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Isotropy
@@ -58,19 +71,27 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Universal algebra
+Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Interface (matter)
+Content/Wikipedia/Wikipedia - Convex geometry
+Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Data binning
@@ -84,9 +105,11 @@ Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Art
@@ -95,13 +118,17 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Plasma (physics)
+Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Vegetable
+Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Black Hole
@@ -117,10 +144,14 @@ Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Flight
+Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Optical medium
+Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Mathematical structure
@@ -129,8 +160,11 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Optical axis
+Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Inverse-square law
@@ -143,12 +177,17 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Harmony
+Content/Wikipedia/Wikipedia - Edge (geometry)
+Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Electrical engineering
+Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Theory
@@ -163,6 +202,8 @@ Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Ray (optics)
+Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -178,14 +219,17 @@ Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Solid
@@ -202,6 +246,8 @@ Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Biology
+Content/Wikipedia/Wikipedia - Wavefront
+Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Morpheme

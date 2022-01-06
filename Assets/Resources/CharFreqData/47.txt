@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Land
@@ -18,11 +19,15 @@ Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Psychoacoustics
+Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Language

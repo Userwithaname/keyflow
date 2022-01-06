@@ -6,6 +6,7 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Dream
+Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -15,5 +16,6 @@ Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Mathematical notation

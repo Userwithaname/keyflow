@@ -1,0 +1,1 @@
+In physics, a fluid is a liquid, gas, or other material that continuously deforms (flows) under an applied shear stress, or external force. They have zero shear modulus, or, in simpler terms, are substances which cannot resist any shear force applied to them.

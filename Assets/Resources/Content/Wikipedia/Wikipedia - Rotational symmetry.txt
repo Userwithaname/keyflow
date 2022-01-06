@@ -1,0 +1,1 @@
+Rotational symmetry, also known as radial symmetry in geometry, is the property a shape has when it looks the same after some rotation by a partial turn. An object's degree of rotational symmetry is the number of distinct orientations in which it looks exactly the same for each rotation.

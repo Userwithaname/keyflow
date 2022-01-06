@@ -33,6 +33,7 @@ public class Typing : MonoBehaviour {
 	
 	public DrawGraph graph;
 	public TMP_Text graphInfo;
+	public Image graphOutline;
 	
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
@@ -96,10 +97,12 @@ public class Typing : MonoBehaviour {
 	
 	public bool showGraphWhenDone=true;
 	
+	RectTransform graphTransform;
 	int lastHoverIndex=-1;
 	bool showGraph,lastShowGraph;
 	float graphBlend;
 	float defaultGraphHeight;
+	Vector3 defaultGraphPos;
 	float[] wpmGraph,
 	        accuracyGraph,
 	        timeGraph,
@@ -112,7 +115,7 @@ public class Typing : MonoBehaviour {
 	bool showMenu;
 
 	void Start(){
-		Application.targetFrameRate=Screen.currentResolution.refreshRate;
+		Application.targetFrameRate=Screen.currentResolution.refreshRate*2;
 		
 		practiceUppercase.isOn=KeyManager.includeUppercase=PlayerPrefs.GetInt("includeUppercase",KeyManager.includeUppercase?1:0)==1;
 		practiceNumbers.isOn=KeyManager.includeNumbers=PlayerPrefs.GetInt("includeNumbers",KeyManager.includeNumbers?1:0)==1;
@@ -126,8 +129,12 @@ public class Typing : MonoBehaviour {
 		darkModeButton.SetActive(selectedTheme!=0);
 		
 		textDisplayText=textDisplay.GetComponentInChildren<TMP_Text>();
-		defaultGraphHeight=graph.rectTransform.rect.height;
 		
+		// graphTransform=graph.rectTransform;
+		graphTransform=graph.transform.parent.GetComponent<RectTransform>();
+		defaultGraphHeight=graphTransform.rect.height;
+		defaultGraphPos=graphTransform.anchoredPosition;
+
 		UpdateTheme();
 		
 		//TODO: Function for practicing multiple characters together (for example, quotes that appear in lists 'a' and 'b', and score highly)
@@ -174,6 +181,8 @@ public class Typing : MonoBehaviour {
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
 		textDisplay.text=textDisplay.text
 			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
+		
+		//TODO: Change button colors when changing theme
 	}
 	public void ChangeTheme(int theme){
 		if(theme!=selectedTheme) lastSelectedTheme=selectedTheme;
@@ -189,7 +198,8 @@ public class Typing : MonoBehaviour {
 		textTransform.localPosition=initialTextPos;
 		caretTransform.localPosition=initialCaretPos;
 		curPracticeIndex=KeyManager.GetLowConfidenceCharacter();
-		text=KeyManager.GetQuoteByCharFrequency(curPracticeIndex);
+		text=KeyManager.GetQuoteByCharFrequency(curPracticeIndex,ref quoteTitle);
+		// text=KeyManager.GetQuoteByOverallScore(ref quoteTitle);
 		ResetLesson();
 	}
 	public void ResetLesson(){
@@ -199,6 +209,7 @@ public class Typing : MonoBehaviour {
 		graph.values=wpmGraph=new float[text.Length-1];
 		graph.accuracy=accuracyGraph=new float[text.Length-1];
 		graph.misses=new int[text.Length-1];
+		graph.seekTimes=new float[text.Length-1];
 		graph.times=timeGraph=new float[text.Length-1];
 		lastHoverIndex=-1;
 		graph.valueScale=1;
@@ -327,7 +338,7 @@ public class Typing : MonoBehaviour {
 						themes[selectedTheme].regressionColorTag+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM ("+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>")+
 				"\nTop Speed: "+
 					(KeyManager.topWPM>oldTopSpeed?
-						themes[selectedTheme].improvementColorTag+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+"  WPM(+"+(KeyManager.topWPM-oldTopSpeed)+")</color>":
+						themes[selectedTheme].improvementColorTag+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM(+"+(KeyManager.topWPM-oldTopSpeed)+")</color>":
 						(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM");
 		}else{	
 			averageWPMInfo.text=
@@ -495,9 +506,10 @@ public class Typing : MonoBehaviour {
 				loc++;
 				if(loc>lastMaxLength){
 					lastMaxLength=loc;
-					accuracyGraph[Mathf.Max(0,loc-1)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
-					wpmGraph[Mathf.Max(0,loc-1)]=wpm=loc/totalTestTime*60/5;
-					timeGraph[Mathf.Max(0,loc-1)]=totalTestTime;
+					int index=Mathf.Max(0,loc-1);
+					accuracyGraph[index]=accuracy=(float)hitCount/(hitCount+missCount)*100;
+					wpmGraph[index]=wpm=loc/totalTestTime*60/5;
+					timeGraph[index]=totalTestTime;
 					
 					graph.values=wpmGraph;
 					if(graph.valueScale<wpm){
@@ -505,6 +517,7 @@ public class Typing : MonoBehaviour {
 					}
 					graph.times=timeGraph;
 					graph.accuracy=accuracyGraph;
+					graph.seekTimes[index]=seekTime;
 					graph.timeScale=totalTestTime;
 					graph.currentIndex=loc-1;
 					
@@ -597,7 +610,11 @@ public class Typing : MonoBehaviour {
 			textColor.a=curBlend;
 			graphInfo.color=textColor;
 			
-			graph.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
+			Color graphOutlineColor=graphOutline.color;
+			graphOutlineColor.a=1f-curBlend;
+			graphOutline.color=graphOutlineColor;
+			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
+			// graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
 
 			graph.expandedBlend=curBlend;
 		}
