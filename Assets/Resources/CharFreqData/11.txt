@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Science
@@ -10,23 +11,28 @@ Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Adjective
+Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Hexadecimal
+Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
+Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Deep learning
+Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dot product
@@ -34,6 +40,7 @@ Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Color
@@ -42,6 +49,7 @@ Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Sleep
@@ -50,11 +58,14 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Hypothesis
@@ -62,6 +73,7 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Alphabet
@@ -88,16 +100,21 @@ Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Lens

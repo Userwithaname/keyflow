@@ -1,9 +1,11 @@
 Content/Wikipedia/Wikipedia - HTTP cookie
+Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Convention (norm)
@@ -17,14 +19,18 @@ Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Jitter
+Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Tradition
+Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Universal algebra
@@ -36,6 +42,7 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Seismic wave
+Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Velocity
@@ -46,20 +53,27 @@ Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Data binning
+Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Language
@@ -67,13 +81,16 @@ Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Hexadecimal
+Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Dot product
@@ -86,5 +103,6 @@ Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Wave

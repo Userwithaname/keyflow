@@ -1,0 +1,1 @@
+In optics, the refractive index (also known as refraction index or index of refraction) of a material is a dimensionless number that describes how fast light travels through the material.

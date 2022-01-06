@@ -1,9 +1,14 @@
 Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Sleep
+Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Ray tracing (physics)
+Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Class (set theory)

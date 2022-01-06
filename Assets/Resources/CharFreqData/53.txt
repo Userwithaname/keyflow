@@ -6,9 +6,12 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Pitch (resin)
+Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Hypothesis
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Force
@@ -16,13 +19,17 @@ Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Algae

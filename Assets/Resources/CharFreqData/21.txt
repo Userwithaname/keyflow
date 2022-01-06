@@ -3,4 +3,6 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Newton's laws of motion

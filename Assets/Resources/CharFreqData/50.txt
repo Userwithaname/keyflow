@@ -1,7 +1,11 @@
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Proton
+Content/Wikipedia/Wikipedia - Pitch (resin)
+Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Physics
+Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Force
@@ -15,4 +19,5 @@ Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Algae

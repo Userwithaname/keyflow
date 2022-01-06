@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -15,6 +16,9 @@ Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Algae

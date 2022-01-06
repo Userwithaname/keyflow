@@ -1,0 +1,1 @@
+In physics, the wavefront of a time-varying field is the set (locus) of all points where the wave has the same phase of the sinusoid. The term is generally meaningful only for fields that, at each point, vary sinusoidally in time with a single temporal frequency (otherwise the phase is not well defined).

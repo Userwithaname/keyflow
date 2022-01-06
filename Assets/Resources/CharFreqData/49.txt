@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Photograph

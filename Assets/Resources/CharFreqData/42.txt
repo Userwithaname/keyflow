@@ -7,6 +7,7 @@ Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Kinetic energy

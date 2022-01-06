@@ -1,0 +1,1 @@
+Signal chain, or signal-processing chain is a term used in signal processing and mixed-signal system design to describe a series of signal-conditioning electronic components that receive input (data acquired from sampling either real-time phenomena or from stored data) sequentially, with the output of one portion of the chain supplying input to the next.

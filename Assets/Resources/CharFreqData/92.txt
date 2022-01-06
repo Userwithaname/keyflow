@@ -14,15 +14,19 @@ Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Number
+Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Black Hole
+Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Fungus
@@ -30,12 +34,15 @@ Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Electrical engineering
+Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy

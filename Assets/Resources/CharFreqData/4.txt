@@ -1,18 +1,24 @@
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Pitch (music)
+Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Proton
+Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Universal algebra
+Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Bicameral mentality
@@ -21,8 +27,10 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Average
+Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Backlash (engineering)

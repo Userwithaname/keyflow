@@ -1,0 +1,1 @@
+In convex geometry, a convex combination is a linear combination of points (which can be vectors, scalars, or more generally points in an affine space) where all coefficients are non-negative and sum to 1.

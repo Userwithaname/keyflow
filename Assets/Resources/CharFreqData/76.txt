@@ -8,13 +8,16 @@ Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Acceleration
+Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Jitter
+Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
+Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Velocity
@@ -25,10 +28,13 @@ Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Image
+Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Astronomy
@@ -36,14 +42,18 @@ Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Error detection and correction
@@ -55,6 +65,7 @@ Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Virus

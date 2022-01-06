@@ -4,6 +4,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Mass
+Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Orbital inclination
@@ -12,6 +13,7 @@ Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Inertia
+Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Velocity
