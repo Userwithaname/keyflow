@@ -104,6 +104,9 @@ public class KeyManager:MonoBehaviour{
 		}
 	}
 	public static void Load(){
+		averageAccuracy=PlayerPrefs.GetFloat("Average Acc",0);
+		averageWPM=PlayerPrefs.GetFloat("Average WPM",0);
+		topWPM=PlayerPrefs.GetFloat("Top WPM",0);
 		if(!System.IO.File.Exists(Application.persistentDataPath+"/key-confidence-data")){
 			return;
 		}
@@ -111,9 +114,6 @@ public class KeyManager:MonoBehaviour{
 		for(int i=0;i<data.Length;i++){
 			instance.confidenceDatabase[i]=JsonUtility.FromJson<KeyConfidenceData>(data[i]);
 		}
-		averageAccuracy=PlayerPrefs.GetFloat("Average Acc",0);
-		averageWPM=PlayerPrefs.GetFloat("Average WPM",0);
-		topWPM=PlayerPrefs.GetFloat("Top WPM",0);
 	}
 	public static void Save(){
 		string fileContents="";
@@ -422,20 +422,27 @@ public class KeyManager:MonoBehaviour{
 				}
 			}
 			if(skipChar) continue;
-
+			if(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
+			
 			averageAccuracy+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
 			averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
 			averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].nextKeySeekTime;
 			averageConfidence.wpm+=instance.confidenceDatabase[keyIndex].wpm;
 			numChars++;
 		}
-		averageAccuracy/=numChars;
-		averageConfidence.seekTime/=numChars;
-		averageConfidence.nextKeySeekTime/=numChars;
-		averageConfidence.wpm/=numChars;
-		const int maxHits=9999999;
-		averageConfidence.hits=(int)(maxHits*averageAccuracy);
-		averageConfidence.misses=maxHits-averageConfidence.hits;
+		
+		if(numChars>0){
+			averageAccuracy/=numChars;
+			averageConfidence.seekTime/=numChars;
+			averageConfidence.nextKeySeekTime/=numChars;
+			averageConfidence.wpm/=numChars;
+			const int maxHits=9999999;
+			averageConfidence.hits=(int)(maxHits*averageAccuracy);
+			averageConfidence.misses=maxHits-averageConfidence.hits;
+		}else{
+			averageConfidence.seekTime=Mathf.Infinity;
+			averageConfidence.nextKeySeekTime=Mathf.Infinity;
+		}
 		
 		return averageConfidence;
 	}
