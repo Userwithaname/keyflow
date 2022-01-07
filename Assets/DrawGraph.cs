@@ -253,7 +253,7 @@ public class DrawGraph:Graphic{
 			
 			
 			
-			vertex.color=diamondColor*new Color(1,1,1,.5f*expandedBlend);
+			vertex.color=diamondColor*new Color(1,1,1,.67f*expandedBlend);
 			
 			hoverPointY=height*seekTimes[hoverIndex]/4;
 			

@@ -50,6 +50,8 @@ public class Typing : MonoBehaviour {
 	public TMP_Text lessonInfo,WPMInfo,averageWPMInfo,quoteInfo;
 	public Button quoteInfoButton;
 	
+	public Image[] themeableButtons,
+	               themeableIcons;
 	public GameObject settingsUI;
 	public Toggle practiceUppercase,
 	              practiceNumbers,
@@ -63,8 +65,6 @@ public class Typing : MonoBehaviour {
 	public GameObject lightModeButton,
 	                  darkModeButton;
 	
-	public Image[] themeableButtons;
-	public Image[] themeableIcons;
 	public Image backgroundImage,fadeImage;
 	[Range(0,1)]public float defaultFade=0f,fadeAmount=.5f;
 	float backgroundFade;	// 0 to 1
@@ -626,7 +626,8 @@ public class Typing : MonoBehaviour {
 			graphOutlineColor.a=1f-curBlend;
 			graphOutline.color=graphOutlineColor;
 			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
-			// graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
+			
+			graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
 
 			graph.expandedBlend=curBlend;
 		}
@@ -640,7 +641,8 @@ public class Typing : MonoBehaviour {
 			}
 			graphInfo.text=
 				"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
-				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+" (key: '"+text[lastHoverIndex]+"')"+
+				" (key: '"+text[lastHoverIndex]+"')"+
+				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
 				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
 				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
 			// Full-Word: 0 WPM ("potato ")
