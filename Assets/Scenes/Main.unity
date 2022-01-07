@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 433118101}
   - component: {fileID: 433118100}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Next Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1907,6 +1907,18 @@ MonoBehaviour:
   textTransform: {fileID: 115241930}
   lightModeButton: {fileID: 2022896285}
   darkModeButton: {fileID: 1114714285}
+  themeableButtons:
+  - {fileID: 1504083783}
+  - {fileID: 811830900}
+  - {fileID: 1459493358}
+  - {fileID: 1073649366}
+  - {fileID: 1532045084}
+  themeableButtonOutlines: []
+  themeableIcons:
+  - {fileID: 1847167163}
+  - {fileID: 1460684680}
+  - {fileID: 1917560483}
+  - {fileID: 433118100}
   backgroundImage: {fileID: 662698825}
   fadeImage: {fileID: 1257766562}
   defaultFade: 0
@@ -5075,7 +5087,7 @@ GameObject:
   - component: {fileID: 1460684681}
   - component: {fileID: 1460684680}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Restart Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6272,7 +6284,7 @@ GameObject:
   - component: {fileID: 1847167164}
   - component: {fileID: 1847167163}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Settings Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6563,7 +6575,7 @@ GameObject:
   - component: {fileID: 1917560484}
   - component: {fileID: 1917560483}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Graph Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

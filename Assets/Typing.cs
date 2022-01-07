@@ -24,12 +24,12 @@ public class Typing : MonoBehaviour {
 	 */
 	/*
 	 * TODO: Progress tracking (save the average accuracy/speed for each day, draw a graph that the user can check whenever they want)
-	 * TODO: Qutoe progress tracking (show a graph of how the speed/accuracy varied over time during the current quote)
 	 *
 	 * TODO: Create a UI to make all colors configurable
 	 */
 
 	public static Typing instance;
+	public static Theme currentTheme;
 	
 	public DrawGraph graph;
 	public TMP_Text graphInfo;
@@ -63,6 +63,8 @@ public class Typing : MonoBehaviour {
 	public GameObject lightModeButton,
 	                  darkModeButton;
 	
+	public Image[] themeableButtons;
+	public Image[] themeableIcons;
 	public Image backgroundImage,fadeImage;
 	[Range(0,1)]public float defaultFade=0f,fadeAmount=.5f;
 	float backgroundFade;	// 0 to 1
@@ -139,7 +141,6 @@ public class Typing : MonoBehaviour {
 
 		UpdateTheme();
 		
-		//TODO: Function for practicing multiple characters together (for example, quotes that appear in lists 'a' and 'b', and score highly)
 		initialTextPos=textTransform.localPosition;
 		caretTransform=textTransform.parent.Find("Caret").GetComponent<RectTransform>();
 		initialCaretPos=caretTransform.localPosition;
@@ -164,6 +165,7 @@ public class Typing : MonoBehaviour {
 		quoteInfoButton.colors=quoteInfoColors;
 		targetFadeColor=backgroundImage.color=fadeImage.color=themes[selectedTheme].backgroundColor;
 		
+		currentTheme=themes[selectedTheme];
 		graph.color=themes[selectedTheme].textColorCorrect;
 		graph.diamondColor=themes[selectedTheme].textColorUI;
 		
@@ -185,7 +187,12 @@ public class Typing : MonoBehaviour {
 		textDisplay.text=textDisplay.text
 			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
 		
-		//TODO: Change button colors when changing theme
+		foreach(Image button in themeableButtons){
+			button.color=currentTheme.buttonColor;
+		}
+		foreach(Image icon in themeableIcons){
+			icon.color=currentTheme.iconColor;
+		}
 	}
 	public void ChangeTheme(int theme){
 		if(theme!=selectedTheme) lastSelectedTheme=selectedTheme;
@@ -476,7 +483,6 @@ public class Typing : MonoBehaviour {
 		}
 	}
 	void LateUpdate(){
-		graph.timeScale=totalTestTime;
 		graph.SetVerticesDirty();
 		incorrect=!text.StartsWith(input);
 		switch(lastMaxLength){
@@ -484,6 +490,7 @@ public class Typing : MonoBehaviour {
 				seekTime+=Time.deltaTime;
 				wordTime+=Time.deltaTime;
 				totalTestTime+=Time.deltaTime;
+				graph.timeScale=totalTestTime;
 				break;
 			}
 			case > 0 when done:{
@@ -494,7 +501,6 @@ public class Typing : MonoBehaviour {
 		if(length==lastLength){
 			return;
 		}
-		
 		
 		if(totalTestTime>0||length>0)
 			fade=true;
@@ -633,8 +639,8 @@ public class Typing : MonoBehaviour {
 				fractions+='0';
 			}
 			graphInfo.text=
-				"Graph Info:"+
-				"\nTime: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
+				"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
+				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+" (key: '"+text[lastHoverIndex]+"')"+
 				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
 				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
 			// Full-Word: 0 WPM ("potato ")
@@ -642,11 +648,8 @@ public class Typing : MonoBehaviour {
 		}else{
 			lastHoverIndex=-1;
 			graphInfo.text=
-				"Graph Info:"+
 				"\n\n-- Move your mouse over the graph to show details --";
 		}
-		
-		//TODO: Show the character and word when hovering over the graph
 	}
 	
 	public void AllowCapitalLetters(){

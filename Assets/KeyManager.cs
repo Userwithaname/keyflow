@@ -135,7 +135,6 @@ public class KeyManager:MonoBehaviour{
 			if(instance.confidenceDatabase[i].keyName==key)
 				return i;
 		}
-		//TODO: If an unsupported key is pressed, create a new entry for it in the confidenceDatabase, re-sort, increase numbersStart, numbersEnd, etc. if the index is <= to that number
 		Debug.LogError("Invalid (untracked) character: "+key);
 		return -1;
 	}
@@ -365,10 +364,10 @@ public class KeyManager:MonoBehaviour{
 		      highestSeekTime=-1,
 		      highestNextKeySeekTime=-1,
 		      lowestFullWordSpeed=99999;
-		int lowestAccIndex=Random.Range(0,numCandidates-1),
-		    highestSeekTimeIndex=Random.Range(0,numCandidates-1),
-		    highestNextKeySeekTimeIndex=Random.Range(0,numCandidates-1),
-		    lowestFullWordSpeedIndex=Random.Range(0,numCandidates-1);
+		int   lowestAccIndex=Random.Range(0,numCandidates-1),
+		      highestSeekTimeIndex=Random.Range(0,numCandidates-1),
+		      highestNextKeySeekTimeIndex=Random.Range(0,numCandidates-1),
+		      lowestFullWordSpeedIndex=Random.Range(0,numCandidates-1);
 		float newQuoteDifficulty=(quoteDifficulty-.2f)*(quoteDifficulty+.123f);
 		for(int i=0;i<numCandidates;i++){
 			if(quoteCandidateTitles[i]==quoteTitle)	continue;
@@ -391,9 +390,20 @@ public class KeyManager:MonoBehaviour{
 		}
 
 		int finalIndex=lowestAccIndex;
-		if(Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
-		if(Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
-		if(Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
+		switch(Random.Range(0f,1f)){
+			case <.3f:
+				finalIndex=highestSeekTimeIndex;
+			break;
+			case <.55f:
+				finalIndex=highestNextKeySeekTimeIndex;
+			break;
+			case <.72f:
+				finalIndex=lowestFullWordSpeedIndex;
+			break;
+		}
+		// if(Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
+		// if(Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
+		// if(Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
 		
 		quoteTitle=quoteCandidateTitles[finalIndex];
 		quoteConfidenceData=averageConfidence[finalIndex];
@@ -404,7 +414,7 @@ public class KeyManager:MonoBehaviour{
 	public static KeyConfidenceData GetQuoteConfidenceData(string quote){
 		List<char> sortedQuote=quote.ToList();
 		sortedQuote.Sort();
-		float averageAccuracy=0;
+		float quoteAccuracyScore=0;
 		KeyConfidenceData averageConfidence=new();
 		char lastC=averageConfidence.keyName='\0';
 		int keyIndex=0;
@@ -421,10 +431,9 @@ public class KeyManager:MonoBehaviour{
 					continue;
 				}
 			}
-			if(skipChar) continue;
-			if(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
+			if(skipChar||instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
 			
-			averageAccuracy+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
+			quoteAccuracyScore+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
 			if(instance.confidenceDatabase[keyIndex].seekTime<999999)
 				averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
 			if(instance.confidenceDatabase[keyIndex].nextKeySeekTime<999999)
@@ -434,12 +443,12 @@ public class KeyManager:MonoBehaviour{
 		}
 		
 		if(numChars>0){
-			averageAccuracy/=numChars;
+			quoteAccuracyScore/=numChars;
 			averageConfidence.seekTime/=numChars;
 			averageConfidence.nextKeySeekTime/=numChars;
 			averageConfidence.wpm/=numChars;
 			const int maxHits=9999999;
-			averageConfidence.hits=(int)(maxHits*averageAccuracy);
+			averageConfidence.hits=(int)(maxHits*quoteAccuracyScore);
 			averageConfidence.misses=maxHits-averageConfidence.hits;
 		}else{
 			averageConfidence.seekTime=Mathf.Infinity;
