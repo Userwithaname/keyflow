@@ -1,0 +1,1 @@
+Software is a collection of instructions that tell a computer how to work. This is in contrast to hardware, from which the system is built and actually performs the work.

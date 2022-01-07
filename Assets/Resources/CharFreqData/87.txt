@@ -13,6 +13,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
@@ -70,6 +71,7 @@ Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Pitch (resin)
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Biology
@@ -78,6 +80,8 @@ Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
+Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Average
@@ -86,9 +90,11 @@ Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Coefficient
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Error detection and correction
+Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Gravity wave
@@ -104,6 +110,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Union (set theory)
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Zipf's law
@@ -118,6 +125,7 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Resonance
@@ -130,9 +138,11 @@ Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Wave
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Mathematical notation
@@ -142,6 +152,7 @@ Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Void (astronomy)
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Punctuation
@@ -149,6 +160,7 @@ Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Optical medium
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
@@ -163,16 +175,20 @@ Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Mirror
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Lens
@@ -187,7 +203,10 @@ Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Wavefront
+Content/Wikipedia/Wikipedia - Extended ASCII
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Affine space
+Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Morpheme
@@ -196,6 +215,7 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Water
@@ -204,6 +224,7 @@ Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -243,6 +264,7 @@ Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Optical axis
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Polyhedron
@@ -266,6 +288,9 @@ Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Skew lines
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Reference

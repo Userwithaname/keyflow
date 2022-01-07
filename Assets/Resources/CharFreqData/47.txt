@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Land
@@ -12,6 +13,8 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Manifold
+Content/Wikipedia/Wikipedia - ASCII
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
@@ -19,6 +22,7 @@ Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Psychoacoustics
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Error detection and correction

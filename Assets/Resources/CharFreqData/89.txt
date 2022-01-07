@@ -1,3 +1,4 @@
+Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Gravity wave
@@ -33,8 +34,10 @@ Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Comics
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Deep learning
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Fiction
@@ -42,11 +45,13 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Probability
@@ -77,6 +82,7 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Optical axis
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Plant
@@ -87,6 +93,7 @@ Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Dispersion (optics)
@@ -107,6 +114,7 @@ Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Elastic modulus
@@ -131,15 +139,18 @@ Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Language
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Parallel (geometry)
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Randomness
@@ -148,14 +159,18 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Bit
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Interface (matter)
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -170,6 +185,7 @@ Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Graphene
@@ -190,6 +206,7 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Psychoacoustics
@@ -197,6 +214,7 @@ Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Mathematics
@@ -211,6 +229,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Signal chain
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Astronomy
@@ -221,6 +240,7 @@ Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Photography

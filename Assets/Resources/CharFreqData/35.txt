@@ -1,9 +1,13 @@
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Identity (mathematics)
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Randomness
@@ -33,7 +37,9 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Paradox
@@ -54,6 +60,8 @@ Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Reference
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Vergence (optics)

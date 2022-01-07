@@ -1,5 +1,7 @@
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Orbit
+Content/Wikipedia/Wikipedia - Reference
+Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Inertia
@@ -10,6 +12,7 @@ Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Jitter
@@ -23,6 +26,7 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Linguistics
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Topology
@@ -34,6 +38,8 @@ Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Variable (mathematics)
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Galaxy
@@ -41,6 +47,7 @@ Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - String theory
@@ -51,6 +58,8 @@ Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Number

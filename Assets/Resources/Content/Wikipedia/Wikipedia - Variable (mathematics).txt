@@ -1,0 +1,1 @@
+In mathematics, a variable (from Latin variabilis, "changeable") is a symbol and placeholder for (historically) a quantity that may change, or (nowadays) any mathematical object. In particular, a variable may represent a number, a vector, a matrix, a function, the argument of a function, a set, or an element of a set.

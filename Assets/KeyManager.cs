@@ -48,7 +48,7 @@ public class KeyManager:MonoBehaviour{
 	public static float averageAccuracy,averageWPM,topWPM;
 	public static float charPracticeDifficulty=.7f;	// 1: Completely random, 0: Only the worst character in either speed or accuracy
 	public static float quoteDifficulty=.45f;			// 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
-	public static float modeBias=.25f;					// 1: multiple keys practice, 0: single key practice
+	public static float modeBias=.4f;					// 1: multiple keys practice, 0: single key practice
 	
 	void Start(){
 		instance=this;
@@ -350,11 +350,11 @@ public class KeyManager:MonoBehaviour{
 		return targetQuote;
 	}
 	public static string GetQuoteByOverallScore(ref string quoteTitle,ref KeyConfidenceData quoteConfidenceData){
-		int numCandidates=(int)(96*quoteDifficulty*quoteDifficulty+1);
+		int numCandidates=(int)(127*quoteDifficulty+1);
 		string[] quoteCandidates=new string[numCandidates];
 		string[] quoteCandidateTitles=new string[numCandidates];
 		KeyConfidenceData[] averageConfidence=new KeyConfidenceData[numCandidates];
-		float charBias=(charPracticeDifficulty-.2f)*.04f-.05f,//charPracticeDifficulty*.5f*charPracticeDifficulty*charPracticeDifficulty,
+		float charBias=(charPracticeDifficulty-.1f)*.035f-.05f,
 		      quoteBias=0;//quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
 		for(int i=0;i<numCandidates;i++){
 			quoteCandidates[i]=GetQuoteByCharFrequency(GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
@@ -369,7 +369,7 @@ public class KeyManager:MonoBehaviour{
 		    highestSeekTimeIndex=Random.Range(0,numCandidates-1),
 		    highestNextKeySeekTimeIndex=Random.Range(0,numCandidates-1),
 		    lowestFullWordSpeedIndex=Random.Range(0,numCandidates-1);
-		float newQuoteDifficulty=(quoteDifficulty-.2f)*quoteDifficulty;
+		float newQuoteDifficulty=(quoteDifficulty-.2f)*(quoteDifficulty+.123f);
 		for(int i=0;i<numCandidates;i++){
 			if(quoteCandidateTitles[i]==quoteTitle)	continue;
 			if(averageConfidence[i].accuracy<lowestAcc&&Random.Range(0f,1f)<=newQuoteDifficulty){

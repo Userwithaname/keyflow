@@ -1,0 +1,1 @@
+In character encoding terminology, a code point or code position is any of the numerical values that make up the codespace. Many code points represent single characters but they can also have other meanings, such as for formatting.

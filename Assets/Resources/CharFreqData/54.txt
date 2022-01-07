@@ -1,7 +1,12 @@
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Software
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Bacteria
+Content/Wikipedia/Wikipedia - Equality (mathematics)
+Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Optical medium
@@ -29,11 +34,14 @@ Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Tesseract
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Fourier transform
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Arithmetic Mean
@@ -44,14 +52,18 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Void (astronomy)
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron

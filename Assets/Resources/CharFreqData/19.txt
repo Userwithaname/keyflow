@@ -5,10 +5,12 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Percentage
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Atom
@@ -16,6 +18,8 @@ Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Extended ASCII
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Number

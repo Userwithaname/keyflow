@@ -12,6 +12,8 @@ Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Fruit
@@ -21,6 +23,7 @@ Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Language
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Dither
@@ -55,6 +58,7 @@ Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Anthropology
+Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Deep learning
@@ -79,6 +83,7 @@ Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Affine space
@@ -89,9 +94,11 @@ Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Rainbow
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Fluid dynamics
@@ -116,10 +123,14 @@ Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Transmission medium
+Content/Wikipedia/Wikipedia - Element (mathematics)
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Mathematical structure
@@ -139,6 +150,7 @@ Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Virus
@@ -148,6 +160,7 @@ Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Force
@@ -157,12 +170,14 @@ Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Tesseract
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
@@ -170,6 +185,7 @@ Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Literature
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Dispersion (optics)
@@ -177,6 +193,7 @@ Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Median
@@ -191,6 +208,7 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Physics
@@ -202,6 +220,7 @@ Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Wave
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Manifold
@@ -227,14 +246,18 @@ Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Computer mouse
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Frequency
@@ -261,4 +284,5 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Isotropy
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Causality

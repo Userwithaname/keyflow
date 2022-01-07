@@ -57,6 +57,7 @@ Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Bicameral mentality
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Convex geometry
@@ -73,6 +74,7 @@ Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Median
@@ -95,10 +97,12 @@ Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Chemistry
@@ -121,6 +125,8 @@ Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Semantics
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Anthropology
@@ -142,6 +148,7 @@ Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Power law
@@ -153,6 +160,7 @@ Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Poetry
@@ -164,6 +172,7 @@ Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Velocity
@@ -172,15 +181,19 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Mechanical equilibrium
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Compiler
@@ -204,6 +217,7 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Literature
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Causality
@@ -214,6 +228,10 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Isotropy
+Content/Wikipedia/Wikipedia - Expression (mathematics)
+Content/Wikipedia/Wikipedia - Reference
+Content/Wikipedia/Wikipedia - Algorithm
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Tradition
@@ -222,12 +240,15 @@ Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Fourier transform
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion

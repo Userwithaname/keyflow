@@ -1,0 +1,1 @@
+In classical mechanics, a particle is in mechanical equilibrium if the net force on that particle is zero. By extension, a physical system made up of many parts is in mechanical equilibrium if the net force on each of its individual parts is zero.

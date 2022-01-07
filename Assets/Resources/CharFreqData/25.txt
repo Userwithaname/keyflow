@@ -3,4 +3,5 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Ratio
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Computer keyboard
