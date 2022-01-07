@@ -1,3 +1,5 @@
+Content/Wikipedia/Wikipedia - Extended ASCII
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Arity
@@ -28,8 +30,11 @@ Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Quantum mechanics
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Edge (geometry)
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Rainbow
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Jitter
@@ -39,7 +44,9 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - HTTP cookie
@@ -48,6 +55,7 @@ Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Parallel (geometry)
@@ -60,6 +68,7 @@ Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Wave
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Histogram
@@ -69,6 +78,7 @@ Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system

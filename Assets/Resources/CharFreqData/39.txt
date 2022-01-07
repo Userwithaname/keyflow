@@ -27,7 +27,9 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Parallel (geometry)
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Error detection and correction

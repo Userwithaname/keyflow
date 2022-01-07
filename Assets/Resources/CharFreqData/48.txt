@@ -1,8 +1,10 @@
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Orbit
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Class (set theory)

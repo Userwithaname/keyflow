@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Quaternion
@@ -12,6 +13,7 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Wave
@@ -19,6 +21,7 @@ Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Fourier transform
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Tesseract
@@ -40,6 +43,7 @@ Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Theorem
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
@@ -52,12 +56,14 @@ Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Interface (matter)
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Error detection and correction
@@ -79,8 +85,11 @@ Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Weather

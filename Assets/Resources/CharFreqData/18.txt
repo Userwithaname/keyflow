@@ -13,9 +13,11 @@ Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Mathematical notation

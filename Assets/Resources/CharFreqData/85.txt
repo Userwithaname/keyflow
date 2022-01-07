@@ -41,6 +41,7 @@ Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -49,6 +50,7 @@ Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Vegetable
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Food
@@ -70,6 +72,7 @@ Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Biology
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Skewness
@@ -81,14 +84,17 @@ Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Pitch (music)
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Color
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Convention (norm)
@@ -100,7 +106,9 @@ Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Vitamin
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Inertia
@@ -116,12 +124,18 @@ Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Paradox
+Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Theorem
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Pitch (resin)
+Content/Wikipedia/Wikipedia - Algorithm
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
+Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Arithmetic Mean
@@ -144,17 +158,21 @@ Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Bicameral mentality
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Symmetry
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Quantum mechanics
@@ -171,6 +189,7 @@ Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Rainbow
+Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Manifold
@@ -190,6 +209,8 @@ Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Arity
+Content/Wikipedia/Wikipedia - Character encoding
+Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Operation (mathematics)
@@ -206,6 +227,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Black Hole
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Parallel (geometry)
@@ -225,6 +247,7 @@ Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Linearity
@@ -237,6 +260,7 @@ Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Backlash (engineering)
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Literature
@@ -252,6 +276,7 @@ Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Gravity wave
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Error detection and correction
@@ -267,6 +292,7 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Weight

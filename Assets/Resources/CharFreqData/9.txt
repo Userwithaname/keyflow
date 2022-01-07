@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Orbital inclination
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Visual language
@@ -22,6 +23,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Paradox
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Typing

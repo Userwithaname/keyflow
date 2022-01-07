@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - HTTP cookie

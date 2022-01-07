@@ -109,7 +109,6 @@ public class Typing : MonoBehaviour {
 	        accuracyGraph,
 	        timeGraph,
 	        fullWordWpmGraph;	//TODO: Create properly sized array and store the full-word speeds for each word typed (I was thinking this part of the graph should be drawn with sharp, 90 degree angles (vertical/horizontal), instead of the usual diagonal ones) Hover caption could be something like 'Full-word speed: 10 WPM ("square ")'
-	//TODO: Idea: After completing the lesson, allow moving the caret in the quote text, and display the recorded stats at the caret position
 	//TODO: Idea: Record all keypresses and store times, allow viewing replay of the lesson
 	
 	int hitCount,missCount;
@@ -117,7 +116,7 @@ public class Typing : MonoBehaviour {
 	bool showMenu;
 
 	void Start(){
-		Application.targetFrameRate=Screen.currentResolution.refreshRate*2;
+		Application.targetFrameRate=Screen.currentResolution.refreshRate*2; //TODO: Framerate limit could maybe be set higher or lower whenever 'fade' becomes true or false(?)
 		
 		practiceUppercase.isOn=KeyManager.includeUppercase=PlayerPrefs.GetInt("includeUppercase",KeyManager.includeUppercase?1:0)==1;
 		practiceNumbers.isOn=KeyManager.includeNumbers=PlayerPrefs.GetInt("includeNumbers",KeyManager.includeNumbers?1:0)==1;
@@ -646,6 +645,8 @@ public class Typing : MonoBehaviour {
 				"Graph Info:"+
 				"\n\n-- Move your mouse over the graph to show details --";
 		}
+		
+		//TODO: Show the character and word when hovering over the graph
 	}
 	
 	public void AllowCapitalLetters(){

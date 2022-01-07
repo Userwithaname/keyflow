@@ -30,6 +30,7 @@ Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Vergence (optics)
+Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Symmetry
@@ -47,6 +48,8 @@ Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Coefficient
+Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
+Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Photography
@@ -74,6 +77,8 @@ Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Code point
+Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -87,6 +92,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Liquid
@@ -96,9 +102,11 @@ Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Fluid
+Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - History
@@ -106,6 +114,7 @@ Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Plant
+Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Tradition
@@ -118,7 +127,9 @@ Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Wikipedia
+Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Poetry
+Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Pitch (music)
@@ -138,6 +149,7 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Gravity
@@ -147,6 +159,7 @@ Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Attenuation
@@ -159,6 +172,7 @@ Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Weather
@@ -183,12 +197,15 @@ Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Chemistry
+Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Deflection (engineering)
@@ -210,6 +227,7 @@ Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Solid
+Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Adjective
@@ -233,6 +251,7 @@ Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Affine space
+Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Plasma (physics)
@@ -243,11 +262,13 @@ Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Histogram
@@ -257,8 +278,11 @@ Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Topology
+Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Parallel (geometry)
+Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Mirror
+Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Wind wave

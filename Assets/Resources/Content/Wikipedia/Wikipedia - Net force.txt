@@ -1,0 +1,1 @@
+In mechanics, the net force is the vector sum of forces acting on a particle or object. The net force is a single force that replaces the effect of the original forces on the particle's motion. It gives the particle the same acceleration as all those actual forces together as described by Newton's second law of motion.
