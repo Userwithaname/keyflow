@@ -26,13 +26,13 @@ public class QuoteDataGenerator:EditorWindow{
 		List<string> quoteFiles=new();
 		List<string> sortedQuoteContents=new();
 		foreach(string path in new[]{
-				// "Content/Movies & Shows",
-				// "Content/Games",
-				// "Content/Songs",
-				// "Content/Code",
-				// "Content/Quotes",
+				"Content/Movies & Shows",
+				"Content/Games",
+				"Content/Songs",
+				"Content/Code",
+				"Content/Quotes",
 				"Content/Wikipedia",
-				// "Content/Non-English",
+				"Content/Non-English",
 			}){
 			foreach(TextAsset t in Resources.LoadAll<TextAsset>(path)){
 				quoteFiles.Add(path+"/"+t.name);

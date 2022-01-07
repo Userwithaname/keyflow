@@ -56,7 +56,9 @@ public class Typing : MonoBehaviour {
 	              practiceSymbols,
 	              practiceWhitespace,
 	              showIncorrectCharacters;
-	public Slider charVarietySlider,quoteDifficultySlider;
+	public Slider charVarietySlider,
+	              quoteDifficultySlider,
+	              modeBiasSlider;
 	public RectTransform textTransform;
 	public GameObject lightModeButton,
 	                  darkModeButton;
@@ -122,6 +124,7 @@ public class Typing : MonoBehaviour {
 		practiceSymbols.isOn=KeyManager.includeSymbols=PlayerPrefs.GetInt("includeSymbols",KeyManager.includeSymbols?1:0)==1;
 		charVarietySlider.value=KeyManager.charPracticeDifficulty=PlayerPrefs.GetFloat("charPracticeDifficulty",KeyManager.charPracticeDifficulty);
 		quoteDifficultySlider.value=KeyManager.quoteDifficulty=PlayerPrefs.GetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
+		modeBiasSlider.value=KeyManager.modeBias=PlayerPrefs.GetFloat("practiceModeBias",KeyManager.modeBias);
 		showIncorrectCharacters.isOn=PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn?1:0)==1;
 		selectedTheme=PlayerPrefs.GetInt("selectedTheme",selectedTheme);
 		
@@ -150,6 +153,7 @@ public class Typing : MonoBehaviour {
 		PlayerPrefs.SetInt("includeSymbols",KeyManager.includeSymbols?1:0);
 		PlayerPrefs.SetFloat("charPracticeDifficulty",KeyManager.charPracticeDifficulty);
 		PlayerPrefs.SetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
+		PlayerPrefs.SetFloat("practiceModeBias",KeyManager.modeBias);
 		PlayerPrefs.SetInt("showTypos",showIncorrectCharacters.isOn?1:0);
 		PlayerPrefs.SetInt("selectedTheme",selectedTheme);
 	}
@@ -197,9 +201,13 @@ public class Typing : MonoBehaviour {
 	public void NextLesson(){
 		textTransform.localPosition=initialTextPos;
 		caretTransform.localPosition=initialCaretPos;
-		curPracticeIndex=KeyManager.GetLowConfidenceCharacter();
-		text=KeyManager.GetQuoteByCharFrequency(curPracticeIndex,ref quoteTitle);
-		// text=KeyManager.GetQuoteByOverallScore(ref quoteTitle);
+		if(UnityEngine.Random.Range(0f,1f)>KeyManager.modeBias){
+			curPracticeIndex=KeyManager.GetLowConfidenceCharacter();
+			text=KeyManager.GetQuoteByCharFrequency(ref curPracticeIndex,ref quoteTitle);
+		}else{
+			curPracticeIndex=-2; 
+			text=KeyManager.GetQuoteByOverallScore(ref quoteTitle,ref curCharPractice);
+		}
 		ResetLesson();
 	}
 	public void ResetLesson(){
@@ -256,20 +264,19 @@ public class Typing : MonoBehaviour {
 	string curCharacterWPM;
 	string curCharacterAccuracy;
 	void UpdateCurrentPracticeUI(int comparisonIndex=-1){
-		KeyManager.KeyConfidenceData updatedCharPractice=KeyManager.instance.confidenceDatabase[curPracticeIndex];
+		KeyManager.KeyConfidenceData updatedCharPractice=curPracticeIndex==-2?
+		                                                 KeyManager.GetQuoteConfidenceData(text):
+		                                                 KeyManager.instance.confidenceDatabase[curPracticeIndex];
 		curCharacterPractice=updatedCharPractice.keyName;
 		curCharacterSeekTime=updatedCharPractice.seekTime>0?Math.Round(updatedCharPractice.seekTime*1000,2)+" ms":"-";
 		curCharacterNextSeekTime=updatedCharPractice.nextKeySeekTime>0?Math.Round(updatedCharPractice.nextKeySeekTime*1000,2)+" ms":":";
 		curCharacterWPM=updatedCharPractice.wpm>0?Math.Round(updatedCharPractice.wpm,1)+" WPM":"-";
 		curCharacterAccuracy=updatedCharPractice.hits+updatedCharPractice.misses>0?Math.Round((float)updatedCharPractice.hits/(updatedCharPractice.hits+updatedCharPractice.misses)*100,1)+"%":"-";
-		
-		// const string improvementColor="<color=#208020>",
-		//              regressionColor="<color=#802020>";
-		// const string improvementColor="<color=#40ff40>",
-		//              regressionColor="<color=#ff4040>";
-		
-		if(comparisonIndex>-1){
-			KeyManager.KeyConfidenceData compare=KeyManager.instance.confidenceDatabase[comparisonIndex];
+
+		if(comparisonIndex!=-1){
+			KeyManager.KeyConfidenceData compare=comparisonIndex==-2?
+		                                        KeyManager.GetQuoteConfidenceData(text):
+		                                        KeyManager.instance.confidenceDatabase[comparisonIndex];
 			float diff=(float)Math.Round(updatedCharPractice.seekTime*1000-curCharPractice.seekTime*1000,3);
 			curCharacterSeekTime=diff<=0?
 			                     themes[selectedTheme].improvementColorTag+curCharacterSeekTime+" ("+diff+")</color>":
@@ -292,8 +299,8 @@ public class Typing : MonoBehaviour {
 		curCharPractice=updatedCharPractice;
 		
 		lessonInfo.text=
-			"<b>Current Practice: "+curCharacterPractice+"</b>"+
-			"\n<b>Average Stats </b>(for <b>"+curCharacterPractice+"</b>)<b>:</b>"+
+			"<b>Current Practice: "+(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)+"</b>"+
+			"\n<b>Average Stats </b>(for <b>"+(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)+"</b>)<b>:</b>"+
 			"\nSeek Time: "+curCharacterSeekTime+
 			"\nNext Key Seek Time: "+curCharacterNextSeekTime+
 			"\nFull-Word: "+curCharacterWPM+
@@ -655,6 +662,9 @@ public class Typing : MonoBehaviour {
 	}
 	public void UpdateQuoteDifficulty(){
 		KeyManager.quoteDifficulty=quoteDifficultySlider.value;
+	}
+	public void UpdateModeBias(){
+		KeyManager.modeBias=modeBiasSlider.value;
 	}
 	public void ResetKeyData(){
 		KeyManager.InitializeKeyDatabase();
