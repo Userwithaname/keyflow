@@ -116,17 +116,17 @@ public class KeyManager:MonoBehaviour{
 		}
 	}
 	public static void Save(){
-		string fileContents="";
-		foreach(KeyConfidenceData kcd in instance.confidenceDatabase){
-			fileContents+=JsonUtility.ToJson(kcd)+"\n";
-		}
-		System.IO.File.WriteAllText(Application.persistentDataPath+"/key-confidence-data",fileContents);
+		Typing.instance.Save();
 		
 		PlayerPrefs.SetFloat("Average Acc",averageAccuracy);
 		PlayerPrefs.SetFloat("Average WPM",averageWPM);
 		PlayerPrefs.SetFloat("Top WPM",topWPM);
 		
-		Typing.instance.Save();
+		string fileContents="";
+		foreach(KeyConfidenceData kcd in instance.confidenceDatabase){
+			fileContents+=JsonUtility.ToJson(kcd)+"\n";
+		}
+		System.IO.File.WriteAllText(Application.persistentDataPath+"/key-confidence-data",fileContents);
 	}
 	
 	public static int GetKeyIndex(char key,int startIndex=0){
@@ -425,8 +425,10 @@ public class KeyManager:MonoBehaviour{
 			if(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
 			
 			averageAccuracy+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
-			averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
-			averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].nextKeySeekTime;
+			if(instance.confidenceDatabase[keyIndex].seekTime<999999)
+				averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
+			if(instance.confidenceDatabase[keyIndex].nextKeySeekTime<999999)
+				averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].nextKeySeekTime;
 			averageConfidence.wpm+=instance.confidenceDatabase[keyIndex].wpm;
 			numChars++;
 		}
