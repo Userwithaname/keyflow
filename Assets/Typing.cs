@@ -281,7 +281,7 @@ public class Typing : MonoBehaviour {
 			                     themes[selectedTheme].improvementColorTag+curCharacterSeekTime+" ("+diff+")</color>":
 			                     themes[selectedTheme].regressionColorTag+curCharacterSeekTime+" (+"+diff+")</color>";
 			diff=(float)Math.Round(updatedCharPractice.nextKeySeekTime*1000-curCharPractice.nextKeySeekTime*1000,3);
-			curCharacterNextSeekTime=diff<=0?
+			curCharacterNextSeekTime=diff<=0||float.IsNaN(diff)?
 			                     themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime+" ("+diff+")</color>":
 			                     themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime+" (+"+diff+")</color>";
 			diff=(float)Math.Round(updatedCharPractice.wpm-curCharPractice.wpm,3);
