@@ -202,7 +202,7 @@ public class KeyManager:MonoBehaviour{
 		}
 	}
 	
-	public static void UpdateWordSpeed(string word,float time){
+	public static float UpdateWordSpeed(string word,float time){
 		float wpm=word.Length/time*60/5;
 		foreach(int i in GetKeyIndexes(word)){
 			switch (instance.confidenceDatabase[i].wpm){
@@ -217,24 +217,55 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.45f/((float)word.Length/3+1));
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
-		//TODO: Track top-speed
+		//TODO: Track top-speed(?)
+		return wpm;
 	}
 
 	public static void UpoateAccuracy(char actual, char pressed){
 		
 	}
 	
-	public static string ValidateWord(string word){
-		for(int i=word.Length-1;i>-1;i--){
-			if(IsAlphaNumericIndex(GetKeyIndex(word[i]))) continue;
+	public static int GetWordCount(string text){
+		int wordCount=0;
+		foreach(char c in text){
+			if(!IsAlphaNumericIndex(GetKeyIndex(c))) wordCount++;
+		}
+		return wordCount;
+	}
+	
+	public static string[] GetWordsInText(string text){
+		List<string> words=new List<string>();
+		string word="";
+		foreach(char c in text){
+			word+=c;
+			if(IsAlphaNumericIndex(GetKeyIndex(c))) continue;
+			words.Add(word);
+			word="";
+		}
+		if(word!=""){
+			Debug.Log(word);
+			words.Add(word);
+		}
+		return words.ToArray();
+	}
+	
+	public static string GetLastWord(string text){
+		return GetLastWord(text,text.Length-1);
+	}
+	
+	public static string GetLastWord(string text,int trimIndex){
+		for(int i=trimIndex;i>-1;i--){
+			if(i==trimIndex&&!IsAlphaNumericIndex(GetKeyIndex(text[i]))) i--;
+			if(IsAlphaNumericIndex(GetKeyIndex(text[i]))) continue;
+			i++;
 			string ret="";
-			while(i<word.Length){
-				ret+=word[i];
+			while(i<text.Length){
+				ret+=text[i];
 				i++;
 			}
 			return ret;
 		}
-		return word;
+		return text;
 	}
 	
 	public static bool CharWithinFilters(int index){

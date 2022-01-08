@@ -114,6 +114,8 @@ public class Typing : MonoBehaviour {
 	//TODO: Idea: Record all keypresses and store times, allow viewing replay of the lesson
 	
 	int hitCount,missCount;
+	string[] words;
+	int wordIndex;
 	
 	bool showMenu;
 
@@ -220,13 +222,17 @@ public class Typing : MonoBehaviour {
 		done=false;
 		
 		ToggleGraphUI(false);
-		graph.values=wpmGraph=new float[text.Length-1];
+		graph.speedValues=wpmGraph=new float[text.Length-1];
 		graph.accuracy=accuracyGraph=new float[text.Length-1];
 		graph.misses=new int[text.Length-1];
 		graph.seekTimes=new float[text.Length-1];
 		graph.times=timeGraph=new float[text.Length-1];
+		words=KeyManager.GetWordsInText(text);
+		graph.wordTimes=new float[words.Length];
+		graph.wordSpeedValues=new float[words.Length];
+		wordIndex=0;
 		lastHoverIndex=-1;
-		graph.valueScale=1;
+		graph.speedValueScale=1;
 		graph.timeScale=1;
 		graph.currentIndex=-1;
 		graph.SetVerticesDirty();
@@ -309,7 +315,7 @@ public class Typing : MonoBehaviour {
 			"\n<b>Average Stats </b>(for <b>"+(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)+"</b>)<b>:</b>"+
 			"\nSeek Time: "+curCharacterSeekTime+
 			"\nNext Key Seek Time: "+curCharacterNextSeekTime+
-			"\nFull-Word: "+curCharacterWPM+
+			"\nWord Speed: "+curCharacterWPM+
 			"\nAccuracy: "+curCharacterAccuracy;
 		
 		wpm=loc/totalTestTime*60/5;
@@ -399,7 +405,7 @@ public class Typing : MonoBehaviour {
 			if(showIncorrectCharacters.isOn){
 				char[] chars=input.Remove(0,loc+1).ToCharArray();
 				for(int i=0;i<chars.Length;i++){
-					switch(content[i]){
+					switch(chars[i]){
 						default:{
 							continue;
 						}
@@ -423,7 +429,7 @@ public class Typing : MonoBehaviour {
 				    incorrectEnd=Mathf.Min(input.Length,text.Length)+lengthDiff;
 				char[] chars=content.ToCharArray();
 				for(int i=Mathf.Max(incorrectStart-1,0);i<incorrectEnd;i++){
-					switch(content[i]){
+					switch(chars[i]){
 						default:{
 							continue;
 						}
@@ -523,9 +529,9 @@ public class Typing : MonoBehaviour {
 					wpmGraph[index]=wpm=loc/totalTestTime*60/5;
 					timeGraph[index]=totalTestTime;
 					
-					graph.values=wpmGraph;
-					if(graph.valueScale<wpm){
-						graph.valueScale=wpm;
+					graph.speedValues=wpmGraph;
+					if(graph.speedValueScale<wpm){
+						graph.speedValueScale=wpm;
 					}
 					graph.times=timeGraph;
 					graph.accuracy=accuracyGraph;
@@ -543,8 +549,14 @@ public class Typing : MonoBehaviour {
 				if(!KeyManager.IsAlphaNumericIndex(keyIndex)&&length>lastMaxLength||input.Length==text.Length){
 					//TODO: Save all word WPMs to an array, show them as a raw speed graph at the end of the game (also track real WPM in the same way)
 					//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)
-					if(loc>0&&input[loc]!=input[loc-1])
-						KeyManager.UpdateWordSpeed(KeyManager.ValidateWord(lastInput),wordTime); 
+					if(loc>0&&input[loc]!=input[loc-1]){
+						graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
+						graph.wordTimes[wordIndex]=totalTestTime;
+						if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){
+							graph.wordSpeedScale=graph.wordSpeedValues[wordIndex];
+						}
+						wordIndex++;
+					}
 					wordTime=0;
 				}
 
@@ -642,11 +654,11 @@ public class Typing : MonoBehaviour {
 			graphInfo.text=
 				"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
 				" (key: '"+text[lastHoverIndex]+"')"+
+				"\nWord: "+words[graph.hoverWordIndex]+
+				"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" DPM"+
 				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
 				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
 				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
-			// Full-Word: 0 WPM ("potato ")
-			// Seek Time ('a'): 0 ms";
 		}else{
 			lastHoverIndex=-1;
 			graphInfo.text=
