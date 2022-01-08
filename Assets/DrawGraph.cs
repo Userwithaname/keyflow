@@ -6,15 +6,19 @@ public class DrawGraph:Graphic{
 	public float selectionSize=32;
 	public float lineWidth=5;
 	public bool fillArea;
-	public float valueScale=1;
-	public float[] values;
+	public float[] speedValues;
+	public float speedValueScale=1;
 	public float timeScale;
 	public float[] accuracy; 
 	public int[] misses;
 	public float[] seekTimes;
 	public float[] times;
+	public float[] wordSpeedValues;
+	public float[] wordTimes;
+	public float wordSpeedScale=1;
 	[System.NonSerialized]public int currentIndex;
 	[System.NonSerialized]public int hoverIndex=-1;
+	[System.NonSerialized]public int hoverWordIndex=-1;
 	[System.NonSerialized]public float expandedBlend;
 	public bool mouseOverGraph;
 	float width,height;
@@ -27,7 +31,7 @@ public class DrawGraph:Graphic{
 		height=rect.height;
 
 		UIVertex vertex=UIVertex.simpleVert;
-		if(currentIndex<2||values.Length<=1)
+		if(currentIndex<2||speedValues.Length<=1)
 			return;
 		
 		Vector3 rtPos=rectTransform.position;
@@ -35,10 +39,13 @@ public class DrawGraph:Graphic{
 		mouseHoverPos.x-=rtPos.x;
 		float lowestHoverDiff=999;
 		float hoverPointX=0;
-		hoverIndex=-1;
+		hoverIndex=hoverWordIndex=-1;
 		mouseOverGraph=mouseHoverPos.x>-10&&mouseHoverPos.x<width+10&&mouseHoverPos.y<rtPos.y+height+10&&mouseHoverPos.y>rtPos.y-10;
-		for(int i=0;i<values.Length;i++){
-			float textProgress=(float)(currentIndex)/(values.Length-1);
+		
+		float topWPM=Mathf.Lerp(speedValueScale,Mathf.Max(speedValueScale,wordSpeedScale),expandedBlend);
+		
+		for(int i=0;i<speedValues.Length;i++){
+			float textProgress=(float)(currentIndex)/(speedValues.Length-1);
 			// float textProgress=(float)((values.Length)-currentIndex+1)/(values.Length);
 			float currentPosX=(times[i]-times[0])/(timeScale-times[0])*textProgress*width;
 			if(expandedBlend>0.00001f&&mouseOverGraph){
@@ -66,13 +73,13 @@ public class DrawGraph:Graphic{
 			 */
 			
 			// Top left		 (0)
-			Vector3 topLeft=vertex.position=new Vector3(previousPosX,height*values[i-1]/valueScale);
+			Vector3 topLeft=vertex.position=new Vector3(previousPosX,height*speedValues[i-1]/topWPM);
 			if(i==1){
 				vh.AddVert(vertex);
 			}
 			
 			// Top right	 (1) (0) (0)
-			vertex.position=new Vector3(currentPosX,height*values[i]/valueScale);
+			vertex.position=new Vector3(currentPosX,height*speedValues[i]/topWPM);
 			vh.AddVert(vertex);
 			
 			Vector3 offsetDir=Vector3.Cross(topLeft-vertex.position,Vector3.forward).normalized*lineWidth;
@@ -89,7 +96,7 @@ public class DrawGraph:Graphic{
 			// Bottom right (3) (2) (1)
 			vertex.position=fillArea?
 				new Vector3(currentPosX,0):
-				new Vector3(currentPosX,height*values[i]/valueScale)-offsetDir;
+				new Vector3(currentPosX,height*speedValues[i]/topWPM)-offsetDir;
 			vh.AddVert(vertex);
 
 			switch(i){
@@ -128,7 +135,7 @@ public class DrawGraph:Graphic{
 		int vertCount=vh.currentVertCount;
 		
 		// Draw a curve for the individual key seek times
-		for(int i=0;i<values.Length;i++){
+		for(int i=0;i<speedValues.Length;i++){
 			if(i==0) continue;
 			if(times[i]<times[i-1]) break;
 			
@@ -177,33 +184,81 @@ public class DrawGraph:Graphic{
 			vertCount+=4;
 			vh.AddTriangle(vertCount+1,vertCount+0,vertCount+2);
 			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
+		}
+		
+		//TODO: Draw another curve for the "full-word" speed (in expanded view), but draw it "sharply" (as in, no diagonal lines, just horizontal and vertical)
+		/*
+		 * Implementation:
+		 *		1: Determine word count for the current quote, make three arrays:
+		 *			- Word speed time (float)
+		 *			- Word finish time (float)
+		 *			- Word text (string) (fill during initialization)
+		 *		2: Whenever a word speed is recorded in Typing.cs, add the word speed and total test time to the respective arrays from step 1
+		 *		3: Draw the graph as such:
+		 *			- Make a horizontal line from previous time (or 0 if it's the first one) to current time, at the height of current word speed
+		 *				- Add ±lineWidth/2 to the Y position to the top/bottom edge
+		 *			- Make a vertical line at the previous time, from current word speed height to previous word speed height (skip for first line) (or leave it unconnected?)
+		 *				- Add -±lineWidth to the X position to the left edge  
+		 *		4: To determine the word hover index, take the selected time from the main graph and loop backwards through the word finish time array, check if <= to the main.
+		 *			- Assign to 'hoverWordIndex'
+		 *		5: The string array is for displaying the word in the UI
+		 *
+		 * Idea: Instead of drawing another diamond, maybe just grow the word line at the hover position? Maybe also brighten it up so it stands out
+		 */
+		for(int i=wordSpeedValues.Length-1;i>-1;i--){
+			if(wordTimes[i]==0) continue;
+			if(hoverIndex!=-1&&wordTimes[i]>=times[hoverIndex]&&(i==0||wordTimes[i-1]<times[hoverIndex])){
+				hoverWordIndex=i;
+			}
 			
-			// switch(i){
-			// 	case 1:{
-			// 		vh.AddTriangle(vertCount+1,vertCount+0,vertCount+2);
-			// 		vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
-			// 		break;
-			// 	}
-			// 	case 2:{
-			// 		vh.AddTriangle(vertCount+1,vertCount+4+0,vertCount+4+1);
-			// 		vh.AddTriangle(vertCount+4+0,vertCount+4+2,vertCount+4+1);
-			// 		vh.AddTriangle(vertCount+3,vertCount+4+1,vertCount+1);
-			// 		break;
-			// 	}
-			// 	default:{
-			// 		vh.AddTriangle(vertCount+(i-2)*3+1+0,vertCount+(i-1)*3+1+0,vertCount+(i-1)*3+1+1);
-			// 		vh.AddTriangle(vertCount+(i-1)*3+1+0,vertCount+(i-1)*3+1+2,vertCount+(i-1)*3+1+1);
-			// 		vh.AddTriangle(vertCount+(i-2)*3+1+2,vertCount+(i-1)*3+1+1,vertCount+(i-2)*3+1+0);
-			// 		break;
-			// 	}
-			// }
+			float currentPosX=(wordTimes[i]-times[0])/(timeScale-times[0])*width;
+			float previousPosX=i>0?(wordTimes[i-1]-times[0])/(timeScale-times[0])*width:0;
+			
+			// vertex.color=new Color(1,.6f,0,1f);
+			// vertex.color=selectedTheme.backgroundColor*new Color(1,1,1,expandedBlend);
+			vertex.color=diamondColor*new Color(0,1,1,(i==hoverWordIndex?.75f:.5f)*expandedBlend);
+			
+			/*
+			 * Idea: For non-filled (line) graphs, always 'pivot' around the outer (pointy) end of the line angle
+			 *
+			 * For example:
+			 * If a line goes up and then down, the start of the down line should pivot around the top vertex
+			 * If a line geos down and then up, then pivot around the bottom vertex
+			 * Doing so would also prevent the need for the extra triangle which currently fills the gap between the two lines
+			 * It may also be a good idea to offset both the top and the bottom vertices in such a way that the true value is in the center, and they are equally distant form that value
+			 */
+			
+			Vector3 topLeft=new Vector3(previousPosX,height*wordSpeedValues[i]/topWPM);
+			Vector3 topRight=new Vector3(currentPosX,height*wordSpeedValues[i]/topWPM);
+			Vector3 offsetDir=Vector3.up*lineWidth/2*expandedBlend*(i==hoverWordIndex?3:1);
+			
+			// Top left		 (0)
+			vertex.position=topLeft+offsetDir;
+			vh.AddVert(vertex);
+			
+			// Top right	 (1) (0)
+			vertex.position=topRight+offsetDir;
+			vh.AddVert(vertex);
+			
+			// Bottom left	 (2) (1)
+			vertex.position=topLeft-offsetDir;
+			vh.AddVert(vertex);
+			
+			// Bottom right (3) (2)
+			vertex.position=topRight-offsetDir;
+			vh.AddVert(vertex);
+
+			vertCount+=4;
+			vh.AddTriangle(vertCount+1,vertCount+0,vertCount+2);
+			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
 		}
 		
 		// Draw diamond and line at cursor X position
 		if(hoverIndex>-1){
+			// Draw WPM diamond 
 			vertex.color=diamondColor*new Color(1,1,1,.75f*expandedBlend);
 			
-			float hoverPointY=height*values[hoverIndex]/valueScale;
+			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
 			
 			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
@@ -221,6 +276,7 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
+			// Draw line below WPM graph
 			vertex.color*=new Color(1,1,1,.75f);
 			
 			vertex.position=new Vector3(hoverPointX-selectionSize/4,hoverPointY);
@@ -236,6 +292,7 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
+			// Draw line above WPM graph
 			vertex.color*=new Color(1,1,1,.5f);
 			
 			vertex.position=new Vector3(hoverPointX-selectionSize/8,hoverPointY);
@@ -251,8 +308,7 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
-			
-			
+			// Draw seek time diamond
 			vertex.color=diamondColor*new Color(1,1,1,.67f*expandedBlend);
 			
 			hoverPointY=height*seekTimes[hoverIndex]/4;
@@ -315,13 +371,5 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
 			vertCount+=4;
 		}
-
-		//TODO: Draw another curve for the "full-word" speed, but draw it "sharply" (as in, no diagonal lines, just horizontal and vertical)
-		/*
-		 * To implement the "sharp" lines, create an extra quad (two triangles) at both ends of each line, with the size of 'lineWidth'
-		 * Draw each segment as a straight line, and connect it by joining the current start-quad to the previous end-quad's top or bottom vertices (create another quad between them)
-		 * (Join top+bottom or bottom+top depending on if the value is greater or lower. Or just have them overlap.)
-		 */
-		// May also scale the alpha color of that curve by the 'expandedBlend' value, so it doesn't make the mini-graph look too busy
 	}
 }
