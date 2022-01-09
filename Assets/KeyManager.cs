@@ -172,6 +172,22 @@ public class KeyManager:MonoBehaviour{
 			index>=capitalStart&&index<=capitalEnd||
 			index>=numbersStart&&index<=numbersEnd;
 	}
+	public static bool IsWhitespaceIndex(int index){
+		return instance.confidenceDatabase[index].keyName switch{
+			' ' => true,
+			'\n' => true,
+			'\t' => true,
+			_ => false
+		};
+	}
+	public static bool IsWhitespaceCharacter(char character){
+		return character switch{
+			' ' => true,
+			'\n' => true,
+			'\t' => true,
+			_ => false
+		};
+	}
 
 	//TODO: Function for lowering the hit/miss count without changing the ratio (e.g. divide by the same value, ratio might still change a bit because the numbers are integers)
 	public static void RemoveHitsAndMisses(int keyIndex,int amount=1){
@@ -214,14 +230,14 @@ public class KeyManager:MonoBehaviour{
 					break;
 			}
 
-			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.45f/((float)word.Length/3+1));
+			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.45f/(Mathf.Max(5-word.Length*5,word.Length)/3+1));
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
 		//TODO: Track top-speed(?)
 		return wpm;
 	}
 
-	public static void UpoateAccuracy(char actual, char pressed){
+	public static void UpdateAccuracy(char actual, char pressed){
 		
 	}
 	
@@ -238,12 +254,12 @@ public class KeyManager:MonoBehaviour{
 		string word="";
 		foreach(char c in text){
 			word+=c;
-			if(IsAlphaNumericIndex(GetKeyIndex(c))) continue;
+			// if(IsAlphaNumericIndex(GetKeyIndex(c))) continue;
+			if(!IsWhitespaceCharacter(c)) continue;
 			words.Add(word);
 			word="";
 		}
 		if(word!=""){
-			Debug.Log(word);
 			words.Add(word);
 		}
 		return words.ToArray();
@@ -255,11 +271,13 @@ public class KeyManager:MonoBehaviour{
 	
 	public static string GetLastWord(string text,int trimIndex){
 		for(int i=trimIndex;i>-1;i--){
-			if(i==trimIndex&&!IsAlphaNumericIndex(GetKeyIndex(text[i]))) i--;
-			if(IsAlphaNumericIndex(GetKeyIndex(text[i]))) continue;
+			// if(i==trimIndex&&!IsAlphaNumericIndex(GetKeyIndex(text[i]))) i--;
+			// if(IsAlphaNumericIndex(GetKeyIndex(text[i]))) continue;
+			if(i==trimIndex&&IsWhitespaceCharacter(text[i])) i--;
+			if(!IsWhitespaceCharacter(text[i])) continue;
 			i++;
 			string ret="";
-			while(i<text.Length){
+			while(i<=trimIndex){
 				ret+=text[i];
 				i++;
 			}
@@ -273,12 +291,7 @@ public class KeyManager:MonoBehaviour{
 		if(!includeNumbers&&index>=numbersStart&&index<=numbersEnd) return false;
 		if(!includeSymbols&&!IsAlphaNumericIndex(index)) return false;
 		if(includeWhitespace) return true;
-		switch(instance.confidenceDatabase[index].keyName){
-			case ' ':	return false;
-			case '\n':	return false;
-			case '\t':	return false;
-		}
-		return true;
+		return !IsWhitespaceIndex(index);
 	}
 	
 	public static int GetLowConfidenceCharacter(){
