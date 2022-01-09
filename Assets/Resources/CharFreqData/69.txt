@@ -123,8 +123,8 @@ Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Homeomorphism
-Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols

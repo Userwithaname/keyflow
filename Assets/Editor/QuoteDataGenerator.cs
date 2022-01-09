@@ -73,7 +73,7 @@ public class QuoteDataGenerator:EditorWindow{
 				quoteKeyFrequencyInfo[i][j]=quoteKeyFrequencyInfo[i][j].Remove(0,8);
 			}
 			// Finally, write the contents to a file named by the current index + .txt
-			File.WriteAllLines("Assets/Resources/CharFreqData/"+i+".txt",quoteKeyFrequencyInfo[i]);
+			File.WriteAllLines($"Assets/Resources/CharFreqData/{i}.txt",quoteKeyFrequencyInfo[i]);
 		}
 		
 		// Warn if there are untracked characters in the file

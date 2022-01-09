@@ -107,10 +107,10 @@ public class KeyManager:MonoBehaviour{
 		averageAccuracy=PlayerPrefs.GetFloat("Average Acc",0);
 		averageWPM=PlayerPrefs.GetFloat("Average WPM",0);
 		topWPM=PlayerPrefs.GetFloat("Top WPM",0);
-		if(!System.IO.File.Exists(Application.persistentDataPath+"/key-confidence-data")){
+		if(!System.IO.File.Exists($"{Application.persistentDataPath}/key-confidence-data")){
 			return;
 		}
-		string[] data=System.IO.File.ReadAllLines(Application.persistentDataPath+"/key-confidence-data");
+		string[] data=System.IO.File.ReadAllLines($"{Application.persistentDataPath}/key-confidence-data");
 		for(int i=0;i<data.Length;i++){
 			instance.confidenceDatabase[i]=JsonUtility.FromJson<KeyConfidenceData>(data[i]);
 		}
@@ -126,7 +126,7 @@ public class KeyManager:MonoBehaviour{
 		foreach(KeyConfidenceData kcd in instance.confidenceDatabase){
 			fileContents+=JsonUtility.ToJson(kcd)+"\n";
 		}
-		System.IO.File.WriteAllText(Application.persistentDataPath+"/key-confidence-data",fileContents);
+		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
 	}
 	
 	public static int GetKeyIndex(char key,int startIndex=0){
@@ -350,7 +350,7 @@ public class KeyManager:MonoBehaviour{
 	}
 	
 	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex){
-		string[] quotes=RemoveTrailingNewline(Resources.Load<TextAsset>("CharFreqData/"+keyIndex).text).Split('\n');
+		string[] quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
 		int invalidCount=0;
 		while(quotes[0].Length==0){
 			const int maxRetries=10;
@@ -362,7 +362,7 @@ public class KeyManager:MonoBehaviour{
 				keyIndex=Mathf.Max(5,keyIndex%trackedKeys.Length);
 			}
 			invalidCount++;
-			quotes=RemoveTrailingNewline(Resources.Load<TextAsset>("CharFreqData/"+keyIndex).text).Split('\n');
+			quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
 		}
 		return quotes;
 	}

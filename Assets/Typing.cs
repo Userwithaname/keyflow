@@ -282,7 +282,7 @@ public class Typing : MonoBehaviour {
 	public void OpenWikiPage(){
 		if(quoteTitle==null)
 			return;
-		string wikiPage="https://en.wikipedia.org/wiki/"+quoteTitle.Split("Wikipedia - ")[^1].Replace(' ','_');
+		string wikiPage=$"https://en.wikipedia.org/wiki/{quoteTitle.Split("Wikipedia - ")[^1].Replace(' ','_')}";
 		Debug.Log(wikiPage);
 		Application.OpenURL(wikiPage);
 	}
@@ -315,32 +315,32 @@ public class Typing : MonoBehaviour {
 		                                        KeyManager.instance.confidenceDatabase[comparisonIndex];
 			float diff=(float)Math.Round(updatedCharPractice.seekTime*1000-curCharPractice.seekTime*1000,3);
 			curCharacterSeekTime=diff<=0?
-			                     themes[selectedTheme].improvementColorTag+curCharacterSeekTime+" ("+diff+")</color>":
-			                     themes[selectedTheme].regressionColorTag+curCharacterSeekTime+" (+"+diff+")</color>";
+			                     $"{themes[selectedTheme].improvementColorTag+curCharacterSeekTime} ({diff})</color>":
+			                     $"{themes[selectedTheme].regressionColorTag+curCharacterSeekTime} (+{diff})</color>";
 			diff=(float)Math.Round(updatedCharPractice.nextKeySeekTime*1000-curCharPractice.nextKeySeekTime*1000,3);
 			curCharacterNextSeekTime=diff<=0||float.IsNaN(diff)?
-			                     themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime+" ("+diff+")</color>":
-			                     themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime+" (+"+diff+")</color>";
+			                     $"{themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime} ({diff})</color>":
+			                     $"{themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime} (+{diff})</color>";
 			diff=(float)Math.Round(updatedCharPractice.wpm-curCharPractice.wpm,3);
 			curCharacterWPM=diff>=0?
-			                     themes[selectedTheme].improvementColorTag+curCharacterWPM+" (+"+diff+")</color>":
-			                     themes[selectedTheme].regressionColorTag+curCharacterWPM+" ("+diff+")</color>";
+			                     $"{themes[selectedTheme].improvementColorTag+curCharacterWPM} (+{diff})</color>":
+			                     $"{themes[selectedTheme].regressionColorTag+curCharacterWPM} ({diff})</color>";
 			float newAccuracy=(float)updatedCharPractice.hits/(updatedCharPractice.hits+updatedCharPractice.misses)*100;
 			diff=(float)Math.Round(newAccuracy-(float)curCharPractice.hits/(curCharPractice.hits+curCharPractice.misses)*100,3);
 			if(float.IsNaN(diff)) diff=newAccuracy;
 			curCharacterAccuracy=diff>=0?
-			                     themes[selectedTheme].improvementColorTag+curCharacterAccuracy+" (+"+diff+")</color>":
-			                     themes[selectedTheme].regressionColorTag+curCharacterAccuracy+" ("+diff+")</color>";
+			                     $"{themes[selectedTheme].improvementColorTag+curCharacterAccuracy} (+{diff})</color>":
+			                     $"{themes[selectedTheme].regressionColorTag+curCharacterAccuracy} ({diff})</color>";
 		}
 		curCharPractice=updatedCharPractice;
 		
 		lessonInfo.text=
-			"<b>Current Practice: "+(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)+"</b>"+
-			"\n<b>Average Stats </b>(for <b>"+(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)+"</b>)<b>:</b>"+
-			"\nSeek Time: "+curCharacterSeekTime+
-			"\nNext Key Seek Time: "+curCharacterNextSeekTime+
-			"\nWord Speed: "+curCharacterWPM+
-			"\nAccuracy: "+curCharacterAccuracy;
+			$"<b>Current Practice: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
+			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
+			$"\nSeek Time: {curCharacterSeekTime}"+
+			$"\nNext Key Seek Time: {curCharacterNextSeekTime}"+
+			$"\nWord Speed: {curCharacterWPM}"+
+			$"\nAccuracy: {curCharacterAccuracy}";
 		
 		wpm=loc/totalTestTime*60/5;
 		accuracy=(float)hitCount/(hitCount+missCount)*100;
@@ -362,32 +362,32 @@ public class Typing : MonoBehaviour {
 			WPMInfo.text=
 				"Accuracy: "+
 					(accuracy>=oldAverageAccuracy?
-						themes[selectedTheme].improvementColorTag+Math.Round(accuracy,2)+"% (+"+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>":
-						themes[selectedTheme].regressionColorTag+Math.Round(accuracy,2)+"% ("+Math.Round(accuracy-oldAverageAccuracy,2)+" from average)</color>")+
+						$"{themes[selectedTheme].improvementColorTag+Math.Round(accuracy,2)}% (+{Math.Round(accuracy-oldAverageAccuracy,2)} from average)</color>":
+						$"{themes[selectedTheme].regressionColorTag+Math.Round(accuracy,2)}% ({Math.Round(accuracy-oldAverageAccuracy,2)} from average)</color>")+
 				"\nSpeed: "+
 					(wpm>=oldAverageSpeed?
-						themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)+" WPM (+"+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>":
-						themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)+" WPM ("+Math.Round(wpm-oldAverageSpeed,2)+" from average)</color>")+
-				"\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions;
+						$"{themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)} WPM (+{Math.Round(wpm-oldAverageSpeed,2)} from average)</color>":
+						$"{themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)} WPM ({Math.Round(wpm-oldAverageSpeed,2)} from average)</color>")+
+				$"\nTime: {Mathf.FloorToInt(totalTestTime/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
 			
 			averageWPMInfo.text=
 				"Average Accuracy: "+
 					(KeyManager.averageAccuracy>=oldAverageAccuracy?
-						themes[selectedTheme].improvementColorTag+Math.Round(KeyManager.averageAccuracy,2)+"% (+"+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>":
-						themes[selectedTheme].regressionColorTag+Math.Round(KeyManager.averageAccuracy,2)+"% ("+Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)+")</color>")+
+						$"{themes[selectedTheme].improvementColorTag}{Math.Round(KeyManager.averageAccuracy,2)}% (+{Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)})</color>":
+						$"{themes[selectedTheme].regressionColorTag}{Math.Round(KeyManager.averageAccuracy,2)}% ({Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)})</color>")+
 				"\nAverage Speed: "+
 					(KeyManager.averageWPM>=oldAverageSpeed?
-						themes[selectedTheme].improvementColorTag+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM (+"+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>":
-						themes[selectedTheme].regressionColorTag+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM ("+Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)+")</color>")+
+						$"{themes[selectedTheme].improvementColorTag}{(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM (+{Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)})</color>":
+						$"{themes[selectedTheme].regressionColorTag}{(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM ({Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)})</color>")+
 				"\nTop Speed: "+
 					(KeyManager.topWPM>oldTopSpeed?
-						themes[selectedTheme].improvementColorTag+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM(+"+(KeyManager.topWPM-oldTopSpeed)+")</color>":
-						(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM");
+						$"{themes[selectedTheme].improvementColorTag}{(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM(+{KeyManager.topWPM-oldTopSpeed})</color>":
+						$"{(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM");
 		}else{	
 			averageWPMInfo.text=
-				"Average Accuracy: "+Math.Round(KeyManager.averageAccuracy,2)+"%"+
-				"\nAverage Speed: "+(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")+" WPM"+
-				"\nTop WPM: "+(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")+" WPM";
+				$"Average Accuracy: {Math.Round(KeyManager.averageAccuracy,2)}%"+
+				$"\nAverage Speed: {(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM"+
+				$"\nTop WPM: {(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM";
 		}
 		
 		quoteInfo.text=quoteTitle;
@@ -503,9 +503,7 @@ public class Typing : MonoBehaviour {
 		wpm=loc/totalTestTime*60/5;
 		if(hitCount+missCount==0) accuracy=100;
 		WPMInfo.text=
-			"Accuracy: "+Mathf.RoundToInt(accuracy)+"%"+
-			"\nSpeed: "+(totalTestTime==0?"-":Mathf.RoundToInt(wpm))+" WPM"+
-		   "\nTime: "+Mathf.FloorToInt(totalTestTime/60)+':'+(seconds<10?"0":"")+seconds;
+			$"Accuracy: {Mathf.RoundToInt(accuracy)}%\nSpeed: {(totalTestTime==0?"-":Mathf.RoundToInt(wpm))} WPM\nTime: {Mathf.FloorToInt(totalTestTime/60)}:{(seconds<10?"0":"")}{seconds}";
 		
 		if(Input.mousePosition!=lastMousePos){
 			fade=false;
@@ -680,14 +678,14 @@ public class Typing : MonoBehaviour {
 			for(int i=fractions.Length;i<3;i++){
 				fractions+='0';
 			}
-			graphInfo.text=	//TODO: Remove all code/objects relating to this old implementation of the graph info
-				"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
-				" (key: '"+text[lastHoverIndex]+"')"+
-				"\nWord: "+words[graph.hoverWordIndex]+
-				"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
-				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
-				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
-				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
+			// graphInfo.text=	//TODO: Remove all code/objects relating to this old implementation of the graph info
+			// 	"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
+			// 	" (key: '"+text[lastHoverIndex]+"')"+
+			// 	"\nWord: "+words[graph.hoverWordIndex]+
+			// 	"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
+			// 	"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
+			// 	"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
+			// 	"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
 
 			/*
 			 * For drawing the tooltip, draw them one after another, and always set the Y pos to either the value in the graph, or Mathf.Max of the previous Y pos + UI element height
@@ -705,26 +703,24 @@ public class Typing : MonoBehaviour {
 			baseTooltipPos.x+=graph.times[lastHoverIndex]/graph.timeScale*graphRect.width;
 			Vector2 tooltipOffset=Vector2.zero;
 			
-			graphTooltipTimestampText.text="Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions;
+			graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
 			graphTooltipTimestamp.anchoredPosition=baseTooltipPos+tooltipOffset;
 			
 			tooltipOffset=Vector2.right*paddingDistance;
 			
-			graphTooltipSpeedText.text="Speed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM";
+			graphTooltipSpeedText.text=$"Speed: {Math.Round(wpmGraph[lastHoverIndex],2)} WPM";
 			tooltipOffset.y=Mathf.Max(tooltipHeight/2+verticalPadding,graph.speedValues[lastHoverIndex]/wpmScale*graphRect.height);
 			graphTooltipSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
 			
 			tooltipOffset=Vector2.left*paddingDistance;
 			
 			//BUG: Tooltips on the left have less padding from the vertical line
-			graphTooltipSeekTimeText.text="Seek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
-			                              "\nKey: '"+text[lastHoverIndex]+"'";
+			graphTooltipSeekTimeText.text=$"Seek Time: {Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)} ms\nKey: '{text[lastHoverIndex]}'";
 			float seekTimeTooltipY=Mathf.Max(tooltipHeight+verticalPadding,graph.seekTimes[lastHoverIndex]/4*graphRect.height);		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order 
 			tooltipOffset.y=seekTimeTooltipY;
 			graphTooltipSeekTime.anchoredPosition=baseTooltipPos+tooltipOffset;
 			
-			graphTooltipWordSpeedText.text="Word Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
-			                               "\nWord: "+words[graph.hoverWordIndex];
+			graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: {words[graph.hoverWordIndex]}";
 			tooltipOffset.y=Mathf.Max(tooltipHeight+verticalPadding,graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height);
 			tooltipOffset.y=tooltipOffset.y>=seekTimeTooltipY?
 			                Mathf.Max(seekTimeTooltipY+tooltipHeight*2+verticalPadding,tooltipOffset.y):
