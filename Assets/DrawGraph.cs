@@ -186,25 +186,7 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
 		}
 		
-		//TODO: Draw another curve for the "full-word" speed (in expanded view), but draw it "sharply" (as in, no diagonal lines, just horizontal and vertical)
-		/*
-		 * Implementation:
-		 *		1: Determine word count for the current quote, make three arrays:
-		 *			- Word speed time (float)
-		 *			- Word finish time (float)
-		 *			- Word text (string) (fill during initialization)
-		 *		2: Whenever a word speed is recorded in Typing.cs, add the word speed and total test time to the respective arrays from step 1
-		 *		3: Draw the graph as such:
-		 *			- Make a horizontal line from previous time (or 0 if it's the first one) to current time, at the height of current word speed
-		 *				- Add ±lineWidth/2 to the Y position to the top/bottom edge
-		 *			- Make a vertical line at the previous time, from current word speed height to previous word speed height (skip for first line) (or leave it unconnected?)
-		 *				- Add -±lineWidth to the X position to the left edge  
-		 *		4: To determine the word hover index, take the selected time from the main graph and loop backwards through the word finish time array, check if <= to the main.
-		 *			- Assign to 'hoverWordIndex'
-		 *		5: The string array is for displaying the word in the UI
-		 *
-		 * Idea: Instead of drawing another diamond, maybe just grow the word line at the hover position? Maybe also brighten it up so it stands out
-		 */
+		// Draw a word speed graph
 		for(int i=wordSpeedValues.Length-1;i>-1;i--){
 			if(wordTimes[i]==0) continue;
 			if(hoverIndex!=-1&&wordTimes[i]>=times[hoverIndex]&&(i==0||wordTimes[i-1]<times[hoverIndex])){
@@ -214,19 +196,7 @@ public class DrawGraph:Graphic{
 			float currentPosX=(wordTimes[i]-times[0])/(timeScale-times[0])*width;
 			float previousPosX=i>0?(wordTimes[i-1]-times[0])/(timeScale-times[0])*width:0;
 			
-			// vertex.color=new Color(1,.6f,0,1f);
-			// vertex.color=selectedTheme.backgroundColor*new Color(1,1,1,expandedBlend);
-			vertex.color=diamondColor*new Color(0,1,1,(i==hoverWordIndex?.75f:.5f)*expandedBlend);
-			
-			/*
-			 * Idea: For non-filled (line) graphs, always 'pivot' around the outer (pointy) end of the line angle
-			 *
-			 * For example:
-			 * If a line goes up and then down, the start of the down line should pivot around the top vertex
-			 * If a line geos down and then up, then pivot around the bottom vertex
-			 * Doing so would also prevent the need for the extra triangle which currently fills the gap between the two lines
-			 * It may also be a good idea to offset both the top and the bottom vertices in such a way that the true value is in the center, and they are equally distant form that value
-			 */
+			vertex.color=Typing.currentTheme.improvementColor*new Color(1,1,1,(i==hoverWordIndex?.75f:.4f)*expandedBlend);
 			
 			Vector3 topLeft=new Vector3(previousPosX,height*wordSpeedValues[i]/topWPM);
 			Vector3 topRight=new Vector3(currentPosX,height*wordSpeedValues[i]/topWPM);
@@ -253,28 +223,11 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
 		}
 		
-		// Draw diamond and line at cursor X position
+		// Draw a diamond and a line at the point nearest to the curser
 		if(hoverIndex>-1){
-			// Draw WPM diamond 
 			vertex.color=diamondColor*new Color(1,1,1,.75f*expandedBlend);
 			
 			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
-			
-			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
-			vh.AddVert(vertex);
-			
-			vertCount=vh.currentVertCount;
-			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
-			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
 			// Draw line below WPM graph
 			vertex.color*=new Color(1,1,1,.75f);
@@ -306,12 +259,50 @@ public class DrawGraph:Graphic{
 			
 			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
+			
+			// Draw WPM diamond 
+			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
+			
+			vertCount=vh.currentVertCount;
+			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
+			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
 			// Draw seek time diamond
 			vertex.color=diamondColor*new Color(1,1,1,.67f*expandedBlend);
 			
 			hoverPointY=height*seekTimes[hoverIndex]/4;
+			
+			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
+			
+			vertCount+=4;
+			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
+			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
+			
+			// Draw word speed diamond
+			vertex.color=Typing.currentTheme.improvementColor;
+			
+			hoverPointY=height*wordSpeedValues[hoverWordIndex]/topWPM;
 			
 			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
@@ -341,7 +332,7 @@ public class DrawGraph:Graphic{
 			// vertex.color=Color.red;
 			
 			float offset=selectionSize*expandedBlend/1.5f;
-			Vector3 diagonal=new Vector3(-offset/4,offset/4);
+			Vector3 diagonal=i==hoverIndex?new Vector3(-offset/2,offset/2):new Vector3(-offset/4,offset/4);
 			
 			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
 			vh.AddVert(vertex);

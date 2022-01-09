@@ -34,7 +34,20 @@ public class Typing : MonoBehaviour {
 	public DrawGraph graph;
 	public TMP_Text graphInfo;
 	public Image graphOutline;
+	public RectTransform graphOutlineTransform;
 	
+	public RectTransform graphTooltipSpeed;
+	public TMP_Text graphTooltipSpeedText;
+	
+	public RectTransform graphTooltipWordSpeed;
+	public TMP_Text graphTooltipWordSpeedText;
+	
+	public RectTransform graphTooltipSeekTime;
+	public TMP_Text graphTooltipSeekTimeText;
+	
+	public RectTransform graphTooltipTimestamp;
+	public TMP_Text graphTooltipTimestampText;
+
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
 	       input="",
@@ -47,11 +60,12 @@ public class Typing : MonoBehaviour {
 	public static string quoteTitle;
 	public TMP_InputField textDisplay;
 	TMP_Text textDisplayText;
-	public TMP_Text lessonInfo,WPMInfo,averageWPMInfo,quoteInfo;
+	public TMP_Text lessonInfo,
+	                WPMInfo,
+	                averageWPMInfo,
+	                quoteInfo;
 	public Button quoteInfoButton;
 	
-	public Image[] themeableButtons,
-	               themeableIcons;
 	public GameObject settingsUI;
 	public Toggle practiceUppercase,
 	              practiceNumbers,
@@ -98,6 +112,10 @@ public class Typing : MonoBehaviour {
 	}
 	public int selectedTheme,lastSelectedTheme;
 	public Theme[] themes;
+	public Image[] themeableButtons,
+	               themeableIcons;
+	public TMP_Text[] themeableUIText;
+	public Image[] themeableTooltipBackgrounds;
 	
 	public bool showGraphWhenDone=true;
 	
@@ -194,6 +212,12 @@ public class Typing : MonoBehaviour {
 		}
 		foreach(Image icon in themeableIcons){
 			icon.color=currentTheme.iconColor;
+		}
+		foreach(TMP_Text uiText in themeableUIText){
+			uiText.color=currentTheme.textColorUI;
+		}
+		foreach(Image tooltipBackground in themeableTooltipBackgrounds){
+			tooltipBackground.color=currentTheme.backgroundColor*new Color(1,1,1,.2f);
 		}
 	}
 	public void ChangeTheme(int theme){
@@ -517,13 +541,12 @@ public class Typing : MonoBehaviour {
 			char inputChar = input[loc+1];
 			char compareChar = text[loc+1];
 			int keyIndex=KeyManager.GetKeyIndex(inputChar);
-			KeyManager.UpoateAccuracy(inputChar,compareChar);
+			KeyManager.UpdateAccuracy(inputChar,compareChar);
 			
 			if(inputChar==compareChar){
 				hitCount++;
 				loc++;
 				if(loc>lastMaxLength){
-					lastMaxLength=loc;
 					int index=Mathf.Max(0,loc-1);
 					accuracyGraph[index]=accuracy=(float)hitCount/(hitCount+missCount)*100;
 					wpmGraph[index]=wpm=loc/totalTestTime*60/5;
@@ -546,20 +569,26 @@ public class Typing : MonoBehaviour {
 					KeyManager.UpdateSeekTime(keyIndex,seekTime);
 					KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
 				}
-				if(!KeyManager.IsAlphaNumericIndex(keyIndex)&&length>lastMaxLength||input.Length==text.Length){
+				if(KeyManager.IsWhitespaceIndex(keyIndex)&&length>lastMaxLength||input.Length==text.Length){
 					//TODO: Save all word WPMs to an array, show them as a raw speed graph at the end of the game (also track real WPM in the same way)
 					//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)
 					if(loc>0&&input[loc]!=input[loc-1]){
-						graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
-						graph.wordTimes[wordIndex]=totalTestTime;
-						if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){
-							graph.wordSpeedScale=graph.wordSpeedValues[wordIndex];
+						try{
+							graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
+							graph.wordTimes[wordIndex]=totalTestTime;
+							if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){
+								graph.wordSpeedScale=graph.wordSpeedValues[wordIndex];
+							}
+							wordIndex++;
+						}catch{
+							Debug.LogWarning("Got a IndexOutOfRangeException trying to access 'graph.wordSpeedValues', the 'wordIndex' is likely too high. Are erased words being added again when re-entered?");
+							Debug.Log(wordIndex);
+							Debug.Log(graph.wordSpeedValues.Length-1);
 						}
-						wordIndex++;
 					}
 					wordTime=0;
 				}
-
+				if(loc>lastMaxLength) lastMaxLength=loc;
 				seekTime=0;
 			}else{
 				accuracyGraph[Mathf.Max(0,loc)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
@@ -637,29 +666,77 @@ public class Typing : MonoBehaviour {
 			Color graphOutlineColor=graphOutline.color;
 			graphOutlineColor.a=1f-curBlend;
 			graphOutline.color=graphOutlineColor;
-			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphInfo.rectTransform.position.y-(graphInfo.rectTransform.rect.height/2),curBlend));
+			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height/3*2,curBlend));
 			
 			graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
 
 			graph.expandedBlend=curBlend;
 		}
 		if(!done||graph.hoverIndex==lastHoverIndex) return;
-		if(graph.hoverIndex!=-1){	//TODO: Turn the graph info text into a tooltip at the mouse position, or better, write text at the graph's height for that particular stat (but make sure the text won't overlap) 
+		if(graph.hoverIndex!=-1){
 			lastHoverIndex=graph.hoverIndex;
 			int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
 			string fractions=((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1];
 			for(int i=fractions.Length;i<3;i++){
 				fractions+='0';
 			}
-			graphInfo.text=
+			graphInfo.text=	//TODO: Remove all code/objects relating to this old implementation of the graph info
 				"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
 				" (key: '"+text[lastHoverIndex]+"')"+
 				"\nWord: "+words[graph.hoverWordIndex]+
-				"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" DPM"+
+				"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
 				"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
 				"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
 				"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
+
+			/*
+			 * For drawing the tooltip, draw them one after another, and always set the Y pos to either the value in the graph, or Mathf.Max of the previous Y pos + UI element height
+			 * That way they won't overlap, and they will always be shown close to where they are presented in the graph
+			 * May need to preform some logic to draw them in the correct order
+			 * Remember to hide the text/background of the tooltips when nothing is selected
+			 */
+			//TODO: When the tooltip reaches offscreen, draw it on the left side instead, ar push it away from the screen edge
+			Rect graphRect=graphOutlineTransform.rect;
+			float tooltipHeight=graphTooltipSpeed.rect.height;
+			float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
+			const float paddingDistance=15;
+			const float verticalPadding=2;
+			Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition;
+			baseTooltipPos.x+=graph.times[lastHoverIndex]/graph.timeScale*graphRect.width;
+			Vector2 tooltipOffset=Vector2.zero;
+			
+			graphTooltipTimestampText.text="Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions;
+			graphTooltipTimestamp.anchoredPosition=baseTooltipPos+tooltipOffset;
+			
+			tooltipOffset=Vector2.right*paddingDistance;
+			
+			graphTooltipSpeedText.text="Speed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM";
+			tooltipOffset.y=Mathf.Max(tooltipHeight/2+verticalPadding,graph.speedValues[lastHoverIndex]/wpmScale*graphRect.height);
+			graphTooltipSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
+			
+			tooltipOffset=Vector2.left*paddingDistance;
+			
+			//BUG: Tooltips on the left have less padding from the vertical line
+			graphTooltipSeekTimeText.text="Seek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
+			                              "\nKey: '"+text[lastHoverIndex]+"'";
+			float seekTimeTooltipY=Mathf.Max(tooltipHeight+verticalPadding,graph.seekTimes[lastHoverIndex]/4*graphRect.height);		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order 
+			tooltipOffset.y=seekTimeTooltipY;
+			graphTooltipSeekTime.anchoredPosition=baseTooltipPos+tooltipOffset;
+			
+			graphTooltipWordSpeedText.text="Word Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
+			                               "\nWord: "+words[graph.hoverWordIndex];
+			tooltipOffset.y=Mathf.Max(tooltipHeight+verticalPadding,graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height);
+			tooltipOffset.y=tooltipOffset.y>=seekTimeTooltipY?
+			                Mathf.Max(seekTimeTooltipY+tooltipHeight*2+verticalPadding,tooltipOffset.y):
+			                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y);
+			graphTooltipWordSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
 		}else{
+			if(lastHoverIndex!=-1){
+				graphTooltipTimestamp.anchoredPosition=-Vector2.up*10000;
+				graphTooltipSpeed.anchoredPosition=-Vector2.up*10000;
+				graphTooltipWordSpeed.anchoredPosition=-Vector2.up*10000;
+				graphTooltipSeekTime.anchoredPosition=-Vector2.up*10000;
+			}
 			lastHoverIndex=-1;
 			graphInfo.text=
 				"\n\n-- Move your mouse over the graph to show details --";
