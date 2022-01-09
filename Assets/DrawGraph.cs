@@ -223,11 +223,24 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
 		}
 		
-		// Draw a diamond and a line at the point nearest to the curser
+		// Draw a diamond and a line at the point nearest to the cursor
 		if(hoverIndex>-1){
+			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
+			
+			// Draw WPM diamond 
 			vertex.color=diamondColor*new Color(1,1,1,.75f*expandedBlend);
 			
-			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
+			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
+			vh.AddVert(vertex);
+			
+			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
+			vh.AddVert(vertex);
 			
 			// Draw line below WPM graph
 			vertex.color*=new Color(1,1,1,.75f);
@@ -260,19 +273,6 @@ public class DrawGraph:Graphic{
 			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			
-			// Draw WPM diamond 
-			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
-			vh.AddVert(vertex);
-			
-			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
-			vh.AddVert(vertex);
-			
 			vertCount=vh.currentVertCount;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
@@ -300,7 +300,7 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
 			// Draw word speed diamond
-			vertex.color=Typing.currentTheme.improvementColor;
+			vertex.color=Typing.currentTheme.improvementColor*new Color(1,1,1,expandedBlend);
 			
 			hoverPointY=height*wordSpeedValues[hoverWordIndex]/topWPM;
 			

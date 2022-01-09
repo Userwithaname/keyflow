@@ -22,8 +22,8 @@ Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Rotational symmetry
-Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Vertex (geometry)
