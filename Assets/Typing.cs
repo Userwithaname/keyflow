@@ -663,73 +663,76 @@ public class Typing : MonoBehaviour {
 
 			graph.expandedBlend=curBlend;
 		}
-		if(!done||graph.hoverIndex==lastHoverIndex) return;
-		if(graph.hoverIndex!=-1){
-			lastHoverIndex=graph.hoverIndex;
-			int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
-			string fractions=((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1];
-			for(int i=fractions.Length;i<3;i++){
-				fractions+='0';
-			}
-			// graphInfo.text=	//TODO: Remove all code/objects relating to this old implementation of the graph info
-			// 	"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
-			// 	" (key: '"+text[lastHoverIndex]+"')"+
-			// 	"\nWord: "+words[graph.hoverWordIndex]+
-			// 	"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
-			// 	"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
-			// 	"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
-			// 	"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
-
-			/*
-			 * For drawing the tooltip, draw them one after another, and always set the Y pos to either the value in the graph, or Mathf.Max of the previous Y pos + UI element height
-			 * That way they won't overlap, and they will always be shown close to where they are presented in the graph
-			 * May need to preform some logic to draw them in the correct order
-			 * Remember to hide the text/background of the tooltips when nothing is selected
-			 */
-			
-			// Rect graphRect=graphOutlineTransform.rect;
-			Rect graphRect=graph.rectTransform.rect;
-			float tooltipHeight=graphTooltipSpeed.rect.height;
-			float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
-			const float paddingDistance=15;
-			const float verticalPadding=2;
-			Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition+graph.rectTransform.anchoredPosition;
-			baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
-			Vector2 tooltipOffset=Vector2.zero;
-			
-			graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
-			graphTooltipTimestamp.anchoredPosition=baseTooltipPos+tooltipOffset;
-			
-			tooltipOffset=Vector2.right*paddingDistance;
-			
-			graphTooltipSpeedText.text=$"Speed: {Math.Round(wpmGraph[lastHoverIndex],2)} WPM";
-			tooltipOffset.y=Mathf.Max(tooltipHeight/2+verticalPadding,graph.speedValues[lastHoverIndex]/wpmScale*graphRect.height);
-			graphTooltipSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
-			
-			tooltipOffset=Vector2.left*paddingDistance;
-			
-			graphTooltipSeekTimeText.text=$"Seek Time: {Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)} ms\nKey: '{text[lastHoverIndex]}'";
-			float seekTimeTooltipY=Mathf.Max(tooltipHeight+verticalPadding,graph.seekTimes[lastHoverIndex]/4*graphRect.height);		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order 
-			tooltipOffset.y=seekTimeTooltipY;
-			graphTooltipSeekTime.anchoredPosition=baseTooltipPos+tooltipOffset;
-			
-			graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: {words[graph.hoverWordIndex]}";
-			tooltipOffset.y=Mathf.Max(tooltipHeight+verticalPadding,graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height);
-			tooltipOffset.y=tooltipOffset.y>=seekTimeTooltipY?
-			                Mathf.Max(seekTimeTooltipY+tooltipHeight*2+verticalPadding,tooltipOffset.y):
-			                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y);
-			graphTooltipWordSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
-		}else{
-			if(lastHoverIndex!=-1){
+		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1){
+			if(graph.hoverIndex==-1&&lastHoverIndex!=-1){
 				graphTooltipTimestamp.anchoredPosition=-Vector2.up*10000;
 				graphTooltipSpeed.anchoredPosition=-Vector2.up*10000;
 				graphTooltipWordSpeed.anchoredPosition=-Vector2.up*10000;
 				graphTooltipSeekTime.anchoredPosition=-Vector2.up*10000;
+				lastHoverIndex=-1;
+				// graphInfo.text=
+				// "\n\n-- Move your mouse over the graph to show details --";
 			}
-			lastHoverIndex=-1;
-			graphInfo.text=
-				"\n\n-- Move your mouse over the graph to show details --";
+			return;
 		}
+		
+		lastHoverIndex=graph.hoverIndex;
+		int seconds=Mathf.FloorToInt(timeGraph[lastHoverIndex]%60);
+		string fractions=((float)Math.Round(timeGraph[lastHoverIndex]-Mathf.FloorToInt(timeGraph[lastHoverIndex]),3)%1).ToString().Split('.')[^1];
+		for(int i=fractions.Length;i<3;i++){
+			fractions+='0';
+		}
+		// graphInfo.text=	//TODO: Remove all code/objects relating to this old implementation of the graph info
+		// 	"Time: "+Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)+':'+(seconds<10?"0":"")+seconds+':'+fractions+
+		// 	" (key: '"+text[lastHoverIndex]+"')"+
+		// 	"\nWord: "+words[graph.hoverWordIndex]+
+		// 	"\nWord Speed: "+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)+" WPM"+
+		// 	"\nSeek Time: "+Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)+" ms"+
+		// 	"\nSpeed: "+Math.Round(wpmGraph[lastHoverIndex],2)+" WPM"+
+		// 	"\nError Rate: "+Math.Round(100f-accuracyGraph[lastHoverIndex],2)+"%";
+
+		/*
+		 * For drawing the tooltip, draw them one after another, and always set the Y pos to either the value in the graph, or Mathf.Max of the previous Y pos + UI element height
+		 * That way they won't overlap, and they will always be shown close to where they are presented in the graph
+		 * May need to preform some logic to draw them in the correct order
+		 * Remember to hide the text/background of the tooltips when nothing is selected
+		 */
+		
+		// Rect graphRect=graphOutlineTransform.rect;
+		Rect graphRect=graph.rectTransform.rect;
+		float tooltipHeight=graphTooltipSpeed.rect.height;
+		float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
+		const float paddingDistance=15;
+		const float verticalPadding=2;
+		Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition+graph.rectTransform.anchoredPosition;
+		baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
+		Vector2 tooltipOffset=Vector2.zero;
+		
+		graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
+		graphTooltipTimestamp.anchoredPosition=baseTooltipPos+tooltipOffset;
+		
+		tooltipOffset=Vector2.right*paddingDistance;
+		
+		graphTooltipSpeedText.text=$"Speed: {Math.Round(wpmGraph[lastHoverIndex],2)} WPM";
+		tooltipOffset.y=Mathf.Clamp(graph.speedValues[lastHoverIndex]/wpmScale*graphRect.height,tooltipHeight/2+verticalPadding,graphRect.height-tooltipHeight/2-verticalPadding);
+		graphTooltipSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
+		
+		//TODO Show number of errors for each letter when greater than 0
+		
+		tooltipOffset=Vector2.left*paddingDistance;
+		
+		graphTooltipSeekTimeText.text=$"Seek Time: {Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)} ms\nKey: '{text[lastHoverIndex]}'";
+		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order
+		float seekTimeTooltipY=Mathf.Clamp(graph.seekTimes[lastHoverIndex]/4*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding); 
+		tooltipOffset.y=seekTimeTooltipY;
+		graphTooltipSeekTime.anchoredPosition=baseTooltipPos+tooltipOffset;
+		
+		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: {words[graph.hoverWordIndex]}";
+		tooltipOffset.y=Mathf.Clamp(graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding);
+		tooltipOffset.y=tooltipOffset.y>=seekTimeTooltipY?
+		                Mathf.Max(seekTimeTooltipY+tooltipHeight*2+verticalPadding,tooltipOffset.y):
+		                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y);
+		graphTooltipWordSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
 	}
 	
 	public void AllowCapitalLetters(){
