@@ -227,6 +227,8 @@ public class DrawGraph:Graphic{
 		if(hoverIndex>-1){
 			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
 			
+			//TODO: When drawing diamonds, also draw a line going towards the tooltip (shouldn't be too hard assuming Typing.GraphUpdate() runs before this function)
+			
 			// Draw WPM diamond 
 			vertex.color=diamondColor*new Color(1,1,1,.75f*expandedBlend);
 			

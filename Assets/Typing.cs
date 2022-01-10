@@ -687,13 +687,14 @@ public class Typing : MonoBehaviour {
 			 * May need to preform some logic to draw them in the correct order
 			 * Remember to hide the text/background of the tooltips when nothing is selected
 			 */
-			//TODO: When the tooltip reaches offscreen, draw it on the left side instead, ar push it away from the screen edge
-			Rect graphRect=graphOutlineTransform.rect;
+			
+			// Rect graphRect=graphOutlineTransform.rect;
+			Rect graphRect=graph.rectTransform.rect;
 			float tooltipHeight=graphTooltipSpeed.rect.height;
 			float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
 			const float paddingDistance=15;
 			const float verticalPadding=2;
-			Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition;
+			Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition+graph.rectTransform.anchoredPosition;
 			baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
 			Vector2 tooltipOffset=Vector2.zero;
 			
@@ -708,7 +709,6 @@ public class Typing : MonoBehaviour {
 			
 			tooltipOffset=Vector2.left*paddingDistance;
 			
-			//BUG: Tooltips on the left have less padding from the vertical line
 			graphTooltipSeekTimeText.text=$"Seek Time: {Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)} ms\nKey: '{text[lastHoverIndex]}'";
 			float seekTimeTooltipY=Mathf.Max(tooltipHeight+verticalPadding,graph.seekTimes[lastHoverIndex]/4*graphRect.height);		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order 
 			tooltipOffset.y=seekTimeTooltipY;
