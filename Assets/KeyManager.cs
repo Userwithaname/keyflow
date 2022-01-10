@@ -340,13 +340,19 @@ public class KeyManager:MonoBehaviour{
 				}
 			}
 		}
-		if(Random.Range(0,1)>.5f&&lowestWPM>0){
-			if(highestSeekTime>highestNextSeekTime)
-				highestNextSeekTimeIndex=lowestWPMIndex;
-			else
-				highestSeekTimeIndex=lowestWPMIndex;
-		}
-		return Random.Range(0f,1f)>.5f?(Random.Range(0f,1f)>.45f?highestSeekTimeIndex:highestNextSeekTimeIndex):lowestAccIndex;
+		return Random.Range(0f,1f) switch{
+			<.28f => lowestWPMIndex,
+			<.55f => highestSeekTimeIndex,
+			<.75f => highestNextSeekTimeIndex,
+			_ => lowestAccIndex
+		};
+		// if(Random.Range(0,1)>.5f&&lowestWPM>0){
+		// 	if(highestSeekTime>highestNextSeekTime)
+		// 		highestNextSeekTimeIndex=lowestWPMIndex;
+		// 	else
+		// 		highestSeekTimeIndex=lowestWPMIndex;
+		// }
+		// return Random.Range(0f,1f)>.5f?(Random.Range(0f,1f)>.45f?highestSeekTimeIndex:highestNextSeekTimeIndex):lowestAccIndex;
 	}
 	
 	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex){
@@ -433,18 +439,12 @@ public class KeyManager:MonoBehaviour{
 			}
 		}
 
-		int finalIndex=lowestAccIndex;
-		switch(Random.Range(0f,1f)){
-			case <.3f:
-				finalIndex=highestSeekTimeIndex;
-			break;
-			case <.55f:
-				finalIndex=highestNextKeySeekTimeIndex;
-			break;
-			case <.72f:
-				finalIndex=lowestFullWordSpeedIndex;
-			break;
-		}
+		int finalIndex = Random.Range(0f,1f) switch{
+			<.3f => highestSeekTimeIndex,
+			<.45f => highestNextKeySeekTimeIndex,
+			<.75f => lowestFullWordSpeedIndex,
+			_ => lowestAccIndex
+		};
 		// if(Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
 		// if(Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
 		// if(Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
