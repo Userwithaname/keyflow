@@ -147,10 +147,6 @@ public class Typing : MonoBehaviour {
 		quoteDifficultySlider.value=KeyManager.quoteDifficulty=PlayerPrefs.GetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
 		modeBiasSlider.value=KeyManager.modeBias=PlayerPrefs.GetFloat("practiceModeBias",KeyManager.modeBias);
 		showIncorrectCharacters.isOn=PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn?1:0)==1;
-		selectedTheme=PlayerPrefs.GetInt("selectedTheme",selectedTheme);
-		
-		lightModeButton.SetActive(selectedTheme==0);
-		darkModeButton.SetActive(selectedTheme!=0);
 		
 		textDisplayText=textDisplay.GetComponentInChildren<TMP_Text>();
 		
@@ -159,13 +155,16 @@ public class Typing : MonoBehaviour {
 		defaultGraphHeight=graphTransform.rect.height;
 		defaultGraphPos=graphTransform.anchoredPosition;
 
-		UpdateTheme();
-		
 		initialTextPos=textTransform.localPosition;
 		caretTransform=textTransform.parent.Find("Caret").GetComponent<RectTransform>();
 		initialCaretPos=caretTransform.localPosition;
 		instance=this;
 		NextLesson();
+		
+		UpdateTheme();
+		ChangeTheme(PlayerPrefs.GetInt("selectedTheme",selectedTheme));
+		lightModeButton.SetActive(selectedTheme==0);
+		darkModeButton.SetActive(selectedTheme!=0);
 	}
 	public void Save(){
 		PlayerPrefs.SetInt("includeUppercase",KeyManager.includeUppercase?1:0);
@@ -213,12 +212,12 @@ public class Typing : MonoBehaviour {
 		foreach(Image icon in themeableIcons){
 			icon.color=currentTheme.iconColor;
 		}
-		foreach(TMP_Text uiText in themeableUIText){
-			uiText.color=currentTheme.textColorUI;
-		}
-		foreach(Image tooltipBackground in themeableTooltipBackgrounds){
-			tooltipBackground.color=currentTheme.backgroundColor*new Color(1,1,1,.2f);
-		}
+		// foreach(TMP_Text uiText in themeableUIText){
+		// 	uiText.color=currentTheme.textColorUI;
+		// }
+		// foreach(Image tooltipBackground in themeableTooltipBackgrounds){
+		// 	tooltipBackground.color=currentTheme.backgroundColor*new Color(1,1,1,.1f);
+		// }
 	}
 	public void ChangeTheme(int theme){
 		if(theme!=selectedTheme) lastSelectedTheme=selectedTheme;
@@ -289,8 +288,8 @@ public class Typing : MonoBehaviour {
 	bool settingsOpen;
 	public void ToggleSettingsUI(){
 		settingsOpen=!settingsOpen;
-		textDisplay.readOnly=!settingsOpen;
 		settingsUI.SetActive(settingsOpen);
+		textDisplay.readOnly=!settingsOpen&&!done;
 	}
 	
 	KeyManager.KeyConfidenceData curCharPractice;

@@ -3824,7 +3824,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
-  m_sharedMaterial: {fileID: 8150559585723144122, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adab326a44ea10158a2c541c124fded9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4404,7 +4404,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
-  m_sharedMaterial: {fileID: 8150559585723144122, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adab326a44ea10158a2c541c124fded9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4748,7 +4748,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
-  m_sharedMaterial: {fileID: 8150559585723144122, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adab326a44ea10158a2c541c124fded9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6388,7 +6388,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
-  m_sharedMaterial: {fileID: 8150559585723144122, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adab326a44ea10158a2c541c124fded9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7373,7 +7373,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
-  m_sharedMaterial: {fileID: 8150559585723144122, guid: dafe0e95f15f858ccbd55c4c2766dfd4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adab326a44ea10158a2c541c124fded9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7729,8 +7729,8 @@ MonoBehaviour:
   diamondColor:
     serializedVersion: 2
     rgba: 0
-  selectionSize: 6
-  lineWidth: 2
+  selectionSize: 8
+  lineWidth: 3
   fillArea: 1
   speedValues: []
   speedValueScale: 1
