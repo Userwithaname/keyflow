@@ -567,22 +567,16 @@ public class Typing : MonoBehaviour {
 					KeyManager.UpdateSeekTime(keyIndex,seekTime);
 					KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
 				}
-				if(KeyManager.IsWhitespaceIndex(keyIndex)&&length>lastMaxLength||input.Length==text.Length){
+				if(KeyManager.IsWhitespaceIndex(keyIndex)&&loc>lastMaxLength||input.Length==text.Length){
 					//TODO: Save all word WPMs to an array, show them as a raw speed graph at the end of the game (also track real WPM in the same way)
 					//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)
 					if(loc>0&&input[loc]!=input[loc-1]){
-						try{
-							graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
-							graph.wordTimes[wordIndex]=totalTestTime;
-							if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){
-								graph.wordSpeedScale=graph.wordSpeedValues[wordIndex];
-							}
-							wordIndex++;
-						}catch{
-							Debug.LogWarning("Got a IndexOutOfRangeException trying to access 'graph.wordSpeedValues', the 'wordIndex' is likely too high. Are erased words being added again when re-entered?");
-							Debug.Log(wordIndex);
-							Debug.Log(graph.wordSpeedValues.Length-1);
+						graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
+						graph.wordTimes[wordIndex]=totalTestTime;
+						if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){
+							graph.wordSpeedScale=graph.wordSpeedValues[wordIndex];
 						}
+						wordIndex++;
 					}
 					wordTime=0;
 				}
@@ -700,7 +694,7 @@ public class Typing : MonoBehaviour {
 			const float paddingDistance=15;
 			const float verticalPadding=2;
 			Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition;
-			baseTooltipPos.x+=graph.times[lastHoverIndex]/graph.timeScale*graphRect.width;
+			baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
 			Vector2 tooltipOffset=Vector2.zero;
 			
 			graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(timeGraph[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
