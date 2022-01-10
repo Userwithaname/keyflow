@@ -227,22 +227,25 @@ public class DrawGraph:Graphic{
 		if(hoverIndex>-1){
 			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
 			
-			//TODO: When drawing diamonds, also draw a line going towards the tooltip (shouldn't be too hard assuming Typing.GraphUpdate() runs before this function)
+			//TODO: When drawing diamonds, also draw a line going towards each tooltip (shouldn't be too hard assuming Typing.GraphUpdate() runs before this function)
+			/*
+			 * tooltip pos - graph pos to get the location in local space, which you can use to draw an extra diamond an da line connecting the two
+			 */
 			
 			// Draw WPM diamond 
 			vertex.color=diamondColor*new Color(1,1,1,.75f*expandedBlend);
 			
 			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
+			
+			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
+			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
 			// Draw line below WPM graph
 			vertex.color*=new Color(1,1,1,.75f);
@@ -274,10 +277,6 @@ public class DrawGraph:Graphic{
 			
 			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
-			
-			vertCount=vh.currentVertCount;
-			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
-			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
 			// Draw seek time diamond
@@ -287,13 +286,10 @@ public class DrawGraph:Graphic{
 			
 			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
 			
@@ -308,13 +304,10 @@ public class DrawGraph:Graphic{
 			
 			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
 			vh.AddVert(vertex);
-			
 			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
 			
