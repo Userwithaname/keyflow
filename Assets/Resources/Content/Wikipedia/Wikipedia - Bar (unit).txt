@@ -1,0 +1,1 @@
+The bar is a metric unit of pressure, but not part of the International System of Units (SI). It is defined as exactly equal to 100,000 Pa (100 kPa), or slightly less than the current average atmospheric pressure on Earth at sea level (approximately 1.013 bar).

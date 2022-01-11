@@ -1,9 +1,11 @@
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - ASCII
+Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Comics
+Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Orbital inclination
@@ -44,6 +46,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Applied science

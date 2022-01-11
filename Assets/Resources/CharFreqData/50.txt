@@ -1,3 +1,5 @@
+Content/Wikipedia/Wikipedia - Bar (unit)
+Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Proton
@@ -5,6 +7,8 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Barometer
+Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - PI curve
