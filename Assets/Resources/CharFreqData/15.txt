@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Fruit
+Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Signal chain
@@ -81,6 +82,7 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Edge (geometry)
+Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Wind wave

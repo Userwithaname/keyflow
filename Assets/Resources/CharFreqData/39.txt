@@ -5,7 +5,9 @@ Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Seismic wave
+Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Euclidean vector

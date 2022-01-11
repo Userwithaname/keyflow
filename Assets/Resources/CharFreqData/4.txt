@@ -35,6 +35,7 @@ Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Weather

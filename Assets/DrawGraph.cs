@@ -23,6 +23,8 @@ public class DrawGraph:Graphic{
 	public bool mouseOverGraph;
 	float width,height;
 
+	//TODO: Ability to zoom (stretch the bar horizontally using the mouse scroolwheel, keep the selected index at the same screen position, shew a scrollbar)
+	
 	protected override void OnPopulateMesh(VertexHelper vh){
 		vh.Clear();
 		

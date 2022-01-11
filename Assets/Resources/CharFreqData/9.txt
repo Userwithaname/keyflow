@@ -20,6 +20,7 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Paradox
@@ -31,6 +32,7 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Tidal acceleration
+Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Astronomy

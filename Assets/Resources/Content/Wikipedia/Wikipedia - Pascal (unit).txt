@@ -1,0 +1,1 @@
+The pascal (symbol: Pa) is the SI derived unit of pressure used to quantify internal pressure, stress, Young's modulus, and ultimate tensile strength. The unit, named after Blaise Pascal, is defined as one newton per square metre and is equivalent to 10 barye (Ba) in the CGS system. The unit of measurement called standard atmosphere (atm) is defined as 101,325 Pa.

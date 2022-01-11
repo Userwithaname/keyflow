@@ -128,6 +128,13 @@ public class KeyManager:MonoBehaviour{
 		}
 		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
 	}
+	public void RemoveScores(){
+		PlayerPrefs.DeleteAll();
+		Load();
+	}
+	public void RemoveKeyData(){
+		InitializeKeyDatabase();
+	}
 	
 	public static int GetKeyIndex(char key,int startIndex=0){
 		// key=key.ToString().ToLower()[0];
@@ -138,7 +145,7 @@ public class KeyManager:MonoBehaviour{
 		Debug.LogError("Invalid (untracked) character: "+key);
 		return -1;
 	}
-	
+
 	public static int[] GetKeyIndexes(string keys){
 		/*
 		 * sort alphabetically
