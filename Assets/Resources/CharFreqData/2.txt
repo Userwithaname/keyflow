@@ -4,6 +4,7 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Weight
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Ocean
@@ -15,6 +16,7 @@ Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Biology
+Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Inertia
@@ -75,10 +77,12 @@ Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Polygon
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Rotational symmetry
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - N-sphere
@@ -96,6 +100,7 @@ Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Tension (physics)
@@ -124,6 +129,7 @@ Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Number
@@ -135,6 +141,8 @@ Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Mathematical structure
+Content/Wikipedia/Wikipedia - Neuron
+Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Data binning
@@ -145,6 +153,7 @@ Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Line integral
@@ -210,6 +219,7 @@ Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Graphene
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Manifold
@@ -287,6 +297,7 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Archaea

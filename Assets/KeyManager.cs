@@ -13,6 +13,7 @@ public class KeyManager:MonoBehaviour{
 		
 		public char		keyName;
 		public float	seekTime,
+		               previousKeySeekTime,
 		               nextKeySeekTime,
 		               wpm;
 		public int		hits, misses;	// Hits and misses are tracked to calculate a confidence ratio
@@ -60,7 +61,7 @@ public class KeyManager:MonoBehaviour{
 	public static void InitializeKeyDatabase(){
 		instance.confidenceDatabase=new KeyConfidenceData[trackedKeys.Length];
 		for(int i=0;i<trackedKeys.Length;i++){
-			instance.confidenceDatabase[i].seekTime=instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
+			instance.confidenceDatabase[i].seekTime=instance.confidenceDatabase[i].previousKeySeekTime=instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
 			instance.confidenceDatabase[i].keyName=trackedKeys[i];
 			#if UNITY_EDITOR
 				instance.confidenceDatabase[i].name="Element "+i+": "+trackedKeys[i];
@@ -113,6 +114,12 @@ public class KeyManager:MonoBehaviour{
 		string[] data=System.IO.File.ReadAllLines($"{Application.persistentDataPath}/key-confidence-data");
 		for(int i=0;i<data.Length;i++){
 			instance.confidenceDatabase[i]=JsonUtility.FromJson<KeyConfidenceData>(data[i]);
+			if(instance.confidenceDatabase[i].seekTime<=0)
+				instance.confidenceDatabase[i].seekTime=Mathf.Infinity;
+			if(instance.confidenceDatabase[i].previousKeySeekTime<=0)
+				instance.confidenceDatabase[i].previousKeySeekTime=Mathf.Infinity;
+			if(instance.confidenceDatabase[i].nextKeySeekTime<=0)
+				instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
 		}
 	}
 	public static void Save(){
@@ -224,6 +231,13 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
 	}
+	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
+		if(instance.confidenceDatabase[index].previousKeySeekTime<10000){
+			instance.confidenceDatabase[index].previousKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
+		}else{
+			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
+		}
+	}
 	
 	public static float UpdateWordSpeed(string word,float time){
 		float wpm=word.Length/time*60/5;
@@ -323,15 +337,18 @@ public class KeyManager:MonoBehaviour{
 				continue;
 			}
 			float accuracy=(float)instance.confidenceDatabase[i].hits/(instance.confidenceDatabase[i].hits+instance.confidenceDatabase[i].misses);
-			if(instance.confidenceDatabase[i].seekTime>=highestSeekTime&&instance.confidenceDatabase[i].seekTime<1000){
+			if(instance.confidenceDatabase[i].seekTime>=highestSeekTime&&instance.confidenceDatabase[i].seekTime<10000){
 				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)){
 					highestSeekTime=instance.confidenceDatabase[i].seekTime;
 					highestSeekTimeIndex=i;
 				}
 			}
-			if(instance.confidenceDatabase[i].nextKeySeekTime>=highestNextSeekTime&&instance.confidenceDatabase[i].nextKeySeekTime<1000){
+			if(instance.confidenceDatabase[i].nextKeySeekTime>=highestNextSeekTime&&instance.confidenceDatabase[i].nextKeySeekTime<10000){
 				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)){
-					highestNextSeekTime=instance.confidenceDatabase[i].seekTime;
+					highestNextSeekTime=
+						instance.confidenceDatabase[i].previousKeySeekTime<10000?
+							Mathf.Max(instance.confidenceDatabase[i].nextKeySeekTime,instance.confidenceDatabase[i].previousKeySeekTime):
+							instance.confidenceDatabase[i].nextKeySeekTime;
 					highestNextSeekTimeIndex=i;
 				}
 			}
@@ -436,6 +453,10 @@ public class KeyManager:MonoBehaviour{
 				highestSeekTime=averageConfidence[i].seekTime;
 				highestSeekTimeIndex=i;
 			}
+			// if(Mathf.Max(averageConfidence[i].previousKeySeekTime,averageConfidence[i].nextKeySeekTime)>highestNextKeySeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
+			// 	highestNextKeySeekTime=Mathf.Max(averageConfidence[i].previousKeySeekTime,averageConfidence[i].nextKeySeekTime);
+			// 	highestNextKeySeekTimeIndex=i;
+			// }
 			if(averageConfidence[i].nextKeySeekTime>highestNextKeySeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
 				highestNextKeySeekTime=averageConfidence[i].nextKeySeekTime;
 				highestNextKeySeekTimeIndex=i;
@@ -487,8 +508,13 @@ public class KeyManager:MonoBehaviour{
 			quoteAccuracyScore+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
 			if(instance.confidenceDatabase[keyIndex].seekTime<999999)
 				averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
+			if(instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999)
+				averageConfidence.previousKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime;
 			if(instance.confidenceDatabase[keyIndex].nextKeySeekTime<999999)
-				averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].nextKeySeekTime;
+				// averageConfidence.previousKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime;
+				averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999?
+					Mathf.Max(instance.confidenceDatabase[keyIndex].previousKeySeekTime,instance.confidenceDatabase[keyIndex].nextKeySeekTime):
+					instance.confidenceDatabase[keyIndex].nextKeySeekTime;
 			averageConfidence.wpm+=instance.confidenceDatabase[keyIndex].wpm;
 			numChars++;
 		}
@@ -496,6 +522,7 @@ public class KeyManager:MonoBehaviour{
 		if(numChars>0){
 			quoteAccuracyScore/=numChars;
 			averageConfidence.seekTime/=numChars;
+			averageConfidence.previousKeySeekTime/=numChars;
 			averageConfidence.nextKeySeekTime/=numChars;
 			averageConfidence.wpm/=numChars;
 			const int maxHits=9999999;
@@ -503,6 +530,7 @@ public class KeyManager:MonoBehaviour{
 			averageConfidence.misses=maxHits-averageConfidence.hits;
 		}else{
 			averageConfidence.seekTime=Mathf.Infinity;
+			averageConfidence.previousKeySeekTime=Mathf.Infinity;
 			averageConfidence.nextKeySeekTime=Mathf.Infinity;
 		}
 		

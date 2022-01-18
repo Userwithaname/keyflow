@@ -2,9 +2,11 @@ Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Photograph

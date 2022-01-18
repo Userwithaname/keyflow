@@ -1,8 +1,11 @@
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Geography
+Content/Wikipedia/Wikipedia - Structure of Earth
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Atmospheric pressure
@@ -22,8 +25,10 @@ Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - History

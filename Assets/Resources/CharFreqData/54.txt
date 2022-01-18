@@ -60,6 +60,7 @@ Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Flight
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Unicode
@@ -67,6 +68,7 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Prism
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Syntax

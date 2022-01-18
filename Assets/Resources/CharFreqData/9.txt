@@ -1,8 +1,10 @@
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - HTTP cookie
@@ -13,10 +15,13 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Tradition
+Content/Wikipedia/Wikipedia - Typewriter
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle

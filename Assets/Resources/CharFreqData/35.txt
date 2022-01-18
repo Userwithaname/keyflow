@@ -44,7 +44,9 @@ Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Melody
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Set (mathematics)
