@@ -306,7 +306,7 @@ public class Typing : MonoBehaviour {
 		                                                 KeyManager.instance.confidenceDatabase[curPracticeIndex];
 		curCharacterPractice=updatedCharPractice.keyName;
 		curCharacterSeekTime=updatedCharPractice.seekTime>0?Math.Round(updatedCharPractice.seekTime*1000,2)+" ms":"-";
-		curCharacterNextSeekTime=updatedCharPractice.nextKeySeekTime>0?Math.Round(updatedCharPractice.nextKeySeekTime*1000,2)+" ms":":";
+		curCharacterNextSeekTime=updatedCharPractice.nextKeySeekTime>0?Math.Round(Mathf.Max(updatedCharPractice.nextKeySeekTime*1000,updatedCharPractice.previousKeySeekTime*1000),2)+" ms":":";
 		curCharacterWPM=updatedCharPractice.wpm>0?Math.Round(updatedCharPractice.wpm,1)+" WPM":"-";
 		curCharacterAccuracy=updatedCharPractice.hits+updatedCharPractice.misses>0?Math.Round((float)updatedCharPractice.hits/(updatedCharPractice.hits+updatedCharPractice.misses)*100,1)+"%":"-";
 
@@ -318,8 +318,8 @@ public class Typing : MonoBehaviour {
 			curCharacterSeekTime=diff<=0?
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterSeekTime} ({diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterSeekTime} (+{diff})</color>";
-			diff=(float)Math.Round(updatedCharPractice.nextKeySeekTime*1000-curCharPractice.nextKeySeekTime*1000,3);
-			curCharacterNextSeekTime=diff<=0||float.IsNaN(diff)?
+			diff=(float)Math.Round(Mathf.Max(updatedCharPractice.nextKeySeekTime,updatedCharPractice.previousKeySeekTime)*1000-Mathf.Max(curCharPractice.nextKeySeekTime,curCharPractice.previousKeySeekTime)*1000,3);
+			curCharacterNextSeekTime=diff is <= 0 or float.NaN?
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime} ({diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime} (+{diff})</color>";
 			diff=(float)Math.Round(updatedCharPractice.wpm-curCharPractice.wpm,3);
@@ -339,7 +339,8 @@ public class Typing : MonoBehaviour {
 			$"<b>Current Practice: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
 			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
 			$"\nSeek Time: {curCharacterSeekTime}"+
-			$"\nNext Key Seek Time: {curCharacterNextSeekTime}"+
+			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
+			$"\nContextual Seek Time: {curCharacterNextSeekTime}"+
 			$"\nWord Speed: {curCharacterWPM}"+
 			$"\nAccuracy: {curCharacterAccuracy}";
 		
@@ -388,7 +389,7 @@ public class Typing : MonoBehaviour {
 			averageWPMInfo.text=
 				$"Average Accuracy: {Math.Round(KeyManager.averageAccuracy,2)}%"+
 				$"\nAverage Speed: {(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM"+
-				$"\nTop WPM: {(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM";
+				$"\nTop Speed: {(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM";
 		}
 		
 		quoteInfo.text=quoteTitle;
@@ -573,9 +574,14 @@ public class Typing : MonoBehaviour {
 					}
 				}
 				KeyManager.RegisterKeyHit(keyIndex);
-				if(loc>0&&input[loc]!=input[loc-1]){
-					KeyManager.UpdateSeekTime(keyIndex,seekTime);
-					KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
+				if(loc>0){
+					if(input[loc]!=input[loc-1]){
+						KeyManager.UpdateSeekTime(keyIndex,seekTime);
+						KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
+					}
+					if(loc<text.Length-1){
+						KeyManager.UpdatePreviousKeySeekTime(KeyManager.GetKeyIndex(text[loc+1]),seekTime);
+					}
 				}
 				seekTime=0;
 			}else{

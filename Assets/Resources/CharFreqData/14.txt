@@ -65,6 +65,7 @@ Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Chart
@@ -75,6 +76,7 @@ Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Constellation
@@ -84,6 +86,7 @@ Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Data binning
@@ -109,6 +112,7 @@ Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Optics
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Algae
@@ -118,6 +122,7 @@ Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Average
+Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Plant
@@ -136,6 +141,7 @@ Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Viscosity
@@ -170,6 +176,7 @@ Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Median
@@ -188,6 +195,7 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Solid
@@ -207,11 +215,13 @@ Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere

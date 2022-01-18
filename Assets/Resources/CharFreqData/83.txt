@@ -72,13 +72,16 @@ Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Newton's laws of motion
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Electrical engineering
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Ray (optics)
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Atmosphere

@@ -25,6 +25,7 @@ Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Deflection (engineering)
@@ -66,6 +67,7 @@ Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Graphene
@@ -111,6 +113,7 @@ Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Base (geometry)
+Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Visual language
@@ -160,6 +163,7 @@ Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Order of operations
+Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Optics
@@ -183,12 +187,14 @@ Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Punctuation
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mass
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Pitch (music)
@@ -217,11 +223,13 @@ Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Variable (mathematics)
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Manifold
@@ -229,6 +237,7 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Skew lines
@@ -241,6 +250,7 @@ Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Triple product

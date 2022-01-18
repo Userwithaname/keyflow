@@ -4,6 +4,7 @@ Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Rotational symmetry
@@ -26,11 +27,14 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Tradition
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Transmission medium
@@ -92,6 +96,7 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Timbre
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Axiomatic system

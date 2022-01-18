@@ -328,8 +328,8 @@ public class DrawGraph:Graphic{
 			vertex.color=Typing.currentTheme.textColorError;
 			// vertex.color=Color.red;
 			
-			float offset=selectionSize*expandedBlend/1.5f;
-			Vector3 diagonal=i==hoverIndex?new Vector3(-offset/2,offset/2):new Vector3(-offset/4,offset/4);
+			float offset=selectionSize*expandedBlend/(i==hoverIndex?1.25f:1.5f);
+			Vector3 diagonal=i==hoverIndex?new Vector3(-offset/3,offset/3):new Vector3(-offset/4,offset/4);
 			
 			vertex.position=new Vector3(currentPosX-offset,height*(1f-accuracy[i]/100)-offset)-diagonal;
 			vh.AddVert(vertex);

@@ -32,6 +32,7 @@ Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Tradition
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Equality (mathematics)
@@ -58,6 +59,7 @@ Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Mathematical structure
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Pitch (music)
@@ -91,6 +93,7 @@ Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Energy
@@ -169,8 +172,10 @@ Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Flux
@@ -179,8 +184,10 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Polygon
+Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Error detection and correction
+Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
@@ -189,6 +196,7 @@ Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Ray (optics)
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Data
@@ -243,6 +251,7 @@ Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Pareidolia

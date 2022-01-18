@@ -15,6 +15,7 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Engineering
+Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Constellation
@@ -95,6 +96,7 @@ Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Polygon
+Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Feedback
@@ -111,6 +113,7 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Plan
+Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Frequency
@@ -135,6 +138,7 @@ Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Morpheme
@@ -152,6 +156,7 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Correlation
+Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Causality
@@ -160,6 +165,7 @@ Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Photosynthesis
@@ -219,6 +225,8 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Structure of Earth
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Language
@@ -228,11 +236,13 @@ Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Newton's laws of motion
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
@@ -280,6 +290,7 @@ Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Identity (mathematics)
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Average

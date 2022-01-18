@@ -9,9 +9,11 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Light
+Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Serial comma
+Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Adjective
@@ -24,6 +26,7 @@ Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Wavefront
+Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Force
@@ -94,6 +97,7 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Spectrum
