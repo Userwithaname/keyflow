@@ -119,6 +119,7 @@ Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Character encoding
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Elastic modulus
@@ -147,6 +148,7 @@ Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Parallel (geometry)
@@ -174,6 +176,7 @@ Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mathematical object
@@ -189,6 +192,7 @@ Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Linearity
@@ -254,7 +258,6 @@ Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Engineering
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Solid

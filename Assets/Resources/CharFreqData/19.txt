@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Earth's inner core

@@ -43,6 +43,7 @@ Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Atmospheric pressure
@@ -145,7 +146,6 @@ Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Universe
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Punctuation
@@ -189,6 +189,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Exercise
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Serial comma
@@ -200,6 +201,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Software
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Fruit
@@ -278,6 +280,7 @@ Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Refractive index

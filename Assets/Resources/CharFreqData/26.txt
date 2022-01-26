@@ -5,4 +5,5 @@ Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Extended ASCII

@@ -245,6 +245,7 @@ public class Typing : MonoBehaviour {
 	}
 	public void ResetLesson(){
 		done=false;
+		MoveTooltipsOffScreen();
 		
 		ToggleGraphUI(false);
 		graph.speedValues=new float[text.Length-1];
@@ -256,10 +257,8 @@ public class Typing : MonoBehaviour {
 		graph.wordTimes=new float[words.Length];
 		graph.wordSpeedValues=new float[words.Length];
 		wordIndex=0;
-		lastHoverIndex=-1;
-		graph.speedValueScale=1;
-		graph.timeScale=1;
-		graph.currentIndex=-1;
+		lastHoverIndex=graph.currentIndex=-1;
+		graph.speedValueScale=graph.wordSpeedScale=graph.timeScale=1;
 		graph.SetVerticesDirty();
 		
 		UpdateCurrentPracticeUI();
@@ -562,7 +561,7 @@ public class Typing : MonoBehaviour {
 					// graph.SetVerticesDirty();
 					if(KeyManager.IsWhitespaceIndex(keyIndex)||input.Length==text.Length){
 						//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)
-						if(loc>0&&input[loc]!=input[loc-1]){
+						if(loc>0){
 							graph.wordSpeedValues[wordIndex]=KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
 							graph.wordTimes[wordIndex]=totalTestTime;
 							if(graph.wordSpeedValues[wordIndex]>graph.wordSpeedScale){	// Maybe skip scaling for the first word? Maybe only if it's less than some length?
@@ -665,12 +664,7 @@ public class Typing : MonoBehaviour {
 		}
 		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1){
 			if(graph.hoverIndex==-1&&lastHoverIndex!=-1){
-				graphTooltipTimestamp.anchoredPosition=-Vector2.up*10000;
-				graphTooltipSpeed.anchoredPosition=-Vector2.up*10000;
-				graphTooltipWordSpeed.anchoredPosition=-Vector2.up*10000;
-				graphTooltipSeekTime.anchoredPosition=-Vector2.up*10000;
-				graphTooltipAccuracy.anchoredPosition=-Vector2.up*10000;
-				lastHoverIndex=-1;
+				MoveTooltipsOffScreen();
 			}
 			return;
 		}
@@ -722,7 +716,8 @@ public class Typing : MonoBehaviour {
 
 		tooltipOffset=Vector2.left*paddingDistance;
 		
-		graphTooltipSeekTimeText.text=$"Seek Time: {Math.Round(graph.seekTimes[lastHoverIndex]*1000,2)} ms\nKey: {(text[lastHoverIndex+1] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => text[lastHoverIndex+1] })}";
+		float graphSeekTime=(float)Math.Round(graph.seekTimes[lastHoverIndex]*1000,2);
+		graphTooltipSeekTimeText.text=$"Seek Time: {(graphSeekTime>0?graphSeekTime:"<"+Math.Round(1.0/Application.targetFrameRate*1000,2))} ms\nKey: {(text[lastHoverIndex+1] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => text[lastHoverIndex+1] })}";
 		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order
 		float seekTimeTooltipY=Mathf.Clamp(graph.seekTimes[lastHoverIndex]/4*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding); 
 		tooltipOffset.y=seekTimeTooltipY;
@@ -736,6 +731,15 @@ public class Typing : MonoBehaviour {
 		graphTooltipWordSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
 	}
 	
+	void MoveTooltipsOffScreen(){
+		graphTooltipTimestamp.anchoredPosition=-Vector2.up*10000;
+		graphTooltipSpeed.anchoredPosition=-Vector2.up*10000;
+		graphTooltipWordSpeed.anchoredPosition=-Vector2.up*10000;
+		graphTooltipSeekTime.anchoredPosition=-Vector2.up*10000;
+		graphTooltipAccuracy.anchoredPosition=-Vector2.up*10000;
+		lastHoverIndex=-1;
+	}
+
 	public void AllowCapitalLetters(){
 		KeyManager.includeUppercase=practiceUppercase.isOn;
 	}

@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Synonym
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Frequency

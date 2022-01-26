@@ -70,9 +70,9 @@ Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Element (mathematics)
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Art
@@ -173,6 +173,7 @@ Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Dimension
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
@@ -275,6 +276,7 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Barye
@@ -304,6 +306,7 @@ Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Exercise
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Extended ASCII

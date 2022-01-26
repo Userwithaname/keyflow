@@ -86,6 +86,7 @@ Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Attenuation
@@ -177,6 +178,7 @@ Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Refractive index
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - System
@@ -215,6 +217,7 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Wikipedia
@@ -226,7 +229,6 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Probability
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Mantle (geology)
@@ -301,4 +303,5 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Reference
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Causality

@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -65,6 +66,7 @@ Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Archaea
@@ -99,6 +101,7 @@ Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Net force
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
@@ -166,6 +169,7 @@ Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Byte
@@ -309,7 +313,6 @@ Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Affine space
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Signal chain

@@ -19,5 +19,4 @@ Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vergence (optics)
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)

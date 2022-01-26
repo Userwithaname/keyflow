@@ -123,6 +123,7 @@ Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Bicameral mentality
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Median
@@ -159,6 +160,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Barometer
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Gravity
@@ -193,6 +195,7 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Computer mouse
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Average
@@ -245,7 +248,6 @@ Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
@@ -305,6 +307,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Vector field

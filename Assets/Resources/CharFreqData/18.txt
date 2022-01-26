@@ -15,6 +15,7 @@ Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Virus

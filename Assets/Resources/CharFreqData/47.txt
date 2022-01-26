@@ -14,7 +14,6 @@ Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Tidal acceleration
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Expression (mathematics)

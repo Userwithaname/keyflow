@@ -54,6 +54,7 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Void (astronomy)
@@ -64,6 +65,7 @@ Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Unicode
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Engineering
@@ -99,7 +101,6 @@ Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Spectrum
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Myth
