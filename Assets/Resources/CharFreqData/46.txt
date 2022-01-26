@@ -7,6 +7,7 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Percentage
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Image

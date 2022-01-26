@@ -13,6 +13,7 @@ Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Sound
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Fiction
@@ -24,6 +25,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Attenuation
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Mathematical structure
@@ -99,9 +101,9 @@ Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Abstract Art
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Music

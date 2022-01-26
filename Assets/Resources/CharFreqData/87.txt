@@ -4,6 +4,7 @@ Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Structure
@@ -146,7 +147,6 @@ Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Signal chain
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Wave
@@ -215,6 +215,7 @@ Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Wavefront
@@ -234,6 +235,7 @@ Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Median
@@ -252,6 +254,7 @@ Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Energy

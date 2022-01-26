@@ -2,8 +2,8 @@
 butlerBin="../Assets_Excluded/butler-linux-amd64/butler"
 
 echo "Pushing Linux build..."
-$"$butlerBin" push Keyflow-Linux-x64.zip namelesshorseman/keyflow:linux
+$"$butlerBin" push Keyflow-Linux-x64.zip nameless-horseman/keyflow:linux
 echo "Pushing MacOS build..."
-$"$butlerBin" push Keyflow-Mac-ARM+x64.zip namelesshorseman/keyflow:macos
+$"$butlerBin" push Keyflow-Mac-ARM+x64.zip nameless-horseman/keyflow:macos
 echo "Pushing Windows build..."
-$"$butlerBin" push Keyflow-Windows-x64.zip namelesshorseman/keyflow:windows
+$"$butlerBin" push Keyflow-Windows-x64.zip nameless-horseman/keyflow:windows

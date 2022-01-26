@@ -30,6 +30,7 @@ Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - String theory
@@ -225,6 +226,7 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Symmetry
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Crystal
@@ -239,9 +241,9 @@ Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Interface (matter)
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
@@ -277,6 +279,7 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Wave
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Virus

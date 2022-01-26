@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Unicode
@@ -48,7 +49,6 @@ Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Arity
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Parallel (geometry)
@@ -87,6 +87,7 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Harmony
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - PI curve
@@ -110,6 +111,7 @@ Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Memory
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Structure
@@ -232,6 +234,7 @@ Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Pitch (resin)

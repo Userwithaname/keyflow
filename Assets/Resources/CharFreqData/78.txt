@@ -69,6 +69,7 @@ Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Archaea
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Liquid
@@ -95,6 +96,7 @@ Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Applied mathematics
@@ -205,7 +207,6 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Byte
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Rotational symmetry
@@ -279,6 +280,7 @@ Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Atmospheric pressure
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Improvement
@@ -287,6 +289,7 @@ Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Enzyme kinetics

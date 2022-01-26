@@ -93,6 +93,7 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Physics
@@ -133,6 +134,7 @@ Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Semantics
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Inertia
@@ -160,6 +162,7 @@ Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Power law
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Frequency
@@ -195,7 +198,6 @@ Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Elastic modulus
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Atom

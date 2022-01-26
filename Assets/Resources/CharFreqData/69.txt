@@ -172,6 +172,7 @@ Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Music
@@ -196,11 +197,12 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Optical medium
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Transmission medium
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Elasticity (physics)
@@ -281,6 +283,7 @@ Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Light
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Rotational symmetry

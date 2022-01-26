@@ -10,6 +10,7 @@ Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Liquid-crystal display
@@ -24,6 +25,7 @@ Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Tesseract

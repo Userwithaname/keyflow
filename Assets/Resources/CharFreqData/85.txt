@@ -57,6 +57,7 @@ Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Void (astronomy)
@@ -111,6 +112,7 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Deep learning
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Elasticity (physics)
@@ -142,6 +144,7 @@ Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Science
@@ -194,7 +197,6 @@ Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dimension
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Flux
@@ -271,6 +273,7 @@ Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Identity (mathematics)

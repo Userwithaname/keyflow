@@ -34,6 +34,7 @@ Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - History
@@ -86,6 +87,7 @@ Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Fiction
@@ -117,7 +119,6 @@ Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical notation
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Dispersion (optics)

@@ -49,6 +49,7 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Pitch (music)
@@ -90,7 +91,6 @@ Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Tension (physics)
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Music
@@ -166,6 +166,7 @@ Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Fungus
@@ -212,6 +213,7 @@ Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Wavefront
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Neuron
@@ -278,6 +280,7 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Ice

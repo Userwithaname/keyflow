@@ -67,6 +67,7 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Bicameral mentality
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Biology
@@ -91,6 +92,7 @@ Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Signal
@@ -99,6 +101,7 @@ Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Rainbow
@@ -152,8 +155,8 @@ Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Gas
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Net force
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - River

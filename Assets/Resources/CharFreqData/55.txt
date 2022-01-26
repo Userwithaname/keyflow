@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Void (astronomy)
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Solid

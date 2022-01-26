@@ -42,6 +42,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Percentage
@@ -106,7 +107,6 @@ Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Pattern
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Torque
@@ -139,6 +139,7 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
@@ -154,6 +155,7 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Harmony
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Elastic modulus
@@ -245,6 +247,7 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Optics
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Polyhedron

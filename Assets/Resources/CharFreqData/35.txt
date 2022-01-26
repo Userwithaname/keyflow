@@ -36,6 +36,7 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Structure
@@ -49,6 +50,7 @@ Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Skew lines
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Wikipedia

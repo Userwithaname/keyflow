@@ -50,7 +50,6 @@ Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Tidal acceleration
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Data binning
@@ -61,6 +60,7 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Weather

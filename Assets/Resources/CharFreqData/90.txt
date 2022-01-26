@@ -40,6 +40,7 @@ Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Arithmetic Mean
@@ -113,7 +114,6 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Earth's outer core
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Parallel (geometry)

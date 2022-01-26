@@ -35,6 +35,7 @@ Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Refractive index
+Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Writing
@@ -54,6 +55,7 @@ Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Scale (music)
+Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Vitamin
@@ -138,7 +140,6 @@ Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Liquid-crystal display
-Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Tesseract
@@ -179,6 +180,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Structure
@@ -202,6 +204,7 @@ Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Linearity
