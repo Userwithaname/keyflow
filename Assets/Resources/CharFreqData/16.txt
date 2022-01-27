@@ -65,6 +65,7 @@ Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Convention (norm)
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Parallel (geometry)
@@ -229,7 +230,6 @@ Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Light
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Myth

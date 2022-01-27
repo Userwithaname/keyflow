@@ -234,8 +234,8 @@ Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Sound
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Robotics

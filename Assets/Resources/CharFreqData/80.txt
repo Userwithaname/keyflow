@@ -295,8 +295,8 @@ Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Comics
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Computational geometry

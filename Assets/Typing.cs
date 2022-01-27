@@ -742,12 +742,15 @@ public class Typing : MonoBehaviour {
 
 	public void AllowCapitalLetters(){
 		KeyManager.includeUppercase=practiceUppercase.isOn;
+		if(!done)	ResetLesson();
 	}
 	public void AllowNumbers(){
 		KeyManager.includeNumbers=practiceNumbers.isOn;
+		if(!done)	ResetLesson();
 	}
 	public void AllowSymbols(){
 		KeyManager.includeSymbols=practiceSymbols.isOn;
+		if(!done)	ResetLesson();
 	}
 	public void UpdateCharDifficulty(){
 		KeyManager.charPracticeDifficulty=charVarietySlider.value;

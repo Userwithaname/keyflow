@@ -215,8 +215,8 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Fourier transform
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Neuron
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Mass

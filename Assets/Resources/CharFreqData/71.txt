@@ -282,9 +282,9 @@ Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Manifold
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Soil

@@ -211,11 +211,11 @@ Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Torque
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium

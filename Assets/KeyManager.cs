@@ -330,7 +330,7 @@ public class KeyManager:MonoBehaviour{
 		for(int i=0;i<instance.confidenceDatabase.Length;i++){
 			if(!CharWithinFilters(i))	continue;
 			if(instance.confidenceDatabase[i].hits==0){
-				if(Random.Range(0f,1f)<.02f){	// Chance to select a key because there is no data for it
+				if(Random.Range(0f,1f)<.025f){	// Chance to select a key because there is no data for it
 					lowestAcc=0;
 					lowestAccIndex=i;
 				}
@@ -423,14 +423,14 @@ public class KeyManager:MonoBehaviour{
 		return targetQuote;
 	}
 	public static string GetQuoteByOverallScore(ref string quoteTitle,ref KeyConfidenceData quoteConfidenceData){
-		int numCandidates=(int)(127*quoteDifficulty+1);
+		int numCandidates=(int)(142*quoteDifficulty+1);
 		string[] quoteCandidates=new string[numCandidates];
 		string[] quoteCandidateTitles=new string[numCandidates];
 		KeyConfidenceData[] averageConfidence=new KeyConfidenceData[numCandidates];
-		float charBias=(charPracticeDifficulty-.1f)*.035f-.05f,
-		      quoteBias=0;//quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
+		float charBias=(charPracticeDifficulty-.1f)*.035f-.05f; //quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
+		const float quoteBias=0;//quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
 		for(int i=0;i<numCandidates;i++){
-			quoteCandidates[i]=GetQuoteByCharFrequency(GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
+			quoteCandidates[i]=GetQuoteByCharFrequency(Random.Range(0f,1f)>(charBias*charBias-.05f)?GetKeyIndex(' '):GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
 			averageConfidence[i]=GetQuoteConfidenceData(quoteCandidates[i]);
 		}
 		

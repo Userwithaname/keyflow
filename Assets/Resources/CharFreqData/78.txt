@@ -27,8 +27,8 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Tradition
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Quantization (signal processing)

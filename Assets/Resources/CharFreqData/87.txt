@@ -179,8 +179,8 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Noise (electronics)
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Neuron
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Robotics
