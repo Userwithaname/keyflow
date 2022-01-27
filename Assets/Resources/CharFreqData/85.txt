@@ -48,8 +48,8 @@ Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Scale (music)
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Ice

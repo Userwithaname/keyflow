@@ -74,8 +74,8 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Refraction
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Typewriter
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Archaea

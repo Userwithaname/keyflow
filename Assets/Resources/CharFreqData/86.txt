@@ -100,11 +100,11 @@ Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Median
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Order of operations

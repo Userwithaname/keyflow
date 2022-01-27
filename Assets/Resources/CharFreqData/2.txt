@@ -55,7 +55,6 @@ Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Tesseract
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geography
@@ -63,6 +62,7 @@ Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Adjective

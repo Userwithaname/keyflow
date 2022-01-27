@@ -46,10 +46,10 @@ Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Plant
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Convention (norm)
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Photography

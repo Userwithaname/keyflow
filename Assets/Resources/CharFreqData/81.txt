@@ -162,11 +162,11 @@ Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Astronomy
-Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
+Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Photography
