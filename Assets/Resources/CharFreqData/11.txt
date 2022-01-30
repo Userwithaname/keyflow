@@ -44,6 +44,7 @@ Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - PI curve
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Tradition

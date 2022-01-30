@@ -25,6 +25,7 @@ Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Liquid-crystal display

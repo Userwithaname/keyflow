@@ -327,29 +327,34 @@ public class KeyManager:MonoBehaviour{
 		float lowestAcc=2;
 		int lowestWPMIndex=Random.Range(lowercaseStart,lowercaseEnd);
 		float lowestWPM=10000;
+		float averageSeekTime=60f/(averageWPM*5);
 		for(int i=0;i<instance.confidenceDatabase.Length;i++){
 			if(!CharWithinFilters(i))	continue;
 			if(instance.confidenceDatabase[i].hits==0){
-				if(Random.Range(0f,1f)<.025f){	// Chance to select a key because there is no data for it
+				if(Random.Range(0f,1f)<.15f){	// Chance to select a key because there is no data for it
 					lowestAcc=0;
 					lowestAccIndex=i;
 				}
 				continue;
 			}
 			float accuracy=(float)instance.confidenceDatabase[i].hits/(instance.confidenceDatabase[i].hits+instance.confidenceDatabase[i].misses);
+			
 			if(instance.confidenceDatabase[i].seekTime>=highestSeekTime&&instance.confidenceDatabase[i].seekTime<10000){
-				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)){
-					highestSeekTime=instance.confidenceDatabase[i].seekTime;
-					highestSeekTimeIndex=i;
+				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
+				   Random.Range(0f,1f)<difficulty*1.333f&&highestSeekTime>=averageSeekTime){
+						highestSeekTime=instance.confidenceDatabase[i].seekTime;
+						highestSeekTimeIndex=i;
 				}
 			}
-			if(instance.confidenceDatabase[i].nextKeySeekTime>=highestNextSeekTime&&instance.confidenceDatabase[i].nextKeySeekTime<10000){
-				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)){
-					highestNextSeekTime=
-						instance.confidenceDatabase[i].previousKeySeekTime<10000?
-							Mathf.Max(instance.confidenceDatabase[i].nextKeySeekTime,instance.confidenceDatabase[i].previousKeySeekTime):
-							instance.confidenceDatabase[i].nextKeySeekTime;
-					highestNextSeekTimeIndex=i;
+			float contextualSeekTime=Mathf.Max(instance.confidenceDatabase[i].nextKeySeekTime,instance.confidenceDatabase[i].previousKeySeekTime);
+			if(contextualSeekTime>=highestNextSeekTime&&contextualSeekTime<10000){
+				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
+				   Random.Range(0f,1f)<difficulty*1.333f&&highestNextSeekTime>=averageSeekTime){
+						highestNextSeekTime=
+							instance.confidenceDatabase[i].previousKeySeekTime<10000?
+								contextualSeekTime:
+								instance.confidenceDatabase[i].nextKeySeekTime;
+						highestNextSeekTimeIndex=i;
 				}
 			}
 			if(instance.confidenceDatabase[i].wpm<lowestWPM){
@@ -358,16 +363,16 @@ public class KeyManager:MonoBehaviour{
 				}
 			}
 			if(accuracy<=lowestAcc){
-				if(Random.Range(0f,1f)<difficulty){
+				if(Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,3)){
 					lowestAcc=accuracy;
 					lowestAccIndex=i;
 				}
 			}
 		}
 		return Random.Range(0f,1f) switch{
-			<.28f => lowestWPMIndex,
-			<.55f => highestSeekTimeIndex,
-			<.75f => highestNextSeekTimeIndex,
+			<.25f => lowestWPMIndex,
+			<.47f => highestSeekTimeIndex,
+			<.82f => highestNextSeekTimeIndex,
 			_ => lowestAccIndex
 		};
 		// if(Random.Range(0,1)>.5f&&lowestWPM>0){
@@ -407,7 +412,7 @@ public class KeyManager:MonoBehaviour{
 	}
 	public static string GetQuoteByCharFrequency(ref int keyIndex,ref string quoteTitle,float difficulty){
 		string[] quotes=GetQuoteTitlesForKeyIndex(ref keyIndex);
-		float random=difficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-difficulty);
+		float random=difficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-difficulty)*(1f-Mathf.Pow(Mathf.Max(0,difficulty-.52f),2));
 		if(random>Mathf.Pow(Mathf.Max(0,difficulty-.3f)/(1f-.3f),2)*.75f){
 			float random2=difficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-difficulty);
 			random=random2<random||Random.Range(0f,1f)<.1f?random2:random;
@@ -423,14 +428,14 @@ public class KeyManager:MonoBehaviour{
 		return targetQuote;
 	}
 	public static string GetQuoteByOverallScore(ref string quoteTitle,ref KeyConfidenceData quoteConfidenceData){
-		int numCandidates=(int)(142*quoteDifficulty+1);
+		int numCandidates=(int)(182*quoteDifficulty+1);
 		string[] quoteCandidates=new string[numCandidates];
 		string[] quoteCandidateTitles=new string[numCandidates];
 		KeyConfidenceData[] averageConfidence=new KeyConfidenceData[numCandidates];
-		float charBias=(charPracticeDifficulty-.1f)*.035f-.05f; //quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
+		float charBias=(charPracticeDifficulty-.1f)*.04f-.05f; //quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
 		const float quoteBias=0;//quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
 		for(int i=0;i<numCandidates;i++){
-			quoteCandidates[i]=GetQuoteByCharFrequency(Random.Range(0f,1f)>(charBias*charBias-.05f)?GetKeyIndex(' '):GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
+			quoteCandidates[i]=GetQuoteByCharFrequency(Random.Range(0f,1f)>(charBias*charBias-.025f)?GetKeyIndex(' '):GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
 			averageConfidence[i]=GetQuoteConfidenceData(quoteCandidates[i]);
 		}
 		
@@ -547,7 +552,11 @@ public class KeyManager:MonoBehaviour{
 
 	public static string RemoveTrailingNewline(string text){
 		if(text.Length<=0) return text;
-		return text[^1]=='\n'?text.Remove(text.Length-1,1):text;
+		while(text[^1] is '\n' or ' '){
+			text=text.Remove(text.Length-1,1);
+		}
+		return text;
+		// return text[^1]=='\n'?text.Remove(text.Length-1,1):text;
 	}
 	
 	private void OnApplicationQuit(){

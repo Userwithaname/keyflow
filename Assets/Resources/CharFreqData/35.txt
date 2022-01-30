@@ -14,6 +14,7 @@ Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Mass

@@ -64,6 +64,7 @@ Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Parallel (geometry)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Compiler
@@ -146,6 +147,7 @@ Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Punctuation
@@ -264,6 +266,7 @@ Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Myth

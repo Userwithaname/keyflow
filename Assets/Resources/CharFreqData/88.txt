@@ -54,6 +54,7 @@ Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Altitude
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Dispersion (optics)
@@ -101,6 +102,7 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Perception
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Code point
@@ -115,6 +117,7 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Polyhedron
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Energy

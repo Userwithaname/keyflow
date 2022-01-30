@@ -152,6 +152,7 @@ Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Fungus
@@ -233,9 +234,9 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Natural science
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
-Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Interpolation
@@ -283,9 +284,11 @@ Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Signal

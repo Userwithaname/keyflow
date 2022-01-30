@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Fluid dynamics
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Scale (music)
@@ -39,6 +40,7 @@ Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Plant
@@ -94,6 +96,7 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Psychoacoustics

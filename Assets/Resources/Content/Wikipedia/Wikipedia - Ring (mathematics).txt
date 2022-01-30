@@ -1,0 +1,1 @@
+In mathematics, rings are algebraic structures that generalize fields: multiplication need not be commutative and multiplicative inverses need not exist. In other words, a ring is a set equipped with two binary operations satisfying properties analogous to those of addition and multiplication of integers.

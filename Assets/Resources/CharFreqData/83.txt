@@ -59,6 +59,7 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Interface (matter)
