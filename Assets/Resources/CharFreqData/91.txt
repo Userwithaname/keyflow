@@ -227,6 +227,7 @@ Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Skew lines
@@ -266,6 +267,7 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Affine space

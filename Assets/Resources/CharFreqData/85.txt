@@ -38,6 +38,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Friction
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Image
@@ -155,6 +156,7 @@ Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Signal chain
@@ -212,6 +214,7 @@ Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Base (geometry)
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Signal

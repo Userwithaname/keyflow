@@ -31,6 +31,7 @@ Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Newton's laws of motion
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Semantics
@@ -80,6 +81,7 @@ Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
@@ -131,6 +133,7 @@ Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Russell's paradox

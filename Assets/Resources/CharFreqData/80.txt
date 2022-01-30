@@ -6,6 +6,7 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Robotics
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Pareidolia
@@ -102,6 +103,7 @@ Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Orbital inclination
@@ -237,11 +239,11 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Vegetable
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Class (set theory)
-Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Black Hole
@@ -313,6 +315,7 @@ Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Barye
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Tesseract

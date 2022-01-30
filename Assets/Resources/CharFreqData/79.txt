@@ -139,6 +139,7 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Computer keyboard
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Equality (mathematics)
@@ -166,6 +167,7 @@ Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Earth's outer core
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -233,6 +235,7 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Energy
@@ -276,8 +279,8 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Typewriter
-Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Tidal acceleration

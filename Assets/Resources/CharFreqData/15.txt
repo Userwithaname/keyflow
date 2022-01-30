@@ -13,8 +13,8 @@ Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Graphene
-Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Operation (mathematics)

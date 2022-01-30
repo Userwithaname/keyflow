@@ -51,10 +51,11 @@ public class DrawGraph:Graphic{
 			// float textProgress=(float)((values.Length)-currentIndex+1)/(values.Length);
 			float currentPosX=(times[i]-times[0])/(timeScale-times[0])*textProgress*width;
 			if(expandedBlend>0.00001f&&mouseOverGraph){
-				float diff=Mathf.Abs(mouseHoverPos.x-currentPosX);
-				if(diff<=lowestHoverDiff){
+				float diff=mouseHoverPos.x-currentPosX;
+				float diffAbs=Mathf.Abs(diff);
+				if(diff>0?diffAbs<=lowestHoverDiff:diffAbs<lowestHoverDiff){
 					hoverPointX=currentPosX;
-					lowestHoverDiff=diff;
+					lowestHoverDiff=diffAbs;
 					hoverIndex=i;
 				}
 			}
@@ -63,16 +64,6 @@ public class DrawGraph:Graphic{
 			
 			float previousPosX=(times[i-1]-times[0])/(timeScale-times[0])*textProgress*width;
 			vertex.color=color;
-			
-			/*
-			 * Idea: For non-filled (line) graphs, always 'pivot' around the outer (pointy) end of the line angle
-			 *
-			 * For example:
-			 * If a line goes up and then down, the start of the down line should pivot around the top vertex
-			 * If a line geos down and then up, then pivot around the bottom vertex
-			 * Doing so would also prevent the need for the extra triangle which currently fills the gap between the two lines
-			 * It may also be a good idea to offset both the top and the bottom vertices in such a way that the true value is in the center, and they are equally distant form that value
-			 */
 			
 			// Top left		 (0)
 			Vector3 topLeft=vertex.position=new Vector3(previousPosX,height*speedValues[i-1]/topWPM);
@@ -198,6 +189,7 @@ public class DrawGraph:Graphic{
 			float currentPosX=(wordTimes[i]-times[0])/(timeScale-times[0])*width;
 			float previousPosX=i>0?(wordTimes[i-1]-times[0])/(timeScale-times[0])*width:0;
 			
+			 //BUG: First word always highlighted when mouse is over graph, but only the color (right two vertices), not size
 			vertex.color=Typing.currentTheme.improvementColor*new Color(1,1,1,(i==hoverWordIndex?.75f:.4f)*expandedBlend);
 			
 			Vector3 topLeft=new Vector3(previousPosX,height*wordSpeedValues[i]/topWPM);
@@ -208,15 +200,15 @@ public class DrawGraph:Graphic{
 			vertex.position=topLeft+offsetDir;
 			vh.AddVert(vertex);
 			
-			// Top right	 (1) (0)
+			// Top right	 (1)
 			vertex.position=topRight+offsetDir;
 			vh.AddVert(vertex);
 			
-			// Bottom left	 (2) (1)
+			// Bottom left	 (2)
 			vertex.position=topLeft-offsetDir;
 			vh.AddVert(vertex);
 			
-			// Bottom right (3) (2)
+			// Bottom right (3)
 			vertex.position=topRight-offsetDir;
 			vh.AddVert(vertex);
 

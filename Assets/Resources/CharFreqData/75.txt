@@ -8,6 +8,8 @@ Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Optical medium
+Content/Wikipedia/Wikipedia - Field (mathematics)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Soil
@@ -130,8 +132,8 @@ Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Error detection and correction
-Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Memory
@@ -195,6 +197,7 @@ Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Attenuation

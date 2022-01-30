@@ -15,6 +15,7 @@ Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - ASCII
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Code point
@@ -176,8 +177,8 @@ Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Music
-Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Graphene
@@ -197,6 +198,7 @@ Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Optical medium
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Transmission medium
@@ -257,6 +259,7 @@ Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Gravity

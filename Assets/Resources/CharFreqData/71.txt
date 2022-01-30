@@ -116,11 +116,11 @@ Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Fourier transform
-Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Inertia
@@ -176,6 +176,7 @@ Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Vitamin
@@ -282,8 +283,10 @@ Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Manifold
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Photography

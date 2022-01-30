@@ -7,11 +7,6 @@ public class Typing : MonoBehaviour {
 	
 	/*
 	 * Idea: game modes:
-	 *		top speed mode: Words are shown one after another, and become active after a countdown. You're supposed to type out the word as fast as possible
-	 *		consistency mode: The text starts scrolling at your average speed, and you must take care to not fall behind, or the text will go offscreen
-	 *		accuracy mode: Similar to consistency, but the scrolling speed follows yours, and increases even with errors 
-	 *		hard words mode: Picks random words containing letters and letter combos you're not as good with
-	 *
 	 *		Stay in flight:
 	 *			A 2D rendered plane is flying as you type.
 	 *			If you slow down, the plane starts to dip.
@@ -21,6 +16,11 @@ public class Typing : MonoBehaviour {
 	 *			First-person game where you jump from computer to computer and have to type out as many quotes as you can in a certain time limit before the boss comes
 	 *		Gibberish Mode:
 	 *			A string of random characters for the user to type out
+	 * 
+	 *		top speed mode: Words are shown one after another, and become active after a countdown. You're supposed to type out the word as fast as possible
+	 *		consistency mode: The text starts scrolling at your average speed, and you must take care to not fall behind, or the text will go offscreen
+	 *		accuracy mode: Similar to consistency, but the scrolling speed follows yours, and increases even with errors 
+	 *		hard words mode: Picks random words containing letters and letter combos you're not as good with
 	 */
 	/*
 	 * TODO: Progress tracking (save the average accuracy/speed for each day, draw a graph that the user can check whenever they want)
@@ -488,6 +488,7 @@ public class Typing : MonoBehaviour {
 		
 		SetTextColor();
 		GraphUpdate();
+		UpdateTooltipPos();
 		
 		if(lastFrameIncorrect!=incorrect){
 			// textDisplay.caretColor=incorrect?caretErrorColor:caretColor;
@@ -634,6 +635,11 @@ public class Typing : MonoBehaviour {
 		}
 		fadeImage.color=targetFadeColor;
 	}
+	Vector2 graphTooltipTimestampTargetPos,
+	        graphTooltipSpeedTargetPos,
+	        graphTooltipAccuracyTargetPos,
+	        graphTooltipSeekTimeTargetPos,
+	        graphTooltipWordSpeedTargetPos;
 	void GraphUpdate(){
 		if(showGraph!=lastShowGraph||graphBlend>0||graphBlend<1){
 			if(showGraph!=lastShowGraph){
@@ -692,18 +698,17 @@ public class Typing : MonoBehaviour {
 		Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition+graph.rectTransform.anchoredPosition;
 		baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
 		Vector2 tooltipOffset=Vector2.zero;
-		
+
 		graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(graph.times[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
-		graphTooltipTimestamp.anchoredPosition=baseTooltipPos+tooltipOffset;
+		graphTooltipTimestampTargetPos=baseTooltipPos+tooltipOffset;
 		
 		tooltipOffset=Vector2.right*paddingDistance;
 		
-		if(graph.misses[lastHoverIndex]>0){
-			graphTooltipAccuracyText.text=$"Errors: {graph.misses[lastHoverIndex]}";
-			tooltipOffset.y=Mathf.Clamp((1f-graph.accuracy[lastHoverIndex]/100)*graphRect.height,tooltipHeight/2+verticalPadding,graphRect.height-tooltipHeight/2-verticalPadding);
-			graphTooltipAccuracy.anchoredPosition=baseTooltipPos+tooltipOffset;
-		}else{
-			graphTooltipAccuracy.anchoredPosition=-Vector2.up*10000;
+		graphTooltipAccuracyText.text=$"Errors: {graph.misses[lastHoverIndex]}";
+		tooltipOffset.y=Mathf.Clamp((1f-graph.accuracy[lastHoverIndex]/100)*graphRect.height,tooltipHeight/2+verticalPadding,graphRect.height-tooltipHeight/2-verticalPadding);
+		graphTooltipAccuracyTargetPos=baseTooltipPos+tooltipOffset;
+		if(graph.misses[lastHoverIndex]<1){
+			graphTooltipAccuracyTargetPos.y=-100;
 		}
 		float accuracyTooltipY=tooltipOffset.y;
 		
@@ -712,7 +717,7 @@ public class Typing : MonoBehaviour {
 		tooltipOffset.y=tooltipOffset.y<accuracyTooltipY&&accuracyTooltipY-tooltipHeight>=verticalPadding?
 		                Mathf.Min(accuracyTooltipY-tooltipHeight-verticalPadding,tooltipOffset.y):
 		                Mathf.Max(accuracyTooltipY+tooltipHeight+verticalPadding,tooltipOffset.y);
-		graphTooltipSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
+		graphTooltipSpeedTargetPos=baseTooltipPos+tooltipOffset;
 
 		tooltipOffset=Vector2.left*paddingDistance;
 		
@@ -721,23 +726,32 @@ public class Typing : MonoBehaviour {
 		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order
 		float seekTimeTooltipY=Mathf.Clamp(graph.seekTimes[lastHoverIndex]/4*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding); 
 		tooltipOffset.y=seekTimeTooltipY;
-		graphTooltipSeekTime.anchoredPosition=baseTooltipPos+tooltipOffset;
+		graphTooltipSeekTimeTargetPos=baseTooltipPos+tooltipOffset;
 		
 		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: {words[graph.hoverWordIndex]}";
 		tooltipOffset.y=Mathf.Clamp(graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding);
 		tooltipOffset.y=tooltipOffset.y<seekTimeTooltipY&&seekTimeTooltipY-tooltipHeight*2>=verticalPadding?
 		                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y):
 		                Mathf.Max(seekTimeTooltipY+tooltipHeight*2+verticalPadding,tooltipOffset.y);
-		graphTooltipWordSpeed.anchoredPosition=baseTooltipPos+tooltipOffset;
+		graphTooltipWordSpeedTargetPos=baseTooltipPos+tooltipOffset;
 	}
 	
 	void MoveTooltipsOffScreen(){
-		graphTooltipTimestamp.anchoredPosition=-Vector2.up*10000;
-		graphTooltipSpeed.anchoredPosition=-Vector2.up*10000;
-		graphTooltipWordSpeed.anchoredPosition=-Vector2.up*10000;
-		graphTooltipSeekTime.anchoredPosition=-Vector2.up*10000;
-		graphTooltipAccuracy.anchoredPosition=-Vector2.up*10000;
+		//TODO: Idea: Transition the scale to make the tooltips smoothly appear/disappear
+		graphTooltipTimestampTargetPos.y=-100;
+		graphTooltipSpeedTargetPos.y=-100;
+		graphTooltipWordSpeedTargetPos.y=-100;
+		graphTooltipSeekTimeTargetPos.y=-100;
+		graphTooltipAccuracyTargetPos.y=-100;
 		lastHoverIndex=-1;
+	}
+	
+	void UpdateTooltipPos(){
+		graphTooltipTimestamp.anchoredPosition=Vector2.Lerp(graphTooltipTimestamp.anchoredPosition,graphTooltipTimestampTargetPos,Time.deltaTime/.1f);
+		graphTooltipAccuracy.anchoredPosition=Vector2.Lerp(graphTooltipAccuracy.anchoredPosition,graphTooltipAccuracyTargetPos,Time.deltaTime/.1f);
+		graphTooltipSpeed.anchoredPosition=Vector2.Lerp(graphTooltipSpeed.anchoredPosition,graphTooltipSpeedTargetPos,Time.deltaTime/.1f);
+		graphTooltipSeekTime.anchoredPosition=Vector2.Lerp(graphTooltipSeekTime.anchoredPosition,graphTooltipSeekTimeTargetPos,Time.deltaTime/.1f);
+		graphTooltipWordSpeed.anchoredPosition=Vector2.Lerp(graphTooltipWordSpeed.anchoredPosition,graphTooltipWordSpeedTargetPos,Time.deltaTime/.1f);
 	}
 
 	public void AllowCapitalLetters(){

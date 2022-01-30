@@ -29,6 +29,7 @@ Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Union (set theory)
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Star
@@ -243,6 +244,7 @@ Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Myth
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Food
@@ -267,8 +269,8 @@ Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Wave
-Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Sound
@@ -288,6 +290,7 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Average

@@ -13,9 +13,11 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Archaeology
@@ -178,15 +180,16 @@ Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Newton's laws of motion
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Wikipedia
-Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Plan

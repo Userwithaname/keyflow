@@ -33,6 +33,7 @@ Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Vegetable
@@ -75,9 +76,9 @@ Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Pitch (resin)
-Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Biology
@@ -87,6 +88,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
+Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Comics
@@ -189,6 +191,7 @@ Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Rock (geology)
+Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Plant
