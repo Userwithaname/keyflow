@@ -208,6 +208,8 @@ public class Typing : MonoBehaviour {
 		textDisplay.text=textDisplay.text
 			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
 		
+		if(KeyConfidenceMap.instance)
+			KeyConfidenceMap.instance.UpdateTheme();
 		foreach(Image button in themeableButtons){
 			button.color=currentTheme.buttonColor;
 		}
@@ -269,6 +271,9 @@ public class Typing : MonoBehaviour {
 		textDisplay.readOnly=false;
 		seekTime=wordTime=totalTestTime=0;
 		loc=lastLength=lastMaxLength=-1;
+		
+		graphTooltipTimestampTargetPos=graphTooltipSpeedTargetPos=graphTooltipWordSpeedTargetPos=graphTooltipSeekTimeTargetPos=graphTooltipAccuracyTargetPos=new Vector2((float)Screen.width/2,-100);
+		
 		// EventSystem.current.SetSelectedGameObject(textDisplayObject);
 	}
 	public void ToggleGraphUI(){
