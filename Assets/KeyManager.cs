@@ -341,7 +341,7 @@ public class KeyManager:MonoBehaviour{
 			
 			if(instance.confidenceDatabase[i].seekTime>=highestSeekTime&&instance.confidenceDatabase[i].seekTime<10000){
 				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
-				   Random.Range(0f,1f)<difficulty*1.333f&&highestSeekTime>=averageSeekTime){
+				   Random.Range(0f,1f)<difficulty*1.4f&&highestSeekTime>=averageSeekTime){
 						highestSeekTime=instance.confidenceDatabase[i].seekTime;
 						highestSeekTimeIndex=i;
 				}
@@ -349,7 +349,7 @@ public class KeyManager:MonoBehaviour{
 			float contextualSeekTime=Mathf.Max(instance.confidenceDatabase[i].nextKeySeekTime,instance.confidenceDatabase[i].previousKeySeekTime);
 			if(contextualSeekTime>=highestNextSeekTime&&contextualSeekTime<10000){
 				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
-				   Random.Range(0f,1f)<difficulty*1.333f&&highestNextSeekTime>=averageSeekTime){
+				   Random.Range(0f,1f)<difficulty*1.4f&&highestNextSeekTime>=averageSeekTime){
 						highestNextSeekTime=
 							instance.confidenceDatabase[i].previousKeySeekTime<10000?
 								contextualSeekTime:
@@ -358,21 +358,22 @@ public class KeyManager:MonoBehaviour{
 				}
 			}
 			if(instance.confidenceDatabase[i].wpm<lowestWPM){
-				if(Random.Range(0f,1f)<difficulty&&instance.confidenceDatabase[i].wpm>0){
+				if(Random.Range(0f,1f)<difficulty+.2f&&instance.confidenceDatabase[i].wpm>0){
 					lowestWPM=instance.confidenceDatabase[i].wpm;
 				}
 			}
 			if(accuracy<=lowestAcc){
-				if(Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,3)){
+				if(Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,3)||
+				   Random.Range(0f,1f)<difficulty*1.4f&&lowestAcc>=averageAccuracy/100){
 					lowestAcc=accuracy;
 					lowestAccIndex=i;
 				}
 			}
 		}
 		return Random.Range(0f,1f) switch{
-			<.25f => lowestWPMIndex,
-			<.47f => highestSeekTimeIndex,
-			<.82f => highestNextSeekTimeIndex,
+			<.2f => lowestWPMIndex,
+			<.55f => highestSeekTimeIndex,
+			<.9f => highestNextSeekTimeIndex,
 			_ => lowestAccIndex
 		};
 		// if(Random.Range(0,1)>.5f&&lowestWPM>0){
