@@ -1,0 +1,26 @@
+#!/bin/bash
+echo 'Updating keyboard layout files...'
+cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Linux-x64/Keyflow/Keyflow_Data/'
+echo "--- Done: Keyflow-Linux-x64    ($(( $(ls './Keyflow-Linux-x64/Keyflow/Keyflow_Data/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Windows-x64/Keyflow/Keyflow_Data/'
+echo "--- Done: Keyflow-Windows-x64  ($(( $(ls './Keyflow-Windows-x64/Keyflow/Keyflow_Data/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/'
+echo "--- Done: Keyflow-Mac-ARM+x64  ($(( $(ls './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+echo 'Done!'
+echo
+
+echo 'Cleaning up...'
+rm --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+rm --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+rm --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
+rm --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
+rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
+rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
+echo 'Done!'
+echo

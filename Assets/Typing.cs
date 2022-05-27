@@ -727,13 +727,13 @@ public class Typing : MonoBehaviour {
 		tooltipOffset=Vector2.left*paddingDistance;
 		
 		float graphSeekTime=(float)Math.Round(graph.seekTimes[lastHoverIndex]*1000,2);
-		graphTooltipSeekTimeText.text=$"Seek Time: {(graphSeekTime>0?graphSeekTime:"<"+Math.Round(1.0/Application.targetFrameRate*1000,2))} ms\nKey: {(text[lastHoverIndex+1] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => text[lastHoverIndex+1] })}";
+		graphTooltipSeekTimeText.text=$"Seek Time: {(graphSeekTime>0?graphSeekTime:"<"+Math.Round(1.0/Application.targetFrameRate*1000,2))} ms\nKey: <i>{(text[lastHoverIndex+1] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => text[lastHoverIndex+1] })}</i>";
 		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order
 		float seekTimeTooltipY=Mathf.Clamp(graph.seekTimes[lastHoverIndex]/4*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding); 
 		tooltipOffset.y=seekTimeTooltipY;
 		graphTooltipSeekTimeTargetPos=baseTooltipPos+tooltipOffset;
 		
-		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: {words[graph.hoverWordIndex]}";
+		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: <i>{words[graph.hoverWordIndex]}</i>";
 		tooltipOffset.y=Mathf.Clamp(graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding);
 		tooltipOffset.y=tooltipOffset.y<seekTimeTooltipY&&seekTimeTooltipY-tooltipHeight*2>=verticalPadding?
 		                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y):
