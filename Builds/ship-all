@@ -1,6 +1,31 @@
 #!/bin/bash
-butlerBin="../Assets_Excluded/butler-linux-amd64/butler"
 
+function prompt(){
+  read -p "Proceed? [y/N]: " response; case "$response" in [yY]) echo ;; [nN]) echo "Abort."; exit 1 ;; *) prompt ;; esac
+}
+
+# Run the preparation script
+./prepare-builds
+
+# Check if Butler is installed, display installed build version, ask to continue
+butlerBin="../Assets_Excluded/butler-linux-amd64/butler"  # This can be changed if Butler is installed elsewhere
+echo "Butler (https://itchio.itch.io/butler) is required to continue."
+echo "  Installed:"
+printf "    "
+$"$butlerBin" --version || { echo "    Unable to run Butler from the expected location"; echo "Aborting." ; exit 0 ; }
+echo
+
+echo "About to ship 3 new builds to https://nameless-horseman.itch.io/keyflow:"
+echo "  Linux:"
+printf "    " ; date -r './Keyflow-Linux-x64/Keyflow/Keyflow_Data/sharedassets0.assets'
+echo "  MacOS:"
+printf "    " ; date -r './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/Resources/Data//sharedassets0.assets'
+echo "  Windows:"
+printf "    " ; date -r './Keyflow-Windows-x64/Keyflow/Keyflow_Data/sharedassets0.assets'
+echo
+prompt
+
+# Ship the builds!
 echo "Pushing Linux build..."
 $"$butlerBin" push Keyflow-Linux-x64.zip nameless-horseman/keyflow:linux
 echo "Pushing MacOS build..."

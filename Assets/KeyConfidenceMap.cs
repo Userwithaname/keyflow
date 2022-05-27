@@ -1,3 +1,4 @@
+// using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,14 +23,31 @@ public class KeyConfidenceMap:MonoBehaviour{
       "qQwWeErRtTyYuUiIoOpP[{]}\\|\n"+
       "aAsSdDfFgGhHjJkKlL;:'\"\n"+
       "zZxXcCvVbBnNmM,<.>/?";
-		// "[{<6*0=2+4&8#$@`%9^5~3|1>7]}\n"+
+		// "[{+4=2*0|1<6#$@`>7&8^5~3%9]}\n"+
   //     "bByYoOuU'(/\\\")lLdDwWvVzZ\n"+
   //     "cCiIeEaA,;  .:hHtTsSnNqQ\n"+
   //     "gGxXjJkK-_?!rRmMfFpP";
+  string selectedLayout="Engram - ISO Wide Mod.txt";	//TODO: Save in PlayerPrefs
 	
 	Transform[] buttons;
+	// IEnumerator Start(){
 	void OnEnable(){
+		// yield return null;
 		instance=this;
+		string layoutsPath=
+			#if UNITY_EDITOR
+				Application.dataPath+"/../Keyboard Layouts"
+			#else
+				Application.dataPath+"/Keyboard Layouts"
+			#endif
+		;
+		if(System.IO.Directory.Exists(layoutsPath)){
+			foreach(string file in System.IO.Directory.GetFiles(layoutsPath)){	//TODO: Store list of files, show a dropdown for the user to select their layout, maybe add a shortcut to open the layouts directory (or create a custom layout editor in-game)
+				if(System.IO.Path.GetFileName(file)==selectedLayout)
+					layout=System.IO.File.ReadAllText(file);
+				Debug.Log(System.IO.Path.GetFileName(file));
+			}
+		}
 		CreateLayout();
 	}
 	Color aboveAverageColor=new Color(0.85f,1,0,1);
