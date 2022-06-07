@@ -472,6 +472,7 @@ public class KeyManager:MonoBehaviour{
 				lowestFullWordSpeedIndex=i;
 			}
 		}
+		//TODO: Idea: Function for selecting easy quotes (maybe an option in the settings to insert intermittent easy quotes to help with motivation when fatigue/regression is detected?)
 
 		int finalIndex = Random.Range(0f,1f) switch{
 			<.3f => highestSeekTimeIndex,
