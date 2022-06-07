@@ -348,6 +348,8 @@ public class Typing : MonoBehaviour {
 			$"\nWord Speed: {curCharacterWPM}"+
 			$"\nAccuracy: {curCharacterAccuracy}";
 		
+		//TODO: Idea: Show practice difficulty (could be a slider (with a gradient background), a bar with representative colors (red/orange/green), a star system, pre-defined words (e.g. "easy", "mildly difficult", "very difficult"), etc.)
+		
 		wpm=loc/totalTestTime*60/5;
 		accuracy=(float)hitCount/(hitCount+missCount)*100;
 		float oldAverageAccuracy=KeyManager.averageAccuracy;

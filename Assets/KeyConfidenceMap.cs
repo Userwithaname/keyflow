@@ -50,12 +50,13 @@ public class KeyConfidenceMap:MonoBehaviour{
 		}
 		CreateLayout();
 	}
-	Color aboveAverageColor=new Color(0.85f,1,0,1);
+	Color aboveAverageColor=new Color(.5f,1f,.5f,1);
 	public void CreateLayout(){
 		Cleanup();
 		
 		buttons=new Transform[(layout.Length-layout.Split('\n').Length+1)/2];
 		
+		//TODO: Idea: Get the score based on average values from all tracked keys instead of the global average speed
 		averageScore=60f/(KeyManager.averageWPM*5);
 		
 		int row=0;
@@ -76,7 +77,19 @@ public class KeyConfidenceMap:MonoBehaviour{
 											  Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
 															  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)))-averageScore;
 				score*=2f-(((float)KeyManager.instance.confidenceDatabase[keyIndex].hits/(KeyManager.instance.confidenceDatabase[keyIndex].hits+KeyManager.instance.confidenceDatabase[keyIndex].misses)+.05f)*.9f+.1f);
-				if(score<99999) button.GetComponent<Image>().color=Color.Lerp(Color.green,score<=averageScore?aboveAverageColor:Color.red,Mathf.Pow((score<=averageScore?(averageScore-score)/averageScore:score/(averageScore*3)),2));
+				if(score<99999){
+					if(score<=averageScore){
+						button.GetComponent<Image>().color=Color.green;
+						// float colorBlend=Mathf.Pow((averageScore*2-score)/(averageScore*2),2);
+						// button.GetComponent<Image>().color=Color.Lerp(Color.green,aboveAverageColor,colorBlend);
+					}else{
+						float colorBlend=Mathf.Pow(score/(averageScore*3),2);
+						if(colorBlend>.5f)
+							button.GetComponent<Image>().color=Color.Lerp(Color.yellow,Color.red,(colorBlend-.5f)*2);
+						else
+							button.GetComponent<Image>().color=Color.Lerp(Color.green,Color.yellow,colorBlend*2);
+					}
+				}
 
 				key++;
 			}

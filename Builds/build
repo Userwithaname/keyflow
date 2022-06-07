@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# A script could be made to automate the build process,
+# provided that IL2CPP and Mono can be switched through code
+# Then, builds for all platforms could be made just by running this script
