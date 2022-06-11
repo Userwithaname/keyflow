@@ -4,28 +4,82 @@ function prompt(){
   read -p "Proceed? [y/N]: " response; case "$response" in [yY]) echo ;; [nN]) echo "Abort."; exit 1 ;; *) prompt ;; esac
 }
 
-# Run the preparation script
-./prepare-builds
+function prepareBuilds(){
+  updateLayouts
+  cleanup
+}
+
+function updateLayouts(){
+  echo 'Updating keyboard layout files...'
+  cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Linux-x64/Keyflow/Keyflow_Data/'
+  echo "--- Done: Keyflow-Linux-x64    ($(( $(ls './Keyflow-Linux-x64/Keyflow/Keyflow_Data/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+  cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Windows-x64/Keyflow/Keyflow_Data/'
+  echo "--- Done: Keyflow-Windows-x64  ($(( $(ls './Keyflow-Windows-x64/Keyflow/Keyflow_Data/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+  cp --recursive --update --verbose '../Keyboard Layouts' './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/'
+  echo "--- Done: Keyflow-Mac-ARM+x64  ($(( $(ls './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/Keyboard Layouts' | wc -l) - $(ls '../Keyboard Layouts' | wc -l) )) additional files discovered in build) ---"
+
+  echo 'Done!'
+  echo
+}
+
+function cleanup(){
+  echo 'Cleaning up...'	#TODO: Move these out of the build and move them back afterwards (instead of removing them, since they may help reduce build time)
+  rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
+  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
+  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
+  echo 'Done!'
+  echo
+}
 
 # Check if Butler is installed, display installed build version, ask to continue
 butlerBin="../Assets_Excluded/butler-linux-amd64/butler"  # This can be changed if Butler is installed elsewhere
-echo "Butler (https://itchio.itch.io/butler) is required to continue."
+echo "This script requires Butler (https://itchio.itch.io/butler) to complete."
 echo "  Installed:"
 printf "    "
 $"$butlerBin" --version || { echo "    Unable to run Butler from the expected location"; echo "Aborting." ; exit 0 ; }
 echo
 
-echo "About to ship 3 new builds to https://nameless-horseman.itch.io/keyflow:"
+echo "About prepare the following builds for shipping:"
+echo "  WebGL:"
+printf "    " ; date -r './Keyflow-WebGL/Build/Keyflow-WebGL.data'
 echo "  Linux:"
 printf "    " ; date -r './Keyflow-Linux-x64/Keyflow/Keyflow_Data/sharedassets0.assets'
 echo "  MacOS:"
-printf "    " ; date -r './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/Resources/Data//sharedassets0.assets'
+printf "    " ; date -r './Keyflow-Mac-ARM+x64/Keyflow.app/Contents/Resources/Data/sharedassets0.assets'
 echo "  Windows:"
 printf "    " ; date -r './Keyflow-Windows-x64/Keyflow/Keyflow_Data/sharedassets0.assets'
 echo
 prompt
 
+# Run the preparation script
+#./prepare-builds
+prepareBuilds
+
+# Create .zip archives
+echo 'Creating ZIP archives for shipping...'
+printf 'Creating Keyflow-WebGL.zip...'
+rm -f Keyflow-WebGL.zip ; zip -r -q 'Keyflow-WebGL.zip' 'Keyflow-WebGL/' && echo ' Done' || 'Failed'
+printf 'Creating Keyflow-Linux-x64.zip...'
+rm -f Keyflow-Linux-x64.zip ; zip -r -q 'Keyflow-Linux-x64.zip' 'Keyflow-Linux-x64/' && echo ' Done' || 'Failed'
+printf 'Creating Keyflow-Mac-ARM+x64.zip...'
+rm -f Keyflow-Mac-ARM+x64.zip ; zip -r -q 'Keyflow-Mac-ARM+x64.zip' 'Keyflow-Mac-ARM+x64/' && echo ' Done' || 'Failed'
+printf 'Creating Keyflow-Windows-x64.zip...'
+rm -f Keyflow-Windows-x64.zip ; zip -r -q 'Keyflow-Windows-x64.zip' 'Keyflow-Windows-x64/' && echo ' Done' || 'Failed'
+echo
+
 # Ship the builds!
+echo "About to ship to https://nameless-horseman.itch.io/keyflow"
+prompt
+echo "Pushing WebGL build..."
+$"$butlerBin" push Keyflow-WebGL.zip nameless-horseman/keyflow:webgl
 echo "Pushing Linux build..."
 $"$butlerBin" push Keyflow-Linux-x64.zip nameless-horseman/keyflow:linux
 echo "Pushing MacOS build..."

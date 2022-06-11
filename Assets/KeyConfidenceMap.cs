@@ -27,7 +27,8 @@ public class KeyConfidenceMap:MonoBehaviour{
   //     "bByYoOuU'(/\\\")lLdDwWvVzZ\n"+
   //     "cCiIeEaA,;  .:hHtTsSnNqQ\n"+
   //     "gGxXjJkK-_?!rRmMfFpP";
-  string selectedLayout="Engram - ISO Wide Mod.txt";	//TODO: Save in PlayerPrefs
+  string selectedLayout="Colemak.txt";
+  // string selectedLayout="QWERTY.txt";
 	
 	Transform[] buttons;
 	// IEnumerator Start(){
@@ -41,6 +42,8 @@ public class KeyConfidenceMap:MonoBehaviour{
 				Application.dataPath+"/Keyboard Layouts"
 			#endif
 		;
+		PlayerPrefs.SetString("keyboardLayoutUI",selectedLayout);
+		selectedLayout=PlayerPrefs.GetString("keyboardLayoutUI",selectedLayout);	//TODO: Save in PlayerPrefs
 		if(System.IO.Directory.Exists(layoutsPath)){
 			foreach(string file in System.IO.Directory.GetFiles(layoutsPath)){	//TODO: Store list of files, show a dropdown for the user to select their layout, maybe add a shortcut to open the layouts directory (or create a custom layout editor in-game)
 				if(System.IO.Path.GetFileName(file)==selectedLayout)

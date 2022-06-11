@@ -13,14 +13,14 @@ echo 'Done!'
 echo
 
 echo 'Cleaning up...'
-rm --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
-rm --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-rm --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
-rm --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-rm --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
-rm --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
-rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
-rm --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
+rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
+rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
+rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
+rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
 echo 'Done!'
 echo

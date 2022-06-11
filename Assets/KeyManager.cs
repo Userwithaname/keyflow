@@ -134,6 +134,9 @@ public class KeyManager:MonoBehaviour{
 			fileContents+=JsonUtility.ToJson(kcd)+"\n";
 		}
 		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
+		#if UNITY_WEBGL
+			PlayerPrefs.Save();
+		#endif
 	}
 	public void RemoveScores(){
 		PlayerPrefs.DeleteAll();
