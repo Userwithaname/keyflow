@@ -312,7 +312,7 @@ public class DrawGraph:Graphic{
 		
 		// Draw errors
 		vertCount=vh.currentVertCount;
-		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){
+		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){	//BUG: When there are no errors, the entire graph breaks unless the mouse is hovering over it
 			if(misses[i]==0) continue;
 			
 			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);

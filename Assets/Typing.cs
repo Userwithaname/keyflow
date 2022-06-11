@@ -399,6 +399,10 @@ public class Typing : MonoBehaviour {
 		}
 		
 		quoteInfo.text=quoteTitle;
+		
+		#if UNITY_WEBGL
+			if(Time.time>5) KeyManager.Save();
+		#endif
 	}
 
 	bool focusInputField,unfocusInputField;
