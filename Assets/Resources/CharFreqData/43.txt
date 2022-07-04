@@ -22,7 +22,6 @@ Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Melody
-Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Mass

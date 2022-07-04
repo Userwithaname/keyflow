@@ -50,6 +50,8 @@ public class Typing : MonoBehaviour {
 	public RectTransform graphTooltipTimestamp;
 	public TMP_Text graphTooltipTimestampText;
 
+	public GameObject keyboardOverlay;
+	
 	// public Font interfaceFont;
 	string text="If you're seeing this text, it means something went wrong with the application",
 	       input="",

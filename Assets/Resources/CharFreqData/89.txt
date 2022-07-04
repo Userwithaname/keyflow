@@ -69,6 +69,7 @@ Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Rotational symmetry
+Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Pitch (resin)
@@ -190,7 +191,6 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Polygon
-Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Structure of Earth
@@ -199,6 +199,7 @@ Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Linearity
+Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Algorithm
