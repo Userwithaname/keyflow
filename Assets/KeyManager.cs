@@ -30,9 +30,9 @@ public class KeyManager:MonoBehaviour{
 		'=','~','-','+','%','/','*','^','<','>','|',
 		'(',')','[',']','{','}',
 	};
-	static int numbersStart,numbersEnd,
-	           capitalStart,capitalEnd,
-	           lowercaseStart,lowercaseEnd;
+	public static int numbersStart,numbersEnd,
+	                  capitalStart,capitalEnd,
+	                  lowercaseStart,lowercaseEnd;
 	public static bool includeUppercase=false,
 	                   includeNumbers=false,
 	                   includeSymbols=false,

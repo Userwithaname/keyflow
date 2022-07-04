@@ -64,6 +64,7 @@ Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Arity
+Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Sea
@@ -239,6 +240,7 @@ Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
