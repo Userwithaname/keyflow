@@ -16,10 +16,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 	 *		Additionally, different physical layout options could be added (row-stagger, ortho-linear, split, etc.)
 	 *		The 'Remove Key Data' can be renamed to 'Show Key Data', and options to clear it can be added to that menu
 	 */
-	//TODO: Idea: Add a button to start a practice for the selected key
-	//TODO: Show data for the key or press (or hover?)
 	
-	//TODO: Support other layouts (user-customizable)
 	string layout=
 		"`~1!2@3#4$5%6^7&8*9(0)-_=+\n"+
       "qQwWeErRtTyYuUiIoOpP[{]}\\|\n"+
@@ -56,7 +53,6 @@ public class KeyConfidenceMap:MonoBehaviour{
 		CreateLayout();
 	}
 	public void UpdateLayout(){
-		//TODO: Update the layout without re-instantiating the keys (might still need to instantiate/destroy when the key count differs between layouts (extra key in one row, etc))
 		string layoutsPath=
 			#if UNITY_EDITOR
 				Application.dataPath+"/../Keyboard Layouts"
@@ -68,7 +64,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		bool hasValue=false;
 		layoutsDropdown.ClearOptions();
-		foreach(string file in System.IO.Directory.GetFiles(layoutsPath)){	//TODO: Store list of files, show a dropdown for the user to select their layout, maybe add a shortcut to open the layouts directory (or create a custom layout editor in-game)
+		foreach(string file in System.IO.Directory.GetFiles(layoutsPath)){	//TODO: Idea: Maybe add a shortcut to open the layouts directory (or create a custom layout editor in-game)
 			string filename=System.IO.Path.GetFileName(file);
 			layoutsDropdown.options.Add(new TMP_Dropdown.OptionData(filename.Remove(filename.Length-4,4)));
 			if(filename==selectedLayout||(!hasValue&&filename=="QWERTY.txt")){
@@ -118,7 +114,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 											  Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
 															  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)));
 				if(score<99999){
-					score=averageScore/score;
+					score=(averageScore/score)*.5f;
 					switch(score){
 						case >1:
 							button.GetComponent<Image>().color=Color.Lerp(Color.green,new Color(0,.95f,.25f,1),(score-1)*2);
