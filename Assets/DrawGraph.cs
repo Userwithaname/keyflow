@@ -182,7 +182,7 @@ public class DrawGraph:Graphic{
 		// Draw a word speed graph
 		for(int i=wordSpeedValues.Length-1;i>-1;i--){
 			if(wordTimes[i]==0) continue;
-			if(hoverIndex!=-1&&wordTimes[i]>=times[hoverIndex]&&(i==0||wordTimes[i-1]<times[hoverIndex])){
+			if(hoverIndex!=-1&&wordTimes[i]>=times[hoverIndex]&&(i==0||wordTimes[i-1]<times[hoverIndex])&&!Typing.instance.settingsOpen){
 				hoverWordIndex=i;
 			}
 			
@@ -218,7 +218,7 @@ public class DrawGraph:Graphic{
 		}
 		
 		// Draw a diamond and a line at the point nearest to the cursor
-		if(hoverIndex>-1){
+		if(hoverIndex>-1&&!Typing.instance.settingsOpen){
 			float hoverPointY=height*speedValues[hoverIndex]/topWPM;
 			
 			//TODO: When drawing diamonds, also draw a line going towards each tooltip (shouldn't be too hard assuming Typing.GraphUpdate() runs before this function)

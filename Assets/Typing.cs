@@ -129,7 +129,6 @@ public class Typing : MonoBehaviour {
 	float graphBlend;
 	float defaultGraphHeight;
 	Vector3 defaultGraphPos;
-	//TODO: Idea: Record all keypresses and store times, allow viewing replay of the lesson
 	
 	int hitCount,missCount;
 	string[] words;
@@ -235,6 +234,14 @@ public class Typing : MonoBehaviour {
 		if(!hasFocus&&!done) ResetLesson();
 	}
 
+	public void SelectPracticeByCharacter(char c){
+		textTransform.localPosition=initialTextPos;
+		caretTransform.localPosition=initialCaretPos;
+		curPracticeIndex=KeyManager.GetKeyIndex(c);
+		text=KeyManager.GetQuoteByCharFrequency(ref curPracticeIndex,ref quoteTitle);
+		ResetLesson();
+	}
+	
 	public void NextLesson(){
 		textTransform.localPosition=initialTextPos;
 		caretTransform.localPosition=initialCaretPos;
@@ -293,7 +300,7 @@ public class Typing : MonoBehaviour {
 		Debug.Log(wikiPage);
 		Application.OpenURL(wikiPage);
 	}
-	bool settingsOpen;
+	public bool settingsOpen;
 	public void ToggleSettingsUI(){
 		settingsOpen=!settingsOpen;
 		settingsUI.SetActive(settingsOpen);
@@ -681,7 +688,7 @@ public class Typing : MonoBehaviour {
 
 			graph.expandedBlend=curBlend;
 		}
-		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1){
+		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1||settingsOpen){
 			if(graph.hoverIndex==-1&&lastHoverIndex!=-1){
 				MoveTooltipsOffScreen();
 			}
@@ -789,6 +796,6 @@ public class Typing : MonoBehaviour {
 		KeyManager.modeBias=modeBiasSlider.value;
 	}
 	
-	//TODO: Make a proper UI plan and redesign the settings menu
+	//TODO: Make a proper UI plan and redesign the settings menu(?)
 	// Also consider where the progress graph will be drawn, if that is to be implemented
 }
