@@ -75,6 +75,9 @@ public class KeyConfidenceMap:MonoBehaviour{
 			// Debug.Log(System.IO.Path.GetFileName(file));
 		}
 		UpdateTheme();
+		#if UNITY_WEBGL
+			layoutsDropdown.gameObject.SetActive(false);	// Don't show the layouts dropdown in the web player, because the layouts directory doesn't exist
+		#endif
 	}
 	
 	public void CreateLayout(){
@@ -85,7 +88,9 @@ public class KeyConfidenceMap:MonoBehaviour{
 		// averageScore=60f/(KeyManager.averageWPM*5);
 		// float averageContextualSeekTime=0;
 		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){
-			if(KeyManager.instance.confidenceDatabase[i].seekTime>=999999) continue;
+			if(KeyManager.instance.confidenceDatabase[i].seekTime+
+			   KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
+			   KeyManager.instance.confidenceDatabase[i].nextKeySeekTime>=999999) continue;
 			// averageScore+=KeyManager.instance.confidenceDatabase[i].seekTime;
 			// averageScore+=(KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
 			//                KeyManager.instance.confidenceDatabase[i].seekTime+
