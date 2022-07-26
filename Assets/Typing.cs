@@ -672,7 +672,8 @@ public class Typing : MonoBehaviour {
 	        graphTooltipSeekTimeTargetPos,
 	        graphTooltipWordSpeedTargetPos;
 	void GraphUpdate(){
-		if(showGraph!=lastShowGraph||graphBlend>0||graphBlend<1){
+		float targetGraphHeight=0;
+		if(showGraph!=lastShowGraph||graphBlend is > 0 or < 1){
 			if(showGraph!=lastShowGraph){
 				graphBlend=showGraph?graphBlend*graphBlend*graphBlend:Mathf.Sqrt(Mathf.Sqrt(graphBlend));
 				lastShowGraph=showGraph;
@@ -695,12 +696,13 @@ public class Typing : MonoBehaviour {
 			// graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height/3*2,curBlend));
 			
 			graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
-			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height-graphTransform.anchoredPosition.y+lessonInfo.rectTransform.anchoredPosition.y-lessonInfo.rectTransform.rect.height-15,curBlend));
+			targetGraphHeight=Screen.height-graphTransform.anchoredPosition.y+lessonInfo.rectTransform.anchoredPosition.y-lessonInfo.rectTransform.rect.height-15;
+			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,targetGraphHeight,curBlend));
 
 			graph.expandedBlend=curBlend;
 		}
-		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1||graph.hoverWordIndex==-1||settingsOpen){
-			if((graph.hoverIndex==-1||graph.hoverWordIndex==-1)&&lastHoverIndex!=-1){
+		if(!done||!showGraph||(graph.hoverIndex==lastHoverIndex&&graphBlend>=.999f)||graph.hoverIndex==-1||graph.hoverWordIndex==-1||settingsOpen){
+			if(!showGraph||((graph.hoverIndex==-1||graph.hoverWordIndex==-1)&&lastHoverIndex!=-1)){
 				MoveTooltipsOffScreen();
 			}
 			return;
@@ -724,6 +726,7 @@ public class Typing : MonoBehaviour {
 
 		// Rect graphRect=graphOutlineTransform.rect;
 		Rect graphRect=graph.rectTransform.rect;
+		graphRect.height=targetGraphHeight;
 		float tooltipHeight=graphTooltipSpeed.rect.height;
 		float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
 		const float paddingDistance=15;
