@@ -8,7 +8,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 	public static KeyConfidenceMap instance;
 	public GameObject keyPrefab;
 	public Transform[] rows;
-	float averageScore=.3f;
+	float averageSeekTime=.3f;
 	public TMP_Dropdown layoutsDropdown;
 	
 	/*
@@ -88,18 +88,21 @@ public class KeyConfidenceMap:MonoBehaviour{
 		// averageScore=60f/(KeyManager.averageWPM*5);
 		// float averageContextualSeekTime=0;
 		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){
-			if(KeyManager.instance.confidenceDatabase[i].seekTime+
+			if(KeyManager.instance.confidenceDatabase[i].hits<=3&&
+			   KeyManager.instance.confidenceDatabase[i].seekTime+
 			   KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
-			   KeyManager.instance.confidenceDatabase[i].nextKeySeekTime>=999999) continue;
-			// averageScore+=KeyManager.instance.confidenceDatabase[i].seekTime;
-			// averageScore+=(KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
-			//                KeyManager.instance.confidenceDatabase[i].seekTime+
-			//                KeyManager.instance.confidenceDatabase[i].nextKeySeekTime)/3;
-			averageScore+=Mathf.Min(KeyManager.instance.confidenceDatabase[i].previousKeySeekTime,
-			                        Mathf.Min(KeyManager.instance.confidenceDatabase[i].seekTime,
-			                                    KeyManager.instance.confidenceDatabase[i].nextKeySeekTime));
-			if(i>KeyManager.lowercaseStart)	averageScore/=2;
+			   KeyManager.instance.confidenceDatabase[i].nextKeySeekTime>=999999)
+				continue;
+			// averageSeekTime+=KeyManager.instance.confidenceDatabase[i].seekTime;
+			// averageSeekTime+=(KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
+			//                   KeyManager.instance.confidenceDatabase[i].seekTime+
+			//                   KeyManager.instance.confidenceDatabase[i].nextKeySeekTime)/3;
+			averageSeekTime+=Mathf.Min(KeyManager.instance.confidenceDatabase[i].previousKeySeekTime,
+			                           Mathf.Min(KeyManager.instance.confidenceDatabase[i].seekTime,
+			                                       KeyManager.instance.confidenceDatabase[i].nextKeySeekTime));
+			if(i>KeyManager.lowercaseStart) averageSeekTime/=2;
 		}
+		// averageSeekTime=Mathf.Min(averageSeekTime,.4f);	// Consider 30 WPM to be the lowest allowed to be colored green
 		
 		int row=0;
 		int buttonIndex=0;
@@ -115,11 +118,11 @@ public class KeyConfidenceMap:MonoBehaviour{
 				Transform button=buttons[buttonIndex].GetChild(i);
 				button.GetChild(0).GetComponent<TMP_Text>().text=$"{layout[key]}";
 				int keyIndex=KeyManager.GetKeyIndex(layout[key]);
-				float score=(Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
-											  Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
-															  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)));
-				if(score<99999){
-					score=(averageScore/score)*.5f;
+				float score=Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
+				                      Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
+				                                  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime));
+				if(KeyManager.instance.confidenceDatabase[keyIndex].hits>=3&&score<99999){
+					score=(averageSeekTime/score)*.55f;
 					switch(score){
 						case >1:
 							button.GetComponent<Image>().color=Color.Lerp(Color.green,new Color(0,.95f,.25f,1),(score-1)*2);
