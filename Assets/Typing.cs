@@ -71,6 +71,7 @@ public class Typing : MonoBehaviour {
 	public Button quoteInfoButton;
 	
 	public GameObject settingsUI;
+	public GameObject[] settingsMenus;
 	public Toggle practiceUppercase,
 	              practiceNumbers,
 	              practiceSymbols,
@@ -304,6 +305,9 @@ public class Typing : MonoBehaviour {
 	public void ToggleSettingsUI(){
 		settingsOpen=!settingsOpen;
 		settingsUI.SetActive(settingsOpen);
+		foreach(GameObject menu in settingsMenus){
+			menu.SetActive(menu.activeSelf&&settingsOpen);
+		}
 		textDisplay.readOnly=!settingsOpen&&!done;
 	}
 	
@@ -502,7 +506,14 @@ public class Typing : MonoBehaviour {
 	
 	float accuracy,wpm;
 	void Update(){
-		if(done&&(Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Escape))){
+		if(!fade&&(Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Escape))){
+			if(settingsOpen){
+				ToggleSettingsUI();
+			}else{
+				ToggleGraphUI();
+			}
+		}
+		if(done&&Input.GetKeyDown(KeyCode.Return)){
 			NextLesson();
 		}
 		
@@ -688,12 +699,14 @@ public class Typing : MonoBehaviour {
 
 			graph.expandedBlend=curBlend;
 		}
-		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1||settingsOpen){
-			if(graph.hoverIndex==-1&&lastHoverIndex!=-1){
+		if(!done||graph.hoverIndex==lastHoverIndex||graph.hoverIndex==-1||graph.hoverWordIndex==-1||settingsOpen){
+			if((graph.hoverIndex==-1||graph.hoverWordIndex==-1)&&lastHoverIndex!=-1){
 				MoveTooltipsOffScreen();
 			}
 			return;
 		}
+		
+		// Tooltips
 		
 		lastHoverIndex=graph.hoverIndex;
 		int seconds=Mathf.FloorToInt(graph.times[lastHoverIndex]%60);
@@ -708,7 +721,7 @@ public class Typing : MonoBehaviour {
 		 * May need to preform some logic to draw them in the correct order
 		 * Remember to hide the text/background of the tooltips when nothing is selected
 		 */
-		
+
 		// Rect graphRect=graphOutlineTransform.rect;
 		Rect graphRect=graph.rectTransform.rect;
 		float tooltipHeight=graphTooltipSpeed.rect.height;

@@ -3223,6 +3223,9 @@ MonoBehaviour:
   quoteInfo: {fileID: 1306277434}
   quoteInfoButton: {fileID: 1306277436}
   settingsUI: {fileID: 118185977}
+  settingsMenus:
+  - {fileID: 1241015958}
+  - {fileID: 647501680}
   practiceUppercase: {fileID: 620925048}
   practiceNumbers: {fileID: 384496572}
   practiceSymbols: {fileID: 554704028}
