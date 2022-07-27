@@ -122,19 +122,29 @@ public class KeyConfidenceMap:MonoBehaviour{
 				                      Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
 				                                  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime));
 				if(KeyManager.instance.confidenceDatabase[keyIndex].hits>=3&&score<99999){
-					score=(averageSeekTime/score)*.55f;
-					switch(score){
-						case >1:
-							button.GetComponent<Image>().color=Color.Lerp(Color.green,new Color(0,.95f,.25f,1),(score-1)*2);
-							break;
-						case >.5f:
-							button.GetComponent<Image>().color=Color.Lerp(Color.yellow,Color.green,(score-.5f)*2);
-							break;
-						default:
-							button.GetComponent<Image>().color=Color.Lerp(Color.red,Color.yellow,score*2);
-							break;
-					}
+					score=(averageSeekTime/score)*1f;
+					button.GetComponent<Image>().color = score switch{
+						> 1	=> Color.Lerp(Color.green, new Color(.2f, .8f, .6f, 1), (score - 1)),
+						> .5f	=> Color.Lerp(Color.yellow, Color.green, (score - .5f) * 2),
+						_		=> Color.Lerp(Color.red, Color.yellow, score * 2)
+					};
 					
+					/*
+					 * Design consideration:
+					 *		In the original design, the colors indicate the following, based on the average score for all lowercase letter keys:
+					 *			- red:		below average
+					 *			- yellow:	exactly average
+					 *			- green:		above average
+					 *		The problem with that is the subconscious implication that everything has to be green, which is not the case
+					 *		As you improve, it's best to improve consistently across all keys, meaning all keys are around the average speed (currently yellow)
+					 *		If there is a lot of green keys, it means one or more keys are bringing down your average (meaning you have orange or red keys with improvement potential)
+					 *		Contrary to what the colors would imply, as more green keys turn to yellow, it actually means improvement, rather than regression
+					 *
+					 * Possible solutions:
+					 *		1: Change the above average color (maybe fade towards white as it moves above average?)
+					 *		2: Swap the average and above average colors (problem: blended colors look weird)
+					 */
+
 					// if(score<=averageScore){
 					// 	button.GetComponent<Image>().color=Color.green;
 					// 	// float colorBlend=Mathf.Pow((averageScore*2-score)/(averageScore*2),2);
