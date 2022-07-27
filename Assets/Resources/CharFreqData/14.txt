@@ -10,6 +10,8 @@ Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Culture
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Fluid
@@ -18,6 +20,7 @@ Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Electrical engineering
@@ -29,6 +32,7 @@ Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Engineering
+Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Lake
@@ -66,6 +70,7 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Pitch (resin)
@@ -94,6 +99,7 @@ Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Reference
@@ -118,6 +124,7 @@ Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Optics
+Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Alphabet
@@ -154,6 +161,7 @@ Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Language
@@ -197,12 +205,14 @@ Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Computer font
+Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Euclidean vector
@@ -241,6 +251,7 @@ Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Concept
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
@@ -255,6 +266,7 @@ Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Isomorphism
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -278,6 +290,7 @@ Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Skew lines
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Byte

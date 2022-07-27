@@ -90,10 +90,12 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Correlation
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Language

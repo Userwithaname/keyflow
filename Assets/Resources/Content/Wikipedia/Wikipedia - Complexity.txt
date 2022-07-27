@@ -1,0 +1,1 @@
+Complexity characterises the behaviour of a system or model whose components interact in multiple ways and follow local rules, leading to nonlinearity, randomness, collective dynamics, hierarchy, and emergence.

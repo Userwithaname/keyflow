@@ -26,8 +26,10 @@ Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Fluid dynamics
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Artificial intelligence
@@ -37,6 +39,7 @@ Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Edge (geometry)
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Net force
@@ -48,6 +51,7 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Pascal (unit)
@@ -79,6 +83,7 @@ Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Histogram

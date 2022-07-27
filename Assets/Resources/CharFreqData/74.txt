@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Wavefront
@@ -27,10 +28,12 @@ Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Photosynthesis
+Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Atmospheric pressure
@@ -46,6 +49,7 @@ Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
@@ -105,6 +109,7 @@ Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Optical medium
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Gravity
@@ -113,6 +118,7 @@ Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Altitude
+Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Mass
@@ -121,12 +127,14 @@ Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Rock (geology)
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Velocity
@@ -151,6 +159,7 @@ Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Line integral
@@ -169,14 +178,17 @@ Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Barometer
+Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Robotics
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
+Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Signal chain
@@ -245,6 +257,7 @@ Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Interface (matter)
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Sequence
@@ -263,6 +276,7 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Language

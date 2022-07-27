@@ -11,6 +11,7 @@ Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Integer sequence
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Liquid-crystal display
@@ -52,6 +53,7 @@ Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Bacteria

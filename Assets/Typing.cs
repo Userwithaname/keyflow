@@ -355,7 +355,7 @@ public class Typing : MonoBehaviour {
 		lessonInfo.text=
 			$"<b>Current Practice: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
 			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
-			$"\nSeek Time: {curCharacterSeekTime}"+
+			$"\nSeek Time: {curCharacterSeekTime}"+	//TODO: Idea: Show a time estimate based on available key seek time data
 			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
 			$"\nContextual Seek Time: {curCharacterNextSeekTime}"+
 			$"\nWord Speed: {curCharacterWPM}"+

@@ -9,6 +9,7 @@ Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Mathematical object
@@ -38,10 +39,12 @@ Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Flight

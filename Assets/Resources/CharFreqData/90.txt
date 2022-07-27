@@ -38,11 +38,15 @@ Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Complexity
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Integer sequence
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Isomorphism
@@ -78,6 +82,7 @@ Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Game
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Line integral
@@ -146,6 +151,7 @@ Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Correlation
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Vacuum

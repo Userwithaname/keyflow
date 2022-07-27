@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Enzyme kinetics
@@ -11,6 +12,7 @@ Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Illusion
@@ -29,6 +31,7 @@ Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Base (geometry)
@@ -44,6 +47,7 @@ Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Ray (optics)
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Theory

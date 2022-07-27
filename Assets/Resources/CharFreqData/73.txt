@@ -8,12 +8,14 @@ Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Seismic wave
@@ -45,6 +47,7 @@ Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Fungus
@@ -92,10 +95,13 @@ Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Color
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Pattern
+Content/Wikipedia/Wikipedia - Maze
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Adjective
@@ -119,6 +125,7 @@ Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Myth
@@ -132,6 +139,7 @@ Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Concept
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Structure
@@ -154,6 +162,7 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Diffraction
@@ -183,6 +192,7 @@ Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Pareidolia
+Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - System
@@ -197,6 +207,7 @@ Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Literature
+Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Mass
@@ -207,6 +218,7 @@ Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Bit
+Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Median
@@ -228,11 +240,13 @@ Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Paradox
+Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Mantle (geology)
