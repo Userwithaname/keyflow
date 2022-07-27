@@ -58,7 +58,7 @@ public class QuoteDataGenerator:EditorWindow{
 				if(charCount==0) continue;
 				
 				// string charCountPrefix=charCount.ToString();
-				string charCountPrefix=(Mathf.CeilToInt((float)(charCount+1)/sortedQuoteContents[j].Length*10000000)).ToString();
+				string charCountPrefix=Mathf.CeilToInt((float)(charCount+1)/sortedQuoteContents[j].Length*99999999).ToString();
 				char[] prefix={'0','0','0','0','0','0','0','0',};	// 8 characters
 				for(int c=1;c<=charCountPrefix.Length;c++){
 					prefix[^c]=charCountPrefix[^c];

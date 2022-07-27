@@ -23,6 +23,7 @@ Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Rotational symmetry
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Artificial intelligence
@@ -61,6 +62,7 @@ Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Interface (matter)
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Color

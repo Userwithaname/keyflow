@@ -2,9 +2,11 @@ Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Game
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Euclid

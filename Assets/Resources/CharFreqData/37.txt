@@ -1,15 +1,19 @@
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Barye
+Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Convex geometry
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Unicode
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Dwarf planet
@@ -20,3 +24,4 @@ Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - Euclid

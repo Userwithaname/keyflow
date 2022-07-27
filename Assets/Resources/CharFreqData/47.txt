@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Earth's inner core
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
@@ -36,5 +37,6 @@ Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Gravity
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Algae

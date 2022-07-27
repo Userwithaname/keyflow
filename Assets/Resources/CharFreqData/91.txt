@@ -1,3 +1,4 @@
+Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Matter
@@ -13,9 +14,11 @@ Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Scale (music)
+Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Orbit
@@ -23,11 +26,13 @@ Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Arity
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Flight
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - System
+Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Fluid dynamics
@@ -40,6 +45,7 @@ Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Wavefront
+Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Computer graphics
@@ -50,6 +56,7 @@ Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Coefficient
@@ -72,8 +79,10 @@ Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Signal
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Zipf's law
+Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Linearity
@@ -130,6 +139,7 @@ Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Melody
+Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Prioritization
@@ -149,9 +159,11 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Union (set theory)
 Content/Wikipedia/Wikipedia - Star
+Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Vertex (geometry)
@@ -313,6 +325,7 @@ Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Sequence
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Vector field

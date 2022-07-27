@@ -9,3 +9,5 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Earth's outer core
+Content/Wikipedia/Wikipedia - Innovation
+Content/Wikipedia/Wikipedia - Euclid

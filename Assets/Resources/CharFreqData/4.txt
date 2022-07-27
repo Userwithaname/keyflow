@@ -11,6 +11,7 @@ Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Equality (mathematics)
+Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Symmetry
@@ -30,7 +31,10 @@ Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Euclid
+Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Extended ASCII

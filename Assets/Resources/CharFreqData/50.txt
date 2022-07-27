@@ -26,4 +26,5 @@ Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Dispersion (optics)
+Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Algae

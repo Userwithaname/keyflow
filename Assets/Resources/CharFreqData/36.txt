@@ -11,3 +11,4 @@ Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Euclid
