@@ -181,7 +181,6 @@ Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Base (geometry)
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Signal chain

@@ -51,7 +51,6 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Diffraction
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Pascal (unit)

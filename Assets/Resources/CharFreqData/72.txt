@@ -177,7 +177,6 @@ Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Unicode
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Applied mathematics

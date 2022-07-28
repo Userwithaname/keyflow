@@ -54,7 +54,6 @@ Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Punctuation
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - River

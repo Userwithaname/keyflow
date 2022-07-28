@@ -25,7 +25,6 @@ Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Feedback
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Matter

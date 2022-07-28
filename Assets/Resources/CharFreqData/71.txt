@@ -130,7 +130,6 @@ Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Music genre
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Coefficient

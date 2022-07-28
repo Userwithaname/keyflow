@@ -125,7 +125,6 @@ Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Interpolation
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Myth

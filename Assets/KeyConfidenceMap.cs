@@ -87,7 +87,8 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		// averageScore=60f/(KeyManager.averageWPM*5);
 		// float averageContextualSeekTime=0;
-		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){
+		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){	//TODO: FIX: Tends to become completely green once enough keys become valid (for example, uppercase letters)
+			// Debug.Log(KeyManager.instance.confidenceDatabase[i].keyName);
 			if(KeyManager.instance.confidenceDatabase[i].hits<=3&&
 			   KeyManager.instance.confidenceDatabase[i].seekTime+
 			   KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
@@ -118,45 +119,26 @@ public class KeyConfidenceMap:MonoBehaviour{
 				Transform button=buttons[buttonIndex].GetChild(i);
 				button.GetChild(0).GetComponent<TMP_Text>().text=$"{layout[key]}";
 				int keyIndex=KeyManager.GetKeyIndex(layout[key]);
-				float score=Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
-				                      Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
-				                                  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime));
-				if(KeyManager.instance.confidenceDatabase[keyIndex].hits>=3&&score<99999){
-					score=(averageSeekTime/score)*1f;
-					button.GetComponent<Image>().color = score switch{
+				// float score=Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
+				//                       Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
+				//                                   KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime));
+				float score=(KeyManager.instance.confidenceDatabase[keyIndex].seekTime+
+				             KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime+
+				             KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)/3;
+				if(score<99999){
+					score=averageSeekTime/score;
+					if(score<1)	score=Mathf.Lerp(score,score*score,.7f);
+					Color keyColor = score switch{
 						> 1	=> Color.Lerp(Color.green, new Color(.2f, .8f, .6f, 1), (score - 1)),
 						> .5f	=> Color.Lerp(Color.yellow, Color.green, (score - .5f) * 2),
 						_		=> Color.Lerp(Color.red, Color.yellow, score * 2)
 					};
 					
-					/*
-					 * Design consideration:
-					 *		In the original design, the colors indicate the following, based on the average score for all lowercase letter keys:
-					 *			- red:		below average
-					 *			- yellow:	exactly average
-					 *			- green:		above average
-					 *		The problem with that is the subconscious implication that everything has to be green, which is not the case
-					 *		As you improve, it's best to improve consistently across all keys, meaning all keys are around the average speed (currently yellow)
-					 *		If there is a lot of green keys, it means one or more keys are bringing down your average (meaning you have orange or red keys with improvement potential)
-					 *		Contrary to what the colors would imply, as more green keys turn to yellow, it actually means improvement, rather than regression
-					 *
-					 * Possible solutions:
-					 *		1: Change the above average color (maybe fade towards white as it moves above average?)
-					 *		2: Swap the average and above average colors (problem: blended colors look weird)
-					 */
-
-					// if(score<=averageScore){
-					// 	button.GetComponent<Image>().color=Color.green;
-					// 	// float colorBlend=Mathf.Pow((averageScore*2-score)/(averageScore*2),2);
-					// 	// button.GetComponent<Image>().color=Color.Lerp(Color.green,aboveAverageColor,colorBlend);
-					// }else{
-					// 	// float colorBlend=Mathf.Pow(score/(averageScore),2);
-					// 	float colorBlend=score;
-					// 	if(colorBlend>.5f)
-					// 		button.GetComponent<Image>().color=Color.Lerp(Color.yellow,Color.red,(colorBlend-.5f)*2);
-					// 	else
-					// 		button.GetComponent<Image>().color=Color.Lerp(Color.green,Color.yellow,colorBlend*2);
-					// }
+					if(KeyManager.instance.confidenceDatabase[keyIndex].hits<3){
+						keyColor=Color.Lerp(Color.grey,keyColor,(float)(KeyManager.instance.confidenceDatabase[keyIndex].hits+1)/4*.25f);
+					}
+					
+					button.GetComponent<Image>().color=keyColor;
 				}
 
 				key++;

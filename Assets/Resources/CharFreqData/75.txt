@@ -295,7 +295,6 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Pascal (unit)
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Function (mathematics)

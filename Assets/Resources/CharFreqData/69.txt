@@ -287,7 +287,6 @@ Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Geography
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Improvement

@@ -8,7 +8,6 @@ Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Convex geometry
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - HTTP cookie

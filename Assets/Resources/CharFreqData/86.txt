@@ -91,7 +91,6 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Triple product
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Spectrum

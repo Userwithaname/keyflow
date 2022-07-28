@@ -254,7 +254,6 @@ Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Percentage
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Isotropy
