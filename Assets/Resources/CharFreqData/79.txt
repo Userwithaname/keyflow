@@ -325,7 +325,6 @@ Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Diffraction
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Psychoacoustics

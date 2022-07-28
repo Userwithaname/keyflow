@@ -79,7 +79,6 @@ Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Base (geometry)
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Affine space

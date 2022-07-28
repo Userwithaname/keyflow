@@ -33,7 +33,6 @@ Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Geometry
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Atmospheric pressure

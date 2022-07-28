@@ -333,10 +333,10 @@ public class KeyManager:MonoBehaviour{
 		float averageSeekTime=60f/(averageWPM*5);
 		for(int i=0;i<instance.confidenceDatabase.Length;i++){
 			if(!CharWithinFilters(i))	continue;
-			if(instance.confidenceDatabase[i].hits==0){
-				if(Random.Range(0f,1f)<.15f){	// Chance to select a key because there is no data for it
-					lowestAcc=0;
-					lowestAccIndex=i;
+			if(instance.confidenceDatabase[i].hits<Random.Range(1,3)){
+				if(Random.Range(0f,1f)<.125f&&GetNumberOfQuotesForKeyIndex(i)>1){	// Chance to select a key because there is no data for it
+					lowestAcc=lowestWPM=0;
+					lowestAccIndex=lowestWPMIndex=i;
 				}
 				continue;
 			}
@@ -373,6 +373,8 @@ public class KeyManager:MonoBehaviour{
 				}
 			}
 		}
+		// float rand=Random.Range(0f,1f);
+		// return rand switch{
 		return Random.Range(0f,1f) switch{
 			<.2f => lowestWPMIndex,
 			<.55f => highestSeekTimeIndex,
@@ -388,6 +390,9 @@ public class KeyManager:MonoBehaviour{
 		// return Random.Range(0f,1f)>.5f?(Random.Range(0f,1f)>.45f?highestSeekTimeIndex:highestNextSeekTimeIndex):lowestAccIndex;
 	}
 	
+	public static int GetNumberOfQuotesForKeyIndex(int keyIndex){
+		return RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n').Length;
+	}
 	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex){
 		string[] quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
 		int invalidCount=0;

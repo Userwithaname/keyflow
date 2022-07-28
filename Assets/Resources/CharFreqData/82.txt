@@ -325,6 +325,5 @@ Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Archaeology
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Ratio

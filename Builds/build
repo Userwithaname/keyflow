@@ -3,3 +3,18 @@
 # A script could be made to automate the build process,
 # provided that IL2CPP and Mono can be switched through code
 # Then, builds for all platforms could be made just by running this script
+
+# TODO: Only building for Linux works (presumably because of IL2CPP)
+
+cd ..
+unityInstall=\
+"~/.unity3d/"+\
+"$(cat ProjectSettings/ProjectVersion.txt | grep 'm_EditorVersion:' | sed 's/.*\: //g')"+\
+"/Editor/Unity"
+echo $unityInstall
+
+tail -f ~/.config/unity3d/Editor.log &
+processID=$!
+/opt/Unity/Editor/Unity -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
+
+cd -

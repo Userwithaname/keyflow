@@ -26,7 +26,6 @@ Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Dot product
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Frequency

@@ -142,7 +142,6 @@ Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Linguistics
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Dimension

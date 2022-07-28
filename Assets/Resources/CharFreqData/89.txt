@@ -176,7 +176,6 @@ Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Base (geometry)
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Moon

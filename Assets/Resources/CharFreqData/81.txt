@@ -263,7 +263,6 @@ Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Affine space
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Enzyme kinetics

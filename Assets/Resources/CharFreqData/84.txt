@@ -220,7 +220,6 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Zipf's law
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Harmony

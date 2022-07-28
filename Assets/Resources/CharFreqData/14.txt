@@ -205,7 +205,6 @@ Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Mathematical notation
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Dimension

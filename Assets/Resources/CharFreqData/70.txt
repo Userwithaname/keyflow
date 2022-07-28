@@ -81,7 +81,6 @@ Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Torque
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Gas

@@ -18,7 +18,6 @@ Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Scale (music)
-Content/Wikipedia/Wikipedia - Labyrinth
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Orbit
