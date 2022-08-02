@@ -87,9 +87,9 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		// averageScore=60f/(KeyManager.averageWPM*5);
 		// float averageContextualSeekTime=0;
-		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){	//TODO: FIX: Tends to become completely green once enough keys become valid (for example, uppercase letters)
+		for(int i=KeyManager.lowercaseStart;i<=KeyManager.lowercaseEnd;i++){
 			// Debug.Log(KeyManager.instance.confidenceDatabase[i].keyName);
-			if(KeyManager.instance.confidenceDatabase[i].hits<=3&&
+			if(KeyManager.instance.confidenceDatabase[i].hits<=3||
 			   KeyManager.instance.confidenceDatabase[i].seekTime+
 			   KeyManager.instance.confidenceDatabase[i].previousKeySeekTime+
 			   KeyManager.instance.confidenceDatabase[i].nextKeySeekTime>=999999)
@@ -103,6 +103,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 			                                       KeyManager.instance.confidenceDatabase[i].nextKeySeekTime));
 			if(i>KeyManager.lowercaseStart) averageSeekTime/=2;
 		}
+		
 		// averageSeekTime=Mathf.Min(averageSeekTime,.4f);	// Consider 30 WPM to be the lowest allowed to be colored green
 		
 		int row=0;
@@ -122,12 +123,25 @@ public class KeyConfidenceMap:MonoBehaviour{
 				// float score=Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
 				//                       Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
 				//                                   KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime));
+				// float score=(KeyManager.instance.confidenceDatabase[keyIndex].seekTime+
+				//              KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime+
+				//              KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)/3;
 				float score=(KeyManager.instance.confidenceDatabase[keyIndex].seekTime+
 				             KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime+
-				             KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)/3;
+				             KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime+
+				             Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].seekTime,
+				                      Mathf.Max(KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime,
+				                                  KeyManager.instance.confidenceDatabase[keyIndex].nextKeySeekTime)))/4;
 				if(score<99999){
 					score=averageSeekTime/score;
-					if(score<1)	score=Mathf.Lerp(score,score*score,.7f);
+					if(score<1){
+						score=Mathf.Lerp(score,score*score,.8f);
+						// score*=score;
+					}else{
+						// score=(score-1)*.75f+1;
+						score=(score-1)*.75f;
+						score=Mathf.Lerp(score,score*score,.5f)+1;
+					}
 					Color keyColor = score switch{
 						> 1	=> Color.Lerp(Color.green, new Color(.2f, .8f, .6f, 1), (score - 1)),
 						> .5f	=> Color.Lerp(Color.yellow, Color.green, (score - .5f) * 2),

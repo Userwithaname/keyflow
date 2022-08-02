@@ -26,15 +26,15 @@ function updateLayouts(){
 
 function cleanup(){
   echo 'Cleaning up...'	#TODO: Move these out of the build and move them back afterwards (instead of removing them, since they may help reduce build time)
-  rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
-  rm --force --recursive --verbose './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-  rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
-  rm --force --recursive --verbose './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-  rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
-  rm --force --recursive --verbose './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
-  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
-  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
-  rm --force --verbose ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
+  rm --force --recursive './Keyflow-Linux-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive './Keyflow-Linux-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force --recursive './Keyflow-Windows-x64/Keyflow/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive './Keyflow-Windows-x64/Keyflow/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force --recursive './Keyflow-Mac-ARM+x64/Keyflow_BurstDebugInformation_DoNotShip'
+  rm --force --recursive './Keyflow-Mac-ARM+x64/Keyflow_BackUpThisFolder_ButDontShipItWithYourGame'
+  rm --force ./Keyflow-Windows-x64/Keyflow/Keyflow.dxvk-cache
+  rm --force ./Keyflow-Windows-x64/Keyflow/Keyflow_dxgi.log
+  rm --force ./Keyflow-Windows-x64/Keyflow/Keyflow_d3d11.log
   echo 'Done!'
   echo
 }
