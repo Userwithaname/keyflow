@@ -5,7 +5,14 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 
-//TODO: Make an asset post-processor to warn when a text file includes a character that isn't tracked
+/*
+ *	Ideas:
+ *		- Expose this code outside to the build as well, which would allow things like:
+ *			- Indexing to memory instead of disk (generate the per-key quote data and store it to an array somewhere rather than files on disk)
+ *			- Allow multiple sources for quotes to be accessed from (for example, Resources folder, user-provided quotes in the build directory, quotes obtained from the web (and likely cached to disk), etc)
+ *			- Re-indexing at any time (opens doors to user-provided content, content from the web, etc)
+ */
+
 public class QuoteDataGenerator:EditorWindow{
 	[MenuItem("Window/Quote Data Generator")]
 	static void Init(){
