@@ -334,7 +334,7 @@ public class KeyManager:MonoBehaviour{
 		for(int i=0;i<instance.confidenceDatabase.Length;i++){
 			if(!CharWithinFilters(i))	continue;
 			if(instance.confidenceDatabase[i].hits<Random.Range(1,3)){
-				if(Random.Range(0f,1f)<.125f&&GetNumberOfQuotesForKeyIndex(i)>1){	// Chance to select a key because there is no data for it
+				if(Random.Range(0f,1f)<.125f&&GetNumberOfQuotesForKey(i)>0){	// Chance to select a key because there is no data for it
 					lowestAcc=lowestWPM=0;
 					lowestAccIndex=lowestWPMIndex=i;
 				}
@@ -390,9 +390,13 @@ public class KeyManager:MonoBehaviour{
 		// return Random.Range(0f,1f)>.5f?(Random.Range(0f,1f)>.45f?highestSeekTimeIndex:highestNextSeekTimeIndex):lowestAccIndex;
 	}
 	
-	public static int GetNumberOfQuotesForKeyIndex(int keyIndex){
-		return RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n').Length;
+	public static int GetNumberOfQuotesForKey(int keyIndex){
+		return Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text.Split('\n').Length-1;	// Key quote data files end with a newline
 	}
+	public static int GetNumberOfQuotesForKey(char key){
+		return GetNumberOfQuotesForKey(GetKeyIndex(key));
+	}
+	
 	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex){
 		string[] quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
 		int invalidCount=0;
