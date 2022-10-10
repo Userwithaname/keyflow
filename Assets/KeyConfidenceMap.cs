@@ -135,8 +135,8 @@ public class KeyConfidenceMap:MonoBehaviour{
 				if(score<99999){
 					score=averageSeekTime/score;
 					if(score<1){
-						score=Mathf.Lerp(score,score*score,.8f);
-						// score*=score;
+						// score=Mathf.Lerp(score,score*score,.85f);
+						score*=score;
 					}else{
 						// score=(score-1)*.75f+1;
 						score=(score-1)*.75f;

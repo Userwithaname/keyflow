@@ -106,6 +106,7 @@ public class Typing : MonoBehaviour {
 		             caretColorError,
 		             improvementColor,
 		             regressionColor,
+		             mildRegressionColor,
 		             buttonColor,
 		             iconColor;
 		[NonSerialized]
@@ -113,7 +114,8 @@ public class Typing : MonoBehaviour {
 		              textColorWarningTag,
 		              textColorCorrectTag,
 		              improvementColorTag,
-		              regressionColorTag;
+		              regressionColorTag,
+		              mildRegressionColorTag;
 	}
 	public int selectedTheme,lastSelectedTheme;
 	public Theme[] themes;
@@ -197,16 +199,20 @@ public class Typing : MonoBehaviour {
 		themes[selectedTheme].textColorCorrectTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].textColorCorrect)+">";
 		themes[selectedTheme].improvementColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].improvementColor)+">";
 		themes[selectedTheme].regressionColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].regressionColor)+">";
+		themes[selectedTheme].mildRegressionColorTag="<color=#"+ColorUtility.ToHtmlStringRGB(themes[selectedTheme].mildRegressionColor)+">";
 
 		WPMInfo.text=WPMInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
 		averageWPMInfo.text=averageWPMInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
 		lessonInfo.text=lessonInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag);
+			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
 		textDisplay.text=textDisplay.text
 			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
 		
@@ -313,6 +319,7 @@ public class Typing : MonoBehaviour {
 	
 	KeyManager.KeyConfidenceData curCharPractice;
 	char curCharacterPractice;
+	string curCharacterSpeedTrend;
 	string curCharacterSeekTime;
 	string curCharacterNextSeekTime;
 	string curCharacterWPM;
@@ -322,6 +329,7 @@ public class Typing : MonoBehaviour {
 		                                                 KeyManager.GetQuoteConfidenceData(text):
 		                                                 KeyManager.instance.confidenceDatabase[curPracticeIndex];
 		curCharacterPractice=updatedCharPractice.keyName;
+		curCharacterSpeedTrend=$"{System.Math.Round(updatedCharPractice.speedTrend,2)} WPM";
 		curCharacterSeekTime=updatedCharPractice.seekTime>0?Math.Round(updatedCharPractice.seekTime*1000,2)+" ms":"-";
 		curCharacterNextSeekTime=updatedCharPractice.nextKeySeekTime>0?Math.Round(Mathf.Max(updatedCharPractice.nextKeySeekTime*1000,updatedCharPractice.previousKeySeekTime*1000),2)+" ms":":";
 		curCharacterWPM=updatedCharPractice.wpm>0?Math.Round(updatedCharPractice.wpm,1)+" WPM":"-";
@@ -340,6 +348,9 @@ public class Typing : MonoBehaviour {
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterNextSeekTime} ({diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterNextSeekTime} (+{diff})</color>";
 			diff=(float)Math.Round(updatedCharPractice.wpm-curCharPractice.wpm,3);
+			if(updatedCharPractice.speedTrend!=0){
+					curCharacterSpeedTrend=$"{(updatedCharPractice.speedTrend<Mathf.Min(0,curCharPractice.speedTrend)?themes[selectedTheme].regressionColorTag:(updatedCharPractice.speedTrend>0?themes[selectedTheme].improvementColorTag:themes[selectedTheme].mildRegressionColorTag))}{curCharacterSpeedTrend}</color>";
+			}
 			curCharacterWPM=diff>=0?
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterWPM} (+{diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterWPM} ({diff})</color>";
@@ -358,7 +369,8 @@ public class Typing : MonoBehaviour {
 			$"\nSeek Time: {curCharacterSeekTime}"+	//TODO: Idea: Show a time estimate based on available key seek time data
 			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
 			$"\nContextual Seek Time: {curCharacterNextSeekTime}"+
-			$"\nWord Speed: {curCharacterWPM}"+
+			$"\nImprovement Trend: {curCharacterSpeedTrend}"+
+			// $"\nWord Speed: {curCharacterWPM}"+
 			$"\nAccuracy: {curCharacterAccuracy}";
 		
 		//TODO: Idea: Show practice difficulty (could be a slider (with a gradient background), a bar with representative colors (red/orange/green), a star system, pre-defined words (e.g. "easy", "mildly difficult", "very difficult"), etc.)
