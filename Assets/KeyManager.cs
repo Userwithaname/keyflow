@@ -16,6 +16,7 @@ public class KeyManager:MonoBehaviour{
 		               previousKeySeekTime,
 		               nextKeySeekTime,
 		               wpm;
+		public float	speedTrend;
 		public int		hits, misses;	// Hits and misses are tracked to calculate a confidence ratio
 		public float	accuracy;
 
@@ -205,6 +206,10 @@ public class KeyManager:MonoBehaviour{
 			_ => false
 		};
 	}
+	
+	public static float SeekTimeToWPM(float seekTime){
+		return 60f/seekTime/5;
+	}
 
 	//TODO: Function for lowering the hit/miss count without changing the ratio (e.g. divide by the same value, ratio might still change a bit because the numbers are integers)
 	public static void RemoveHitsAndMisses(int keyIndex,int amount=1){
@@ -221,24 +226,36 @@ public class KeyManager:MonoBehaviour{
 	}
 	
 	public static void UpdateSeekTime(int index,float seekTime){
-		if(instance.confidenceDatabase[index].seekTime<10000){
+		float oldSeekTime=instance.confidenceDatabase[index].seekTime;
+		if(oldSeekTime<10000){
 			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
+			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
+			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].seekTime)-SeekTimeToWPM(oldSeekTime),
+			                                                            .15f);
 		}else{
 			instance.confidenceDatabase[index].seekTime=seekTime;
 		}
 	}
-	public static void UpdateNextKeySeekTime(int index,float seekTime){
-		if(instance.confidenceDatabase[index].nextKeySeekTime<10000){
-			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
-		}else{
-			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
-		}
-	}
 	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
-		if(instance.confidenceDatabase[index].previousKeySeekTime<10000){
+		float oldSeekTime=instance.confidenceDatabase[index].previousKeySeekTime;
+		if(oldSeekTime<10000){
 			instance.confidenceDatabase[index].previousKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
+			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
+			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+			                                                            .125f);
 		}else{
 			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
+		}
+	}
+	public static void UpdateNextKeySeekTime(int index,float seekTime){
+		float oldSeekTime=instance.confidenceDatabase[index].nextKeySeekTime;
+		if(oldSeekTime<10000){
+			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
+			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
+			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+			                                                            .1f);
+		}else{
+			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
 	}
 	
@@ -377,8 +394,10 @@ public class KeyManager:MonoBehaviour{
 		// return rand switch{
 		return Random.Range(0f,1f) switch{
 			<.2f => lowestWPMIndex,
-			<.55f => highestSeekTimeIndex,
-			<.9f => highestNextSeekTimeIndex,
+			<.4f => highestSeekTimeIndex,
+			<.6f => highestNextSeekTimeIndex,
+			<.9f => (instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend<instance.confidenceDatabase[highestSeekTimeIndex].speedTrend)?
+			         highestNextSeekTimeIndex:highestSeekTimeIndex,
 			_ => lowestAccIndex
 		};
 		// if(Random.Range(0,1)>.5f&&lowestWPM>0){
@@ -455,10 +474,12 @@ public class KeyManager:MonoBehaviour{
 		float lowestAcc=2,
 		      highestSeekTime=-1,
 		      highestNextKeySeekTime=-1,
+		      bestTrendingSeekTime=-1,	//TODO: For the difficulty options, there could be a 'worst' variant as well
 		      lowestFullWordSpeed=99999;
 		int   lowestAccIndex=Random.Range(0,numCandidates-1),
 		      highestSeekTimeIndex=Random.Range(0,numCandidates-1),
 		      highestNextKeySeekTimeIndex=Random.Range(0,numCandidates-1),
+		      bestTrendingSeekTimeIndex=Random.Range(0,numCandidates),
 		      lowestFullWordSpeedIndex=Random.Range(0,numCandidates-1);
 		float newQuoteDifficulty=(quoteDifficulty-.2f)*(quoteDifficulty+.123f);
 		for(int i=0;i<numCandidates;i++){
@@ -479,6 +500,10 @@ public class KeyManager:MonoBehaviour{
 				highestNextKeySeekTime=averageConfidence[i].nextKeySeekTime;
 				highestNextKeySeekTimeIndex=i;
 			}
+			if(averageConfidence[i].speedTrend>bestTrendingSeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
+				bestTrendingSeekTime=averageConfidence[i].speedTrend;
+				bestTrendingSeekTimeIndex=i;
+			}
 			if(averageConfidence[i].wpm<lowestFullWordSpeed&&Random.Range(0f,1f)<=newQuoteDifficulty){
 				lowestFullWordSpeed=averageConfidence[i].wpm;
 				lowestFullWordSpeedIndex=i;
@@ -487,9 +512,10 @@ public class KeyManager:MonoBehaviour{
 		//TODO: Idea: Function for selecting easy quotes (maybe an option in the settings to insert intermittent easy quotes to help with motivation when fatigue/regression is detected?)
 
 		int finalIndex = Random.Range(0f,1f) switch{
-			<.3f => highestSeekTimeIndex,
-			<.45f => highestNextKeySeekTimeIndex,
-			<.75f => lowestFullWordSpeedIndex,
+			<.15f => highestSeekTimeIndex,
+			<.3f => highestNextKeySeekTimeIndex,
+			<.75f => bestTrendingSeekTimeIndex,
+			<.875f => lowestFullWordSpeedIndex,
 			_ => lowestAccIndex
 		};
 		// if(Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
@@ -534,10 +560,12 @@ public class KeyManager:MonoBehaviour{
 				averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999?
 					Mathf.Max(instance.confidenceDatabase[keyIndex].previousKeySeekTime,instance.confidenceDatabase[keyIndex].nextKeySeekTime):
 					instance.confidenceDatabase[keyIndex].nextKeySeekTime;
+			averageConfidence.speedTrend+=instance.confidenceDatabase[keyIndex].speedTrend;
 			averageConfidence.wpm+=instance.confidenceDatabase[keyIndex].wpm;
 			numChars++;
 		}
 		
+		averageConfidence.speedTrend/=numChars;
 		if(numChars>0){
 			quoteAccuracyScore/=numChars;
 			averageConfidence.seekTime/=numChars;
