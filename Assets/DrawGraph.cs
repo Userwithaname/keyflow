@@ -239,6 +239,7 @@ public class DrawGraph:Graphic{
 			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
 			vh.AddVert(vertex);
 			
+			vertCount+=4;
 			vh.AddTriangle(vertCount-1,vertCount-2,vertCount-3);
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 			
@@ -297,13 +298,13 @@ public class DrawGraph:Graphic{
 			
 			hoverPointY=height*wordSpeedValues[hoverWordIndex]/topWPM;
 			
-			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend),hoverPointY);
+			vertex.position=new Vector3(hoverPointX-(selectionSize*expandedBlend/2),hoverPointY);
 			vh.AddVert(vertex);
-			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend));
+			vertex.position=new Vector3(hoverPointX,hoverPointY-(selectionSize*expandedBlend/2));
 			vh.AddVert(vertex);
-			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend),hoverPointY);
+			vertex.position=new Vector3(hoverPointX+(selectionSize*expandedBlend/2),hoverPointY);
 			vh.AddVert(vertex);
-			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend));
+			vertex.position=new Vector3(hoverPointX,hoverPointY+(selectionSize*expandedBlend/2));
 			vh.AddVert(vertex);
 			
 			vertCount+=4;
@@ -312,13 +313,14 @@ public class DrawGraph:Graphic{
 		}
 		
 		// this is only here to work around an index error which otherwise occurs when there were no mistakes and mouse is not hovering on the graph
-		vertex.position=new Vector3(-50000,-height*50000);
+		vertCount=vh.currentVertCount;
+		vertex.position=new Vector3(-50000,-50000);
 		vh.AddVert(vertex);
-		vertex.position=new Vector3(-50000,-height*50000);
+		vertex.position=new Vector3(-50000,-50000);
 		vh.AddVert(vertex);
-		vertex.position=new Vector3(-50000,-height*50000);
+		vertex.position=new Vector3(-50000,-50000);
 		vh.AddVert(vertex);
-		vertex.position=new Vector3(-50000,-height*50000);
+		vertex.position=new Vector3(-50000,-50000);
 		vh.AddVert(vertex);
 		vh.AddTriangle(vertCount+1,vertCount+0,vertCount+2);
 		vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
