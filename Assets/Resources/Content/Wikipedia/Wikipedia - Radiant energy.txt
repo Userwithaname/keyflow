@@ -1,0 +1,1 @@
+In physics, and in particular as measured by radiometry, radiant energy is the energy of electromagnetic and gravitational radiation. As energy, its SI unit is the joule (J). The quantity of radiant energy may be calculated by integrating radiant flux (or power) with respect to time.

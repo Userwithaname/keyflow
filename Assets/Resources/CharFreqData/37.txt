@@ -19,6 +19,7 @@ Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Chemical reaction
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Vergence (optics)

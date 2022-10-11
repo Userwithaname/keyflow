@@ -46,6 +46,7 @@ public class DrawGraph:Graphic{
 		
 		float topWPM=Mathf.Lerp(speedValueScale,Mathf.Max(speedValueScale,wordSpeedScale),expandedBlend);
 		
+		// Draw WPM graph
 		for(int i=0;i<speedValues.Length;i++){
 			float textProgress=(float)(currentIndex)/(speedValues.Length-1);
 			// float textProgress=(float)((values.Length)-currentIndex+1)/(values.Length);
@@ -310,9 +311,21 @@ public class DrawGraph:Graphic{
 			vh.AddTriangle(vertCount-3,vertCount-4,vertCount-1);
 		}
 		
+		// this is only here to work around an index error which otherwise occurs when there were no mistakes and mouse is not hovering on the graph
+		vertex.position=new Vector3(-50000,-height*50000);
+		vh.AddVert(vertex);
+		vertex.position=new Vector3(-50000,-height*50000);
+		vh.AddVert(vertex);
+		vertex.position=new Vector3(-50000,-height*50000);
+		vh.AddVert(vertex);
+		vertex.position=new Vector3(-50000,-height*50000);
+		vh.AddVert(vertex);
+		vh.AddTriangle(vertCount+1,vertCount+0,vertCount+2);
+		vh.AddTriangle(vertCount+2,vertCount+1,vertCount+3);
+		vertCount+=4;
+		
 		// Draw errors
-		vertCount=vh.currentVertCount;
-		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){	//BUG: When there are no errors, the entire graph breaks unless the mouse is hovering over it
+		for(int i=0;expandedBlend>0.00001f&&i<accuracy.Length;i++){
 			if(misses[i]==0) continue;
 			
 			float currentPosX=width*(times[i]-times[0])/(timeScale-times[0]);
