@@ -45,6 +45,7 @@ Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Innovation
@@ -63,4 +64,5 @@ Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - General relativity
 Content/Wikipedia/Wikipedia - Wave

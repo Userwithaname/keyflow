@@ -65,7 +65,6 @@ Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Interpolation
-Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Base (geometry)
@@ -117,6 +116,7 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Weight
+Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Feedback
@@ -138,6 +138,7 @@ Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Punctuation
+Content/Wikipedia/Wikipedia - Measurement
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Liquid
@@ -158,12 +159,15 @@ Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Inverse-square law
+Content/Wikipedia/Wikipedia - Chemical reaction
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Proton
+Content/Wikipedia/Wikipedia - Conservation law
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Signal
@@ -194,15 +198,19 @@ Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Time
 Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Elastic energy
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Tidal acceleration
+Content/Wikipedia/Wikipedia - Conservation of energy
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Acceleration
+Content/Wikipedia/Wikipedia - Space
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Structure of Earth
@@ -237,6 +245,7 @@ Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Simplicity
+Content/Wikipedia/Wikipedia - Chemical energy
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Median
@@ -254,6 +263,7 @@ Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - General relativity
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Gravity
@@ -261,6 +271,7 @@ Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Optics
+Content/Wikipedia/Wikipadia - Three-dimensional space
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Natural science
@@ -289,6 +300,7 @@ Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Deep learning
+Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Fluid dynamics
@@ -318,6 +330,7 @@ Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Chart
+Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Typewriter

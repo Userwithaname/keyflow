@@ -7,4 +7,6 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Number
+Content/Wikipedia/Wikipedia - Chemical reaction
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - General relativity

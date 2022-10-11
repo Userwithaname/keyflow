@@ -10,7 +10,9 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Pascal (unit)
+Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Innovation
+Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Serial comma
@@ -19,7 +21,7 @@ Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Hypothesis
-Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Chemical energy
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Ratio

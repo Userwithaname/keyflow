@@ -19,6 +19,7 @@ Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Gravity wave
@@ -78,3 +79,4 @@ Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Dispersion (optics)
+Content/Wikipedia/Wikipedia - General relativity
