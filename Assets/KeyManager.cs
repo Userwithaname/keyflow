@@ -225,7 +225,18 @@ public class KeyManager:MonoBehaviour{
 		instance.confidenceDatabase[keyIndex].misses++;
 	}
 	
-	public static void UpdateSeekTime(int index,float seekTime){
+	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
+		float oldSeekTime=instance.confidenceDatabase[index].previousKeySeekTime;
+		if(oldSeekTime<10000){
+			instance.confidenceDatabase[index].previousKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
+			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
+			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+			                                                            .075f);
+		}else{
+			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
+		}
+	}
+	public static void UpdateKeySeekTime(int index,float seekTime){
 		float oldSeekTime=instance.confidenceDatabase[index].seekTime;
 		if(oldSeekTime<10000){
 			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
@@ -234,17 +245,6 @@ public class KeyManager:MonoBehaviour{
 			                                                            .15f);
 		}else{
 			instance.confidenceDatabase[index].seekTime=seekTime;
-		}
-	}
-	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
-		float oldSeekTime=instance.confidenceDatabase[index].previousKeySeekTime;
-		if(oldSeekTime<10000){
-			instance.confidenceDatabase[index].previousKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
-			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
-			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
-			                                                            .125f);
-		}else{
-			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
 		}
 	}
 	public static void UpdateNextKeySeekTime(int index,float seekTime){
