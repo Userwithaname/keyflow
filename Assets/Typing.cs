@@ -6,6 +6,54 @@ using UnityEngine.UI;
 public class Typing : MonoBehaviour {
 	
 	/*
+	 * TODO: Decouple the UI code from the typing progress logic, so modes can be implemented
+	 *
+	 * Maybe this could be turned into a 'Base UI' class, for things like:
+	 *		- Test itself
+	 *		- Buttons on the bottom
+	 *		- Text UI on top, controlled by external code for the actual game mode
+	 * 
+	 * It may be easiest to create a new file and use this as a reference to copy from.
+	 * The new file(s) should consider the following:
+	 *		- Theme data should still be stored in one single location (such as this 'Typing' singleton class)
+	 *		- All UI and mode-specific code should be done in separate, mode-specific classes
+	 *		- The base class would likely handle quote selection, typing progress, timing, score calculations (per-key, WPM, etc.)
+	 *
+	 * Ideas for 'mode' implementation:
+	 *		1: Decouple the UI/theme and other singleton code from the test logic
+	 *			For example, if the modes inherit from 'Typing', they don't need to have their own themes and settings defined for each one)
+	 *			All of that code would be moved elsewhere, and this class would become something that modes can inherit from.
+	 *		2: This class is stripped of all test logic, and calls the test functions from an external reference
+	 *			This class would remain a singleton and handle UI/graphs (likely renamed to 'BaseUI'),
+	 *			but it would keep a reference to a 'TypingTest' instance - which the actual modes could inherit from,
+	 *			and would call functions from there. The 'BaseUI' class could still handle the progress logic
+	 *			and call 'Done()' on the 'TypingTest', so it can decide what to do. They may need to communicate with each other.
+	 *
+	 * For consideration: !his class currently handles the following:
+	 *		- Selects new quotes
+	 *		- The test itself
+	 *		- Test-related UI/info, as well as transitions
+	 *		- General UI like the buttons at the bottom
+	 *		- The themes used in the application
+	 *		- Controls what the buttons at the bottom do
+	 *		- Manages opening/closing other UI elements (settings window, graph UI)
+	 * Which of these are fine to keep in a singleton class, and which should be considered mode-specific?
+	 *		- Quote picking/progress and the choice of what to display during tests should be done in a dedicated class which modes can inherit from
+	 *		- Theming, buttons/button logic, transitions, any actual drawing of the UI could still be handled here
+	 * 
+	 *		For example: the test chooses to display the WPM, the average scores, and top scores, which this class then draws.
+	 *		During the test, the typing progress (and all KeyManager/score calculation) is handled by the mode itself. It constructs a 'progress' string
+	 *		which this class then uses to display the text/errors/etc on screen.
+	 *		After the test, the mode tells this class what to do (e.g., draw graph, score the player using a star system, etc.)
+	 * 
+	 * Modes:
+	 *		- Consistency Mode
+	 *		- Accuracy Mode
+	 *		- Speed Mode
+	 *		- Guided Mode
+	 */
+	
+	/*
 	 * Idea: game modes:
 	 *		Stay in flight:
 	 *			A 2D rendered plane is flying as you type.
@@ -183,7 +231,7 @@ public class Typing : MonoBehaviour {
 		showIncorrectCharacters.isOn=PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn?1:0)==1;
 	}
 	
-	void UpdateTheme(){
+	public void UpdateTheme(){
 		textDisplayText.color=themes[selectedTheme].textColorQuote;
 		var quoteInfoColors=quoteInfoButton.colors;
 		lessonInfo.color=WPMInfo.color=averageWPMInfo.color=quoteInfoColors.normalColor=quoteInfoColors.selectedColor=themes[selectedTheme].textColorUI;
@@ -619,7 +667,7 @@ public class Typing : MonoBehaviour {
 				KeyManager.RegisterKeyHit(keyIndex);
 				if(loc>0){
 					if(input[loc]!=input[loc-1]){
-						KeyManager.UpdateSeekTime(keyIndex,seekTime);
+						KeyManager.UpdateKeySeekTime(keyIndex,seekTime);
 						KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc-1]),seekTime);
 					}
 					if(loc<text.Length-1){
