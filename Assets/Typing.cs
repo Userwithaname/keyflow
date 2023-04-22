@@ -756,7 +756,8 @@ public class Typing : MonoBehaviour {
 			// graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,Screen.height/3*2,curBlend));
 			
 			graphTransform.anchoredPosition=new Vector2(defaultGraphPos.x,defaultGraphPos.y+(curBlend*62));
-			targetGraphHeight=Screen.height-graphTransform.anchoredPosition.y+lessonInfo.rectTransform.anchoredPosition.y-lessonInfo.rectTransform.rect.height-15;
+			// targetGraphHeight=Screen.height-graphTransform.anchoredPosition.y+lessonInfo.rectTransform.anchoredPosition.y-lessonInfo.rectTransform.rect.height-15;
+			targetGraphHeight=700f-graphTransform.anchoredPosition.y+lessonInfo.rectTransform.anchoredPosition.y-lessonInfo.rectTransform.rect.height-15;
 			graphTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Lerp(defaultGraphHeight,targetGraphHeight,curBlend));
 
 			graph.expandedBlend=curBlend;

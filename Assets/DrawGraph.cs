@@ -25,8 +25,8 @@ public class DrawGraph:Graphic{
 	float lastWidth,lastHeight;
 	float pixelScale;
 
-	//TODO: Ability to zoom (stretch the bar horizontally using the mouse scroolwheel, keep the selected index at the same screen position, shew a scrollbar)
-	
+	//TODO: Ability to zoom (stretch the bar horizontally using the mouse scrollwheel, keep the selected index at the same screen position, shew a scrollbar)
+
 	protected override void OnPopulateMesh(VertexHelper vh){
 		vh.Clear();
 		
