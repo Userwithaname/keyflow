@@ -36,6 +36,8 @@ public class DrawGraph:Graphic{
 		if(lastWidth!=width||lastHeight!=height){
 			CanvasScaler scaler=FindObjectOfType<CanvasScaler>();
 			pixelScale=Mathf.Lerp(Screen.width/scaler.referenceResolution.x,Screen.height/scaler.referenceResolution.y,scaler.matchWidthOrHeight);
+			lastWidth=width;
+			lastHeight=height;
 		}
 
 		UIVertex vertex=UIVertex.simpleVert;
