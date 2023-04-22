@@ -22,6 +22,8 @@ public class DrawGraph:Graphic{
 	[System.NonSerialized]public float expandedBlend;
 	public bool mouseOverGraph;
 	float width,height;
+	float lastWidth,lastHeight;
+	float pixelScale;
 
 	//TODO: Ability to zoom (stretch the bar horizontally using the mouse scroolwheel, keep the selected index at the same screen position, shew a scrollbar)
 	
@@ -31,6 +33,10 @@ public class DrawGraph:Graphic{
 		Rect rect=rectTransform.rect;
 		width=rect.width;
 		height=rect.height;
+		if(lastWidth!=width||lastHeight!=height){
+			CanvasScaler scaler=FindObjectOfType<CanvasScaler>();
+			pixelScale=Mathf.Lerp(Screen.width/scaler.referenceResolution.x,Screen.height/scaler.referenceResolution.y,scaler.matchWidthOrHeight);
+		}
 
 		UIVertex vertex=UIVertex.simpleVert;
 		if(currentIndex<2||speedValues.Length<=1)
@@ -39,11 +45,12 @@ public class DrawGraph:Graphic{
 		Vector3 rtPos=rectTransform.position;
 		Vector3 mouseHoverPos=Input.mousePosition;
 		mouseHoverPos.x-=rtPos.x;
+		mouseHoverPos/=pixelScale;
 		float lowestHoverDiff=999;
 		float hoverPointX=0;
 		hoverIndex=hoverWordIndex=-1;
 		mouseOverGraph=mouseHoverPos.x>-10&&mouseHoverPos.x<width+10&&mouseHoverPos.y<rtPos.y+height+10&&mouseHoverPos.y>rtPos.y-10;
-		
+
 		float topWPM=Mathf.Lerp(speedValueScale,Mathf.Max(speedValueScale,wordSpeedScale),expandedBlend);
 		
 		// Draw WPM graph

@@ -8,13 +8,13 @@
 
 cd ..
 unityInstall=\
-"~/.unity3d/"+\
-"$(cat ProjectSettings/ProjectVersion.txt | grep 'm_EditorVersion:' | sed 's/.*\: //g')"+\
+"$HOME/.unity3d/"\
+"$(cat ProjectSettings/ProjectVersion.txt | grep 'm_EditorVersion:' | sed 's/.*\: //g')"\
 "/Editor/Unity"
 echo $unityInstall
 
 tail -f ~/.config/unity3d/Editor.log &
 processID=$!
-/opt/Unity/Editor/Unity -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
+$unityInstall -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
 
 cd -
