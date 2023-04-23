@@ -507,7 +507,8 @@ public class Typing : MonoBehaviour {
 	bool lastFrameIncorrect=true;
 	void SetTextColor(){
 		int cappedLoc=Mathf.Min(loc+1,text.Length);
-		string content=(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)+text.Insert(cappedLoc,"</color>");
+		string content=$"{(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)}{text.Insert(cappedLoc,"</color>")}";
+		// string content=(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)+text.Insert(cappedLoc,"</color>");
 		if(incorrect){
 			int lengthDiff=content.Length-text.Length;
 			
@@ -532,7 +533,7 @@ public class Typing : MonoBehaviour {
 						}
 					}
 				}
-				content=content.Insert(cappedLoc+lengthDiff,themes[selectedTheme].textColorErrorTag+"<u>"+new string(chars)+"</u></color>");
+				content=content.Insert(cappedLoc+lengthDiff,$"{themes[selectedTheme].textColorErrorTag}<u>{new string(chars)}</u></color>");
 			}else{
 				int incorrectStart=cappedLoc+lengthDiff,
 				    incorrectEnd=Mathf.Min(input.Length,text.Length)+lengthDiff;
