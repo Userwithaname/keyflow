@@ -107,7 +107,7 @@ public class Typing : MonoBehaviour {
 	int loc=-1;
 	int lastLength,lastMaxLength=-1;
 	float seekTime,wordTime,totalTestTime;
-	bool incorrect,done;
+	bool incorrect,done,started=true;
 	public static int curPracticeIndex;
 	public static string quoteTitle;
 	public TMP_InputField textDisplay;
@@ -310,6 +310,7 @@ public class Typing : MonoBehaviour {
 		ResetLesson();
 	}
 	public void ResetLesson(){
+		started=true;
 		done=false;
 		MoveTooltipsOffScreen();
 		
@@ -414,7 +415,7 @@ public class Typing : MonoBehaviour {
 		lessonInfo.text=
 			$"<b>Current Practice: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
 			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
-			$"\nSeek Time: {curCharacterSeekTime}"+	//TODO: Idea: Show a time estimate based on available key seek time data
+			$"\nSeek Time: {curCharacterSeekTime}"+
 			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
 			$"\nContextual Seek Time: {curCharacterNextSeekTime}"+
 			$"\nImprovement Trend: {curCharacterSpeedTrend}"+
@@ -592,12 +593,23 @@ public class Typing : MonoBehaviour {
 		if(fade!=lastFade||backgroundFade>0||backgroundFade<1)
 			FadeUpdate();
 		if(done) return;
+		if(totalTestTime<.001f){
+			if(!started)
+				return;
+			started=false;
+		}
 		int seconds=Mathf.FloorToInt(totalTestTime%60);
 		accuracy=(float)hitCount/(hitCount+missCount)*100;
 		wpm=loc/totalTestTime*60/5;
 		if(hitCount+missCount==0) accuracy=100;
 		WPMInfo.text=
 			$"Accuracy: {Mathf.RoundToInt(accuracy)}%\nSpeed: {(totalTestTime==0?"-":Mathf.RoundToInt(wpm))} WPM\nTime: {Mathf.FloorToInt(totalTestTime/60)}:{(seconds<10?"0":"")}{seconds}";
+		
+		if(totalTestTime<.001f){
+			float estimatedTime=KeyManager.GetEstimatedTypingTimeSeconds(text);
+			seconds=Mathf.FloorToInt(estimatedTime%60);
+			WPMInfo.text+=$" (est.: {Mathf.FloorToInt(estimatedTime/60)}:{(seconds<10?"0":"")}{seconds})";
+		}
 		
 		if(Input.mousePosition!=lastMousePos){
 			fade=false;
@@ -609,6 +621,7 @@ public class Typing : MonoBehaviour {
 		incorrect=!text.StartsWith(input);
 		switch(lastMaxLength){
 			case >= 0 when input.Length<text.Length||incorrect:{
+				started=true;
 				seekTime+=Time.deltaTime;
 				wordTime+=Time.deltaTime;
 				totalTestTime+=Time.deltaTime;

@@ -584,6 +584,25 @@ public class KeyManager:MonoBehaviour{
 		return averageConfidence;
 	}
 	
+	public static float GetEstimatedTypingTimeSeconds(string quote){
+		List<char> sortedQuote=quote.ToList();
+		sortedQuote.Sort();
+		float timeEstimate=0;
+		int keyIndex=0;
+		char lastC='\t';
+		foreach(char c in sortedQuote){
+			if(lastC!=c){
+				keyIndex=GetKeyIndex(c,keyIndex);
+				lastC=c;
+			}
+			timeEstimate+=
+				instance.confidenceDatabase[keyIndex].seekTime<1000?
+					instance.confidenceDatabase[keyIndex].seekTime:
+					.35f;
+		}
+		return timeEstimate;
+	}
+	
 	/*
 	 * TODO: If code snippets are to be implemented, the following could work for online selection (or they could be added offline):
 	 * 
