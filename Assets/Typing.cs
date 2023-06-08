@@ -422,7 +422,7 @@ public class Typing : MonoBehaviour {
 		curCharPractice=updatedCharPractice;
 		
 		lessonInfo.text=
-			$"<b>Current Practice: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
+			$"<b>Practice Focus: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
 			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
 			$"\nSeek Time: {curCharacterSeekTime}"+
 			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
