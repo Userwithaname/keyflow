@@ -375,6 +375,19 @@ public class Typing : MonoBehaviour {
 		textDisplay.readOnly=!settingsOpen&&!done;
 	}
 	
+	public string TimeFormattedString(float time,bool keepMinutes=false,bool keepFractions=false){
+		bool negative=time<0;
+		time=Mathf.Abs(time);
+		int seconds=Mathf.FloorToInt(time%60);
+		string fractions=((float)Math.Round(time-Mathf.FloorToInt(time),3)%1).ToString().Split('.')[^1];
+		for(int i=fractions.Length;i<3;i++){
+			fractions+='0';
+		}
+		return time>60||keepMinutes?
+			$"{(negative?'-':"")}{Mathf.FloorToInt(time/60)}:{(seconds<10?"0":"")}{seconds}{(keepFractions?$":{fractions}":"")}":
+			$"{(negative?'-':"")}{seconds}{(keepFractions?$":{fractions}":"")}";
+	}
+	
 	KeyManager.KeyConfidenceData curCharPractice;
 	char curCharacterPractice;
 	string curCharacterSpeedTrend;
@@ -444,11 +457,6 @@ public class Typing : MonoBehaviour {
 				KeyManager.averageAccuracy=Mathf.Lerp(KeyManager.averageAccuracy,accuracy,KeyManager.averageAccuracy>0?.12f:1);
 			if(wpm>0)
 				KeyManager.averageWPM=Mathf.Lerp(KeyManager.averageWPM,wpm,KeyManager.averageWPM>0?.12f:1);
-			int seconds=Mathf.FloorToInt(totalTestTime%60);
-			string fractions=((float)Math.Round(totalTestTime-Mathf.FloorToInt(totalTestTime),3)%1).ToString().Split('.')[^1];
-			for(int i=fractions.Length;i<3;i++){
-				fractions+='0';
-			}
 			if(float.IsNaN(accuracy)) accuracy=100;
 			WPMInfo.text=
 				"Accuracy: "+
@@ -459,7 +467,10 @@ public class Typing : MonoBehaviour {
 					(wpm>=oldAverageSpeed?
 						$"{themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)} WPM (+{Math.Round(wpm-oldAverageSpeed,2)} from average)</color>":
 						$"{themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)} WPM ({Math.Round(wpm-oldAverageSpeed,2)} from average)</color>")+
-				$"\nTime: {Mathf.FloorToInt(totalTestTime/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
+				$"\nTime: "+
+					(totalTestTime<estimatedTime?
+						$"{themes[selectedTheme].improvementColorTag}{TimeFormattedString(totalTestTime,true)} ({TimeFormattedString(totalTestTime-estimatedTime,true,true)} from estimate)</color>":
+						$"{themes[selectedTheme].regressionColorTag}{TimeFormattedString(totalTestTime,true)} (+{TimeFormattedString(totalTestTime-estimatedTime,true,true)} from estimate)</color>");
 			
 			averageWPMInfo.text=
 				"Average Accuracy: "+
@@ -522,6 +533,7 @@ public class Typing : MonoBehaviour {
 		if(incorrect){
 			int lengthDiff=content.Length-text.Length;
 			
+			//BUG: Index out of range when deleting using control+backspace
 			if(showIncorrectCharacters.isOn){
 				char[] chars=input.Remove(0,loc+1).ToCharArray();
 				for(int i=0;i<chars.Length;i++){
@@ -575,7 +587,7 @@ public class Typing : MonoBehaviour {
 		textDisplay.caretPosition=Mathf.Min(input.Length,text.Length);
 	}
 	
-	float accuracy,wpm;
+	float accuracy,wpm,estimatedTime;
 	void Update(){
 		if(!fade&&(Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Escape))){
 			if(settingsOpen){
@@ -607,17 +619,15 @@ public class Typing : MonoBehaviour {
 				return;
 			started=false;
 		}
-		int seconds=Mathf.FloorToInt(totalTestTime%60);
 		accuracy=(float)hitCount/(hitCount+missCount)*100;
 		wpm=loc/totalTestTime*60/5;
 		if(hitCount+missCount==0) accuracy=100;
 		WPMInfo.text=
-			$"Accuracy: {Mathf.RoundToInt(accuracy)}%\nSpeed: {(totalTestTime==0?"-":Mathf.RoundToInt(wpm))} WPM\nTime: {Mathf.FloorToInt(totalTestTime/60)}:{(seconds<10?"0":"")}{seconds}";
+			$"Accuracy: {Mathf.RoundToInt(accuracy)}%\nSpeed: {(totalTestTime==0?"-":Mathf.RoundToInt(wpm))} WPM\nTime: {TimeFormattedString(totalTestTime,true)}";
 		
 		if(totalTestTime<.001f){
-			float estimatedTime=KeyManager.GetEstimatedTypingTimeSeconds(text);
-			seconds=Mathf.FloorToInt(estimatedTime%60);
-			WPMInfo.text+=$" (est.: {Mathf.FloorToInt(estimatedTime/60)}:{(seconds<10?"0":"")}{seconds})";
+			estimatedTime=KeyManager.GetEstimatedTypingTimeSeconds(text);
+			WPMInfo.text+=$" (est.: {TimeFormattedString(estimatedTime,true)})";
 		}
 		
 		if(Input.mousePosition!=lastMousePos){
@@ -699,27 +709,25 @@ public class Typing : MonoBehaviour {
 				}
 				seekTime=0;
 			}else{
-				graph.accuracy[Mathf.Max(0,loc)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
-				graph.misses[Mathf.Max(0,loc)]++;
-				missCount++;
-				KeyManager.RegisterKeyMiss(keyIndex);
+				if(input.Length>lastLength){
+					graph.accuracy[Mathf.Max(0,loc)]=accuracy=(float)hitCount/(hitCount+missCount)*100;
+					graph.misses[Mathf.Max(0,loc)]++;
+					missCount++;
+					KeyManager.RegisterKeyMiss(keyIndex);
+				}
 				incorrect=true;
 				
 				break;
 			}
 		}
 		wpm=loc/totalTestTime*60/5;
-
-		incorrect=!text.StartsWith(input);
-		
 		lastLength=input.Length;
-		// if(!incorrect&&lastLength>lastMaxLength)
-		// 	lastMaxLength=lastLength;
 		lastInput=input;
-		
-		if(incorrect||input.Length<text.Length)	return;
-		// KeyManager.RemoveHitsAndMisses(curPracticeIndex);
-		done=textDisplay.readOnly=true;
+		incorrect=!text.StartsWith(input[..Mathf.Min(input.Length,text.Length)]);	// Compare substring in case of trailing characters
+		if(incorrect||input.Length<text.Length) return;
+		if(input.Length>text.Length)	input=text;
+
+		textDisplay.readOnly=done=true;
 		fade=false;
 		int charOccurrences=0;
 		for(int i=0;i<input.Length;i++){
@@ -793,13 +801,6 @@ public class Typing : MonoBehaviour {
 		}
 		
 		// Tooltips
-		
-		lastHoverIndex=graph.hoverIndex;
-		int seconds=Mathf.FloorToInt(graph.times[lastHoverIndex]%60);
-		string fractions=((float)Math.Round(graph.times[lastHoverIndex]-Mathf.FloorToInt(graph.times[lastHoverIndex]),3)%1).ToString().Split('.')[^1];
-		for(int i=fractions.Length;i<3;i++){
-			fractions+='0';
-		}
 
 		/*
 		 * For drawing the tooltip, draw them one after another, and always set the Y pos to either the value in the graph, or Mathf.Max of the previous Y pos + UI element height
@@ -815,11 +816,12 @@ public class Typing : MonoBehaviour {
 		float wpmScale=Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
 		const float paddingDistance=15;
 		const float verticalPadding=2;
+		lastHoverIndex=graph.hoverIndex;
 		Vector2 baseTooltipPos=graphOutlineTransform.anchoredPosition+graph.rectTransform.anchoredPosition;
 		baseTooltipPos.x=Mathf.Clamp(baseTooltipPos.x+graph.times[lastHoverIndex]/graph.timeScale*graphRect.width,graphTooltipWordSpeed.rect.width+paddingDistance,Screen.width-graphTooltipSpeed.rect.width-paddingDistance);
 		Vector2 tooltipOffset=Vector2.zero;
 
-		graphTooltipTimestampText.text=$"Time: {Mathf.FloorToInt(graph.times[lastHoverIndex]/60)}:{(seconds<10?"0":"")}{seconds}:{fractions}";
+		graphTooltipTimestampText.text=$"Time: {TimeFormattedString(graph.times[lastHoverIndex],true,true)}";
 		graphTooltipTimestampTargetPos=baseTooltipPos+tooltipOffset;
 		
 		tooltipOffset=Vector2.right*paddingDistance;
@@ -841,14 +843,37 @@ public class Typing : MonoBehaviour {
 
 		tooltipOffset=Vector2.left*paddingDistance;
 		
+		//TODO: Idea: Display the current word in a new tooltip, centered above the diamond? 
+		string wordWithHighlightedLetter="";
+		int indexOffset=lastHoverIndex;
+		try{
+			while(true){
+				switch(text[indexOffset]){
+					case ' ':case '\t':case '\n':
+						break;
+					default:
+						indexOffset--;
+						continue;
+				}
+				break;
+			}
+		}catch{
+			indexOffset=0;
+		}
+		for(int i=0;i<words[graph.hoverWordIndex].Length;i++){
+			char c=(words[graph.hoverWordIndex][i] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => words[graph.hoverWordIndex][i] });
+			wordWithHighlightedLetter+=
+				i+indexOffset==lastHoverIndex?
+				$"<b>{c}</b>":c;
+		}
 		float graphSeekTime=(float)Math.Round(graph.seekTimes[lastHoverIndex]*1000,2);
-		graphTooltipSeekTimeText.text=$"Seek Time: {(graphSeekTime>0?graphSeekTime:"<"+Math.Round(1.0/Application.targetFrameRate*1000,2))} ms\nKey: <i>{(text[lastHoverIndex+1] switch{ ' ' => '␣', '\t' => '↹', '\n' => '↵', _ => text[lastHoverIndex+1] })}</i>";
+		graphTooltipSeekTimeText.text=$"Seek Time: {(graphSeekTime>0?graphSeekTime:"<"+Math.Round(1.0/Application.targetFrameRate*1000,2))} ms\n{wordWithHighlightedLetter}</i>";
 		//TODO: Determine the Y pos of each tooltip beforehand, prevent overlap in the proper order
 		float seekTimeTooltipY=Mathf.Clamp(graph.seekTimes[lastHoverIndex]/4*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding); 
 		tooltipOffset.y=seekTimeTooltipY;
 		graphTooltipSeekTimeTargetPos=baseTooltipPos+tooltipOffset;
 		
-		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: <i>{words[graph.hoverWordIndex]}</i>";
+		graphTooltipWordSpeedText.text=$"Word Speed: {+Math.Round(graph.wordSpeedValues[graph.hoverWordIndex],2)} WPM\nWord: <i>{wordWithHighlightedLetter}</i>";
 		tooltipOffset.y=Mathf.Clamp(graph.wordSpeedValues[graph.hoverWordIndex]/wpmScale*graphRect.height,tooltipHeight+verticalPadding,graphRect.height-tooltipHeight-verticalPadding);
 		tooltipOffset.y=tooltipOffset.y<seekTimeTooltipY&&seekTimeTooltipY-tooltipHeight*2>=verticalPadding?
 		                Mathf.Min(seekTimeTooltipY-tooltipHeight*2-verticalPadding,tooltipOffset.y):
