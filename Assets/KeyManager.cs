@@ -343,10 +343,12 @@ public class KeyManager:MonoBehaviour{
 		float highestSeekTime=-1;
 		int highestNextSeekTimeIndex=Random.Range(lowercaseStart,lowercaseEnd);
 		float highestNextSeekTime=-1;
-		int lowestAccIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float lowestAcc=2;
 		int lowestWPMIndex=Random.Range(lowercaseStart,lowercaseEnd);
 		float lowestWPM=10000;
+		int lowestAccIndex=Random.Range(lowercaseStart,lowercaseEnd);
+		float lowestAcc=2;
+		int bestImprovementTrendIndex=Random.Range(lowercaseStart,lowercaseEnd);
+		float bestImprovementTrend=-10000;
 		float averageSeekTime=60f/(averageWPM*5);
 		for(int i=0;i<instance.confidenceDatabase.Length;i++){
 			if(!CharWithinFilters(i))	continue;
@@ -389,24 +391,20 @@ public class KeyManager:MonoBehaviour{
 					lowestAccIndex=i;
 				}
 			}
+			if(instance.confidenceDatabase[i].speedTrend>bestImprovementTrend){
+				if(Random.Range(0f,1f)>.65f){
+						bestImprovementTrend=instance.confidenceDatabase[i].speedTrend;
+						bestImprovementTrendIndex=i;
+				}
+			}
 		}
-		// float rand=Random.Range(0f,1f);
-		// return rand switch{
 		return Random.Range(0f,1f) switch{
-			<.2f => lowestWPMIndex,
-			<.4f => highestSeekTimeIndex,
-			<.6f => highestNextSeekTimeIndex,
-			<.9f => (instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend<instance.confidenceDatabase[highestSeekTimeIndex].speedTrend)?
+			<.2f	=> lowestWPMIndex,
+			<.55f	=> bestImprovementTrendIndex,
+			<.9f	=> instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend>instance.confidenceDatabase[highestSeekTimeIndex].speedTrend&&Random.Range(0f,1f)>difficulty*.45f+.1f?
 			         highestNextSeekTimeIndex:highestSeekTimeIndex,
-			_ => lowestAccIndex
+			_		=> lowestAccIndex
 		};
-		// if(Random.Range(0,1)>.5f&&lowestWPM>0){
-		// 	if(highestSeekTime>highestNextSeekTime)
-		// 		highestNextSeekTimeIndex=lowestWPMIndex;
-		// 	else
-		// 		highestSeekTimeIndex=lowestWPMIndex;
-		// }
-		// return Random.Range(0f,1f)>.5f?(Random.Range(0f,1f)>.45f?highestSeekTimeIndex:highestNextSeekTimeIndex):lowestAccIndex;
 	}
 	
 	public static int GetNumberOfQuotesForKey(int keyIndex){
