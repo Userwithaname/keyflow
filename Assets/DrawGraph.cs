@@ -24,6 +24,7 @@ public class DrawGraph:Graphic{
 	float width,height;
 	float lastWidth,lastHeight;
 	float pixelScale;
+	CanvasScaler scaler;
 
 	//TODO: Ability to zoom (stretch the bar horizontally using the mouse scrollwheel, keep the selected index at the same screen position, shew a scrollbar)
 
@@ -34,7 +35,8 @@ public class DrawGraph:Graphic{
 		width=rect.width;
 		height=rect.height;
 		if(lastWidth!=width||lastHeight!=height){
-			CanvasScaler scaler=FindObjectOfType<CanvasScaler>();
+			if(!scaler)
+				scaler=(CanvasScaler)FindAnyObjectByType(typeof(CanvasScaler));
 			pixelScale=Mathf.Lerp(Screen.width/scaler.referenceResolution.x,Screen.height/scaler.referenceResolution.y,scaler.matchWidthOrHeight);
 			lastWidth=width;
 			lastHeight=height;

@@ -1,6 +1,9 @@
+#define USE_NEW_INPUT
+
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Typing : MonoBehaviour {
@@ -197,7 +200,7 @@ public class Typing : MonoBehaviour {
 	bool showMenu;
 
 	void Start(){
-		Application.targetFrameRate=Screen.currentResolution.refreshRate;
+		Application.targetFrameRate=(int)(Screen.currentResolution.refreshRateRatio.value + .49);
 		
 		Load();
 
@@ -218,6 +221,10 @@ public class Typing : MonoBehaviour {
 		ChangeTheme(PlayerPrefs.GetInt("selectedTheme",selectedTheme));
 		lightModeButton.SetActive(selectedTheme==0);
 		darkModeButton.SetActive(selectedTheme!=0);
+		
+		#if USE_NEW_INPUT
+			RegisterInputHandler();
+		#endif
 	}
 	public void Save(){
 		PlayerPrefs.SetInt("includeUppercase",KeyManager.includeUppercase?1:0);
@@ -498,9 +505,73 @@ public class Typing : MonoBehaviour {
 			if(Time.time>5) KeyManager.Save();
 		#endif
 	}
-
+	
+#if USE_NEW_INPUT
+	bool inputFieldFocused;
+	void RegisterInputHandler(){
+		Keyboard.current.onTextInput += inputChar => {
+			if (done || settingsOpen || !inputFieldFocused){
+				return;
+			}
+			switch ((byte)inputChar){
+				case 8:		// Backspace
+					if (input.Length == 0){
+						break;
+					}
+					if (!Keyboard.current.ctrlKey.isPressed) {
+						input = input.Remove(input.Length-1, 1);
+						break;
+					}
+					int rm = 2;
+					for(;rm<input.Length;rm++){
+						switch (input[^rm]){
+							case '\n':case ' ':case '\t':
+								rm--;
+								goto set_input;
+						}
+					}
+					set_input: input = input.Remove(input. Length-rm, rm);
+					break;
+				case 9:		// Tab
+					input += '\t';
+					break;
+				case 13:		// Enter
+					input += '\n';
+					break;
+				case 27:		// Escape
+					ResetLesson();
+					break;
+				case 127:	// Delete
+					break;
+				case <127:
+					if (Keyboard.current.ctrlKey.isPressed) break;
+					input += inputChar;
+					break;
+				default:
+					Debug.Log($"Pressed: {(byte)inputChar}: '{inputChar}'");
+					break;
+			}
+		};
+	}
+	
+	public void FocusInputField(){
+		inputFieldFocused=true;
+	}
+	public void UnfocusInputField(){
+		inputFieldFocused=false;
+	}
+#else
 	bool focusInputField,unfocusInputField;
+	bool fontSet;
 	void OnGUI(){
+		if (!fontSet) {
+			// Manually set the font to fix input issues when the default font is not available
+			// The only OnGUI element is the input field, which is rendered off-screen, so the
+			// actual font doesn't matter, as long as it's valid.
+			GUI.skin.font = Font.CreateDynamicFontFromOSFont(Font.GetOSInstalledFontNames()[0],1);
+			fontSet = true;
+		}
+		
 		if(!done&&!settingsOpen){
 			GUI.SetNextControlName("1");
 			input=GUI.TextArea(new Rect(300,Screen.height+50,Screen.width-600,30),input);
@@ -524,7 +595,8 @@ public class Typing : MonoBehaviour {
 	public void UnfocusInputField(){
 		unfocusInputField=true;
 	}
-
+#endif
+	
 	bool lastFrameIncorrect=true;
 	void SetTextColor(){
 		int cappedLoc=Mathf.Min(loc+1,text.Length);
@@ -746,7 +818,8 @@ public class Typing : MonoBehaviour {
 			backgroundFade=fade?backgroundFade*backgroundFade*backgroundFade:Mathf.Sqrt(Mathf.Sqrt(backgroundFade));
 			Cursor.visible=!fade;
 			lastFade=fade;
-			Application.targetFrameRate=fade?Screen.currentResolution.refreshRate*2:Screen.currentResolution.refreshRate;
+			int refreshRate=(int)(Screen.currentResolution.refreshRateRatio.value + .49);
+			Application.targetFrameRate=fade?refreshRate*2:refreshRate;
 		}
 		if(fade){
 			backgroundFade=Mathf.Clamp01(backgroundFade+Time.deltaTime*2f);
