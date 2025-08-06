@@ -8,9 +8,9 @@
 
 cd ..
 unityInstall=\
-"$HOME/.unity3d/"\
-"$(cat ProjectSettings/ProjectVersion.txt | grep 'm_EditorVersion:' | sed 's/.*\: //g')"\
-"/Editor/Unity"
+"$HOME/.unity/\
+$(cat './ProjectSettings/ProjectVersion.txt' | grep 'm_EditorVersion:' | sed 's/.*\: //g')\
+/Editor/Unity"
 echo $unityInstall
 
 tail -f ~/.config/unity3d/Editor.log &
