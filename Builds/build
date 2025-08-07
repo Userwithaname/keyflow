@@ -7,14 +7,14 @@
 # TODO: Only building for Linux works (presumably because of IL2CPP)
 
 cd ..
-unityInstall=\
+unityPath=\
 "$HOME/.unity/\
 $(cat './ProjectSettings/ProjectVersion.txt' | grep 'm_EditorVersion:' | sed 's/.*\: //g')\
 /Editor/Unity"
-echo $unityInstall
+echo $unityPath
 
 tail -f ~/.config/unity3d/Editor.log &
 processID=$!
-$unityInstall -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
+$unityPath -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
 
 cd -

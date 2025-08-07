@@ -228,10 +228,19 @@ public class KeyManager:MonoBehaviour{
 	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
 		float oldSeekTime=instance.confidenceDatabase[index].previousKeySeekTime;
 		if(oldSeekTime<10000){
-			instance.confidenceDatabase[index].previousKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
-			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
-			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
-			                                                            .075f);
+			instance.confidenceDatabase[index].previousKeySeekTime = Mathf.Lerp(
+				instance.confidenceDatabase[index].seekTime,
+				seekTime,
+				.12f
+			);
+			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
+				Mathf.Lerp(
+					instance.confidenceDatabase[index].speedTrend,
+					SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+					75f
+				),
+				0
+			);
 		}else{
 			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
 		}
@@ -239,10 +248,19 @@ public class KeyManager:MonoBehaviour{
 	public static void UpdateKeySeekTime(int index,float seekTime){
 		float oldSeekTime=instance.confidenceDatabase[index].seekTime;
 		if(oldSeekTime<10000){
-			instance.confidenceDatabase[index].seekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
-			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
-			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].seekTime)-SeekTimeToWPM(oldSeekTime),
-			                                                            .15f);
+			instance.confidenceDatabase[index].seekTime = Mathf.Lerp(
+				instance.confidenceDatabase[index].seekTime,
+				seekTime,
+				.12f
+			);
+			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
+				Mathf.Lerp(
+					instance.confidenceDatabase[index].speedTrend,
+					SeekTimeToWPM(instance.confidenceDatabase[index].seekTime)-SeekTimeToWPM(oldSeekTime),
+					15f
+				),
+				0
+			);
 		}else{
 			instance.confidenceDatabase[index].seekTime=seekTime;
 		}
@@ -250,10 +268,19 @@ public class KeyManager:MonoBehaviour{
 	public static void UpdateNextKeySeekTime(int index,float seekTime){
 		float oldSeekTime=instance.confidenceDatabase[index].nextKeySeekTime;
 		if(oldSeekTime<10000){
-			instance.confidenceDatabase[index].nextKeySeekTime=Mathf.Lerp(instance.confidenceDatabase[index].seekTime,seekTime,.12f);
-			instance.confidenceDatabase[index].speedTrend=Mathf.Lerp(instance.confidenceDatabase[index].speedTrend,
-			                                                            SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime)-SeekTimeToWPM(oldSeekTime),
-			                                                            .1f);
+			instance.confidenceDatabase[index].nextKeySeekTime = Mathf.Lerp(
+				instance.confidenceDatabase[index].seekTime,
+				seekTime,
+				.12f
+			);
+			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
+				Mathf.Lerp(
+					instance.confidenceDatabase[index].speedTrend,
+					SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+					.1f
+				),
+				0
+			);
 		}else{
 			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
@@ -548,7 +575,11 @@ public class KeyManager:MonoBehaviour{
 			}
 			if(skipChar||instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
 			
-			quoteAccuracyScore+=(float)instance.confidenceDatabase[keyIndex].hits/(instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses);
+			quoteAccuracyScore += (float)
+				instance.confidenceDatabase[keyIndex].hits / (
+					instance.confidenceDatabase[keyIndex].hits +
+				   instance.confidenceDatabase[keyIndex].misses
+				);
 			if(instance.confidenceDatabase[keyIndex].seekTime<999999)
 				averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
 			if(instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999)

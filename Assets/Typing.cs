@@ -1,4 +1,3 @@
-#define USE_NEW_INPUT
 
 using System;
 using TMPro;
@@ -222,9 +221,7 @@ public class Typing : MonoBehaviour {
 		lightModeButton.SetActive(selectedTheme==0);
 		darkModeButton.SetActive(selectedTheme!=0);
 		
-		#if USE_NEW_INPUT
-			RegisterInputHandler();
-		#endif
+		RegisterInputHandler();
 	}
 	public void Save(){
 		PlayerPrefs.SetInt("includeUppercase",KeyManager.includeUppercase?1:0);
@@ -355,6 +352,7 @@ public class Typing : MonoBehaviour {
 		
 		graphTooltipTimestampTargetPos=graphTooltipSpeedTargetPos=graphTooltipWordSpeedTargetPos=graphTooltipSeekTimeTargetPos=graphTooltipAccuracyTargetPos=new Vector2((float)Screen.width/2,-100);
 		
+		FocusInputField();
 		// EventSystem.current.SetSelectedGameObject(textDisplayObject);
 	}
 	public void ToggleGraphUI(){
@@ -433,8 +431,10 @@ public class Typing : MonoBehaviour {
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterWPM} (+{diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterWPM} ({diff})</color>";
 			float newAccuracy=(float)updatedCharPractice.hits/(updatedCharPractice.hits+updatedCharPractice.misses)*100;
-			diff=(float)Math.Round(newAccuracy-(float)curCharPractice.hits/(curCharPractice.hits+curCharPractice.misses)*100,3);
-			if(float.IsNaN(diff)) diff=newAccuracy;
+			diff=Misc.ValidateIfNaN(
+				(float)Math.Round(newAccuracy-(float)curCharPractice.hits/(curCharPractice.hits+curCharPractice.misses)*100,3),
+				newAccuracy
+			);
 			curCharacterAccuracy=diff>=0?
 			                     $"{themes[selectedTheme].improvementColorTag+curCharacterAccuracy} (+{diff})</color>":
 			                     $"{themes[selectedTheme].regressionColorTag+curCharacterAccuracy} ({diff})</color>";
@@ -506,7 +506,6 @@ public class Typing : MonoBehaviour {
 		#endif
 	}
 	
-#if USE_NEW_INPUT
 	bool inputFieldFocused;
 	void RegisterInputHandler(){
 		Keyboard.current.onTextInput += inputChar => {
@@ -515,25 +514,25 @@ public class Typing : MonoBehaviour {
 			}
 			switch ((byte)inputChar){
 				case 8:		// Backspace
-					if (input.Length == 0){
-						break;
+					int rm = 1;
+					if (!Keyboard.current.ctrlKey.isPressed || input.Length < 2) {
+						goto set_input;
 					}
-					if (!Keyboard.current.ctrlKey.isPressed) {
-						input = input.Remove(input.Length-1, 1);
-						break;
-					}
-					int rm = 2;
-					for(;rm<input.Length;rm++){
+					for (rm=2;rm<input.Length;rm++) {
 						switch (input[^rm]){
 							case '\n':case ' ':case '\t':
 								rm--;
 								goto set_input;
 						}
 					}
-					set_input: input = input.Remove(input. Length-rm, rm);
+					set_input: {
+						rm = Mathf.Min(rm, input.Length);
+						input = input.Remove(input. Length-rm, rm);
+					}
+					if (input.Length == 0) ResetLesson();
 					break;
 				case 9:		// Tab
-					input += '\t';
+					//input += '\t';
 					break;
 				case 13:		// Enter
 					input += '\n';
@@ -560,42 +559,6 @@ public class Typing : MonoBehaviour {
 	public void UnfocusInputField(){
 		inputFieldFocused=false;
 	}
-#else
-	bool focusInputField,unfocusInputField;
-	bool fontSet;
-	void OnGUI(){
-		if (!fontSet) {
-			// Manually set the font to fix input issues when the default font is not available
-			// The only OnGUI element is the input field, which is rendered off-screen, so the
-			// actual font doesn't matter, as long as it's valid.
-			GUI.skin.font = Font.CreateDynamicFontFromOSFont(Font.GetOSInstalledFontNames()[0],1);
-			fontSet = true;
-		}
-		
-		if(!done&&!settingsOpen){
-			GUI.SetNextControlName("1");
-			input=GUI.TextArea(new Rect(300,Screen.height+50,Screen.width-600,30),input);
-		}
-		if(focusInputField){
-			GUI.FocusControl("1");
-		}
-		if(unfocusInputField){
-			GUI.FocusControl(null);
-			unfocusInputField=false;
-			if(!done)
-				ResetLesson();
-		}
-		
-		SetTextColor();
-	}
-	
-	public void FocusInputField(){
-		focusInputField=true;
-	}
-	public void UnfocusInputField(){
-		unfocusInputField=true;
-	}
-#endif
 	
 	bool lastFrameIncorrect=true;
 	void SetTextColor(){
@@ -605,8 +568,8 @@ public class Typing : MonoBehaviour {
 		if(incorrect){
 			int lengthDiff=content.Length-text.Length;
 			
-			//BUG: Index out of range when deleting using control+backspace
 			if(showIncorrectCharacters.isOn){
+				if (input.Length <= loc)	return;
 				char[] chars=input.Remove(0,loc+1).ToCharArray();
 				for(int i=0;i<chars.Length;i++){
 					switch(chars[i]){
