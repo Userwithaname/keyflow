@@ -4,25 +4,25 @@ using System.Collections.Generic;
 using System.Linq;
 using Random = UnityEngine.Random;
 
-public class KeyManager:MonoBehaviour{
+public class KeyManager : MonoBehaviour {
 	public static KeyManager instance;
 	[Serializable]public struct KeyConfidenceData{
 		#if UNITY_EDITOR
 			[NonSerialized]public string name;
 		#endif
 		
-		public char		keyName;
-		public float	seekTime,
-		               previousKeySeekTime,
-		               nextKeySeekTime,
-		               wpm;
-		public float	speedTrend;
-		public int		hits, misses;	// Hits and misses are tracked to calculate a confidence ratio
-		public float	accuracy;
+		public char  keyName;
+		public float seekTime,
+		             previousKeySeekTime,
+		             nextKeySeekTime,
+		             wpm;
+		public float speedTrend;
+		public int   hits, misses;	// Hits and misses are tracked to calculate a confidence ratio
+		public float accuracy;
 
 	}
 	public KeyConfidenceData[] confidenceDatabase; 
-	public static readonly char[] trackedKeys={
+	public static readonly char[] trackedKeys = {
 		'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
 		'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
 		'0','1','2','3','4','5','6','7','8','9',
@@ -31,203 +31,211 @@ public class KeyManager:MonoBehaviour{
 		'=','~','-','+','%','/','*','^','<','>','|',
 		'(',')','[',']','{','}',
 	};
-	public static int numbersStart,numbersEnd,
-	                  capitalStart,capitalEnd,
-	                  lowercaseStart,lowercaseEnd;
-	public static bool includeUppercase=false,
-	                   includeNumbers=false,
-	                   includeSymbols=false,
-	                   includeWhitespace=false;
-	[Serializable]public struct DailyData{	//TODO: Save the averages for each day
-		public int year,
-		           month,
-		           day;
-		public float topSpeed,
-		             averageSpeed,
-		             averageAcc;
-	}
-	List<DailyData> dailyData=new List<DailyData>();
+	public static int numbersStart, numbersEnd,
+	                  capitalStart, capitalEnd,
+	                  lowercaseStart, lowercaseEnd;
+	public static bool includeUppercase = false,
+	                   includeNumbers = false,
+	                   includeSymbols = false,
+	                   includeWhitespace = false;
+	// [Serializable]
+	// public struct DailyData{	//TODO: Idea: Save the averages for each day
+	// 	public int year,
+	// 	           month,
+	// 	           day;
+	// 	public float topSpeed,
+	// 	             averageSpeed,
+	// 	             averageAcc;
+	// }
+	// List<DailyData> dailyData = new List<DailyData>();
 	public static float averageAccuracy,averageWPM,topWPM;
-	public static float charPracticeDifficulty=.7f;	// 1: Completely random, 0: Only the worst character in either speed or accuracy
-	public static float quoteDifficulty=.45f;			// 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
-	public static float modeBias=.4f;					// 1: multiple keys practice, 0: single key practice
+	public static float charPracticeDifficulty = .7f; // 1: Completely random, 0: Only the worst character in either speed or accuracy
+	public static float quoteDifficulty = .45f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
+	public static float modeBias = .4f; // 1: multiple keys practice, 0: single key practice
 	
-	void Start(){
-		instance=this;
+	void Start() {
+		instance = this;
 		InitializeKeyDatabase();
 		Load();
-		
-		// GetKeyIndexes("abcAbd".ToLower());
 	}
-	public static void InitializeKeyDatabase(){
-		instance.confidenceDatabase=new KeyConfidenceData[trackedKeys.Length];
-		for(int i=0;i<trackedKeys.Length;i++){
-			instance.confidenceDatabase[i].seekTime=instance.confidenceDatabase[i].previousKeySeekTime=instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
-			instance.confidenceDatabase[i].keyName=trackedKeys[i];
+	
+	public static void InitializeKeyDatabase() {
+		instance.confidenceDatabase = new KeyConfidenceData[trackedKeys.Length];
+		for (int i = 0; i < trackedKeys.Length; i++) {
+			instance.confidenceDatabase[i].seekTime =
+				instance.confidenceDatabase[i].previousKeySeekTime =
+				instance.confidenceDatabase[i].nextKeySeekTime =
+				Mathf.Infinity;
+			instance.confidenceDatabase[i].keyName = trackedKeys[i];
 			#if UNITY_EDITOR
-				instance.confidenceDatabase[i].name="Element "+i+": "+trackedKeys[i];
+				instance.confidenceDatabase[i].name = "Element " + i + ": " + trackedKeys[i];
 			#endif
 		}
 		
-		List<char> sortedKeys=trackedKeys.ToList<char>();
+		List<char> sortedKeys = trackedKeys.ToList<char>();
 		sortedKeys.Sort();
-		for(int i=0;i<sortedKeys.Count;i++){
-			instance.confidenceDatabase[i].keyName=sortedKeys[i];
+		for (int i = 0;i < sortedKeys.Count; i++) {
+			instance.confidenceDatabase[i].keyName = sortedKeys[i];
 			#if UNITY_EDITOR
-				instance.confidenceDatabase[i].name="Element "+i+": "+sortedKeys[i];
+				instance.confidenceDatabase[i].name = "Element " + i + ": " + sortedKeys[i];
 			#endif
 			
-			switch(sortedKeys[i]){
-				case 'a':{
-					lowercaseStart=i;
+			switch (sortedKeys[i]) {
+				case 'a': {
+					lowercaseStart = i;
 					break;
 				}
-				case 'z':{
-					lowercaseEnd=i;
+				case 'z': {
+					lowercaseEnd = i;
 					break;
 				}
-				case 'A':{
-					capitalStart=i;
+				case 'A': {
+					capitalStart = i;
 					break;
 				}
-				case 'Z':{
-					capitalEnd=i;
+				case 'Z': {
+					capitalEnd = i;
 					break;
 				}
-				case '0':{
-					numbersStart=i;
+				case '0': {
+					numbersStart = i;
 					break;
 				}
-				case '9':{
-					numbersEnd=i;
+				case '9': {
+					numbersEnd = i;
 					break;
 				}
 			}
 		}
 	}
-	public static void Load(){
-		averageAccuracy=PlayerPrefs.GetFloat("Average Acc",0);
-		averageWPM=PlayerPrefs.GetFloat("Average WPM",0);
-		topWPM=PlayerPrefs.GetFloat("Top WPM",0);
-		if(!System.IO.File.Exists($"{Application.persistentDataPath}/key-confidence-data")){
+	public static void Load() {
+		averageAccuracy = PlayerPrefs.GetFloat("Average Acc", 0);
+		averageWPM = PlayerPrefs.GetFloat("Average WPM", 0);
+		topWPM = PlayerPrefs.GetFloat("Top WPM", 0);
+		if (!System.IO.File.Exists($"{Application.persistentDataPath}/key-confidence-data")) {
 			return;
 		}
-		string[] data=System.IO.File.ReadAllLines($"{Application.persistentDataPath}/key-confidence-data");
-		for(int i=0;i<data.Length;i++){
-			instance.confidenceDatabase[i]=JsonUtility.FromJson<KeyConfidenceData>(data[i]);
-			if(instance.confidenceDatabase[i].seekTime<=0)
-				instance.confidenceDatabase[i].seekTime=Mathf.Infinity;
-			if(instance.confidenceDatabase[i].previousKeySeekTime<=0)
-				instance.confidenceDatabase[i].previousKeySeekTime=Mathf.Infinity;
-			if(instance.confidenceDatabase[i].nextKeySeekTime<=0)
-				instance.confidenceDatabase[i].nextKeySeekTime=Mathf.Infinity;
+		string[] data =
+			System.IO.File.ReadAllLines($"{Application.persistentDataPath}/key-confidence-data");
+		for (int i = 0; i < data.Length; i++) {
+			instance.confidenceDatabase[i] = JsonUtility.FromJson<KeyConfidenceData>(data[i]);
+			if(instance.confidenceDatabase[i].seekTime <= 0)
+				instance.confidenceDatabase[i].seekTime = Mathf.Infinity;
+			if(instance.confidenceDatabase[i].previousKeySeekTime <= 0)
+				instance.confidenceDatabase[i].previousKeySeekTime = Mathf.Infinity;
+			if(instance.confidenceDatabase[i].nextKeySeekTime <= 0)
+				instance.confidenceDatabase[i].nextKeySeekTime = Mathf.Infinity;
 		}
 	}
-	public static void Save(){
+	public static void Save() {
 		Typing.instance.Save();
 		
-		PlayerPrefs.SetFloat("Average Acc",averageAccuracy);
-		PlayerPrefs.SetFloat("Average WPM",averageWPM);
-		PlayerPrefs.SetFloat("Top WPM",topWPM);
+		PlayerPrefs.SetFloat("Average Acc", averageAccuracy);
+		PlayerPrefs.SetFloat("Average WPM", averageWPM);
+		PlayerPrefs.SetFloat("Top WPM", topWPM);
 		
-		string fileContents="";
-		foreach(KeyConfidenceData kcd in instance.confidenceDatabase){
-			fileContents+=JsonUtility.ToJson(kcd)+"\n";
+		string fileContents = "";
+		foreach(KeyConfidenceData kcd in instance.confidenceDatabase) {
+			fileContents += JsonUtility.ToJson(kcd) + "\n";
 		}
 		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
 		#if UNITY_WEBGL
 			PlayerPrefs.Save();
 		#endif
 	}
-	public void RemoveScores(){
+	public void RemoveScores() {
 		PlayerPrefs.DeleteAll();
 		Load();
 	}
-	public void RemoveKeyData(){
+	public void RemoveKeyData() {
 		InitializeKeyDatabase();
 	}
 	
-	public static int GetKeyIndex(char key,int startIndex=0){
+	public static int GetKeyIndex(char key, int startIndex=0) {
 		// key=key.ToString().ToLower()[0];
-		for(int i=startIndex;i<instance.confidenceDatabase.Length;i++){
-			if(instance.confidenceDatabase[i].keyName==key)
+		for (int i = startIndex;i < instance.confidenceDatabase.Length; i++) {
+			if(instance.confidenceDatabase[i].keyName == key)
 				return i;
 		}
-		Debug.LogError("Invalid (untracked) character: "+key);
+		Debug.LogError("Invalid (untracked) character: " + key);
 		return -1;
 	}
 
-	public static int[] GetKeyIndexes(string keys){
+	public static int[] GetKeyIndexes(string keys) {
 		/*
 		 * sort alphabetically
 		 * remove duplicates
 		 * loop through the 'instance.confidenceDatabase' and look for the next sorted match
 		 */
-		List<char> sorted=new List<char>();
-		for(int i=0;i<keys.Length;i++){
+		List<char> sorted = new List<char>();
+		for (int i = 0; i < keys.Length; i++) {
 			sorted.Add(keys[i]);
 		}
 		sorted.Sort();
-		for(int i=1;i<sorted.Count;i++){
-			if(sorted[i]==sorted[i-1])
+		for(int i = 1; i < sorted.Count; i++) {
+			if(sorted[i] == sorted[i - 1])
 				sorted.RemoveAt(i);
 		}
 		
-		int[] o=new int[sorted.Count];
-		int lookupIndex=0;
-		for(int i=0;i<instance.confidenceDatabase.Length&&lookupIndex<o.Length;i++){
+		int[] o = new int[sorted.Count];
+		int lookupIndex = 0;
+		for(int i = 0; i < instance.confidenceDatabase.Length && lookupIndex < o.Length; i++) {
 			if (instance.confidenceDatabase[i].keyName != sorted[lookupIndex]) continue;
-			o[lookupIndex]=i;
+			o[lookupIndex]= i;
 			lookupIndex++;
 		}
 		
 		return o;
 	}
 
-	public static bool IsAlphaNumericIndex(int index){
+	public static bool IsAlphaNumericIndex(int index) {
 		return 
-			index>=lowercaseStart&&index<=lowercaseEnd||
-			index>=capitalStart&&index<=capitalEnd||
-			index>=numbersStart&&index<=numbersEnd;
+			index >= lowercaseStart && index <= lowercaseEnd ||
+			index >= capitalStart && index <= capitalEnd ||
+			index >= numbersStart && index <= numbersEnd;
 	}
-	public static bool IsWhitespaceIndex(int index){
-		return instance.confidenceDatabase[index].keyName switch{
-			' ' => true,
+	public static bool IsWhitespaceIndex(int index) {
+		return instance.confidenceDatabase[index].keyName switch {
+			 ' ' => true,
 			'\n' => true,
 			'\t' => true,
-			_ => false
+			   _ => false
 		};
 	}
-	public static bool IsWhitespaceCharacter(char character){
-		return character switch{
-			' ' => true,
+	public static bool IsWhitespaceCharacter(char character) {
+		return character switch {
+			 ' ' => true,
 			'\n' => true,
 			'\t' => true,
-			_ => false
+			   _ => false
 		};
 	}
 	
-	public static float SeekTimeToWPM(float seekTime){
-		return 60f/seekTime/5;
+	public static float SeekTimeToWPM(float seekTime) {
+		return 60f / seekTime / 5;
 	}
 
 	//TODO: Function for lowering the hit/miss count without changing the ratio (e.g. divide by the same value, ratio might still change a bit because the numbers are integers)
-	public static void RemoveHitsAndMisses(int keyIndex,int amount=1){
-		if(instance.confidenceDatabase[keyIndex].hits<10)
+	public static void RemoveHitsAndMisses(int keyIndex, int amount = 1) {
+		if (instance.confidenceDatabase[keyIndex].hits < 10)
 			return;
-		instance.confidenceDatabase[keyIndex].hits=Mathf.Max(0,instance.confidenceDatabase[keyIndex].hits-amount);
-		instance.confidenceDatabase[keyIndex].misses=Mathf.Max(0,instance.confidenceDatabase[keyIndex].misses-amount);
+		instance.confidenceDatabase[keyIndex].hits = Mathf.Max(
+			0, instance.confidenceDatabase[keyIndex].hits - amount
+		);
+		instance.confidenceDatabase[keyIndex].misses = Mathf.Max(
+			0, instance.confidenceDatabase[keyIndex].misses - amount
+		);
 	}
-	public static void RegisterKeyHit(int keyIndex){
+	public static void RegisterKeyHit(int keyIndex) {
 		instance.confidenceDatabase[keyIndex].hits++;
 	}
-	public static void RegisterKeyMiss(int keyIndex){
+	public static void RegisterKeyMiss(int keyIndex) {
 		instance.confidenceDatabase[keyIndex].misses++;
 	}
 	
-	public static void UpdatePreviousKeySeekTime(int index,float seekTime){
-		float oldSeekTime=instance.confidenceDatabase[index].previousKeySeekTime;
-		if(oldSeekTime<10000){
+	public static void UpdatePreviousKeySeekTime(int index,float seekTime) {
+		float oldSeekTime = instance.confidenceDatabase[index].previousKeySeekTime;
+		if(oldSeekTime < 10000) {
 			instance.confidenceDatabase[index].previousKeySeekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -236,18 +244,19 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
-					SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+					SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime) -
+					SeekTimeToWPM(oldSeekTime),
 					75f
 				),
 				0
 			);
 		}else{
-			instance.confidenceDatabase[index].previousKeySeekTime=seekTime;
+			instance.confidenceDatabase[index].previousKeySeekTime = seekTime;
 		}
 	}
-	public static void UpdateKeySeekTime(int index,float seekTime){
-		float oldSeekTime=instance.confidenceDatabase[index].seekTime;
-		if(oldSeekTime<10000){
+	public static void UpdateKeySeekTime(int index, float seekTime) {
+		float oldSeekTime = instance.confidenceDatabase[index].seekTime;
+		if (oldSeekTime < 10000) {
 			instance.confidenceDatabase[index].seekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -256,18 +265,19 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
-					SeekTimeToWPM(instance.confidenceDatabase[index].seekTime)-SeekTimeToWPM(oldSeekTime),
+					SeekTimeToWPM(instance.confidenceDatabase[index].seekTime) -
+					SeekTimeToWPM(oldSeekTime),
 					15f
 				),
 				0
 			);
-		}else{
+		} else {
 			instance.confidenceDatabase[index].seekTime=seekTime;
 		}
 	}
-	public static void UpdateNextKeySeekTime(int index,float seekTime){
-		float oldSeekTime=instance.confidenceDatabase[index].nextKeySeekTime;
-		if(oldSeekTime<10000){
+	public static void UpdateNextKeySeekTime(int index, float seekTime) {
+		float oldSeekTime = instance.confidenceDatabase[index].nextKeySeekTime;
+		if (oldSeekTime < 10000) {
 			instance.confidenceDatabase[index].nextKeySeekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -276,77 +286,82 @@ public class KeyManager:MonoBehaviour{
 			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
-					SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime)-SeekTimeToWPM(oldSeekTime),
+					SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime) -
+					SeekTimeToWPM(oldSeekTime),
 					.1f
 				),
 				0
 			);
-		}else{
+		} else {
 			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
 		}
 	}
 	
-	public static float UpdateWordSpeed(string word,float time){
-		float wpm=word.Length/time*60/5;
-		foreach(int i in GetKeyIndexes(word)){
-			switch (instance.confidenceDatabase[i].wpm){
+	public static float UpdateWordSpeed(string word, float time) {
+		float wpm = word.Length / time * 60 / 5;
+		foreach (int i in GetKeyIndexes(word)) {
+			switch (instance.confidenceDatabase[i].wpm) {
 				case 0:
-					instance.confidenceDatabase[i].wpm=wpm;
+					instance.confidenceDatabase[i].wpm = wpm;
 					continue;
 				case float.NaN:
-					instance.confidenceDatabase[i].wpm=wpm;
+					instance.confidenceDatabase[i].wpm = wpm;
 					break;
 			}
 
-			instance.confidenceDatabase[i].wpm=Mathf.Lerp(instance.confidenceDatabase[i].wpm,wpm,.45f/(Mathf.Max(5-word.Length*5,word.Length)/3+1));
+			instance.confidenceDatabase[i].wpm = Mathf.Lerp(
+				instance.confidenceDatabase[i].wpm,
+				wpm,
+				.45f / (Mathf.Max(
+					5 - word.Length * 5,
+					word.Length
+				) / 3 + 1)
+			);
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
 		//TODO: Track top-speed(?)
 		return wpm;
 	}
 
-	public static void UpdateAccuracy(char actual, char pressed){
-		
+	public static void UpdateAccuracy(char actual, char pressed) {
+		Debug.LogWarning("TODO: UpdateAccuracy()");
 	}
 	
-	public static int GetWordCount(string text){
-		int wordCount=0;
-		foreach(char c in text){
-			if(!IsAlphaNumericIndex(GetKeyIndex(c))) wordCount++;
+	public static int GetWordCount(string text) {
+		int wordCount = 0;
+		foreach (char c in text) {
+			if (!IsAlphaNumericIndex(GetKeyIndex(c))) wordCount++;
 		}
 		return wordCount;
 	}
 	
-	public static string[] GetWordsInText(string text){
-		List<string> words=new List<string>();
-		string word="";
-		foreach(char c in text){
-			word+=c;
-			// if(IsAlphaNumericIndex(GetKeyIndex(c))) continue;
-			if(!IsWhitespaceCharacter(c)) continue;
+	public static string[] GetWordsInText(string text) {
+		List<string> words = new List<string>();
+		string word = "";
+		foreach (char c in text) {
+			word += c;
+			if (!IsWhitespaceCharacter(c)) continue;
 			words.Add(word);
-			word="";
+			word = "";
 		}
-		if(word!=""){
+		if (word != "") {
 			words.Add(word);
 		}
 		return words.ToArray();
 	}
 	
-	public static string GetLastWord(string text){
-		return GetLastWord(text,text.Length-1);
+	public static string GetLastWord(string text) {
+		return GetLastWord(text,text.Length - 1);
 	}
 	
-	public static string GetLastWord(string text,int trimIndex){
-		for(int i=trimIndex;i>-1;i--){
-			// if(i==trimIndex&&!IsAlphaNumericIndex(GetKeyIndex(text[i]))) i--;
-			// if(IsAlphaNumericIndex(GetKeyIndex(text[i]))) continue;
-			if(i==trimIndex&&IsWhitespaceCharacter(text[i])) i--;
-			if(!IsWhitespaceCharacter(text[i])) continue;
+	public static string GetLastWord(string text,int trimIndex) {
+		for (int i = trimIndex; i > -1; i--) {
+			if (i == trimIndex && IsWhitespaceCharacter(text[i])) i--;
+			if (!IsWhitespaceCharacter(text[i])) continue;
 			i++;
-			string ret="";
-			while(i<=trimIndex){
-				ret+=text[i];
+			string ret = "";
+			while (i <= trimIndex) {
+				ret += text[i];
 				i++;
 			}
 			return ret;
@@ -354,277 +369,317 @@ public class KeyManager:MonoBehaviour{
 		return text;
 	}
 	
-	public static bool CharWithinFilters(int index){
-		if(!includeUppercase&&index>=capitalStart&&index<=capitalEnd) return false;
-		if(!includeNumbers&&index>=numbersStart&&index<=numbersEnd) return false;
-		if(!includeSymbols&&!IsAlphaNumericIndex(index)) return false;
-		if(includeWhitespace) return true;
+	public static bool CharWithinFilters(int index) {
+		if (!includeUppercase && index >= capitalStart && index <= capitalEnd) return false;
+		if (!includeNumbers && index >= numbersStart && index <= numbersEnd) return false;
+		if (!includeSymbols && !IsAlphaNumericIndex(index)) return false;
+		if (includeWhitespace) return true;
 		return !IsWhitespaceIndex(index);
 	}
 	
-	public static int GetLowConfidenceCharacter(){
+	public static int GetLowConfidenceCharacter() {
 		return GetLowConfidenceCharacter(charPracticeDifficulty);
 	}
-	public static int GetLowConfidenceCharacter(float difficulty){
-		int highestSeekTimeIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float highestSeekTime=-1;
-		int highestNextSeekTimeIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float highestNextSeekTime=-1;
-		int lowestWPMIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float lowestWPM=10000;
-		int lowestAccIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float lowestAcc=2;
-		int bestImprovementTrendIndex=Random.Range(lowercaseStart,lowercaseEnd);
-		float bestImprovementTrend=-10000;
-		float averageSeekTime=60f/(averageWPM*5);
-		for(int i=0;i<instance.confidenceDatabase.Length;i++){
-			if(!CharWithinFilters(i))	continue;
-			if(instance.confidenceDatabase[i].hits<Random.Range(1,3)){
-				if(Random.Range(0f,1f)<.125f&&GetNumberOfQuotesForKey(i)>0){	// Chance to select a key because there is no data for it
-					lowestAcc=lowestWPM=0;
-					lowestAccIndex=lowestWPMIndex=i;
+	public static int GetLowConfidenceCharacter(float difficulty) {
+		int highestSeekTimeIndex = Random.Range(lowercaseStart, lowercaseEnd);
+		float highestSeekTime = -1;
+		int highestNextSeekTimeIndex = Random.Range(lowercaseStart, lowercaseEnd);
+		float highestNextSeekTime = -1;
+		int lowestWPMIndex = Random.Range(lowercaseStart, lowercaseEnd);
+		float lowestWPM = 10000;
+		int lowestAccIndex = Random.Range(lowercaseStart, lowercaseEnd);
+		float lowestAcc = 2;
+		int bestImprovementTrendIndex = Random.Range(lowercaseStart, lowercaseEnd);
+		float bestImprovementTrend = -10000;
+		float averageSeekTime = 60f / (averageWPM * 5);
+		for(int i = 0; i < instance.confidenceDatabase.Length; i++) {
+			if (!CharWithinFilters(i))	continue;
+			if (instance.confidenceDatabase[i].hits < Random.Range(1, 3)) {
+				if(Random.Range(0f, 1f) < .125f&&GetNumberOfQuotesForKey(i) > 0) {	// Chance to select a key because there is no data for it
+					lowestAcc = lowestWPM = 0;
+					lowestAccIndex = lowestWPMIndex = i;
 				}
 				continue;
 			}
-			float accuracy=(float)instance.confidenceDatabase[i].hits/(instance.confidenceDatabase[i].hits+instance.confidenceDatabase[i].misses);
+			float accuracy = (float)instance.confidenceDatabase[i].hits /
+				(instance.confidenceDatabase[i].hits + instance.confidenceDatabase[i].misses);
 			
-			if(instance.confidenceDatabase[i].seekTime>=highestSeekTime&&instance.confidenceDatabase[i].seekTime<10000){
-				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
-				   Random.Range(0f,1f)<difficulty*1.4f&&highestSeekTime>=averageSeekTime){
-						highestSeekTime=instance.confidenceDatabase[i].seekTime;
-						highestSeekTimeIndex=i;
+			if (instance.confidenceDatabase[i].seekTime >= highestSeekTime &&
+				instance.confidenceDatabase[i].seekTime < 10000) {
+				if(Random.Range(0f, 1f) >= Mathf.Clamp(accuracy, 1f - difficulty * .8f, 1f - difficulty) ||
+				   Random.Range(0f, 1f) < difficulty * 1.4f && highestSeekTime >= averageSeekTime
+				) {
+						highestSeekTime = instance.confidenceDatabase[i].seekTime;
+						highestSeekTimeIndex = i;
 				}
 			}
-			float contextualSeekTime=Mathf.Max(instance.confidenceDatabase[i].nextKeySeekTime,instance.confidenceDatabase[i].previousKeySeekTime);
-			if(contextualSeekTime>=highestNextSeekTime&&contextualSeekTime<10000){
-				if(Random.Range(0f,1f)>=Mathf.Clamp(accuracy,1F-difficulty*.8f,1F-difficulty)||
-				   Random.Range(0f,1f)<difficulty*1.4f&&highestNextSeekTime>=averageSeekTime){
-						highestNextSeekTime=
+			float contextualSeekTime = Mathf.Max(
+				instance.confidenceDatabase[i].nextKeySeekTime,
+				instance.confidenceDatabase[i].previousKeySeekTime
+			);
+			if (contextualSeekTime >= highestNextSeekTime && contextualSeekTime < 10000) {
+				if(Random.Range(0f, 1f) >= Mathf.Clamp(accuracy, 1f - difficulty * .8f, 1f - difficulty) ||
+				   Random.Range(0f, 1f) < difficulty * 1.4f && highestNextSeekTime >= averageSeekTime
+				) {
+						highestNextSeekTime =
 							instance.confidenceDatabase[i].previousKeySeekTime<10000?
 								contextualSeekTime:
 								instance.confidenceDatabase[i].nextKeySeekTime;
-						highestNextSeekTimeIndex=i;
+						highestNextSeekTimeIndex = i;
 				}
 			}
-			if(instance.confidenceDatabase[i].wpm<lowestWPM){
-				if(Random.Range(0f,1f)<difficulty+.2f&&instance.confidenceDatabase[i].wpm>0){
-					lowestWPM=instance.confidenceDatabase[i].wpm;
+			if (instance.confidenceDatabase[i].wpm < lowestWPM) {
+				if (Random.Range(0f,1f) < difficulty + .2f && instance.confidenceDatabase[i].wpm > 0) {
+					lowestWPM = instance.confidenceDatabase[i].wpm;
 				}
 			}
-			if(accuracy<=lowestAcc){
-				if(Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,3)||
-				   Random.Range(0f,1f)<difficulty*1.4f&&lowestAcc>=averageAccuracy/100){
+			if (accuracy <= lowestAcc) {
+				if (Random.Range(0f, 1f) > Mathf.Pow(1f - difficulty, 3) ||
+					Random.Range(0f, 1f) < difficulty * 1.4f && lowestAcc >= averageAccuracy / 100
+				) {
 					lowestAcc=accuracy;
 					lowestAccIndex=i;
 				}
 			}
-			if(instance.confidenceDatabase[i].speedTrend>bestImprovementTrend){
-				if(Random.Range(0f,1f)>.65f){
-						bestImprovementTrend=instance.confidenceDatabase[i].speedTrend;
-						bestImprovementTrendIndex=i;
+			if (instance.confidenceDatabase[i].speedTrend>bestImprovementTrend) {
+				if (Random.Range(0f,1f) > .65f) {
+						bestImprovementTrend = instance.confidenceDatabase[i].speedTrend;
+						bestImprovementTrendIndex = i;
 				}
 			}
 		}
 		return Random.Range(0f,1f) switch{
 			<.2f	=> lowestWPMIndex,
 			<.55f	=> bestImprovementTrendIndex,
-			<.9f	=> instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend>instance.confidenceDatabase[highestSeekTimeIndex].speedTrend&&Random.Range(0f,1f)>difficulty*.45f+.1f?
-			         highestNextSeekTimeIndex:highestSeekTimeIndex,
+			<.9f	=> instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend >
+			              instance.confidenceDatabase[highestSeekTimeIndex].speedTrend &&
+                          Random.Range(0f, 1f) > difficulty * .45f + .1f ?
+                              highestNextSeekTimeIndex:
+                              highestSeekTimeIndex,
 			_		=> lowestAccIndex
 		};
 	}
 	
-	public static int GetNumberOfQuotesForKey(int keyIndex){
-		return Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text.Split('\n').Length-1;	// Key quote data files end with a newline
+	public static int GetNumberOfQuotesForKey(int keyIndex) {
+		// Key quote data files end with a newline
+		return Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text.Split('\n').Length - 1;
 	}
-	public static int GetNumberOfQuotesForKey(char key){
+	public static int GetNumberOfQuotesForKey(char key) {
 		return GetNumberOfQuotesForKey(GetKeyIndex(key));
 	}
 	
-	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex){
-		string[] quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
-		int invalidCount=0;
-		while(quotes[0].Length==0){
-			const int maxRetries=10;
+	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex) {
+		string[] quotes = RemoveTrailingNewline(
+			Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text
+		).Split('\n');
+		int invalidCount = 0;
+		while (quotes[0].Length == 0) {
+			const int maxRetries = 10;
 			// Debug.Log("Found no quotes containing '"+instance.confidenceDatabase[keyIndex].keyName+"', skipping...");
-			if(invalidCount<maxRetries){
-				keyIndex=GetLowConfidenceCharacter();
-			}else{
+			if (invalidCount < maxRetries) {
+				keyIndex = GetLowConfidenceCharacter();
+			} else {
 				keyIndex++;
-				keyIndex=Mathf.Max(5,keyIndex%trackedKeys.Length);
+				keyIndex = Mathf.Max(5, keyIndex % trackedKeys.Length);
 			}
 			invalidCount++;
-			quotes=RemoveTrailingNewline(Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text).Split('\n');
+			quotes = RemoveTrailingNewline(
+				Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text
+			).Split('\n');
 		}
 		return quotes;
 	}
-	public static string GetQuoteByCharFrequency(int keyIndex,ref string quoteTitle){
-		return GetQuoteByCharFrequency(ref keyIndex,ref quoteTitle,quoteDifficulty);
+	public static string GetQuoteByCharFrequency(int keyIndex, ref string quoteTitle) {
+		return GetQuoteByCharFrequency(ref keyIndex, ref quoteTitle, quoteDifficulty);
 	}
-	public static string GetQuoteByCharFrequency(ref int keyIndex,ref string quoteTitle){
-		return GetQuoteByCharFrequency(ref keyIndex,ref quoteTitle,quoteDifficulty);
+	public static string GetQuoteByCharFrequency(ref int keyIndex, ref string quoteTitle) {
+		return GetQuoteByCharFrequency(ref keyIndex, ref quoteTitle, quoteDifficulty);
 	}
-	public static string GetQuoteByCharFrequency(int keyIndex,ref string quoteTitle,float difficulty){
-		return GetQuoteByCharFrequency(ref keyIndex,ref quoteTitle,difficulty);
+	public static string GetQuoteByCharFrequency(int keyIndex, ref string quoteTitle, float difficulty) {
+		return GetQuoteByCharFrequency(ref keyIndex, ref quoteTitle, difficulty);
 	}
-	public static string GetQuoteByCharFrequency(ref int keyIndex,ref string quoteTitle,float difficulty){
-		string[] quotes=GetQuoteTitlesForKeyIndex(ref keyIndex);
-		float random=difficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-difficulty)*(1f-Mathf.Pow(Mathf.Max(0,difficulty-.52f),2));
-		if(random>Mathf.Pow(Mathf.Max(0,difficulty-.3f)/(1f-.3f),2)*.75f){
-			float random2=difficulty>=1?0:1f-Mathf.Pow(Random.Range(0f,1f),1f-difficulty);
-			random=random2<random||Random.Range(0f,1f)<.1f?random2:random;
+	public static string GetQuoteByCharFrequency(ref int keyIndex, ref string quoteTitle, float difficulty) {
+		string[] quotes = GetQuoteTitlesForKeyIndex(ref keyIndex);
+		float random = difficulty >= 1 ?
+			0:
+			1f - Mathf.Pow(
+				Random.Range(0f, 1f),
+				1f - difficulty) * (1f - Mathf.Pow(Mathf.Max(0, difficulty - .52f), 2)
+			);
+		if (random > Mathf.Pow(Mathf.Max(0, difficulty - .3f) / (1f - .3f),2) * .75f) {
+			float random2 = difficulty >= 1 ? 0 : 1f - Mathf.Pow(Random.Range(0f, 1f), 1f - difficulty);
+			random = random2 < random || Random.Range(0f, 1f) < .1f ? random2 : random;
 		}
-		// float random=Random.Range(0f,1f)>Mathf.Pow(1f-difficulty,5)?1f-Mathf.Sqrt(Random.Range(0f,1f)):Random.Range(0f,1f);
-		string targetQuote=quotes[Mathf.Min(Mathf.FloorToInt(random*quotes.Length),quotes.Length-1)];
-		string newQuote=targetQuote.Split('/')[^1];
-		if(newQuote==quoteTitle){
-			targetQuote=quotes[Random.Range(0,quotes.Length)];
+		string targetQuote = quotes[Mathf.Min(Mathf.FloorToInt(random * quotes.Length), quotes.Length - 1)];
+		string newQuote = targetQuote.Split('/')[^1];
+		if (newQuote == quoteTitle) {
+			targetQuote = quotes[Random.Range(0, quotes.Length)];
 		}
-		quoteTitle=targetQuote.Split('/')[^1];
-		targetQuote=RemoveTrailingNewline(Resources.Load<TextAsset>(targetQuote).text);	//TODO: Allow skipping categories (eg. ignore 'Content/Code/...') (increase index until a different category is found, loop over if not, select different character if same index is reached) (check if an appropriate file exists in the 'while' loop above)
+		quoteTitle = targetQuote.Split('/')[^1];
+		//TODO: Allow skipping categories (eg. ignore 'Content/Code/...')
+		// (increase index until a different category is found, loop over if not, select different
+		// character if same index is reached) (check if an appropriate file exists in the 'while'
+		// loop above)
+		targetQuote = RemoveTrailingNewline(Resources.Load<TextAsset>(targetQuote).text);	
 		return targetQuote;
 	}
-	public static string GetQuoteByOverallScore(ref string quoteTitle,ref KeyConfidenceData quoteConfidenceData){
-		int numCandidates=(int)(182*quoteDifficulty+1);
-		string[] quoteCandidates=new string[numCandidates];
-		string[] quoteCandidateTitles=new string[numCandidates];
-		KeyConfidenceData[] averageConfidence=new KeyConfidenceData[numCandidates];
-		float charBias=(charPracticeDifficulty-.1f)*.04f-.05f; //quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
-		const float quoteBias=0;//quoteDifficulty*.5f*quoteDifficulty*quoteDifficulty;
-		for(int i=0;i<numCandidates;i++){
-			quoteCandidates[i]=GetQuoteByCharFrequency(Random.Range(0f,1f)>(charBias*charBias-.025f)?GetKeyIndex(' '):GetLowConfidenceCharacter(charBias),ref quoteCandidateTitles[i],quoteBias);
-			averageConfidence[i]=GetQuoteConfidenceData(quoteCandidates[i]);
+	public static string GetQuoteByOverallScore(ref string quoteTitle, ref KeyConfidenceData quoteConfidenceData) {
+		int numCandidates = (int)(182*quoteDifficulty+1);
+		string[] quoteCandidates = new string[numCandidates];
+		string[] quoteCandidateTitles = new string[numCandidates];
+		KeyConfidenceData[] averageConfidence = new KeyConfidenceData[numCandidates];
+		float charBias = (charPracticeDifficulty - .1f) * .04f - .05f;
+		const float quoteBias = 0;
+		for(int i = 0;i<numCandidates;i++) {
+			quoteCandidates[i] = GetQuoteByCharFrequency(
+				Random.Range(0f, 1f) > (charBias * charBias - .025f) ?
+					GetKeyIndex(' '):
+					GetLowConfidenceCharacter(charBias),
+				ref quoteCandidateTitles[i],
+				quoteBias
+			);
+			averageConfidence[i] = GetQuoteConfidenceData(quoteCandidates[i]);
 		}
 		
-		float lowestAcc=2,
-		      highestSeekTime=-1,
-		      highestNextKeySeekTime=-1,
-		      bestTrendingSeekTime=-1,	//TODO: For the difficulty options, there could be a 'worst' variant as well
-		      lowestFullWordSpeed=99999;
-		int   lowestAccIndex=Random.Range(0,numCandidates-1),
-		      highestSeekTimeIndex=Random.Range(0,numCandidates-1),
-		      highestNextKeySeekTimeIndex=Random.Range(0,numCandidates-1),
-		      bestTrendingSeekTimeIndex=Random.Range(0,numCandidates),
-		      lowestFullWordSpeedIndex=Random.Range(0,numCandidates-1);
-		float newQuoteDifficulty=(quoteDifficulty-.2f)*(quoteDifficulty+.123f);
-		for(int i=0;i<numCandidates;i++){
-			if(quoteCandidateTitles[i]==quoteTitle)	continue;
-			if(averageConfidence[i].accuracy<lowestAcc&&Random.Range(0f,1f)<=newQuoteDifficulty){
-				lowestAcc=averageConfidence[i].accuracy;
-				lowestAccIndex=i;
+		float lowestAcc = 2,
+		      highestSeekTime = -1,
+		      highestNextKeySeekTime = -1,
+		      bestTrendingSeekTime = -1,	//TODO: For the difficulty options, there could be a 'worst' variant as well
+		      lowestFullWordSpeed = 99999;
+		int   lowestAccIndex = Random.Range(0, numCandidates - 1),
+		      highestSeekTimeIndex = Random.Range(0, numCandidates - 1),
+		      highestNextKeySeekTimeIndex = Random.Range(0, numCandidates - 1),
+		      bestTrendingSeekTimeIndex = Random.Range(0, numCandidates),
+		      lowestFullWordSpeedIndex = Random.Range(0, numCandidates - 1);
+		float newQuoteDifficulty = (quoteDifficulty - .2f) * (quoteDifficulty + .123f);
+		for(int i = 0;i<numCandidates;i++) {
+			if (quoteCandidateTitles[i] == quoteTitle)	continue;
+			if (averageConfidence[i].accuracy < lowestAcc && Random.Range(0f,1f) <= newQuoteDifficulty) {
+				lowestAcc = averageConfidence[i].accuracy;
+				lowestAccIndex = i;
 			}
-			if(averageConfidence[i].seekTime>highestSeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
-				highestSeekTime=averageConfidence[i].seekTime;
-				highestSeekTimeIndex=i;
+			if (averageConfidence[i].seekTime>highestSeekTime && Random.Range(0f,1f) <= newQuoteDifficulty) {
+				highestSeekTime = averageConfidence[i].seekTime;
+				highestSeekTimeIndex = i;
 			}
-			// if(Mathf.Max(averageConfidence[i].previousKeySeekTime,averageConfidence[i].nextKeySeekTime)>highestNextKeySeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
-			// 	highestNextKeySeekTime=Mathf.Max(averageConfidence[i].previousKeySeekTime,averageConfidence[i].nextKeySeekTime);
-			// 	highestNextKeySeekTimeIndex=i;
-			// }
-			if(averageConfidence[i].nextKeySeekTime>highestNextKeySeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
-				highestNextKeySeekTime=averageConfidence[i].nextKeySeekTime;
-				highestNextKeySeekTimeIndex=i;
+			if (averageConfidence[i].nextKeySeekTime > highestNextKeySeekTime &&
+				Random.Range(0f,1f) <= newQuoteDifficulty
+			) {
+				highestNextKeySeekTime = averageConfidence[i].nextKeySeekTime;
+				highestNextKeySeekTimeIndex = i;
 			}
-			if(averageConfidence[i].speedTrend>bestTrendingSeekTime&&Random.Range(0f,1f)<=newQuoteDifficulty){
-				bestTrendingSeekTime=averageConfidence[i].speedTrend;
-				bestTrendingSeekTimeIndex=i;
+			if (averageConfidence[i].speedTrend > bestTrendingSeekTime &&
+				Random.Range(0f,1f) <= newQuoteDifficulty
+			) {
+				bestTrendingSeekTime = averageConfidence[i].speedTrend;
+				bestTrendingSeekTimeIndex = i;
 			}
-			if(averageConfidence[i].wpm<lowestFullWordSpeed&&Random.Range(0f,1f)<=newQuoteDifficulty){
-				lowestFullWordSpeed=averageConfidence[i].wpm;
-				lowestFullWordSpeedIndex=i;
+			if (averageConfidence[i].wpm < lowestFullWordSpeed && Random.Range(0f,1f) <= newQuoteDifficulty) {
+				lowestFullWordSpeed = averageConfidence[i].wpm;
+				lowestFullWordSpeedIndex = i;
 			}
 		}
-		//TODO: Idea: Function for selecting easy quotes (maybe an option in the settings to insert intermittent easy quotes to help with motivation when fatigue/regression is detected?)
+		//TODO: Idea: Function for selecting easy quotes (maybe an option in the settings to insert
+		// intermittent easy quotes to help with motivation when fatigue/regression is detected?)
 
-		int finalIndex = Random.Range(0f,1f) switch{
+		int finalIndex = Random.Range(0f, 1f) switch{
 			<.15f => highestSeekTimeIndex,
 			<.3f => highestNextKeySeekTimeIndex,
 			<.75f => bestTrendingSeekTimeIndex,
 			<.875f => lowestFullWordSpeedIndex,
 			_ => lowestAccIndex
 		};
-		// if(Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
-		// if(Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
-		// if(Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
+		// if (Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
+		// if (Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
+		// if (Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
 		
-		quoteTitle=quoteCandidateTitles[finalIndex];
-		quoteConfidenceData=averageConfidence[finalIndex];
+		quoteTitle = quoteCandidateTitles[finalIndex];
+		quoteConfidenceData = averageConfidence[finalIndex];
 		
 		return quoteCandidates[finalIndex];
 	}
 	
-	public static KeyConfidenceData GetQuoteConfidenceData(string quote){
-		List<char> sortedQuote=quote.ToList();
+	public static KeyConfidenceData GetQuoteConfidenceData(string quote) {
+		List<char> sortedQuote = quote.ToList();
 		sortedQuote.Sort();
-		float quoteAccuracyScore=0;
-		KeyConfidenceData averageConfidence=new();
-		char lastC=averageConfidence.keyName='\0';
-		int keyIndex=0;
-		int numChars=0;
-		bool skipChar=false;
-		foreach(char c in sortedQuote){
-			if(c!=lastC){
-				keyIndex=GetKeyIndex(c,keyIndex);
-				lastC=c;
-				if(CharWithinFilters(keyIndex)){
-					skipChar=false;
-				}else{
-					skipChar=true;
+		float quoteAccuracyScore = 0;
+		KeyConfidenceData averageConfidence = new();
+		char lastC = averageConfidence.keyName = '\0';
+		int keyIndex = 0;
+		int numChars = 0;
+		bool skipChar = false;
+		foreach(char c in sortedQuote) {
+			if (c != lastC) {
+				keyIndex = GetKeyIndex(c,keyIndex);
+				lastC = c;
+				if (CharWithinFilters(keyIndex)) {
+					skipChar = false;
+				} else {
+					skipChar = true;
 					continue;
 				}
 			}
-			if(skipChar||instance.confidenceDatabase[keyIndex].hits+instance.confidenceDatabase[keyIndex].misses==0)	continue;
+			if (skipChar ||
+				instance.confidenceDatabase[keyIndex].hits +
+				instance.confidenceDatabase[keyIndex].misses == 0
+			) {
+				continue;
+			}
 			
 			quoteAccuracyScore += (float)
 				instance.confidenceDatabase[keyIndex].hits / (
 					instance.confidenceDatabase[keyIndex].hits +
 				   instance.confidenceDatabase[keyIndex].misses
 				);
-			if(instance.confidenceDatabase[keyIndex].seekTime<999999)
-				averageConfidence.seekTime+=instance.confidenceDatabase[keyIndex].seekTime;
-			if(instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999)
-				averageConfidence.previousKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime;
-			if(instance.confidenceDatabase[keyIndex].nextKeySeekTime<999999)
-				// averageConfidence.previousKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime;
-				averageConfidence.nextKeySeekTime+=instance.confidenceDatabase[keyIndex].previousKeySeekTime<999999?
-					Mathf.Max(instance.confidenceDatabase[keyIndex].previousKeySeekTime,instance.confidenceDatabase[keyIndex].nextKeySeekTime):
-					instance.confidenceDatabase[keyIndex].nextKeySeekTime;
-			averageConfidence.speedTrend+=instance.confidenceDatabase[keyIndex].speedTrend;
-			averageConfidence.wpm+=instance.confidenceDatabase[keyIndex].wpm;
+			if (instance.confidenceDatabase[keyIndex].seekTime < 999999)
+				averageConfidence.seekTime += instance.confidenceDatabase[keyIndex].seekTime;
+			if (instance.confidenceDatabase[keyIndex].previousKeySeekTime < 999999)
+				averageConfidence.previousKeySeekTime += instance.confidenceDatabase[keyIndex].previousKeySeekTime;
+			if (instance.confidenceDatabase[keyIndex].nextKeySeekTime < 999999) {
+				averageConfidence.nextKeySeekTime +=
+					instance.confidenceDatabase[keyIndex].previousKeySeekTime < 999999?
+						Mathf.Max(
+							instance.confidenceDatabase[keyIndex].previousKeySeekTime,
+							instance.confidenceDatabase[keyIndex].nextKeySeekTime
+						):
+						instance.confidenceDatabase[keyIndex].nextKeySeekTime;
+			}
+			averageConfidence.speedTrend += instance.confidenceDatabase[keyIndex].speedTrend;
+			averageConfidence.wpm += instance.confidenceDatabase[keyIndex].wpm;
 			numChars++;
 		}
 		
-		averageConfidence.speedTrend/=numChars;
-		if(numChars>0){
-			quoteAccuracyScore/=numChars;
-			averageConfidence.seekTime/=numChars;
-			averageConfidence.previousKeySeekTime/=numChars;
-			averageConfidence.nextKeySeekTime/=numChars;
-			averageConfidence.wpm/=numChars;
-			const int maxHits=9999999;
-			averageConfidence.hits=(int)(maxHits*quoteAccuracyScore);
-			averageConfidence.misses=maxHits-averageConfidence.hits;
-		}else{
-			averageConfidence.seekTime=Mathf.Infinity;
-			averageConfidence.previousKeySeekTime=Mathf.Infinity;
-			averageConfidence.nextKeySeekTime=Mathf.Infinity;
+		averageConfidence.speedTrend /= numChars;
+		if (numChars > 0) {
+			quoteAccuracyScore /= numChars;
+			averageConfidence.seekTime /= numChars;
+			averageConfidence.previousKeySeekTime /= numChars;
+			averageConfidence.nextKeySeekTime /= numChars;
+			averageConfidence.wpm /= numChars;
+			const int maxHits = 9999999;
+			averageConfidence.hits = (int)(maxHits * quoteAccuracyScore);
+			averageConfidence.misses = maxHits-averageConfidence.hits;
+		} else {
+			averageConfidence.seekTime = Mathf.Infinity;
+			averageConfidence.previousKeySeekTime = Mathf.Infinity;
+			averageConfidence.nextKeySeekTime = Mathf.Infinity;
 		}
 		
 		return averageConfidence;
 	}
 	
-	public static float GetEstimatedTypingTimeSeconds(string quote){
-		List<char> sortedQuote=quote.ToList();
+	public static float GetEstimatedTypingTimeSeconds(string quote) {
+		List<char> sortedQuote = quote.ToList();
 		sortedQuote.Sort();
-		float timeEstimate=0;
-		int keyIndex=0;
-		char lastC='\t';
-		foreach(char c in sortedQuote){
-			if(lastC!=c){
-				keyIndex=GetKeyIndex(c,keyIndex);
-				lastC=c;
+		float timeEstimate = 0;
+		int keyIndex = 0;
+		char lastC = '\t';
+		foreach(char c in sortedQuote) {
+			if (lastC != c) {
+				keyIndex = GetKeyIndex(c, keyIndex);
+				lastC = c;
 			}
-			timeEstimate+=
+			timeEstimate+= 
 				instance.confidenceDatabase[keyIndex].seekTime<1000?
 					instance.confidenceDatabase[keyIndex].seekTime:
 					.35f;
@@ -640,16 +695,16 @@ public class KeyManager:MonoBehaviour{
 	 *		3: Pick the hardest of the bunch (using any of the following: )
 	 */
 
-	public static string RemoveTrailingNewline(string text){
-		if(text.Length<=0) return text;
-		while(text[^1] is '\n' or ' '){
-			text=text.Remove(text.Length-1,1);
+	public static string RemoveTrailingNewline(string text) {
+		if (text.Length <= 0) return text;
+		while (text[^1] is '\n' or ' ') {
+			text = text.Remove(text.Length - 1,1);
 		}
 		return text;
-		// return text[^1]=='\n'?text.Remove(text.Length-1,1):text;
+		// return text[^1] == '\n' ? text.Remove(text.Length - 1,1) : text;
 	}
 	
-	private void OnApplicationQuit(){
-		Save();
+	private void OnApplaicationQuit() {
+	 	 Save();
 	}
 }

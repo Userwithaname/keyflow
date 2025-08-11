@@ -1,7 +1,8 @@
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
-public static class AutoBuild{
+
+public static class AutoBuild {
 /*
 	This can be used in the terminal as such:
 
@@ -25,217 +26,241 @@ private static BuildTargetGroup		targetPlatformGroup;
 private static BuildTarget			targetPlatform;
 private static string buildPath;
 	
-	public static void Build(){
+	public static void Build() {
 		PrepareForBuild();
-		var target=EditorUserBuildSettings.activeBuildTarget;
-		var targetGroup=EditorUserBuildSettings.selectedBuildTargetGroup;
-		bool built=false;
-		if(HasArgument("--linux")||HasArgument("-l")){
+		var target = EditorUserBuildSettings.activeBuildTarget;
+		var targetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
+		bool built = false;
+		if (HasArgument("--linux") || HasArgument("-l")) {
 			BuildLinux();
-			built=true;
+			built = true;
 		}
-		if(HasArgument("--macos")||HasArgument("-m")){
+		if (HasArgument("--macos") || HasArgument("-m")) {
 			BuildMacOS();
-			built=true;
+			built = true;
 		}
-		if(HasArgument("--windows")||HasArgument("-w")){
+		if (HasArgument("--windows") || HasArgument("-w")) {
 			BuildWindows();
-			built=true;
+			built = true;
 		}
-		if(HasArgument("--webgl")||HasArgument("-gl")){
-			EditorUserBuildSettings.selectedBuildTargetGroup=BuildTargetGroup.WebGL;
-			// target=EditorUserBuildSettings.activeBuildTarget;
+		if (HasArgument("--webgl") || HasArgument("-gl")) {
+			EditorUserBuildSettings.selectedBuildTargetGroup = BuildTargetGroup.WebGL;
+			// target = EditorUserBuildSettings.activeBuildTarget;
 			BuildWebGL();
-			built=true;
+			built = true;
 		}
-		if(!built)	// If no platform was specified, build for Linux
+		if (!built)	// If no platform was specified, build for Linux
 			BuildLinux();
 		
-		if(target!=EditorUserBuildSettings.activeBuildTarget){
+		if (target != EditorUserBuildSettings.activeBuildTarget) {
 			Debug.Log("Reverting editor build settings");
-			EditorUserBuildSettings.SwitchActiveBuildTarget(targetGroup,target);
+			EditorUserBuildSettings.SwitchActiveBuildTarget(targetGroup, target);
 		}
 	}
 
-	private static void PrepareForBuild(){
-		buildPath=GetArgumentValue("-projectPath")+"/Builds/";
-		Debug.Log("Building to: '"+buildPath+"'");
+	private static void PrepareForBuild() {
+		buildPath = GetArgumentValue("-projectPath") + "/Builds/";
+		Debug.Log("Building to: '" + buildPath + "'");
 
 		Debug.Log("Determining scenes for build...");
 		EditorBuildSettingsScene[] scenesTemp=EditorBuildSettings.scenes;
-		var scenes=new List<string>();
-		for(int i=0;i<scenesTemp.Length;i++){
-			if(scenesTemp[i].enabled){
+		var scenes = new List<string>();
+		for (int i = 0; i < scenesTemp.Length; i++) {
+			if (scenesTemp[i].enabled) {
 				scenes.Add(scenesTemp[i].path);
 			}
 		}
 
-		buildOptions=new BuildPlayerOptions();
-		buildOptions.scenes=scenes.ToArray();
+		buildOptions = new BuildPlayerOptions();
+		buildOptions.scenes = scenes.ToArray();
 
-		var projectPath=System.IO.Directory.GetParent(Application.dataPath);
+		var projectPath = System.IO.Directory.GetParent(Application.dataPath);
 
-		if(HasArgument("--clean")||HasArgument("--full-clean")||HasArgument("--reimport")){
+		if (HasArgument("--clean") || HasArgument("--full-clean") || HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/PlayerDataCache'");
-			try{
+			try {
 				System.IO.Directory.Delete(projectPath+"/Library/PlayerDataCache",true);
-			}catch{}
+			} catch {}
 		}
-		if(HasArgument("--full-clean")||HasArgument("--reimport")){
+		if (HasArgument("--full-clean") || HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/il2cpp_cache'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/il2cpp_cache",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/il2cpp_cache",true);
+			} catch {}
 
 			Debug.Log("Removing directory: 'Library/PlayerScriptAssemblies'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/PlayerScriptAssemblies",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/PlayerScriptAssemblies",true);
+			} catch {}
 
 			Debug.Log("Removing directory: 'Library/PlayerAssemblies'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/PlayerAssemblies",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/PlayerAssemblies",true);
+			} catch {}
 
 			Debug.Log("Removing directory: 'Library/ShaderCache'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/ShaderCache",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/ShaderCache",true);
+			} catch {}
 
 			Debug.Log("Removing directory: 'Library/SplashScreenCache'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/SplashScreenCache",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/SplashScreenCache",true);
+			} catch {}
 
 			Debug.Log("Removing file: 'Library/ShaderCache.db'");
-			System.IO.File.Delete(projectPath+"/Library/ShaderCache.db");
+			System.IO.File.Delete(projectPath + "/Library/ShaderCache.db");
 		}
-		if(HasArgument("--reimport")){
+		if (HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/Artifacts'");
-			try{
-				System.IO.Directory.Delete(projectPath+"/Library/Artifacts",true);
-			}catch{}
+			try {
+				System.IO.Directory.Delete(projectPath + "/Library/Artifacts",true);
+			} catch {}
 
 			Debug.Log("Removing file: 'Library/ArtifactDB'");
-			System.IO.File.Delete(projectPath+"/Library/ArtifactDB");
+			System.IO.File.Delete(projectPath + "/Library/ArtifactDB");
 
 			Debug.Log("Removing file: 'Library/ArtifactDB-lock'");
-			System.IO.File.Delete(projectPath+"/Library/ArtifactDB-lock");
+			System.IO.File.Delete(projectPath + "/Library/ArtifactDB-lock");
 		}
 
-		if(HasArgument("--show")||HasArgument("-s")){
-			buildOptions.options=BuildOptions.ShowBuiltPlayer;
+		if (HasArgument("--show") || HasArgument("-s")) {
+			buildOptions.options = BuildOptions.ShowBuiltPlayer;
 		}
 
-		if(HasArgument("--fast")||HasArgument("-f")||HasArgument("--quick")){
-			buildOptions.options|=BuildOptions.BuildScriptsOnly;
+		if (HasArgument("--fast") || HasArgument("-f") || HasArgument("--quick")) {
+			buildOptions.options |= BuildOptions.BuildScriptsOnly;
 		}
 		
-		// if(HasArgument("--final")||HasArgument("-F")){
+		// if (HasArgument("--final") || HasArgument("-F")) {
 		// 	return;
 		// }
 		//
-		// buildOptions.options|=BuildOptions.Development;
+		// buildOptions.options |= BuildOptions.Development;
 		//
 		//
-		// if(HasArgument("--debug")){
-		// 	buildOptions.options|=BuildOptions.AllowDebugging;
+		// if (HasArgument("--debug")) {
+		// 	buildOptions.options |= BuildOptions.AllowDebugging;
 		// }
-		// if(HasArgument("--profiler")||HasArgument("-p")){
-		// 	buildOptions.options|=BuildOptions.ConnectWithProfiler;
+		// if (HasArgument("--profiler") || HasArgument("-p")) {
+		// 	buildOptions.options |= BuildOptions.ConnectWithProfiler;
 		// }
 	}
 
-	private static void BuildLinux(){
+	private static void BuildLinux() {
 		Debug.Log("Switching build target... (Linux 64-bit)");
-		if(HasArgument("--clean")){
-			Debug.Log("Removing existing build: '"+buildPath+PlayerSettings.productName+"-Linux-x64/"+PlayerSettings.productName+"'");
-			try{System.IO.File.Delete(buildPath+PlayerSettings.productName+"-Linux-x64/"+PlayerSettings.productName+".x86_64");}catch{}
-			try{System.IO.Directory.Delete(buildPath+PlayerSettings.productName+"-Linux-x64/"+PlayerSettings.productName+"_Data",true);}catch{}
-			while(System.IO.Directory.Exists(buildPath+PlayerSettings.productName+"-Linux-x64/"+PlayerSettings.productName)){
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-Linux-x64/{PlayerSettings.productName}";
+		if (HasArgument("--clean")) {
+			Debug.Log($"Removing existing build: '{buildDir}'");
+			try { System.IO.File.Delete($"{buildDir}.x86_64"); } catch {}
+			try { System.IO.Directory.Delete($"{buildDir}_Data",true); } catch {}
+			while (System.IO.Directory.Exists(buildDir)) {
 				System.Threading.Thread.Sleep(500);
 				Debug.Log("Directory not deleted yet, retrying in 0.5 seconds...");
 			}
 		}
-		targetPlatform=BuildTarget.StandaloneLinux64;
-		targetPlatformGroup=BuildTargetGroup.Standalone;
-		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
+		targetPlatform = BuildTarget.StandaloneLinux64;
+		targetPlatformGroup = BuildTargetGroup.Standalone;
+		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup, targetPlatform);
 
-		buildOptions.locationPathName=buildPath+PlayerSettings.productName+"-Linux-x64/"+PlayerSettings.productName+".x86_64";
-		buildOptions.targetGroup=targetPlatformGroup;
-		buildOptions.target=targetPlatform;
+		buildOptions.locationPathName = $"{buildDir}.x86_64";
+		buildOptions.targetGroup = targetPlatformGroup;
+		buildOptions.target = targetPlatform;
 
 		Debug.Log("Creating a Linux build...");
-		BuildPipeline.BuildPlayer(buildOptions.scenes,buildOptions.locationPathName,targetPlatform,buildOptions.options);
+		BuildPipeline.BuildPlayer(
+			buildOptions.scenes,
+			buildOptions.locationPathName,
+			targetPlatform,
+			buildOptions.options
+		);
 		Debug.Log("Done!");
 	}
 
-	private static void BuildMacOS(){
+	private static void BuildMacOS() {
 		Debug.Log("Switching build target... (Mac OS 64-bit+ARM)");
-		if(HasArgument("--clean")){
-			System.IO.Directory.Delete(buildPath+PlayerSettings.productName+"-Mac-ARM+x64/"+PlayerSettings.productName+".app",true);
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-Mac-ARM+x64/{PlayerSettings.productName}.app";
+		if (HasArgument("--clean")) {
+			System.IO.Directory.Delete(buildDir,true);
 		}
-		targetPlatform=BuildTarget.StandaloneOSX;
-		targetPlatformGroup=BuildTargetGroup.Standalone;
-		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
+		targetPlatform = BuildTarget.StandaloneOSX;
+		targetPlatformGroup = BuildTargetGroup.Standalone;
+		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup, targetPlatform);
 
-		buildOptions.locationPathName=buildPath+PlayerSettings.productName+"-Mac-ARM+x64/"+PlayerSettings.productName+".app";
-		buildOptions.targetGroup=targetPlatformGroup;
-		buildOptions.target=targetPlatform;
+		buildOptions.locationPathName = buildDir;
+		buildOptions.targetGroup = targetPlatformGroup;
+		buildOptions.target = targetPlatform;
 
 		Debug.Log("Creating a Mac OS build...");
-		BuildPipeline.BuildPlayer(buildOptions.scenes,buildOptions.locationPathName,targetPlatform,buildOptions.options);
+		BuildPipeline.BuildPlayer(
+			buildOptions.scenes,
+			buildOptions.locationPathName,
+			targetPlatform,
+			buildOptions.options
+		);
 		Debug.Log("Done!");
 	}
 
-	private static void BuildWindows(){
+	private static void BuildWindows() {
 		Debug.Log("Switching build target... (Windows 64-bit)");
-		if(HasArgument("--clean")){
-			System.IO.File.Delete(buildPath+PlayerSettings.productName+"-Windows-x64/"+PlayerSettings.productName+".exe");
-			System.IO.Directory.Delete(buildPath+PlayerSettings.productName+"-Windows-x64/"+PlayerSettings.productName+"_Data",true);
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-Windows-x64/{PlayerSettings.productName}";
+		if (HasArgument("--clean")) {
+			System.IO.File.Delete($"{buildDir}.exe");
+			System.IO.Directory.Delete($"{buildDir}_Data",true);
 		}
-		targetPlatform=BuildTarget.StandaloneWindows64;
-		targetPlatformGroup=BuildTargetGroup.Standalone;
+		targetPlatform = BuildTarget.StandaloneWindows64;
+		targetPlatformGroup = BuildTargetGroup.Standalone;
 		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
 
-		buildOptions.locationPathName=buildPath+PlayerSettings.productName+"-Windows-x64/"+PlayerSettings.productName+".exe";
-		buildOptions.targetGroup=targetPlatformGroup;
-		buildOptions.target=targetPlatform;
+		buildOptions.locationPathName = $"{buildDir}.exe";
+		buildOptions.targetGroup = targetPlatformGroup;
+		buildOptions.target = targetPlatform;
 
 		Debug.Log("Creating a Windows build...");
-		BuildPipeline.BuildPlayer(buildOptions.scenes,buildOptions.locationPathName,targetPlatform,buildOptions.options);
+		BuildPipeline.BuildPlayer(
+			buildOptions.scenes,
+			buildOptions.locationPathName,
+			targetPlatform,
+			buildOptions.options
+		);
 		Debug.Log("Done!");
 	}
 	
-	private static void BuildWebGL(){
+	private static void BuildWebGL() {
 		Debug.Log("Switching build target... (WebGL)");
-		targetPlatform=BuildTarget.WebGL;
-		targetPlatformGroup=BuildTargetGroup.WebGL;
+		targetPlatform = BuildTarget.WebGL;
+		targetPlatformGroup = BuildTargetGroup.WebGL;
 		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
 
-		buildOptions.locationPathName=buildPath+PlayerSettings.productName+"-WebGL/"+PlayerSettings.productName;
-		buildOptions.targetGroup=targetPlatformGroup;
-		buildOptions.target=targetPlatform;
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-WebGL/{PlayerSettings.productName}";
+		buildOptions.locationPathName = buildDir;
+		buildOptions.targetGroup = targetPlatformGroup;
+		buildOptions.target = targetPlatform;
 
 		Debug.Log("Creating a WebGL build...");
-		BuildPipeline.BuildPlayer(buildOptions.scenes,buildOptions.locationPathName,BuildTarget.WebGL,buildOptions.options);
+		BuildPipeline.BuildPlayer(
+			buildOptions.scenes,
+			buildOptions.locationPathName,
+			BuildTarget.WebGL,
+			buildOptions.options
+		);
 		Debug.Log("Done!");
 	}
 
-	private static bool HasArgument(string name){
-		string[] args=System.Environment.GetCommandLineArgs();
-		foreach(string arg in args){
-			if(arg==name)
+	private static bool HasArgument(string name) {
+		string[] args = System.Environment.GetCommandLineArgs();
+		foreach (string arg in args) {
+			if (arg == name)
 				return true;
 		}
 		return false;
 	}
 
-	private static string GetArgumentValue(string name){
-		string[] args=System.Environment.GetCommandLineArgs();
-		for(int i=args.Length-1;i>-1;i--){
-			if(args[i]==name){
-				return args[i+1];
+	private static string GetArgumentValue(string name) {
+		string[] args = System.Environment.GetCommandLineArgs();
+		for (int i = args.Length - 1; i > -1; i--) {
+			if (args[i] == name) {
+				return args[i + 1];
 			}
 		}
 		return null;
