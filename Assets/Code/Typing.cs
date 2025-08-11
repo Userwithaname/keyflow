@@ -145,12 +145,12 @@ public class Typing : MonoBehaviour {
 	public Image backgroundImage,fadeImage;
 	[Range(0, 1)]public float defaultFade = 0f, fadeAmount = .5f;
 	float backgroundFade;	// 0 to 1
-	bool fade,lastFade;
+	bool fade, lastFade;
 	Vector3 lastMousePos;
-	Color targetFadeColor = new Color(0,0,0,0);
+	Color targetFadeColor = new Color(0, 0, 0, 0);
 	
 	RectTransform caretTransform;
-	Vector3 initialTextPos,initialCaretPos;
+	Vector3 initialTextPos, initialCaretPos;
 	
 	[Serializable]public struct Theme{
 		public string name;
@@ -432,6 +432,7 @@ public class Typing : MonoBehaviour {
 	string curCharacterNextSeekTime;
 	string curCharacterWPM;
 	string curCharacterAccuracy;
+
 	void UpdateCurrentPracticeUI(int comparisonIndex = -1) {
 		KeyManager.KeyConfidenceData updatedCharPractice =
 			curPracticeIndex == -2 ?
@@ -459,7 +460,8 @@ public class Typing : MonoBehaviour {
 				(float)updatedCharPractice.hits /
 					(updatedCharPractice.hits + updatedCharPractice.misses) * 100,
 				1
-			) + " % ":"-";
+			) + "%":
+			"-";
 
 		if (comparisonIndex != -1) {
 			KeyManager.KeyConfidenceData compare =
@@ -476,12 +478,13 @@ public class Typing : MonoBehaviour {
 			diff = (float)Math.Round(
 				Mathf.Max(
 					updatedCharPractice.nextKeySeekTime,
-					updatedCharPractice.previousKeySeekTime) * 1000 -
-						Mathf.Max(
-							curCharPractice.nextKeySeekTime,
-							curCharPractice.previousKeySeekTime
-						) * 1000,
-				3);
+					updatedCharPractice.previousKeySeekTime
+				) * 1000 - Mathf.Max(
+					curCharPractice.nextKeySeekTime,
+					curCharPractice.previousKeySeekTime
+				) * 1000,
+				3
+			);
 			curCharacterNextSeekTime = diff is <= 0 or float.NaN?
 				$"{themes[selectedTheme].improvementColorTag + curCharacterNextSeekTime} ({diff})</color>":
 				$"{themes[selectedTheme].regressionColorTag + curCharacterNextSeekTime} (+{diff})</color>";
@@ -513,7 +516,6 @@ public class Typing : MonoBehaviour {
 			$"<b>Practice Focus: {(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>"+
 			$"\n<b>Average Stats </b>(for <b>{(curCharacterPractice=='\0'?"multiple keys":curCharacterPractice)}</b>)<b>:</b>"+
 			$"\nSeek Time: {curCharacterSeekTime}"+
-			// $"\nAdjacency Seek Time: {curCharacterNextSeekTime}"+
 			$"\nContextual Seek Time: {curCharacterNextSeekTime}"+
 			$"\nImprovement Trend: {curCharacterSpeedTrend}"+
 			// $"\nWord Speed: {curCharacterWPM}"+
@@ -521,56 +523,61 @@ public class Typing : MonoBehaviour {
 		
 		//TODO: Idea: Show practice difficulty (could be a slider (with a gradient background), a bar with representative colors (red/orange/green), a star system, pre-defined words (e.g. "easy", "mildly difficult", "very difficult"), etc.)
 		
-		wpm=loc/totalTestTime*60/5;
-		accuracy=(float)hitCount/(hitCount+missCount)*100;
-		float oldAverageAccuracy=KeyManager.averageAccuracy;
-		float oldAverageSpeed=KeyManager.averageWPM;
-		float oldTopSpeed=KeyManager.topWPM;
+		wpm = loc / totalTestTime * 60 / 5;
+		accuracy = (float)hitCount / (hitCount + missCount) * 100;
+		float oldAverageAccuracy = KeyManager.averageAccuracy;
+		float oldAverageSpeed = KeyManager.averageWPM;
+		float oldTopSpeed = KeyManager.topWPM;
 		if (done) {
-			if (wpm>KeyManager.topWPM) KeyManager.topWPM=wpm;
-			if (accuracy>0)
-				KeyManager.averageAccuracy=Mathf.Lerp(KeyManager.averageAccuracy,accuracy,KeyManager.averageAccuracy>0?.12f:1);
-			if (wpm>0)
-				KeyManager.averageWPM=Mathf.Lerp(KeyManager.averageWPM,wpm,KeyManager.averageWPM>0?.12f:1);
+			if (wpm > KeyManager.topWPM) KeyManager.topWPM = wpm;
+			if (accuracy > 0)
+				KeyManager.averageAccuracy = Mathf.Lerp(
+					KeyManager.averageAccuracy,
+					accuracy,
+					KeyManager.averageAccuracy > 0 ? .12f : 1
+				);
+			if (wpm > 0)
+				KeyManager.averageWPM =
+					Mathf.Lerp(KeyManager.averageWPM, wpm, KeyManager.averageWPM > 0 ? .12f : 1);
 			if (float.IsNaN(accuracy)) accuracy=100;
-			WPMInfo.text=
-				"Accuracy: "+
-					(accuracy>=oldAverageAccuracy?
+			WPMInfo.text =
+				"Accuracy: " +
+					(accuracy >= oldAverageAccuracy ?
 						$"{themes[selectedTheme].improvementColorTag+Math.Round(accuracy,2)}% (+{Math.Round(accuracy-oldAverageAccuracy,2)} from average)</color>":
 						$"{themes[selectedTheme].regressionColorTag+Math.Round(accuracy,2)}% ({Math.Round(accuracy-oldAverageAccuracy,2)} from average)</color>")+
-				"\nSpeed: "+
-					(wpm>=oldAverageSpeed?
+				"\nSpeed: " +
+					(wpm >= oldAverageSpeed ?
 						$"{themes[selectedTheme].improvementColorTag+Math.Round(wpm,2)} WPM (+{Math.Round(wpm-oldAverageSpeed,2)} from average)</color>":
 						$"{themes[selectedTheme].regressionColorTag+Math.Round(wpm,2)} WPM ({Math.Round(wpm-oldAverageSpeed,2)} from average)</color>")+
-				$"\nTime: "+
-					(totalTestTime<estimatedTime?
+				$"\nTime: " +
+					(totalTestTime < estimatedTime ?
 						$"{themes[selectedTheme].improvementColorTag}{TimeFormattedString(totalTestTime,true)} ({TimeFormattedString(totalTestTime-estimatedTime,true,true)} from estimate)</color>":
 						$"{themes[selectedTheme].regressionColorTag}{TimeFormattedString(totalTestTime,true)} (+{TimeFormattedString(totalTestTime-estimatedTime,true,true)} from estimate)</color>");
 			
-			averageWPMInfo.text=
-				"Average Accuracy: "+
-					(KeyManager.averageAccuracy>=oldAverageAccuracy?
+			averageWPMInfo.text =
+				"Average Accuracy: " +
+					(KeyManager.averageAccuracy >= oldAverageAccuracy ?
 						$"{themes[selectedTheme].improvementColorTag}{Math.Round(KeyManager.averageAccuracy,2)}% (+{Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)})</color>":
 						$"{themes[selectedTheme].regressionColorTag}{Math.Round(KeyManager.averageAccuracy,2)}% ({Math.Round(KeyManager.averageAccuracy-oldAverageAccuracy,2)})</color>")+
-				"\nAverage Speed: "+
-					(KeyManager.averageWPM>=oldAverageSpeed?
+				"\nAverage Speed: " +
+					(KeyManager.averageWPM >= oldAverageSpeed ? 
 						$"{themes[selectedTheme].improvementColorTag}{(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM (+{Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)})</color>":
 						$"{themes[selectedTheme].regressionColorTag}{(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM ({Math.Round(KeyManager.averageWPM-oldAverageSpeed,3)})</color>")+
-				"\nTop Speed: "+
-					(KeyManager.topWPM>oldTopSpeed?
+				"\nTop Speed: " +
+					(KeyManager.topWPM > oldTopSpeed ?
 						$"{themes[selectedTheme].improvementColorTag}{(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM(+{KeyManager.topWPM-oldTopSpeed})</color>":
 						$"{(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM");
 		} else {	
-			averageWPMInfo.text=
-				$"Average Accuracy: {Math.Round(KeyManager.averageAccuracy,2)}%"+
-				$"\nAverage Speed: {(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM"+
+			averageWPMInfo.text =
+				$"Average Accuracy: {Math.Round(KeyManager.averageAccuracy,2)}%" + 
+				$"\nAverage Speed: {(KeyManager.averageWPM>0?Math.Round(KeyManager.averageWPM,2):"-")} WPM" + 
 				$"\nTop Speed: {(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM";
 		}
 		
 		quoteInfo.text=quoteTitle;
 		
 		#if UNITY_WEBGL
-			if (Time.time>5) KeyManager.Save();
+			if (Time.time > 5) KeyManager.Save();
 		#endif
 	}
 	
@@ -599,16 +606,16 @@ public class Typing : MonoBehaviour {
 					}
 					if (input.Length == 0) ResetLesson();
 					break;
-				case 9:		// Tab
+				case 9:     // Tab
 					//input += '\t';
 					break;
-				case 13:		// Enter
+				case 13:    // Enter
 					input += '\n';
 					break;
-				case 27:		// Escape
+				case 27:    // Escape
 					ResetLesson();
 					break;
-				case 127:	// Delete
+				case 127:   // Delete
 					break;
 				case <127:
 					if (Keyboard.current.ctrlKey.isPressed) break;

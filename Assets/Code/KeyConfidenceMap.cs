@@ -1,4 +1,3 @@
-// using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -40,8 +39,8 @@ public class KeyConfidenceMap:MonoBehaviour{
 	}
 	public void ChangeSelectedLayout() {
 		selectedLayout = lastActiveLayoutIndex == -1 ?
-			PlayerPrefs.GetString("keyboardLayoutUI",selectedLayout):
-			layoutsDropdown.options[layoutsDropdown.value].text + ".txt";
+			PlayerPrefs.GetString("keyboardLayoutUI", selectedLayout):
+			layoutsDropdown.options[layoutsDropdown. value].text + ".txt";
 		UpdateLayout();
 		CreateLayout();
 	}
@@ -57,19 +56,24 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		bool hasValue=false;
 		layoutsDropdown.ClearOptions();
-		foreach (string file in System.IO.Directory.GetFiles(layoutsPath)) {	//TODO: Idea: Maybe add a shortcut to open the layouts directory (or create a custom layout editor in-game)
+		// TODO: Idea: Maybe add a shortcut to open the layouts directory
+		// (or create a custom layout editor in-game)
+		foreach (string file in System.IO.Directory.GetFiles(layoutsPath)) {
 			string filename=System.IO.Path.GetFileName(file);
-			layoutsDropdown.options.Add(new TMP_Dropdown.OptionData(filename.Remove(filename.Length - 4,4)));
+			layoutsDropdown.options.Add(
+				new TMP_Dropdown.OptionData(filename.Remove(filename.Length - 4, 4))
+			);
 			if (filename == selectedLayout || (!hasValue && filename == "QWERTY.txt")) {
 				layout = System.IO.File.ReadAllText(file);
 				layoutsDropdown.value = layoutsDropdown.options.Count;
 				hasValue = true;
 			}
-			// Debug.Log(System.IO.Path.GetFileName(file));
 		}
 		UpdateTheme();
 		#if UNITY_WEBGL
-			layoutsDropdown.gameObject.SetActive(false);	// Don't show the layouts dropdown in the web player, because the layouts directory doesn't exist
+			// Don't show the layouts dropdown in the web player,
+			// because the layouts directory doesn't exist there
+			layoutsDropdown.gameObject.SetActive(false);
 		#endif
 	}
 	
@@ -99,20 +103,21 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		// averageSeekTime = Mathf.Min(averageSeekTime, .4f);	// Consider 30 WPM to be the lowest allowed to be colored green
 		
-		int row=0;
-		int buttonIndex=0;
-		for (int key=0;key<layout.Length;) {
-			if (layout[key]=='\n') {
+		int row = 0;
+		int buttonIndex = 0;
+		for (int key = 0; key < layout.Length;) {
+			if (layout[key] == '\n') {
 				row++;
 				key++;
 				continue;
 			}
-			buttons[buttonIndex]=Instantiate(keyPrefab,rows[row],true).transform;
-			buttons[buttonIndex].Find("Outline").GetComponent<Image>().color=Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
-			for (int i=0;i<2;i++) {
+			buttons[buttonIndex] = Instantiate(keyPrefab,rows[row],true).transform;
+			buttons[buttonIndex].Find("Outline").GetComponent<Image>().color =
+				Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
+			for (int i = 0; i < 2; i++) {
 				Transform button=buttons[buttonIndex].GetChild(i);
-				button.GetChild(0).GetComponent<TMP_Text>().text=$"{layout[key]}";
-				int keyIndex=KeyManager.GetKeyIndex(layout[key]);
+				button.GetChild(0).GetComponent<TMP_Text>().text = $"{layout[key]}";
+				int keyIndex = KeyManager.GetKeyIndex(layout[key]);
 				float score = (
 					KeyManager.instance.confidenceDatabase[keyIndex].seekTime+
 						KeyManager.instance.confidenceDatabase[keyIndex].previousKeySeekTime+
@@ -126,12 +131,10 @@ public class KeyConfidenceMap:MonoBehaviour{
 						)
 				) / 4;
 				if (score < 99999) {
-					score = averageSeekTime/score;
+					score = averageSeekTime / score;
 					if (score < 1) {
-						// score = Mathf.Lerp(score, score*score, .85f);
 						score *= score;
 					} else {
-						// score = (score-1)*.75f+1;
 						score = (score - 1) * .75f;
 						score = Mathf.Lerp(score, score * score, .5f) + 1;
 					}
@@ -145,7 +148,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 						keyColor = Color.Lerp(
 							Color.grey,
 							keyColor,
-							(float)(KeyManager.instance.confidenceDatabase[keyIndex].hits + 1) / 4 * .25f
+							(float)(KeyManager.instance.confidenceDatabase[keyIndex].hits + 1) / 16
 						);
 					}
 					
@@ -167,7 +170,8 @@ public class KeyConfidenceMap:MonoBehaviour{
 	public void UpdateTheme() {
 		if (buttons != null) {
 			foreach (Transform t in buttons) {
-				t.Find("Outline").GetComponent<Image>().color = Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
+				t.Find("Outline").GetComponent<Image>().color =
+					Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
 			}
 		}
 
