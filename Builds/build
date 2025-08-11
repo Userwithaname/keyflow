@@ -15,6 +15,15 @@ echo $unityPath
 
 tail -f ~/.config/unity3d/Editor.log &
 processID=$!
-$unityPath -logFile "$HOME/.config/unity3d/Editor.log" -quit -batchmode -projectPath "$(pwd)" -executeMethod AutoBuild.Build "$@"; kill $processID || { echo "Build failed!"; exit 2; }
+$unityPath \
+  -logFile "$HOME/.config/unity3d/Editor.log" \
+  -quit \
+  -batchmode \
+  -projectPath "$(pwd)" \
+  -executeMethod AutoBuild.Build "$@" ;\
+  kill $processID || {
+    echo "Build failed!";
+    exit 2;
+  }
 
 cd -
