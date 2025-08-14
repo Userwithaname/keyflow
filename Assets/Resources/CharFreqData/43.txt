@@ -20,6 +20,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Distance
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Geometry
@@ -53,6 +54,7 @@ Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Diffraction
+Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Pascal (unit)

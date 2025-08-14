@@ -22,6 +22,7 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Electrical engineering
+Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Virus

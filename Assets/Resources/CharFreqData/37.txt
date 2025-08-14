@@ -3,7 +3,9 @@ Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Color
+Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Liquid-crystal display

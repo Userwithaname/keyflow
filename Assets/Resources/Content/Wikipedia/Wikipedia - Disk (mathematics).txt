@@ -1,0 +1,1 @@
+In geometry, a disk (also spelled disc) is the region in a plane bounded by a circle. A disk is said to be closed if it contains the circle that constitutes its boundary, and open if it does not.

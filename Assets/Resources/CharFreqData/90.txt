@@ -9,12 +9,16 @@ Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Convex combination
+Content/Wikipedia/Wikipedia - Curve
+Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Map
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
+Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Optical axis
@@ -22,11 +26,14 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Point
+Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Axiomatic system
+Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Coefficient
@@ -35,8 +42,10 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Flux
+Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Function (mathematics)
+Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Asymptote
@@ -61,6 +70,7 @@ Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Temperature
+Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Unicode
@@ -123,6 +133,7 @@ Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Structure of Earth
+Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler

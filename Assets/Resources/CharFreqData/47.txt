@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Unimodality
+Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Code point
