@@ -85,7 +85,7 @@ public class DrawGraph : Graphic {
 			return;
 		
 		Vector3 rtPos = rectTransform.position;
-		Vector3 mouseHoverPos = Input.mousePosition;
+		Vector3 mouseHoverPos = InputHandler.mousePosition;
 		mouseHoverPos.x -= rtPos.x;
 		mouseHoverPos /= pixelScale;
 		float lowestHoverDiff = 999;
