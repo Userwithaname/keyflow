@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Point
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Frequency
@@ -8,10 +9,12 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Neuron
+Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
+Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Perception
@@ -23,6 +26,7 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Union (set theory)
@@ -35,6 +39,7 @@ Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Base (geometry)
+Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Alphabet

@@ -1,3 +1,4 @@
+Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Wikipedia

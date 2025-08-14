@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
-Content/Wikipedia/Wikipadia - Three-dimensional space
+Content/Wikipedia/Wikipedia - Three-dimensional space
+Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Photograph

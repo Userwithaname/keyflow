@@ -2,7 +2,8 @@ Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Feedback
-Content/Wikipedia/Wikipadia - Three-dimensional space
+Content/Wikipedia/Wikipedia - Three-dimensional space
+Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Poetry
@@ -12,6 +13,7 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - N-sphere
+Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Ice
@@ -39,6 +41,7 @@ Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Dither

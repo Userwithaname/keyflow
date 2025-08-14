@@ -12,6 +12,7 @@ Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Maze
+Content/Wikipedia/Wikipedia - Distance
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Symmetry
@@ -29,6 +30,7 @@ Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Class (set theory)
+Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Innovation
