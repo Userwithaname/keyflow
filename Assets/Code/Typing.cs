@@ -146,7 +146,7 @@ public class Typing : MonoBehaviour {
 	[Range(0, 1)]public float defaultFade = 0f, fadeAmount = .5f;
 	float backgroundFade;	// 0 to 1
 	bool fade, lastFade;
-	Vector3 lastMousePos;
+	Vector2 lastMousePos;
 	Color targetFadeColor = new Color(0, 0, 0, 0);
 	
 	RectTransform caretTransform;
@@ -696,19 +696,30 @@ public class Typing : MonoBehaviour {
 		textDisplay.caretPosition = Mathf.Min(input.Length, text.Length);
 	}
 	
-	float accuracy,wpm,estimatedTime;
-	void Update() {
-		if (!fade && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Escape))) {
+	public void ProcessEscapeKey() {
+		if (fade) return;
+		if (settingsOpen) {
+			ToggleSettingsUI();
+		} else {
+			ToggleGraphUI();
+		}
+	}
+	
+	public void ProcessReturnKey() {
+		if (!fade) {
 			if (settingsOpen) {
 				ToggleSettingsUI();
 			} else {
 				ToggleGraphUI();
 			}
 		}
-		if (done && Input.GetKeyDown(KeyCode.Return)) {
+		if (done) {
 			NextLesson();
 		}
-		
+	}
+	
+	float accuracy,wpm,estimatedTime;
+	void Update() {
 		SetTextColor();
 		GraphUpdate();
 		UpdateTooltipPos();
@@ -719,7 +730,6 @@ public class Typing : MonoBehaviour {
 				themes[selectedTheme].caretColor;
 			lastFrameIncorrect = incorrect;
 		}
-		
 		
 		if (fade != lastFade || backgroundFade > 0 || backgroundFade < 1)
 			FadeUpdate();
@@ -739,9 +749,9 @@ public class Typing : MonoBehaviour {
 			WPMInfo.text += $" (est.: {TimeFormattedString(estimatedTime, true)})";
 		}
 		
-		if (Input.mousePosition != lastMousePos) {
+		if (InputHandler.mousePosition != lastMousePos) {
 			fade = false;
-			lastMousePos = Input.mousePosition;
+			lastMousePos = InputHandler.mousePosition;
 		}
 	}
 	void LateUpdate() {
@@ -947,7 +957,7 @@ public class Typing : MonoBehaviour {
 		Rect graphRect = graph.rectTransform.rect;
 		graphRect.height = targetGraphHeight;
 		float tooltipHeight = graphTooltipSpeed.rect.height;
-		float wpmScale = Mathf.Max(graph.speedValueScale,graph.wordSpeedScale);
+		float wpmScale = Mathf.Max(graph.speedValueScale, graph.wordSpeedScale);
 		const float paddingDistance = 15;
 		const float verticalPadding = 2;
 		lastHoverIndex = graph.hoverIndex;
@@ -1055,31 +1065,32 @@ public class Typing : MonoBehaviour {
 		lastHoverIndex = -1;
 	}
 	
+	const float tooltipMoveSpeed = 9f;
 	void UpdateTooltipPos() {
 		graphTooltipTimestamp.anchoredPosition = Vector2.Lerp(
 			graphTooltipTimestamp.anchoredPosition,
 			graphTooltipTimestampTargetPos,
-			Time.deltaTime / .1f
+			Time.deltaTime * tooltipMoveSpeed
 		);
 		graphTooltipAccuracy.anchoredPosition = Vector2.Lerp(
 			graphTooltipAccuracy.anchoredPosition,
 			graphTooltipAccuracyTargetPos,
-			Time.deltaTime / .1f
+			Time.deltaTime * tooltipMoveSpeed
 		);
 		graphTooltipSpeed.anchoredPosition = Vector2.Lerp(
 			graphTooltipSpeed.anchoredPosition,
 			graphTooltipSpeedTargetPos,
-			Time.deltaTime / .1f
+			Time.deltaTime * tooltipMoveSpeed
 		);
 		graphTooltipSeekTime.anchoredPosition = Vector2.Lerp(
 			graphTooltipSeekTime.anchoredPosition,
 			graphTooltipSeekTimeTargetPos,
-			Time.deltaTime / .1f
+			Time.deltaTime * tooltipMoveSpeed
 		);
 		graphTooltipWordSpeed.anchoredPosition = Vector2.Lerp(
 			graphTooltipWordSpeed.anchoredPosition,
 			graphTooltipWordSpeedTargetPos,
-			Time.deltaTime / .1f
+			Time.deltaTime * tooltipMoveSpeed
 		);
 	}
 
