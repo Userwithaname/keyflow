@@ -9,7 +9,9 @@ Builds/Keyflow*
 Assets_Excluded/butler*/
 Assets/Scenes/*/*/Lightmap*.png*
 Assets/Scenes/*/*/Lightmap*.exr*
+Assets/Resources/PerformanceTest*
 UIElementsSchema/
+UserSettings/
 obj/
 Temp/
 Logs/

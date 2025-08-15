@@ -537,7 +537,7 @@ public class Typing : MonoBehaviour {
 			if (wpm > 0)
 				KeyManager.averageWPM =
 					Mathf.Lerp(KeyManager.averageWPM, wpm, KeyManager.averageWPM > 0 ? .12f : 1);
-			if (float.IsNaN(accuracy)) accuracy=100;
+			if (float.IsNaN(accuracy)) accuracy = 100;
 			WPMInfo.text =
 				"Accuracy: " +
 					(accuracy >= oldAverageAccuracy ?
@@ -585,33 +585,12 @@ public class Typing : MonoBehaviour {
 			}
 			switch ((byte)inputChar) {
 				case 8:		// Backspace
-					int rm = 1;
-					if (!Keyboard.current.ctrlKey.isPressed || input.Length < 2) {
-						goto set_input;
-					}
-					for (rm = 2; rm < input.Length; rm++) {
-						switch (input[^rm]) {
-							case '\n':case ' ':case '\t':
-								rm--;
-								goto set_input;
-						}
-					}
-					set_input: {
-						rm = Mathf.Min(rm, input.Length);
-						input = input.Remove(input. Length - rm, rm);
-					}
-					if (input.Length == 0) ResetLesson();
-					break;
 				case 9:     // Tab
-					//input += '\t';
-					break;
+				case 27:    // Escape
+				case 127:   // Delete
+					break;	// ^ Ignore the above inputs
 				case 13:    // Enter
 					input += '\n';
-					break;
-				case 27:    // Escape
-					ResetLesson();
-					break;
-				case 127:   // Delete
 					break;
 				case <127:
 					if (Keyboard.current.ctrlKey.isPressed) break;
@@ -692,8 +671,36 @@ public class Typing : MonoBehaviour {
 		textDisplay.caretPosition = Mathf.Min(input.Length, text.Length);
 	}
 	
-	public void ProcessEscapeKey() {
-		if (fade) return;
+	public void ProcessBackspaceKey(InputAction.CallbackContext context) {
+		if (!context.started) return;
+		if (done || settingsOpen || !inputFieldFocused) return;
+		int rm = 1;
+		if ((!Keyboard.current.ctrlKey.isPressed &&
+			!Keyboard.current.leftAppleKey.isPressed) ||
+			input.Length < 2
+		) {
+			goto set_input;
+		}
+		for (rm = 2; rm < input.Length; rm++) {
+			switch (input[^rm]) {
+				case '\n':case ' ':case '\t':
+					rm--;
+					goto set_input;
+			}
+		}
+		set_input: {
+			rm = Mathf.Min(rm, input.Length);
+			input = input.Remove(input. Length - rm, rm);
+		}
+		if (input.Length == 0) ResetLesson();
+	}
+	
+	public void ProcessEscapeKey(InputAction.CallbackContext context) {
+		if (!context.started) return;
+		if (fade){
+			ResetLesson();
+			return;
+		}
 		if (settingsOpen) {
 			ToggleSettingsUI();
 		} else {
@@ -701,7 +708,8 @@ public class Typing : MonoBehaviour {
 		}
 	}
 	
-	public void ProcessReturnKey() {
+	public void ProcessReturnKey(InputAction.CallbackContext context) {
+		if (!context.started) return;
 		if (!fade) {
 			if (settingsOpen) {
 				ToggleSettingsUI();
