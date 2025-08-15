@@ -236,24 +236,24 @@ public class Typing : MonoBehaviour {
 	public void Load() {
 		practiceUppercase.isOn =
 			KeyManager.includeUppercase =
-			PlayerPrefs.GetInt("includeUppercase",KeyManager.includeUppercase ? 1 : 0) == 1;
+			PlayerPrefs.GetInt("includeUppercase", KeyManager.includeUppercase ? 1 : 0) == 1;
 		practiceNumbers.isOn =
 			KeyManager.includeNumbers =
-			PlayerPrefs.GetInt("includeNumbers",KeyManager.includeNumbers ? 1 : 0) == 1;
+			PlayerPrefs.GetInt("includeNumbers", KeyManager.includeNumbers ? 1 : 0) == 1;
 		practiceSymbols.isOn =
 			KeyManager.includeSymbols =
-			PlayerPrefs.GetInt("includeSymbols",KeyManager.includeSymbols ? 1 : 0) == 1;
+			PlayerPrefs.GetInt("includeSymbols", KeyManager.includeSymbols ? 1 : 0) == 1;
 		charVarietySlider.value =
 			KeyManager.charPracticeDifficulty =
-			PlayerPrefs.GetFloat("charPracticeDifficulty",KeyManager.charPracticeDifficulty);
+			PlayerPrefs.GetFloat("charPracticeDifficulty", KeyManager.charPracticeDifficulty);
 		quoteDifficultySlider.value =
 			KeyManager.quoteDifficulty =
-			PlayerPrefs.GetFloat("quoteDifficulty",KeyManager.quoteDifficulty);
+			PlayerPrefs.GetFloat("quoteDifficulty", KeyManager.quoteDifficulty);
 		modeBiasSlider.value =
 			KeyManager.modeBias =
-			PlayerPrefs.GetFloat("practiceModeBias",KeyManager.modeBias);
+			PlayerPrefs.GetFloat("practiceModeBias", KeyManager.modeBias);
 		showIncorrectCharacters.isOn =
-			PlayerPrefs.GetInt("showTypos",showIncorrectCharacters.isOn ? 1 : 0) == 1;
+			PlayerPrefs.GetInt("showTypos", showIncorrectCharacters.isOn ? 1 : 0) == 1;
 	}
 	
 	public void UpdateTheme() {
@@ -381,13 +381,11 @@ public class Typing : MonoBehaviour {
 			graphTooltipWordSpeedTargetPos =
 			graphTooltipSeekTimeTargetPos =
 			graphTooltipAccuracyTargetPos =
-			new Vector2((float)Screen.width/2,-100);
+			new Vector2((float)Screen.width / 2, -100);
 		
 		FocusInputField();
 	}
 	public void ToggleGraphUI() {
-		//TODO: When there is no graph data available for the quote (e.g. not finished typing), show the daily progress instead (always show a tab for the daily progress as well). If there is no data at all, display a message explaining that
-		
 		showGraph = done && !showGraph;
 	}
 	public void ToggleGraphUI(bool show) {
@@ -574,11 +572,9 @@ public class Typing : MonoBehaviour {
 				$"\nTop Speed: {(KeyManager.topWPM>0?Math.Round(KeyManager.topWPM,2):"-")} WPM";
 		}
 		
-		quoteInfo.text=quoteTitle;
+		quoteInfo.text = quoteTitle;
 		
-		#if UNITY_WEBGL
-			if (Time.time > 5) KeyManager.Save();
-		#endif
+		if (Time.time > 5) KeyManager.Save();
 	}
 	
 	bool inputFieldFocused;
@@ -1097,23 +1093,29 @@ public class Typing : MonoBehaviour {
 	public void AllowCapitalLetters() {
 		KeyManager.includeUppercase = practiceUppercase.isOn;
 		if (!done)	ResetLesson();
+		KeyManager.unsavedPrefs = true;
 	}
 	public void AllowNumbers() {
 		KeyManager.includeNumbers = practiceNumbers.isOn;
 		if (!done)	ResetLesson();
+		KeyManager.unsavedPrefs = true;
 	}
 	public void AllowSymbols() {
 		KeyManager.includeSymbols = practiceSymbols.isOn;
 		if (!done)	ResetLesson();
+		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateCharDifficulty() {
 		KeyManager.charPracticeDifficulty = charVarietySlider.value;
+		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateQuoteDifficulty() {
 		KeyManager.quoteDifficulty = quoteDifficultySlider.value;
+		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateModeBias() {
 		KeyManager.modeBias = modeBiasSlider.value;
+		KeyManager.unsavedPrefs = true;
 	}
 	
 	//TODO: Make a proper UI plan and redesign the settings menu(?)
