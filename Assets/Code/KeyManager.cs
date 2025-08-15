@@ -48,11 +48,14 @@ public class KeyManager : MonoBehaviour {
 	// 	             averageAcc;
 	// }
 	// List<DailyData> dailyData = new List<DailyData>();
-	public static float averageAccuracy,averageWPM,topWPM;
+	public static float averageAccuracy, averageWPM, topWPM;
 	public static float charPracticeDifficulty = .7f; // 1: Completely random, 0: Only the worst character in either speed or accuracy
 	public static float quoteDifficulty = .45f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
 	public static float modeBias = .4f; // 1: multiple keys practice, 0: single key practice
 	
+	public static bool unsavedData = false;
+	public static bool unsavedPrefs = false;
+
 	void Start() {
 		instance = this;
 		InitializeKeyDatabase();
@@ -128,6 +131,14 @@ public class KeyManager : MonoBehaviour {
 		}
 	}
 	public static void Save() {
+		if (!unsavedData) {
+			if (unsavedPrefs) {
+				PlayerPrefs.Save();
+				unsavedPrefs = false;
+			}
+			return;
+		}
+
 		Typing.instance.Save();
 		
 		PlayerPrefs.SetFloat("Average Acc", averageAccuracy);
@@ -139,9 +150,9 @@ public class KeyManager : MonoBehaviour {
 			fileContents += JsonUtility.ToJson(kcd) + "\n";
 		}
 		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
-		#if UNITY_WEBGL
-			PlayerPrefs.Save();
-		#endif
+		PlayerPrefs.Save();
+
+		unsavedData = false;
 	}
 	public void RemoveScores() {
 		PlayerPrefs.DeleteAll();
@@ -228,9 +239,11 @@ public class KeyManager : MonoBehaviour {
 	}
 	public static void RegisterKeyHit(int keyIndex) {
 		instance.confidenceDatabase[keyIndex].hits++;
+		unsavedData = true;
 	}
 	public static void RegisterKeyMiss(int keyIndex) {
 		instance.confidenceDatabase[keyIndex].misses++;
+		unsavedData = true;
 	}
 	
 	public static void UpdatePreviousKeySeekTime(int index,float seekTime) {
