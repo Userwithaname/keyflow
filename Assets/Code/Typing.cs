@@ -787,9 +787,9 @@ public class Typing : MonoBehaviour {
 		while(loc < length - 1) {
 			char inputChar  =  input[loc + 1];
 			char compareChar  =  text[loc + 1];	// BUG: NullReferenceException after finishing quote (might have pressed multiple keys in the same frame when finished) 
-			int keyIndex = KeyManager.GetKeyIndex(inputChar);
 			
 			if (inputChar == compareChar) {
+				int keyIndex = KeyManager.GetKeyIndex(inputChar);
 				hitCount++;
 				loc++;
 				if (loc > lastMaxLength) {
@@ -833,12 +833,14 @@ public class Typing : MonoBehaviour {
 				}
 				seekTime = 0;
 			} else {
-				if (input.Length>lastLength) {
-					graph.accuracy[Mathf.Max(0,loc)] = accuracy =
-						(float)hitCount / (hitCount+missCount) * 100;
-					graph.misses[Mathf.Max(0,loc)]++;
+				if (input.Length > lastLength) {
+					graph.accuracy[Mathf.Max(0, loc)] = accuracy =
+						(float)hitCount / (hitCount + missCount) * 100;
+					graph.misses[Mathf.Max(0, loc)]++;
 					missCount++;
-					KeyManager.RegisterKeyMiss(keyIndex);
+					if(input.Length == lastLength + 1)
+						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(compareChar));
+					KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(inputChar));
 				}
 				incorrect = true;
 				
