@@ -450,8 +450,8 @@ public class Typing : MonoBehaviour {
 				2
 			) + " ms":
 			":";
-		curCharacterWPM = updatedCharPractice.wpm > 0 ?
-			Math.Round(updatedCharPractice.wpm , 1) + " WPM":
+		curCharacterWPM = updatedCharPractice.wordSpeed > 0 ?
+			Math.Round(updatedCharPractice.wordSpeed , 1) + " WPM":
 			"-";
 		curCharacterAccuracy = updatedCharPractice.hits + updatedCharPractice.misses > 0 ?
 			Math.Round(
@@ -486,7 +486,7 @@ public class Typing : MonoBehaviour {
 			curCharacterNextSeekTime = diff is <= 0 or float.NaN?
 				$"{themes[selectedTheme].improvementColorTag + curCharacterNextSeekTime} ({diff})</color>":
 				$"{themes[selectedTheme].regressionColorTag + curCharacterNextSeekTime} (+{diff})</color>";
-			diff = (float)Math.Round(updatedCharPractice.wpm - curCharPractice.wpm, 3);
+			diff = (float)Math.Round(updatedCharPractice.wordSpeed - curCharPractice.wordSpeed, 3);
 			if (updatedCharPractice.speedTrend != 0) {
 				curCharacterSpeedTrend=$"{(updatedCharPractice.speedTrend<Mathf.Min(0,curCharPractice.speedTrend)?themes[selectedTheme].regressionColorTag:(updatedCharPractice.speedTrend>0?themes[selectedTheme].improvementColorTag:themes[selectedTheme].mildRegressionColorTag))}{curCharacterSpeedTrend}</color>";
 			}
@@ -782,14 +782,12 @@ public class Typing : MonoBehaviour {
 		if (totalTestTime > 0 || length > 0)
 			fade = true;
 		incorrect = false;
-		if (loc>length - 1)
+		if (loc > length - 1)
 			loc = length - 1;
-		while(loc<length - 1) {
+		while(loc < length - 1) {
 			char inputChar  =  input[loc + 1];
 			char compareChar  =  text[loc + 1];	// BUG: NullReferenceException after finishing quote (might have pressed multiple keys in the same frame when finished) 
 			int keyIndex = KeyManager.GetKeyIndex(inputChar);
-			// TODO: What is this for?
-			// KeyManager.UpdateAccuracy(inputChar,compareChar);
 			
 			if (inputChar == compareChar) {
 				hitCount++;
