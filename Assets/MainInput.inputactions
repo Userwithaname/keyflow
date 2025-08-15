@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "name": "Keyflow input actions",
+    "name": "MainInput",
     "maps": [
         {
             "name": "UI",
@@ -28,7 +28,16 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "759f1a91-60a1-41fe-9d64-d0418f6d0413",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Erase",
+                    "type": "Button",
+                    "id": "7f07a82b-5dac-4cfe-970b-eb32744d9b1d",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -381,6 +390,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
                     "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de553cdb-a366-4f0d-8634-6130c9d434f9",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Erase",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
