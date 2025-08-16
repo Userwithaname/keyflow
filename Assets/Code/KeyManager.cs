@@ -21,8 +21,7 @@ public class KeyManager : MonoBehaviour {
 		[FormerlySerializedAs("wpm")] public float wordSpeed;
 		public float speedTrend;
 		public int   hits, misses;
-		public float accuracy;
-
+		public float accuracy => (float) hits / (hits + misses);
 	}
 	public KeyConfidenceData[] confidenceDatabase; 
 	public static readonly char[] trackedKeys = {
@@ -414,8 +413,7 @@ public class KeyManager : MonoBehaviour {
 				}
 				continue;
 			}
-			float accuracy = (float)instance.confidenceDatabase[i].hits /
-				(instance.confidenceDatabase[i].hits + instance.confidenceDatabase[i].misses);
+			float accuracy = instance.confidenceDatabase[i].accuracy;
 			float contextualSeekTime = Mathf.Max(
 				instance.confidenceDatabase[i].nextKeySeekTime,
 				instance.confidenceDatabase[i].previousKeySeekTime
@@ -590,11 +588,11 @@ public class KeyManager : MonoBehaviour {
 		float newQuoteDifficulty = (quoteDifficulty - .2f) * (quoteDifficulty + .123f);
 		for(int i = 0; i < numCandidates; i++) {
 			if (quoteCandidateTitles[i] == quoteTitle)	continue;
-			if (averageConfidence[i].accuracy < lowestAcc && Random.Range(0f,1f) <= newQuoteDifficulty) {
+			if (averageConfidence[i].accuracy < lowestAcc && Random.Range(0f, 1f) <= newQuoteDifficulty) {
 				lowestAcc = averageConfidence[i].accuracy;
 				lowestAccIndex = i;
 			}
-			if (averageConfidence[i].seekTime > highestSeekTime && Random.Range(0f,1f) <= newQuoteDifficulty) {
+			if (averageConfidence[i].seekTime > highestSeekTime && Random.Range(0f, 1f) <= newQuoteDifficulty) {
 				highestSeekTime = averageConfidence[i].seekTime;
 				highestSeekTimeIndex = i;
 			}
@@ -610,7 +608,7 @@ public class KeyManager : MonoBehaviour {
 				bestTrendingSeekTime = averageConfidence[i].speedTrend;
 				bestTrendingSeekTimeIndex = i;
 			}
-			if (averageConfidence[i].wordSpeed < lowestFullWordSpeed && Random.Range(0f,1f) <= newQuoteDifficulty) {
+			if (averageConfidence[i].wordSpeed < lowestFullWordSpeed && Random.Range(0f, 1f) <= newQuoteDifficulty) {
 				lowestFullWordSpeed = averageConfidence[i].wordSpeed;
 				lowestFullWordSpeedIndex = i;
 			}
@@ -662,11 +660,7 @@ public class KeyManager : MonoBehaviour {
 				continue;
 			}
 			
-			quoteAccuracyScore += (float)
-				instance.confidenceDatabase[keyIndex].hits / (
-					instance.confidenceDatabase[keyIndex].hits +
-				   instance.confidenceDatabase[keyIndex].misses
-				);
+			quoteAccuracyScore += instance.confidenceDatabase[keyIndex].accuracy;
 			if (instance.confidenceDatabase[keyIndex].seekTime < 999999)
 				averageConfidence.seekTime += instance.confidenceDatabase[keyIndex].seekTime;
 			if (instance.confidenceDatabase[keyIndex].previousKeySeekTime < 999999)
