@@ -838,9 +838,15 @@ public class Typing : MonoBehaviour {
 						(float)hitCount / (hitCount + missCount) * 100;
 					graph.misses[Mathf.Max(0, loc)]++;
 					missCount++;
-					if(input.Length == lastLength + 1)
+
+					if(input.Length == lastLength + 1) {
 						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(compareChar));
-					KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(inputChar));
+
+						// Don't register a miss for the input character if it's correct in the next position
+						if (text.Length > lastLength && text[lastLength + 1] == inputChar) break;
+
+						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(inputChar));
+					}
 				}
 				incorrect = true;
 				
