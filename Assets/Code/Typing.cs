@@ -410,6 +410,10 @@ public class Typing : MonoBehaviour {
 			menu.SetActive(menu.activeSelf && settingsOpen);
 		}
 		textDisplay.readOnly = !settingsOpen && !done;
+
+		if (!settingsOpen) {
+			KeyManager.Save();
+		}
 	}
 	
 	public string TimeFormattedString(float time, bool keepMinutes = false, bool keepFractions = false) {
