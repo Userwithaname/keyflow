@@ -34,15 +34,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Erase",
-                    "type": "Button",
-                    "id": "7f07a82b-5dac-4cfe-970b-eb32744d9b1d",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Point",
                     "type": "PassThrough",
                     "id": "02aea85b-afe9-4342-bc5c-01199dd33c81",
@@ -390,17 +381,6 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
                     "action": "Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "de553cdb-a366-4f0d-8634-6130c9d434f9",
-                    "path": "<Keyboard>/backspace",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
-                    "action": "Erase",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

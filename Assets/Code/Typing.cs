@@ -1,3 +1,7 @@
+#if UNITY_WEBGL
+	#define BACKSPACE_KEY_WORKAROUND
+#endif
+
 using System;
 using TMPro;
 using UnityEngine;
@@ -220,7 +224,7 @@ public class Typing : MonoBehaviour {
 		lightModeButton.SetActive(selectedTheme == 0);
 		darkModeButton.SetActive(selectedTheme != 0);
 		
-		RegisterInputHandler();
+		OnTextInputHandler();
 	}
 	public void Save() {
 		PlayerPrefs.SetInt("includeUppercase", KeyManager.includeUppercase ? 1 : 0);
@@ -574,32 +578,6 @@ public class Typing : MonoBehaviour {
 	}
 	
 	bool inputFieldFocused;
-	void RegisterInputHandler() {
-		Keyboard.current.onTextInput += inputChar => {
-			if (done || settingsOpen || !inputFieldFocused) {
-				return;
-			}
-			switch ((byte)inputChar) {
-				case 8:		// Backspace
-					EraseInputCharacter();
-					break;
-				case 9:     // Tab
-				case 27:    // Escape
-				case 127:   // Delete
-					break;	// ^ Ignore the above inputs
-				case 13:    // Enter
-					input += '\n';
-					break;
-				case <127:
-					if (Keyboard.current.ctrlKey.isPressed) break;
-					input += inputChar;
-					break;
-				default:
-					Debug.Log($"Pressed: {(byte)inputChar}: '{inputChar}'");
-					break;
-			}
-		};
-	}
 	
 	public void FocusInputField() {
 		inputFieldFocused = true;
@@ -669,34 +647,6 @@ public class Typing : MonoBehaviour {
 		textDisplay.caretPosition = Mathf.Min(input.Length, text.Length);
 	}
 	
-	public void ProcessBackspaceKey(InputAction.CallbackContext context) {
-		if (!context.started) return;
-		EraseInputCharacter();
-	}
-
-	void EraseInputCharacter() {
-		if (done || settingsOpen || !inputFieldFocused) return;
-		int rm = 1;
-		if ((!Keyboard.current.ctrlKey.isPressed &&
-			!Keyboard.current.leftAppleKey.isPressed) ||
-			input.Length < 2
-		) {
-			goto set_input;
-		}
-		for (rm = 2; rm < input.Length; rm++) {
-			switch (input[^rm]) {
-				case '\n':case ' ':case '\t':
-					rm--;
-					goto set_input;
-			}
-		}
-		set_input: {
-			rm = Mathf.Min(rm, input.Length);
-			input = input.Remove(input. Length - rm, rm);
-		}
-		if (input.Length == 0) ResetLesson();
-	}
-	
 	public void ProcessEscapeKey(InputAction.CallbackContext context) {
 		if (!context.started) return;
 		if (fade){
@@ -724,8 +674,90 @@ public class Typing : MonoBehaviour {
 		}
 	}
 	
+	void OnTextInputHandler() {
+		Keyboard.current.onTextInput += inputChar => {
+			if (done || settingsOpen || !inputFieldFocused) {
+				return;
+			}
+			//Debug.Log($"{(byte)inputChar}:	{inputChar}");
+			switch ((byte)inputChar) {
+				case 8:		// Backspace
+					#if !BACKSPACE_KEY_WORKAROUND
+						EraseInputCharacter();
+					#endif
+					break;
+				case 9:     // Tab
+				case 27:    // Escape
+				case 127:   // Delete
+					break;	// ^ Ignore the above inputs
+				case 13:    // Enter
+					input += '\n';
+					break;
+				case <127:
+					if (Keyboard.current.ctrlKey.isPressed) break;
+					input += inputChar;
+					break;
+				default:
+					Debug.Log($"Pressed: {(byte)inputChar}: '{inputChar}'");
+					break;
+			}
+		};
+	}
+	
+	void EraseInputCharacter() {
+		if (done || settingsOpen || !inputFieldFocused) return;
+		int rm = 1;
+		if ((!Keyboard.current.ctrlKey.isPressed &&
+			!Keyboard.current.leftAppleKey.isPressed) ||
+			input.Length < 2
+		) {
+			goto set_input;
+		}
+		for (rm = 2; rm < input.Length; rm++) {
+			switch (input[^rm]) {
+				case '\n':case ' ':case '\t':
+					rm--;
+					goto set_input;
+			}
+		}
+		set_input: {
+			rm = Mathf.Min(rm, input.Length);
+			input = input.Remove(input. Length - rm, rm);
+		}
+		if (input.Length == 0) ResetLesson();
+	}
+	
+	#if BACKSPACE_KEY_WORKAROUND
+		const float backspaceRepeatInterval = 0.03f;
+		const float backspaceRepeatDelay = 0.4f;
+		float backspaceHeldTime = 0;
+		float backspaceRepeatTimer = Mathf.Infinity;
+		bool backspaceHeld = false;
+	#endif
 	float accuracy,wpm,estimatedTime;
 	void Update() {
+		#if BACKSPACE_KEY_WORKAROUND
+			if (Keyboard.current.backspaceKey.wasPressedThisFrame){
+				EraseInputCharacter();
+				backspaceHeld = true;
+			}
+			if (Keyboard.current.backspaceKey.wasReleasedThisFrame){
+				backspaceHeld = false;
+				backspaceHeldTime = 0;
+				backspaceRepeatTimer = Mathf.Infinity;
+			}
+			if (backspaceHeld){
+				backspaceHeldTime += Time.deltaTime;
+				backspaceRepeatTimer += Time.deltaTime;
+				if (backspaceRepeatTimer >= backspaceRepeatInterval &&
+					backspaceHeldTime >= backspaceRepeatDelay
+				) {
+					EraseInputCharacter();
+					backspaceRepeatTimer = 0;
+				}
+			}
+		#endif
+		
 		SetTextColor();
 		GraphUpdate();
 		UpdateTooltipPos();
