@@ -437,7 +437,7 @@ public class Typing : MonoBehaviour {
 				KeyManager.GetQuoteConfidenceData(text):
 				KeyManager.instance.confidenceDatabase[curPracticeIndex];
 		curCharacterPractice = updatedCharPractice.keyName;
-		curCharacterSpeedTrend = $"{System.Math.Round(updatedCharPractice.speedTrend,2)} WPM";
+		curCharacterSpeedTrend = $"{System.Math.Round(updatedCharPractice.speedTrend, 2)} WPM";
 		curCharacterSeekTime = updatedCharPractice.seekTime > 0 ?
 			Math.Round(updatedCharPractice.seekTime * 1000, 2) + " ms":
 			"-";
@@ -455,8 +455,7 @@ public class Typing : MonoBehaviour {
 			"-";
 		curCharacterAccuracy = updatedCharPractice.hits + updatedCharPractice.misses > 0 ?
 			Math.Round(
-				(float)updatedCharPractice.hits /
-					(updatedCharPractice.hits + updatedCharPractice.misses) * 100,
+				updatedCharPractice.accuracy * 100,
 				1
 			) + "%":
 			"-";
@@ -493,13 +492,10 @@ public class Typing : MonoBehaviour {
 			curCharacterWPM = diff >= 0 ?
 				$"{themes[selectedTheme].improvementColorTag + curCharacterWPM} (+{diff})</color>":
 				$"{themes[selectedTheme].regressionColorTag + curCharacterWPM} ({diff})</color>";
-			float newAccuracy =
-				(float)updatedCharPractice.hits /
-				(updatedCharPractice.hits + updatedCharPractice.misses) * 100;
+			float newAccuracy = updatedCharPractice.accuracy * 100;
 			diff = Misc.ValidateIfNaN(
 				(float)Math.Round(
-					newAccuracy - (float)curCharPractice.hits /
-					(curCharPractice.hits + curCharPractice.misses) * 100,
+					newAccuracy - curCharPractice.accuracy * 100,
 					3
 				),
 				newAccuracy
