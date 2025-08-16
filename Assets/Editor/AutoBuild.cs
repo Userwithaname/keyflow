@@ -149,7 +149,7 @@ private static string buildPath;
 
 	private static void BuildLinux() {
 		Debug.Log("Switching build target... (Linux 64-bit)");
-		string buildDir = $"{buildPath}{PlayerSettings.productName}-Linux-x64/{PlayerSettings.productName}";
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-Linux-x64/{PlayerSettings.productName}/{PlayerSettings.productName}";
 		if (HasArgument("--clean")) {
 			Debug.Log($"Removing existing build: '{buildDir}'");
 			try { System.IO.File.Delete($"{buildDir}.x86_64"); } catch {}
@@ -203,14 +203,14 @@ private static string buildPath;
 
 	private static void BuildWindows() {
 		Debug.Log("Switching build target... (Windows 64-bit)");
-		string buildDir = $"{buildPath}{PlayerSettings.productName}-Windows-x64/{PlayerSettings.productName}";
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-Windows-x64/{PlayerSettings.productName}/{PlayerSettings.productName}";
 		if (HasArgument("--clean")) {
 			System.IO.File.Delete($"{buildDir}.exe");
 			System.IO.Directory.Delete($"{buildDir}_Data",true);
 		}
 		targetPlatform = BuildTarget.StandaloneWindows64;
 		targetPlatformGroup = BuildTargetGroup.Standalone;
-		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
+		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup, targetPlatform);
 
 		buildOptions.locationPathName = $"{buildDir}.exe";
 		buildOptions.targetGroup = targetPlatformGroup;
@@ -232,7 +232,7 @@ private static string buildPath;
 		targetPlatformGroup = BuildTargetGroup.WebGL;
 		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
 
-		string buildDir = $"{buildPath}{PlayerSettings.productName}-WebGL/{PlayerSettings.productName}";
+		string buildDir = $"{buildPath}{PlayerSettings.productName}-WebGL/";
 		buildOptions.locationPathName = buildDir;
 		buildOptions.targetGroup = targetPlatformGroup;
 		buildOptions.target = targetPlatform;

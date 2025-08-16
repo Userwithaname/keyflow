@@ -60,29 +60,32 @@ echo
 prompt
 
 # Run the preparation script
-#./prepare-builds
 prepareBuilds
 
 # Create .zip archives
 echo 'Creating ZIP archives for shipping...'
 printf 'Creating Keyflow-WebGL.zip...'
-rm -f Keyflow-WebGL.zip ; zip -r -q 'Keyflow-WebGL.zip' 'Keyflow-WebGL/' && echo ' Done' || 'Failed'
+rm -f Keyflow-WebGL.zip ; zip -r -q 'Keyflow-WebGL.zip' 'Keyflow-WebGL/' && \
+  echo ' Done' || echo ' Failed'
 printf 'Creating Keyflow-Linux-x64.zip...'
-rm -f Keyflow-Linux-x64.zip ; zip -r -q 'Keyflow-Linux-x64.zip' 'Keyflow-Linux-x64/' && echo ' Done' || 'Failed'
+rm -f Keyflow-Linux-x64.zip ; zip -r -q 'Keyflow-Linux-x64.zip' 'Keyflow-Linux-x64/' && \
+  echo ' Done' || echo ' Failed'
 printf 'Creating Keyflow-Mac-ARM+x64.zip...'
-rm -f Keyflow-Mac-ARM+x64.zip ; zip -r -q 'Keyflow-Mac-ARM+x64.zip' 'Keyflow-Mac-ARM+x64/' && echo ' Done' || 'Failed'
+rm -f Keyflow-Mac-ARM+x64.zip ; zip -r -q 'Keyflow-Mac-ARM+x64.zip' 'Keyflow-Mac-ARM+x64/' && \
+  echo ' Done' || echo ' Failed'
 printf 'Creating Keyflow-Windows-x64.zip...'
-rm -f Keyflow-Windows-x64.zip ; zip -r -q 'Keyflow-Windows-x64.zip' 'Keyflow-Windows-x64/' && echo ' Done' || 'Failed'
+rm -f Keyflow-Windows-x64.zip ; zip -r -q 'Keyflow-Windows-x64.zip' 'Keyflow-Windows-x64/' && \
+  echo ' Done' || echo ' Failed'
 echo
 
 # Ship the builds!
-echo "About to ship to https://nameless-horseman.itch.io/keyflow"
+echo "About to ship to https://no-name-soft.itch.io/keyflow"
 prompt
 echo "Pushing WebGL build..."
-$"$butlerBin" push Keyflow-WebGL.zip nameless-horseman/keyflow:webgl
+$"$butlerBin" push Keyflow-WebGL.zip no-name-soft/keyflow:webgl
 echo "Pushing Linux build..."
-$"$butlerBin" push Keyflow-Linux-x64.zip nameless-horseman/keyflow:linux
+$"$butlerBin" push Keyflow-Linux-x64.zip no-name-soft/keyflow:linux
 echo "Pushing MacOS build..."
-$"$butlerBin" push Keyflow-Mac-ARM+x64.zip nameless-horseman/keyflow:macos
+$"$butlerBin" push Keyflow-Mac-ARM+x64.zip no-name-soft/keyflow:macos
 echo "Pushing Windows build..."
-$"$butlerBin" push Keyflow-Windows-x64.zip nameless-horseman/keyflow:windows
+$"$butlerBin" push Keyflow-Windows-x64.zip no-name-soft/keyflow:windows
