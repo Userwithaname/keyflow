@@ -581,6 +581,8 @@ public class Typing : MonoBehaviour {
 			}
 			switch ((byte)inputChar) {
 				case 8:		// Backspace
+					EraseInputCharacter();
+					break;
 				case 9:     // Tab
 				case 27:    // Escape
 				case 127:   // Delete
@@ -669,6 +671,10 @@ public class Typing : MonoBehaviour {
 	
 	public void ProcessBackspaceKey(InputAction.CallbackContext context) {
 		if (!context.started) return;
+		EraseInputCharacter();
+	}
+
+	void EraseInputCharacter() {
 		if (done || settingsOpen || !inputFieldFocused) return;
 		int rm = 1;
 		if ((!Keyboard.current.ctrlKey.isPressed &&
@@ -839,7 +845,7 @@ public class Typing : MonoBehaviour {
 						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(compareChar));
 
 						// Don't register a miss for the input character if it's correct in the next position
-						if (text.Length > lastLength && text[lastLength + 1] == inputChar) break;
+						if (text.Length > lastLength + 1 && text[lastLength + 1] == inputChar) break;
 
 						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(inputChar));
 					}
