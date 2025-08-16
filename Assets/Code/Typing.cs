@@ -453,11 +453,11 @@ public class Typing : MonoBehaviour {
 			Math.Round(
 				Mathf.Max(
 					updatedCharPractice.nextKeySeekTime * 1000,
-					updatedCharPractice.previousKeySeekTime*1000
+					updatedCharPractice.previousKeySeekTime * 1000
 				),
 				2
 			) + " ms":
-			":";
+			"-";
 		curCharacterWPM = updatedCharPractice.wordSpeed > 0 ?
 			Math.Round(updatedCharPractice.wordSpeed , 1) + " WPM":
 			"-";
@@ -1075,7 +1075,7 @@ public class Typing : MonoBehaviour {
 				_    => words[graph.hoverWordIndex][i]
 			};
 			wordWithHighlightedLetter += 
-				i+indexOffset == lastHoverIndex ? $"<b>{c}</b>" : c;
+				i+indexOffset == lastHoverIndex ? $"<u><b>{c}</b></u>" : c;
 		}
 		float graphSeekTime = (float)Math.Round(graph.seekTimes[lastHoverIndex] * 1000, 2);
 		graphTooltipSeekTimeText.text =

@@ -250,7 +250,7 @@ public class KeyManager : MonoBehaviour {
 	
 	public static void UpdatePreviousKeySeekTime(int index,float seekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].previousKeySeekTime;
-		if(oldSeekTime < 10000) {
+		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].previousKeySeekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -260,8 +260,8 @@ public class KeyManager : MonoBehaviour {
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime) -
-					SeekTimeToWPM(oldSeekTime),
-					75f
+						SeekTimeToWPM(oldSeekTime),
+					.075f
 				),
 				0
 			);
@@ -271,7 +271,7 @@ public class KeyManager : MonoBehaviour {
 	}
 	public static void UpdateKeySeekTime(int index, float seekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].seekTime;
-		if (oldSeekTime < 10000) {
+		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].seekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -281,18 +281,18 @@ public class KeyManager : MonoBehaviour {
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].seekTime) -
-					SeekTimeToWPM(oldSeekTime),
-					15f
+						SeekTimeToWPM(oldSeekTime),
+					.12f
 				),
 				0
 			);
 		} else {
-			instance.confidenceDatabase[index].seekTime=seekTime;
+			instance.confidenceDatabase[index].seekTime = seekTime;
 		}
 	}
 	public static void UpdateNextKeySeekTime(int index, float seekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].nextKeySeekTime;
-		if (oldSeekTime < 10000) {
+		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].nextKeySeekTime = Mathf.Lerp(
 				instance.confidenceDatabase[index].seekTime,
 				seekTime,
@@ -302,13 +302,13 @@ public class KeyManager : MonoBehaviour {
 				Mathf.Lerp(
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime) -
-					SeekTimeToWPM(oldSeekTime),
+						SeekTimeToWPM(oldSeekTime),
 					.1f
 				),
 				0
 			);
 		} else {
-			instance.confidenceDatabase[index].nextKeySeekTime=seekTime;
+			instance.confidenceDatabase[index].nextKeySeekTime = seekTime;
 		}
 	}
 	
