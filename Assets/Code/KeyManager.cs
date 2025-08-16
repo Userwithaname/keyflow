@@ -52,7 +52,7 @@ public class KeyManager : MonoBehaviour {
 	// List<DailyData> dailyData = new List<DailyData>();
 	public static float averageAccuracy, averageWPM, topWPM;
 	public static float charPracticeDifficulty = .7f; // 1: Only the lowest confidence characters, 0: Completely random
-	public static float quoteDifficulty = .6f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
+	public static float quoteDifficulty = .75f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
 	public static float modeBias = .4f; // 1: multiple keys practice, 0: single key practice
 	
 	public static bool unsavedData = false;
@@ -405,7 +405,7 @@ public class KeyManager : MonoBehaviour {
 		float averageSeekTime = 60f / (averageWPM * 5);
 		for(int i = 0; i < instance.confidenceDatabase.Length; i++) {
 			if (!CharWithinFilters(i))	continue;
-			if (instance.confidenceDatabase[i].hits < Random.Range(1, 3)) {
+			if (instance.confidenceDatabase[i].hits < 4) {
 				// Chance to select a key with insufficient data
 				if(Random.Range(0f, 1f) < .125f && GetNumberOfQuotesForKey(i) > 0) {
 					lowestAcc = lowestWPM = 0;
