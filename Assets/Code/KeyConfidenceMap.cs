@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class KeyConfidenceMap:MonoBehaviour{
+public class KeyConfidenceMap : MonoBehaviour {
 	public static KeyConfidenceMap instance;
 	public GameObject keyPrefab;
 	public Transform[] rows;
@@ -25,7 +25,12 @@ public class KeyConfidenceMap:MonoBehaviour{
 	Transform[] buttons;
 	void OnEnable() {
 		instance = this;
-		LateUpdate();
+		if (layoutsDropdown.value != lastActiveLayoutIndex) {
+			LateUpdate();
+		} else{
+			UpdateLayout();
+			CreateLayout();
+		}
 	}
 	
 	int lastActiveLayoutIndex = -1;
@@ -53,7 +58,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 		;
 		if (!System.IO.Directory.Exists(layoutsPath))	return;
 		
-		bool hasValue=false;
+		bool hasValue = false;
 		layoutsDropdown.ClearOptions();
 		// TODO: Idea: Maybe add a shortcut to open the layouts directory
 		// (or create a custom layout editor in-game)
@@ -81,7 +86,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 		
 		buttons = new Transform[(layout.Length - layout.Split('\n').Length + 1) / 2];
 		
-		for (int i = KeyManager.lowercaseStart;i <= KeyManager.lowercaseEnd; i++) {
+		for (int i = KeyManager.lowercaseStart; i <= KeyManager.lowercaseEnd; i++) {
 			if (KeyManager.instance.confidenceDatabase[i].hits <= 3 ||
 				KeyManager.instance.confidenceDatabase[i].seekTime +
 					KeyManager.instance.confidenceDatabase[i].previousKeySeekTime +
@@ -92,7 +97,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 			}
 			averageSeekTime += Mathf.Min(
 				KeyManager.instance.confidenceDatabase[i].previousKeySeekTime,
-			    Mathf.Min(
+				Mathf.Min(
 					KeyManager.instance.confidenceDatabase[i].seekTime,
 					KeyManager.instance.confidenceDatabase[i].nextKeySeekTime
 				)
