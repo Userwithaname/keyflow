@@ -25,8 +25,7 @@ public class KeyConfidenceMap:MonoBehaviour{
 	Transform[] buttons;
 	void OnEnable() {
 		instance = this;
-		UpdateLayout();
-		CreateLayout();
+		LateUpdate();
 	}
 	
 	int lastActiveLayoutIndex = -1;
@@ -139,9 +138,21 @@ public class KeyConfidenceMap:MonoBehaviour{
 						score = Mathf.Lerp(score, score * score, .5f) + 1;
 					}
 					Color keyColor = score switch{
-						> 1	  => Color.Lerp(Color.green, new Color(.2f, .8f, .6f, 1), (score - 1)),
-						> .5f => Color.Lerp(Color.yellow, Color.green, (score - .5f) * 2),
-						_     => Color.Lerp(Color.red, Color.yellow, score * 2)
+						< .5f => Color.Lerp(
+							Color.red,
+							Color.yellow,
+							Mathf.Sqrt(score * 2)
+						),
+						< 1   => Color.Lerp(
+							Color.yellow,
+							Color.green,
+							Mathf.Pow((score - .5f) * 2, 2)
+						),
+						_     => Color.Lerp(
+							Color.green,
+							new Color(.2f, .8f, .6f, 1),
+							(score - 1)
+						),
 					};
 					
 					if (KeyManager.instance.confidenceDatabase[keyIndex].hits < 3) {

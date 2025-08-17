@@ -51,8 +51,8 @@ public class KeyManager : MonoBehaviour {
 	// }
 	// List<DailyData> dailyData = new List<DailyData>();
 	public static float averageAccuracy, averageWPM, topWPM;
-	public static float charPracticeDifficulty = .7f; // 1: Only the lowest confidence characters, 0: Completely random
-	public static float quoteDifficulty = .75f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
+	public static float charPracticeDifficulty = .82f; // 1: Only the lowest confidence characters, 0: Completely random
+	public static float quoteDifficulty = .74f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
 	public static float modeBias = .4f; // 1: multiple keys practice, 0: single key practice
 	
 	public static bool unsavedData = false;
@@ -66,23 +66,17 @@ public class KeyManager : MonoBehaviour {
 	
 	public static void InitializeKeyDatabase() {
 		instance.confidenceDatabase = new KeyConfidenceData[trackedKeys.Length];
-		for (int i = 0; i < trackedKeys.Length; i++) {
+		List<char> sortedKeys = trackedKeys.ToList<char>();
+		sortedKeys.Sort();
+		
+		for (int i = 0; i < sortedKeys.Count; i++) {
 			instance.confidenceDatabase[i].seekTime =
 				instance.confidenceDatabase[i].previousKeySeekTime =
 				instance.confidenceDatabase[i].nextKeySeekTime =
 				Mathf.Infinity;
-			instance.confidenceDatabase[i].keyName = trackedKeys[i];
-			#if UNITY_EDITOR
-				instance.confidenceDatabase[i].name = "Element " + i + ": " + trackedKeys[i];
-			#endif
-		}
-		
-		List<char> sortedKeys = trackedKeys.ToList<char>();
-		sortedKeys.Sort();
-		for (int i = 0;i < sortedKeys.Count; i++) {
 			instance.confidenceDatabase[i].keyName = sortedKeys[i];
 			#if UNITY_EDITOR
-				instance.confidenceDatabase[i].name = "Element " + i + ": " + sortedKeys[i];
+				instance.confidenceDatabase[i].name = $"Element {i}: {sortedKeys[i]}".Trim();
 			#endif
 			
 			switch (sortedKeys[i]) {

@@ -250,9 +250,11 @@ public class Typing : MonoBehaviour {
 		charVarietySlider.value =
 			KeyManager.charPracticeDifficulty =
 			PlayerPrefs.GetFloat("charPracticeDifficulty", KeyManager.charPracticeDifficulty);
+		charVarietySlider.value *= charVarietySlider.value;
 		quoteDifficultySlider.value =
 			KeyManager.quoteDifficulty =
 			PlayerPrefs.GetFloat("quoteDifficulty", KeyManager.quoteDifficulty);
+		quoteDifficultySlider.value *= quoteDifficultySlider.value;
 		modeBiasSlider.value =
 			KeyManager.modeBias =
 			PlayerPrefs.GetFloat("practiceModeBias", KeyManager.modeBias);
@@ -676,6 +678,11 @@ public class Typing : MonoBehaviour {
 		if (done) {
 			NextLesson();
 		}
+	}
+	
+	public void ProcessTabKey(InputAction.CallbackContext context){
+		if (!context.started || settingsOpen) return;
+		NextLesson();
 	}
 	
 	void OnTextInputHandler() {
@@ -1158,11 +1165,11 @@ public class Typing : MonoBehaviour {
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateCharDifficulty() {
-		KeyManager.charPracticeDifficulty = charVarietySlider.value;
+		KeyManager.charPracticeDifficulty = Mathf.Sqrt(charVarietySlider.value);
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateQuoteDifficulty() {
-		KeyManager.quoteDifficulty = quoteDifficultySlider.value;
+		KeyManager.quoteDifficulty = Mathf.Sqrt(quoteDifficultySlider.value);
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateModeBias() {

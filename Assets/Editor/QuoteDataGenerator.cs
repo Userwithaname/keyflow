@@ -32,15 +32,10 @@ public class QuoteDataGenerator : EditorWindow {
 		// Get all quotes, change the names so they include a valid path
 		List<string> quoteFiles = new();
 		List<string> sortedQuoteContents = new();
-		foreach (string path in new[] {
-				"Content/Movies & Shows",
-				"Content/Games",
-				"Content/Songs",
-				"Content/Code",
-				"Content/Quotes",
+		string[] quotePaths = {
 				"Content/Wikipedia",
-				"Content/Non-English",
-			}) {
+		};
+		foreach (string path in quotePaths) {
 			foreach (TextAsset t in Resources.LoadAll<TextAsset>(path)) {
 				quoteFiles.Add(path + "/" + t.name);
 				char[] text = t.text.ToCharArray();
@@ -57,7 +52,7 @@ public class QuoteDataGenerator : EditorWindow {
 		
 		for (int i = 0; i < trackedKeys.Count; i++) {
 			quoteKeyFrequencyInfo[i] = new List<string>();
-			for (int j = 0; j<quoteFiles.Count; j++) {
+			for (int j = 0; j < quoteFiles.Count; j++) {
 				int charCount = 0;
 				for (;
 					charProgress[j] < sortedQuoteContents[j].Length &&
