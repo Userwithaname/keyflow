@@ -14,14 +14,39 @@ public class SliderColors : MonoBehaviour {
         slider = GetComponent<Slider>();
         image = slider.fillRect.GetComponent<Image>();
     }
-    void Update() {
-        switch(slider.value) {
-            case <.5f:
-                image.color = Color.Lerp(Color.red, Color.yellow, slider.value * 2);
-                break;
-            default:
-                image.color = Color.Lerp(Color.yellow, Color.green, (slider.value - .5f) * 2);
-                break;
+    
+    public void UpdateColorGreenToRed(){
+        if (!slider) {
+            Start();
         }
+        image.color = slider.value switch{
+            < .5f => Color.Lerp(
+                Color.green,
+                Color.yellow,
+                Mathf.Sqrt(slider.value * 2)
+            ),
+            _ => Color.Lerp(
+                Color.yellow,
+                Color.red, 
+                Mathf.Pow((slider.value - .5f) * 2, 2)
+            )
+        };
+    }
+    public void UpdateColorRedToGreen(){
+        if (!slider) {
+            Start();
+        }
+        image.color = slider.value switch{
+            < .5f => Color.Lerp(
+                Color.red,
+                Color.yellow,
+                Mathf.Sqrt(slider.value * 2)
+            ),
+            _ => Color.Lerp(
+                Color.yellow,
+                Color.green,
+                Mathf.Pow((slider.value - .5f) * 2, 2)
+            )
+        };
     }
 }

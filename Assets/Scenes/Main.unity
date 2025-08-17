@@ -1579,6 +1579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221534421}
   - component: {fileID: 221534422}
+  - component: {fileID: 221534423}
   m_Layer: 5
   m_Name: Character Difficulty Slider
   m_TagString: Untagged
@@ -1671,6 +1672,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 221534423}
+        m_TargetAssemblyTypeName: SliderColors, Assembly-CSharp
+        m_MethodName: UpdateColorGreenToRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &221534423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221534420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761b8a31b48c99728b0cb5842cb948fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &296310629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8821,6 +8846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1393621026}
   - component: {fileID: 1393621027}
+  - component: {fileID: 1393621028}
   m_Layer: 5
   m_Name: Quote Difficulty Slider
   m_TagString: Untagged
@@ -8913,6 +8939,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1393621028}
+        m_TargetAssemblyTypeName: SliderColors, Assembly-CSharp
+        m_MethodName: UpdateColorGreenToRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1393621028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393621025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761b8a31b48c99728b0cb5842cb948fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1398330468
 GameObject:
   m_ObjectHideFlags: 0
@@ -12994,6 +13044,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8d0d0c63-843d-48b1-8f9c-0fc9a04eb827
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c286d56e-ae90-4ded-94e8-25c2987900b4
+    m_ActionName: 'UI/Skip[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
