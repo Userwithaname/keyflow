@@ -869,11 +869,11 @@ public class Typing : MonoBehaviour {
 				KeyManager.RegisterKeyHit(keyIndex);
 				if (loc > 0) {
 					if (input[loc] != input[loc - 1]) {
-						KeyManager.UpdateKeySeekTime(keyIndex,seekTime);
-						KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc - 1]),seekTime);
+						KeyManager.UpdateKeySeekTime(keyIndex, seekTime);
+						KeyManager.UpdateNextKeySeekTime(KeyManager.GetKeyIndex(input[loc - 1]), seekTime);
 					}
 					if (loc < text.Length - 1) {
-						KeyManager.UpdatePreviousKeySeekTime(KeyManager.GetKeyIndex(text[loc + 1]),seekTime);
+						KeyManager.UpdatePreviousKeySeekTime(KeyManager.GetKeyIndex(text[loc + 1]), seekTime);
 					}
 				}
 				seekTime = 0;

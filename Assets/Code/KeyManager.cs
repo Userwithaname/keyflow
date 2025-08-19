@@ -51,8 +51,8 @@ public class KeyManager : MonoBehaviour {
 	// }
 	// List<DailyData> dailyData = new List<DailyData>();
 	public static float averageAccuracy, averageWPM, topWPM;
-	public static float charPracticeDifficulty = .82f; // 1: Only the lowest confidence characters, 0: Completely random
-	public static float quoteDifficulty = .74f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
+	public static float charPracticeDifficulty = .71f; // 1: Only the lowest confidence characters, 0: Completely random
+	public static float quoteDifficulty = .85f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
 	public static float modeBias = .4f; // 1: multiple keys practice, 0: single key practice
 	
 	public static bool unsavedData = false;
@@ -242,12 +242,15 @@ public class KeyManager : MonoBehaviour {
 		unsavedData = true;
 	}
 	
-	public static void UpdatePreviousKeySeekTime(int index,float seekTime) {
+	/// <summary>
+	/// Sets the previous key seek time (the time between the two previous keypress)
+	/// </summary>
+	public static void UpdatePreviousKeySeekTime(int index,float previousKeySeekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].previousKeySeekTime;
 		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].previousKeySeekTime = Mathf.Lerp(
-				instance.confidenceDatabase[index].seekTime,
-				seekTime,
+				instance.confidenceDatabase[index].previousKeySeekTime,
+				previousKeySeekTime,
 				.12f
 			);
 			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
@@ -255,14 +258,18 @@ public class KeyManager : MonoBehaviour {
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].previousKeySeekTime) -
 						SeekTimeToWPM(oldSeekTime),
-					.075f
+					.003f
 				),
 				0
 			);
-		}else{
-			instance.confidenceDatabase[index].previousKeySeekTime = seekTime;
+		} else {
+			instance.confidenceDatabase[index].previousKeySeekTime = previousKeySeekTime;
 		}
 	}
+	
+	/// <summary>
+	/// Sets the key seek time (the time between the previous and current keypress)
+	/// </summary>
 	public static void UpdateKeySeekTime(int index, float seekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].seekTime;
 		if (oldSeekTime is <10000 and >0) {
@@ -276,7 +283,7 @@ public class KeyManager : MonoBehaviour {
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].seekTime) -
 						SeekTimeToWPM(oldSeekTime),
-					.12f
+					.08f
 				),
 				0
 			);
@@ -284,12 +291,16 @@ public class KeyManager : MonoBehaviour {
 			instance.confidenceDatabase[index].seekTime = seekTime;
 		}
 	}
-	public static void UpdateNextKeySeekTime(int index, float seekTime) {
+	
+	/// <summary>
+	/// Sets the next key seek time (the time it took to move on from the current key)
+	/// </summary>
+	public static void UpdateNextKeySeekTime(int index, float nextKeySeekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].nextKeySeekTime;
 		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].nextKeySeekTime = Mathf.Lerp(
-				instance.confidenceDatabase[index].seekTime,
-				seekTime,
+				instance.confidenceDatabase[index].nextKeySeekTime,
+				nextKeySeekTime,
 				.12f
 			);
 			instance.confidenceDatabase[index].speedTrend = Misc.ValidateIfNaN(
@@ -297,12 +308,12 @@ public class KeyManager : MonoBehaviour {
 					instance.confidenceDatabase[index].speedTrend,
 					SeekTimeToWPM(instance.confidenceDatabase[index].nextKeySeekTime) -
 						SeekTimeToWPM(oldSeekTime),
-					.1f
+					.06f
 				),
 				0
 			);
 		} else {
-			instance.confidenceDatabase[index].nextKeySeekTime = seekTime;
+			instance.confidenceDatabase[index].nextKeySeekTime = nextKeySeekTime;
 		}
 	}
 	
