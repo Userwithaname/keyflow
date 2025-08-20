@@ -1,3 +1,5 @@
+#define SCALLE_CHAR_DIFFICULTY_WITH_NUM_QUOTES
+
 using System;
 using UnityEngine;
 using System.Collections.Generic;
@@ -525,27 +527,25 @@ public class KeyManager : MonoBehaviour {
 	public static string GetQuoteByCharFrequency(ref int keyIndex, ref string quoteTitle, float difficulty) {
 		string[] quotes = GetQuoteTitlesForKeyIndex(ref keyIndex);
 		
-		// When difficulty is 0.5, it is ignored until this many quotes are available.
-		// The threshold increases at lower difficulties, and decreases at higher ones.
-		// When difficulty is 1, the threshold is always 0.
-		const float quoteNumberThreshold = 3;
-		float difficultyThreshold = quoteNumberThreshold / difficulty - quoteNumberThreshold;
+		#if SCALLE_CHAR_DIFFICULTY_WITH_NUM_QUOTES
+			// The value is used to attenuate difficulty based on the number of quotes.
+			// When the number of quotes is below this threshold, difficulty is considered 0.
+			// The threshold scales with the difficulty value; when difficulty is 1, the threshold is 0.
+			const float quoteNumberThreshold = 2.5f;
+			float difficultyThreshold = quoteNumberThreshold / difficulty - quoteNumberThreshold;
+			
+			// Difficulty scaling based on the number of quotes to reduce repetition.
+			// The higher the number of quotes, the closer it gets to the original difficulty.
+			difficulty -= difficulty / (Mathf.Pow(
+				Mathf.Max(0f, quotes.Length - difficultyThreshold) / difficultyThreshold,
+				2
+			) + 1);
+		#endif
 		
-		// Difficulty scaling based on the number of quotes to reduce repetition.
-		// The higher the number of quotes, the closer it gets to the original difficulty.
-		difficulty -= difficulty / (Mathf.Pow(
-			Mathf.Max(0f, quotes.Length - difficultyThreshold) / difficultyThreshold,
-			2
-		) + 1);
-		
-		float random = difficulty >= 1 ?
-			0:
-			1f - Mathf.Pow(
-					Random.Range(0f, 1f),
-					1f - difficulty
-				) * (1f - Mathf.Pow(Mathf.Max(0, difficulty - .52f), 2)
-			);
-		if (random > Mathf.Pow(Mathf.Max(0, difficulty - .3f) / (1f - .3f),2) * .75f) {
+		float random = difficulty >= 1 ? 0:
+			(1f - Mathf.Pow(Random.Range(0f, 1f), 1f - difficulty)) *
+				(1f - Mathf.Pow(Mathf.Max(0, difficulty - .52f), 2));
+		if (random > Mathf.Pow(Mathf.Max(0, difficulty - .3f) / (1f - .3f), 2) * .75f) {
 			float random2 = difficulty >= 1 ? 0 : 1f - Mathf.Pow(Random.Range(0f, 1f), 1f - difficulty);
 			random = random2 < random || Random.Range(0f, 1f) < .1f ? random2 : random;
 		}
@@ -563,16 +563,17 @@ public class KeyManager : MonoBehaviour {
 		return targetQuote;
 	}
 	public static string GetQuoteByOverallScore(ref string quoteTitle, ref KeyConfidenceData quoteConfidenceData) {
-		int numCandidates = (int)(182*quoteDifficulty+1);
+		int numCandidates = (int)(182f * quoteDifficulty + 1);
 		string[] quoteCandidates = new string[numCandidates];
 		string[] quoteCandidateTitles = new string[numCandidates];
 		KeyConfidenceData[] averageConfidence = new KeyConfidenceData[numCandidates];
-		float charBias = (charPracticeDifficulty - .1f) * .04f - .05f;
+		float charBias = charPracticeDifficulty * charPracticeDifficulty * .0051f;
 		const float quoteBias = 0;
+		int spacebarIndex = GetKeyIndex(' ');
 		for(int i = 0; i < numCandidates; i++) {
 			quoteCandidates[i] = GetQuoteByCharFrequency(
-				Random.Range(0f, 1f) > charBias * charBias - .025f ?
-					GetKeyIndex(' '):
+				Random.Range(0f, 1f) > charBias ?
+					spacebarIndex:
 					GetLowConfidenceCharacter(charBias),
 				ref quoteCandidateTitles[i],
 				quoteBias
