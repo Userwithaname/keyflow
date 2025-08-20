@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Procedural knowledge
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - HTTP cookie
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Lake
@@ -23,6 +24,7 @@ Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Temperature
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Convention (norm)
@@ -46,6 +48,7 @@ Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Fraction
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Refractive index
@@ -72,6 +75,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Poetry
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Seismic wave
@@ -131,6 +135,7 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Fiction

@@ -12,6 +12,7 @@ Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Pattern
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -26,7 +27,6 @@ Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Affine space
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Concept
@@ -38,6 +38,7 @@ Content/Wikipedia/Wikipedia - Point
 Content/Wikipedia/Wikipedia - Roof
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Applied mathematics
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -51,8 +52,10 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Deep learning
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Psychoacoustics
@@ -143,6 +146,7 @@ Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Conservation law
 Content/Wikipedia/Wikipedia - Isotropy
@@ -188,6 +192,7 @@ Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Procedural knowledge
 Content/Wikipedia/Wikipedia - Vector field
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Potential energy
@@ -222,6 +227,7 @@ Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Travel
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Algae
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Dither
@@ -286,6 +292,7 @@ Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Condensation
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - Line (geometry)
@@ -341,6 +348,7 @@ Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Lake
@@ -368,7 +376,6 @@ Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Symmetry
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Mathematical object
@@ -396,7 +403,6 @@ Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Skill
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Extended ASCII
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Attenuation

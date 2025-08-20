@@ -1,6 +1,7 @@
 Content/Wikipedia/Wikipedia - Function (mathematics)
 Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Bay
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Disk (mathematics)
 Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - Element (mathematics)
@@ -8,7 +9,6 @@ Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Union (set theory)
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Earth's inner core
@@ -16,6 +16,7 @@ Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Ratio
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Force
@@ -38,6 +39,7 @@ Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Stream
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - Newton's laws of motion
@@ -92,13 +94,13 @@ Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Matter
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Nozzle
 Content/Wikipedia/Wikipedia - Melting
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Font
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Power law
@@ -131,6 +133,7 @@ Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Poetry
@@ -196,6 +199,7 @@ Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Simplicity
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Data binning
@@ -210,6 +214,7 @@ Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Barye
@@ -268,6 +273,7 @@ Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Applied science
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
@@ -318,6 +324,8 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Linguistics
+Content/Wikipedia/Wikipedia - Order of operations
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Vanishing point
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Robotics
@@ -345,7 +353,6 @@ Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Cartography
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Science
@@ -400,6 +407,7 @@ Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Literal and figurative language
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Astronomy

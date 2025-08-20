@@ -9,6 +9,8 @@ Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Field (mathematics)
+Content/Wikipedia/Wikipedia - Imagination
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Literal and figurative language
@@ -23,7 +25,6 @@ Content/Wikipedia/Wikipedia - Attention
 Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Deep learning
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
@@ -39,6 +40,7 @@ Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Space
@@ -60,6 +62,7 @@ Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Freezing
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - Dither
@@ -84,6 +87,7 @@ Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Expression (computer science)
@@ -218,6 +222,7 @@ Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Font
@@ -262,6 +267,7 @@ Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Ideogram
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Music
@@ -293,12 +299,12 @@ Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Polyhedron
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Algorithm
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Melting point
@@ -311,9 +317,11 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Humidity
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -370,7 +378,6 @@ Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Simplicity
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Homeomorphism
@@ -412,6 +419,7 @@ Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Formal system
 Content/Wikipedia/Wikipedia - HTTP cookie
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Liquid-crystal display

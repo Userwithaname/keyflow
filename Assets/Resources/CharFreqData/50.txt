@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Plant
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Projection plane

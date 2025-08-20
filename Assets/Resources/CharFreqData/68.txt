@@ -3,17 +3,21 @@ Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Probability
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Bay
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Travel
@@ -27,7 +31,6 @@ Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Mantle (geology)
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Map
@@ -116,6 +119,7 @@ Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Information
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Gravity wave
@@ -131,6 +135,7 @@ Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Optics
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Velocity
@@ -163,7 +168,6 @@ Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Space
 Content/Wikipedia/Wikipedia - Sound
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Photosynthesis
@@ -194,6 +198,7 @@ Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Maze
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Elastic energy
 Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Vegetable
@@ -259,6 +264,7 @@ Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Foam
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Lens
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Class (set theory)
@@ -283,6 +289,7 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Compiler
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Morpheme
 Content/Wikipedia/Wikipedia - Barometer
@@ -306,7 +313,6 @@ Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Expression (computer science)
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Plan

@@ -3,6 +3,7 @@ Content/Wikipedia/Wikipedia - Equality (mathematics)
 Content/Wikipedia/Wikipedia - Quantum mechanics
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Power law
@@ -50,6 +51,7 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Poetry
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Quiz
@@ -116,7 +118,6 @@ Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Computational geometry
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Computing

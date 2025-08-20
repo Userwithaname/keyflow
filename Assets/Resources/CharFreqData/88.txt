@@ -1,5 +1,7 @@
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Void (astronomy)
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Curve
@@ -12,6 +14,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Vanishing point
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Triple product
@@ -28,6 +31,7 @@ Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Histogram
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Refraction
@@ -36,7 +40,7 @@ Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Acceleration
-Content/Wikipedia/Wikipedia - Adjective
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Leaf
@@ -59,6 +63,7 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Gas
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Optics
@@ -75,10 +80,10 @@ Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Commutative property
 Content/Wikipedia/Wikipedia - Vector field
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Nozzle
 Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Flight
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - River
@@ -104,7 +109,6 @@ Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Associative property
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Space
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Arithmetic Mean
@@ -138,6 +142,7 @@ Content/Wikipedia/Wikipedia - Procedural knowledge
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Skill
@@ -231,6 +236,7 @@ Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - String theory
 Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Power law
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Photography
