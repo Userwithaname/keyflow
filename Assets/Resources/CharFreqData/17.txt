@@ -1,6 +1,5 @@
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Velocity
-Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Mathematical notation

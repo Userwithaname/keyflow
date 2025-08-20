@@ -1,15 +1,14 @@
+Content/Wikipedia/Wikipedia - Dynamics (music)
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Three-dimensional space
 Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Theory
-Content/Wikipedia/Wikipedia - Photograph
-Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Mathematical notation
-Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Virus

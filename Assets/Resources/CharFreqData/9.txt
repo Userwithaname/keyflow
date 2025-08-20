@@ -12,6 +12,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Net force
+Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Visual language
@@ -34,13 +35,14 @@ Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Enzyme kinetics
-Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Theory
-Content/Wikipedia/Wikipedia - Photograph
+Content/Wikipedia/Wikipedia - Melting
+Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - General relativity
 Content/Wikipedia/Wikipedia - Atmospheric pressure
+Content/Wikipedia/Wikipedia - Ability
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Astronomy

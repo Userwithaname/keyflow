@@ -1,10 +1,13 @@
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Noise (electronics)
+Content/Wikipedia/Wikipedia - Musical note
 Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Net force
+Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Prism (optics)
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Number

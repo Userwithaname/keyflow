@@ -1,0 +1,1 @@
+In kinematics, the speed (commonly referred to as v) of an object is the magnitude of the change of its position over time or the magnitude of the change of its position per unit of time; it is thus a non-negative scalar quantity.

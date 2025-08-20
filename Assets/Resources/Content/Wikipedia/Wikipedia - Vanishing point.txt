@@ -1,0 +1,1 @@
+A vanishing point is a point on the image plane of a perspective rendering where the two-dimensional perspective projections of parallel lines in three-dimensional space appear to converge.

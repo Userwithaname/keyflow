@@ -1,0 +1,1 @@
+A wing is a type of fin that produces both lift and drag while moving through air. Wings are defined by two shape characteristics, an airfoil section and a planform.

@@ -6,15 +6,19 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
+Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Sunbeam
 Content/Wikipedia/Wikipedia - Transmission medium
+Content/Wikipedia/Wikipedia - Skill
 Content/Wikipedia/Wikipedia - Philosophy
+Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Radiant energy
-Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Pitch (resin)
@@ -33,19 +37,16 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Enzyme kinetics
-Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
+Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
-Content/Wikipedia/Wikipedia - Prism
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - String theory
-Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Virus
-Content/Wikipedia/Wikipedia - Algae

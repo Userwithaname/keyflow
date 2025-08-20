@@ -4,8 +4,6 @@ Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Serial comma
-Content/Wikipedia/Wikipedia - Photograph
-Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - String theory

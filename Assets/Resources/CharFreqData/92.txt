@@ -1,18 +1,24 @@
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Point
+Content/Wikipedia/Wikipedia - Freezing
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
-Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Nozzle
+Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
+Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
+Content/Wikipedia/Wikipedia - Font
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Philosophy
@@ -25,7 +31,9 @@ Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Fluid
+Content/Wikipedia/Wikipedia - Musical note
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Mathematical optimization
@@ -36,8 +44,10 @@ Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Asymptote
+Content/Wikipedia/Wikipedia - Snow
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Black Hole
+Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Rock (geology)
@@ -57,7 +67,6 @@ Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Theory
-Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Moon
@@ -66,8 +75,8 @@ Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Astronomy
+Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - General relativity
-Content/Wikipedia/Wikipedia - Wave

@@ -1,0 +1,1 @@
+In engineering, a bottleneck is a phenomenon by which the performance or capacity of an entire system is severely limited by a single component.
