@@ -1,0 +1,1 @@
+The near field and far field are regions of the electromagnetic (EM) field around an object, such as a transmitting antenna, or the result of radiation scattering off an object. Non-radiative near-field behaviors dominate close to the antenna or scatterer, while electromagnetic radiation far-field behaviors predominate at greater distances.

@@ -1,0 +1,1 @@
+A projection plane, or plane of projection, is a type of view in which graphical projections from an object intersect. Projection planes are used often in descriptive geometry and graphical representation. A picture plane in perspective drawing is a type of projection plane.

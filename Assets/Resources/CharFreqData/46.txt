@@ -3,18 +3,19 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Linguistics
+Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Newton's laws of motion
 Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Library
+Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Linearity
-Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Vacuum
-Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Gravity

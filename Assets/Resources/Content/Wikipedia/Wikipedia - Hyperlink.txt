@@ -1,0 +1,1 @@
+In computing, a hyperlink, or simply a link, is a digital reference providing direct access to data by a user's clicking or tapping. A hyperlink points to a whole document or to a specific element within a document.
