@@ -49,7 +49,7 @@ echo
 
 echo "About prepare the following builds for shipping:"
 echo "  WebGL:"
-printf "    " ; date -r './Keyflow-WebGL/Build/Keyflow-WebGL.data'
+printf "    " ; date -r './Keyflow-WebGL/Build/Keyflow-WebGL.data.gz'
 echo "  Linux:"
 printf "    " ; date -r './Keyflow-Linux-x64/Keyflow/Keyflow_Data/sharedassets0.assets'
 echo "  MacOS:"

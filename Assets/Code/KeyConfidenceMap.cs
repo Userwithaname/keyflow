@@ -86,8 +86,11 @@ public class KeyConfidenceMap : MonoBehaviour {
 		
 		buttons = new Transform[(layout.Length - layout.Split('\n').Length + 1) / 2];
 		
+		const int minHitCount = 3;
+		int numKeys = 0;
+		
 		for (int i = KeyManager.lowercaseStart; i <= KeyManager.lowercaseEnd; i++) {
-			if (KeyManager.instance.confidenceDatabase[i].hits <= 3 ||
+			if (KeyManager.instance.confidenceDatabase[i].hits < minHitCount ||
 				KeyManager.instance.confidenceDatabase[i].seekTime +
 					KeyManager.instance.confidenceDatabase[i].previousKeySeekTime +
 					KeyManager.instance.confidenceDatabase[i].nextKeySeekTime
@@ -102,10 +105,10 @@ public class KeyConfidenceMap : MonoBehaviour {
 					KeyManager.instance.confidenceDatabase[i].nextKeySeekTime
 				)
 			);
-			if (i > KeyManager.lowercaseStart) averageSeekTime /= 2;
+			if (i > KeyManager.lowercaseStart) numKeys++;
 		}
 		
-		// averageSeekTime = Mathf.Min(averageSeekTime, .4f);	// Consider 30 WPM to be the lowest allowed to be colored green
+		averageSeekTime /= numKeys;
 		
 		int row = 0;
 		int buttonIndex = 0;
@@ -160,7 +163,7 @@ public class KeyConfidenceMap : MonoBehaviour {
 						),
 					};
 					
-					if (KeyManager.instance.confidenceDatabase[keyIndex].hits < 3) {
+					if (KeyManager.instance.confidenceDatabase[keyIndex].hits < minHitCount) {
 						keyColor = Color.Lerp(
 							Color.grey,
 							keyColor,
