@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Point
@@ -12,6 +13,7 @@ Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Dither

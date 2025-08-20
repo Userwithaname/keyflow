@@ -35,10 +35,12 @@ Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Optical axis
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Commutative property
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Chemical energy
 Content/Wikipedia/Wikipedia - Set (mathematics)
@@ -68,7 +70,6 @@ Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Function (mathematics)
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Storage (memory)
@@ -112,6 +113,7 @@ Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
@@ -123,8 +125,10 @@ Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Microscope
 Content/Wikipedia/Wikipedia - Enzyme kinetics
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Procedural knowledge
 Content/Wikipedia/Wikipedia - Artificial intelligence
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Trade
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Vacuum
@@ -193,6 +197,7 @@ Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Equality (mathematics)
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Skill
 Content/Wikipedia/Wikipedia - Archaea
@@ -210,6 +215,7 @@ Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Elastic modulus
 Content/Wikipedia/Wikipedia - Computer font
@@ -220,7 +226,6 @@ Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Paradox
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Affine space
@@ -273,6 +278,7 @@ Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Conservation of energy
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Vertex (geometry)
@@ -287,7 +293,6 @@ Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Acceleration
 Content/Wikipedia/Wikipedia - Linearity
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Skew lines
@@ -310,12 +315,14 @@ Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Photosynthesis
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - N-sphere
@@ -344,6 +351,7 @@ Content/Wikipedia/Wikipedia - Melting
 Content/Wikipedia/Wikipedia - Loudness
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Material
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Emergence

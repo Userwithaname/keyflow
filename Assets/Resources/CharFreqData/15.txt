@@ -22,6 +22,7 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Near and far field
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Computer mouse
@@ -78,6 +79,7 @@ Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Void (astronomy)

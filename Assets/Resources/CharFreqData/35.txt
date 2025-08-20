@@ -1,5 +1,6 @@
 Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Map
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Identity (mathematics)

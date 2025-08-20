@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Pixel
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Neuron
@@ -8,6 +9,7 @@ Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Complexity
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Vitamin
@@ -42,7 +44,9 @@ Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Ability
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Maze
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Manifold
@@ -218,6 +222,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Signal
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Virus
@@ -244,7 +249,9 @@ Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Signal chain
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Map
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Causality
@@ -290,6 +297,7 @@ Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Memory
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Point
@@ -299,7 +307,6 @@ Content/Wikipedia/Wikipedia - Wing
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Wave
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Fraction
@@ -327,7 +334,6 @@ Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Neutron
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Unicode
@@ -337,6 +343,7 @@ Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Conservation of energy
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Temperature
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Loudness
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Information
@@ -404,7 +411,6 @@ Content/Wikipedia/Wikipedia - Retrograde and prograde motion
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Barye
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Time
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Refraction
@@ -415,6 +421,7 @@ Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Percentage

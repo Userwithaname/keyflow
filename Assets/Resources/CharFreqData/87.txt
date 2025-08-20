@@ -23,11 +23,13 @@ Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Feedback
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Snow
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Culture
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Musical tone
@@ -38,6 +40,7 @@ Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Quantum
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Literal and figurative language
@@ -87,6 +90,7 @@ Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Freezing
@@ -147,7 +151,6 @@ Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Barye
-Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Space
@@ -168,7 +171,9 @@ Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Improvement
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Angle
+Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Image
@@ -182,7 +187,6 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Signal
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Atom
@@ -209,6 +213,7 @@ Content/Wikipedia/Wikipedia - Dynamics (music)
 Content/Wikipedia/Wikipedia - Measurement
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Character encoding
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Proton
 Content/Wikipedia/Wikipedia - Punctuation
@@ -246,7 +251,6 @@ Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Plant
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Computer graphics
@@ -299,6 +303,7 @@ Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Refraction
 Content/Wikipedia/Wikipedia - Light
@@ -311,6 +316,7 @@ Content/Wikipedia/Wikipedia - Glyph
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Applied mathematics
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
@@ -341,6 +347,7 @@ Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Typewriter
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Pattern
@@ -359,6 +366,7 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Sea
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Perspectivity

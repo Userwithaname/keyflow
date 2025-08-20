@@ -75,6 +75,7 @@ Content/Wikipedia/Wikipedia - Tension (physics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Order theory
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Mathematical object
@@ -100,7 +101,6 @@ Content/Wikipedia/Wikipedia - Prism (optics)
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Melting
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Expression (computer science)

@@ -45,8 +45,10 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Attention
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Black Hole
+Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Musical note
+Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Complexity
@@ -57,7 +59,6 @@ Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Potential energy
-Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Mathematical object
 Content/Wikipedia/Wikipedia - Synapse
 Content/Wikipedia/Wikipedia - Triple product
@@ -135,6 +136,7 @@ Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Commutative property
 Content/Wikipedia/Wikipedia - Aperture
+Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Solid
@@ -162,6 +164,7 @@ Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Plan
+Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Asymptote
@@ -230,6 +233,7 @@ Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Graphene
+Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - PI curve
@@ -247,6 +251,7 @@ Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Perspectivity
@@ -269,6 +274,7 @@ Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Pitch (music)
+Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
@@ -292,6 +298,7 @@ Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Time
 Content/Wikipedia/Wikipedia - Poetry
+Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Information
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Fluid
@@ -342,7 +349,6 @@ Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Font
-Content/Wikipedia/Wikipedia - Mirror
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Sunbeam
@@ -403,6 +409,7 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Dither
+Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Freezing
 Content/Wikipedia/Wikipedia - Angle
