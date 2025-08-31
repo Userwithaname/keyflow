@@ -646,7 +646,7 @@ public class Typing : MonoBehaviour {
 					}
 				}
 				content = new string(chars);
-				content = content.Insert(incorrectEnd, "</u></color>").Insert(incorrectStart, "<color = red><u>");
+				content = content.Insert(incorrectEnd, "</u></color>").Insert(incorrectStart, "<color=red><u>");
 			}
 		}
 		textDisplay.text = content;
@@ -690,6 +690,7 @@ public class Typing : MonoBehaviour {
 			if (done || settingsOpen || !inputFieldFocused) {
 				return;
 			}
+			
 			//Debug.Log($"{(byte)inputChar}:	{inputChar}");
 			switch ((byte)inputChar) {
 				case 8:		// Backspace
@@ -702,7 +703,8 @@ public class Typing : MonoBehaviour {
 				case 127:   // Delete
 					break;	// ^ Ignore the above inputs
 				case 13:    // Enter
-					input += '\n';
+					if (totalTestTime > .1f)
+						input += '\n';
 					break;
 				case <127:
 					if (Keyboard.current.ctrlKey.isPressed) break;
