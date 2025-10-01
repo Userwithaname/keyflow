@@ -95,5 +95,7 @@ public class QuoteDataGenerator : EditorWindow {
 				);
 			}
 		}
+		
+		Debug.Log("Quote character frequency data updated");
 	}
 }
