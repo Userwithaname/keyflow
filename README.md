@@ -1,7 +1,7 @@
 <h1>
 <p align="center">
-  <iframe frameborder="0" src="https://itch.io/embed/1291557?border_width=3&amp;bg_color=153961&amp;fg_color=d2edfd&amp;link_color=167bff&amp;border_color=354355" width="212" height="171"><a href="https://no-name-soft.itch.io/keyflow">Keyflow by No-name Soft</a></iframe>
-  <br>Keyflow
+  <img height=128 src="Assets/UI/Promo/Keyflow-Icon.webp">
+  <br>Available on <a href="https://no-name-soft.itch.io/keyflow">itch.io</a>
 </h1>
   <p align="center">
     Keyflow is a typing practice program which identifies your flaws and helps you resolve them.
