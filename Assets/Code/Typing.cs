@@ -832,8 +832,8 @@ public class Typing : MonoBehaviour {
 		if (loc > length - 1)
 			loc = length - 1;
 		while(loc < length - 1) {
-			char inputChar  =  input[loc + 1];
-			char compareChar  =  text[loc + 1];	// BUG: NullReferenceException after finishing quote (might have pressed multiple keys in the same frame when finished) 
+			char inputChar = input[loc + 1];
+			char compareChar = loc < text.Length - 1 ? text[loc + 1] : '⌫';
 			
 			if (inputChar == compareChar) {
 				int keyIndex = KeyManager.GetKeyIndex(inputChar);
@@ -909,7 +909,7 @@ public class Typing : MonoBehaviour {
 
 		if (incorrect || input.Length < text.Length)
 			return;
-		if (input.Length>text.Length)
+		if (input.Length > text.Length)
 			input = text;
 
 		textDisplay.readOnly = done = true;

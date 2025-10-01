@@ -37,7 +37,7 @@ public class DrawGraph : Graphic {
        
 		// Return calculated dimensions based on the monitor name if possible
 		string[] displayInfo = Screen.mainWindowDisplayInfo.name.Split(' ');
-		for(int i = displayInfo.Length - 1; i > 0; i--) {
+		for (int i = displayInfo.Length - 1; i > 0; i--) {
 			if (displayInfo[i][^1] == '"' &&
 				float.TryParse(displayInfo[i].Replace("\"", ""), out float diagonal)
 			){
@@ -199,10 +199,8 @@ public class DrawGraph : Graphic {
 			
 			float textProgress = (float)currentIndex / (seekTimes.Length - 1);
 			float currentPosX = (times[i] - times[0]) / (timeScale - times[0]) * textProgress * width;
-			float previousPosX = (times[i - 1] - times[0]) / (timeScale-times[0]) * textProgress*width;
+			float previousPosX = (times[i - 1] - times[0]) / (timeScale-times[0]) * textProgress * width;
 			
-			// vertex.color = new Color(1, .6f, 0, 1f);
-			// vertex.color = selectedTheme.backgroundColor * new Color(1, 1, 1, expandedBlend);
 			vertex.color = diamondColor * new Color(1, 1, 1, .75f * expandedBlend * .75f * .5f);
 			
 			/*
@@ -215,8 +213,8 @@ public class DrawGraph : Graphic {
 			 * It may also be a good idea to offset both the top and the bottom vertices in such a way that the true value is in the center, and they are equally distant form that value
 			 */
 			
-			Vector3 topLeft = new Vector3(previousPosX,height * seekTimes[i-1]/4);
-			Vector3 topRight = new Vector3(currentPosX,height * seekTimes[i]/4);
+			Vector3 topLeft = new Vector3(previousPosX, height * seekTimes[i - 1] / 4);
+			Vector3 topRight = new Vector3(currentPosX, height * seekTimes[i] / 4);
 			Vector3 offsetDir = Vector3.Cross(
 				topLeft - topRight,
 				Vector3.forward
@@ -235,16 +233,16 @@ public class DrawGraph : Graphic {
 			// vertex.color.a = 0;
 			
 			// Bottom left	 (2) (1)
-			vertex.position = topLeft-offsetDir;
+			vertex.position = topLeft - offsetDir;
 			vh.AddVert(vertex);
 			
 			// Bottom right (3) (2)
-			vertex.position = topRight-offsetDir;
+			vertex.position = topRight - offsetDir;
 			vh.AddVert(vertex);
 
 			vertCount += 4;
-			vh.AddTriangle(vertCount + 1,vertCount + 0,vertCount + 2);
-			vh.AddTriangle(vertCount + 2,vertCount + 1,vertCount + 3);
+			vh.AddTriangle(vertCount + 1, vertCount + 0, vertCount + 2);
+			vh.AddTriangle(vertCount + 2, vertCount + 1, vertCount + 3);
 		}
 		
 		// Draw a word speed graph
@@ -263,7 +261,6 @@ public class DrawGraph : Graphic {
 				(wordTimes[i - 1] - times[0]) / (timeScale - times[0]) * width:
 				0;
 			
-			 //BUG: First word always highlighted when mouse is over graph, but only the color (right two vertices), not size
 			vertex.color = Typing.currentTheme.improvementColor *
 				new Color(1, 1, 1, (i == hoverWordIndex ? .75f : .4f) * expandedBlend);
 			
@@ -288,21 +285,28 @@ public class DrawGraph : Graphic {
 			vh.AddVert(vertex);
 
 			vertCount += 4;
-			vh.AddTriangle(vertCount + 1,vertCount + 0,vertCount + 2);
-			vh.AddTriangle(vertCount + 2,vertCount + 1,vertCount + 3);
+			vh.AddTriangle(vertCount + 1, vertCount + 0, vertCount + 2);
+			vh.AddTriangle(vertCount + 2, vertCount + 1, vertCount + 3);
 		}
+		
+		// TODO: Idea: Smoothly move the diamonds and lines using lerp
+		// `hoverPointX` should be the easiest; just create a new variable,
+		// and have `hoverPointX` follow its value using lerp.
+		// `hoverPointY` might be tricky, since it would require two variables per diamond,
+		// and they cannot be reused like they are now.
 		
 		// Draw a diamond and a line at the point nearest to the cursor
 		if (hoverIndex > -1 && !Typing.instance.settingsOpen) {
-			float hoverPointY = height * speedValues[hoverIndex] / topWPM;
 			
 			//TODO: When drawing diamonds, also draw a line going towards each tooltip (shouldn't be too hard assuming Typing.GraphUpdate() runs before this function)
 			/*
-			 * tooltip pos - graph pos to get the location in local space, which you can use to draw an extra diamond an da line connecting the two
+			 * tooltip pos - graph pos to get the location in local space, which you can use to draw an extra diamond and a line connecting the two
 			 */
 			
 			// Draw WPM diamond 
 			vertex.color = diamondColor * new Color(1, 1, 1, .75f * expandedBlend);
+			
+			float hoverPointY = height * speedValues[hoverIndex] / topWPM;
 			
 			vertex.position = new Vector3(hoverPointX - (selectionSize * expandedBlend), hoverPointY);
 			vh.AddVert(vertex);
@@ -314,10 +318,10 @@ public class DrawGraph : Graphic {
 			vh.AddVert(vertex);
 			
 			vertCount += 4;
-			vh.AddTriangle(vertCount - 1,vertCount - 2,vertCount - 3);
-			vh.AddTriangle(vertCount - 3,vertCount - 4,vertCount - 1);
+			vh.AddTriangle(vertCount - 1, vertCount - 2, vertCount - 3);
+			vh.AddTriangle(vertCount - 3, vertCount - 4, vertCount - 1);
 			
-			// Draw line below WPM graph
+			// Draw vertical line below WPM graph
 			vertex.color*=new Color(1, 1, 1, .75f);
 			
 			vertex.position = new Vector3(hoverPointX - selectionSize / 4, hoverPointY);
@@ -333,7 +337,7 @@ public class DrawGraph : Graphic {
 			vh.AddTriangle(vertCount - 1, vertCount - 2, vertCount - 3);
 			vh.AddTriangle(vertCount - 3, vertCount - 4, vertCount - 1);
 			
-			// Draw line above WPM graph
+			// Draw vertical line above WPM graph
 			vertex.color *= new Color(1, 1, 1, .5f);
 			
 			vertex.position = new Vector3(hoverPointX - selectionSize / 8, hoverPointY);
@@ -382,19 +386,21 @@ public class DrawGraph : Graphic {
 			vh.AddVert(vertex);
 			
 			vertCount += 4;
-			vh.AddTriangle(vertCount - 1,vertCount - 2,vertCount - 3);
-			vh.AddTriangle(vertCount - 3,vertCount - 4,vertCount - 1);
+			vh.AddTriangle(vertCount - 1, vertCount - 2,  vertCount - 3);
+			vh.AddTriangle(vertCount - 3, vertCount - 4,  vertCount - 1);
 		}
 		
-		// this is only here to work around an index error which otherwise occurs when there were no mistakes and mouse is not hovering on the graph
+		// Workaround for an index error which otherwise occurs
+		// when there were no mistakes and mouse is not hovering on the graph
 		vertCount = vh.currentVertCount;
-		vertex.position = new Vector3(-50000, -50000);
+		vertex.color = new Color(0, 0, 0, 0);
+		vertex.position = new Vector3(-5, -5);
 		vh.AddVert(vertex);
-		vertex.position = new Vector3(-50000, -50000);
+		vertex.position = new Vector3(-5, -5);
 		vh.AddVert(vertex);
-		vertex.position = new Vector3(-50000, -50000);
+		vertex.position = new Vector3(-5, -5);
 		vh.AddVert(vertex);
-		vertex.position = new Vector3(-50000, -50000);
+		vertex.position = new Vector3(-5, -5);
 		vh.AddVert(vertex);
 		vh.AddTriangle(vertCount + 1, vertCount + 0, vertCount + 2);
 		vh.AddTriangle(vertCount + 2, vertCount + 1, vertCount + 3);
@@ -407,12 +413,11 @@ public class DrawGraph : Graphic {
 			float currentPosX = width * (times[i] - times[0]) / (timeScale - times[0]);
 			
 			vertex.color = Typing.currentTheme.textColorError;
-			// vertex.color=Color.red;
 			
 			float offset = selectionSize * expandedBlend / (i == hoverIndex ? 1.25f : 1.5f);
 			Vector3 diagonal = i == hoverIndex ?
-				new Vector3(-offset / 3,offset / 3):
-				new Vector3(-offset / 4,offset / 4);
+				new Vector3(-offset / 3, offset / 3):
+				new Vector3(-offset / 4, offset / 4);
 			
 			vertex.position = new Vector3(
 				currentPosX - offset,
@@ -435,8 +440,8 @@ public class DrawGraph : Graphic {
 			) + diagonal;
 			vh.AddVert(vertex);
 			
-			vh.AddTriangle(vertCount + 1,vertCount + 0,vertCount + 2);
-			vh.AddTriangle(vertCount + 2,vertCount + 1,vertCount + 3);
+			vh.AddTriangle(vertCount + 1, vertCount + 0, vertCount + 2);
+			vh.AddTriangle(vertCount + 2, vertCount + 1, vertCount + 3);
 			vertCount += 4;
 			
 			diagonal.x = -diagonal.x;
