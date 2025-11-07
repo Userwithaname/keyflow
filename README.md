@@ -92,8 +92,6 @@ on MacOS.
 
 You can access the settings menu at any time by pressing the gear button in the bottom left.
 
-![](./Screenshots/settings_dark.png)
-
 The settings menu includes:
 
 - _Practice Capital Letters_ - Whether capital letter skill should be considered for practice selection
@@ -102,7 +100,11 @@ The settings menu includes:
 - _Practice Selection Bias_ - How much should 'Practice Focus' be limited to your problematic characters
 - _Quote Difficulty Bias_ - How much should quotes be biased to contain your problematic characters
 - _Multi-Key Mode Bias_ - How often should practices focus on overall difficulty rather than individual keys
-- _Show Typos_ - Whether to insert incorrect characters into the text, or only highlight it in red
+- _Mistakes_ - Adjusts how typos are handled:
+  - _Show Typos_ - Inserts typos into the quote text
+  - _Highlight Typos_ - Highlights the correct character at the position of the typo
+  - _Erase Typos_ - Any incorrect character you enter is automatically removed
+  - _Erase Misstyped Words_ - The entire word is erased if you enter a typo
 - _Show Confidence Data_ - Opens the key confidence map
 - _Switch To Light/Dark Theme_ - Switches between the light and dark themes
 - _Remove Saved Data_ - Opens a menu where you can remove key data, scores, or both
