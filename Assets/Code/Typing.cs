@@ -34,7 +34,7 @@ public class Typing : MonoBehaviour {
 	 *			and would call functions from there. The 'BaseUI' class could still handle the progress logic
 	 *			and call 'Done()' on the 'TypingTest', so it can decide what to do. They may need to communicate with each other.
 	 *
-	 * For consideration: !his class currently handles the following:
+	 * For consideration: This class currently handles the following:
 	 *		- Selects new quotes
 	 *		- The test itself
 	 *		- Test-related UI/info, as well as transitions
@@ -136,9 +136,8 @@ public class Typing : MonoBehaviour {
 	public GameObject[] settingsMenus;
 	public Toggle practiceUppercase,
 	              practiceNumbers,
-	              practiceSymbols,
-	              practiceWhitespace,
-	              showIncorrectCharacters;
+	              practiceSymbols;
+	public TMP_Dropdown errorMode;
 	public Slider charVarietySlider,
 	              quoteDifficultySlider,
 	              modeBiasSlider;
@@ -233,33 +232,26 @@ public class Typing : MonoBehaviour {
 		PlayerPrefs.SetFloat("charPracticeDifficulty", KeyManager.charPracticeDifficulty);
 		PlayerPrefs.SetFloat("quoteDifficulty", KeyManager.quoteDifficulty);
 		PlayerPrefs.SetFloat("practiceModeBias", KeyManager.modeBias);
-		PlayerPrefs.SetInt("showTypos", showIncorrectCharacters.isOn ? 1 : 0);
+		PlayerPrefs.SetInt("errorMode", errorMode.value);
 		PlayerPrefs.SetInt("selectedTheme", selectedTheme);
 	}
 	
 	public void Load() {
-		practiceUppercase.isOn =
-			KeyManager.includeUppercase =
+		practiceUppercase.isOn = KeyManager.includeUppercase =
 			PlayerPrefs.GetInt("includeUppercase", KeyManager.includeUppercase ? 1 : 0) == 1;
-		practiceNumbers.isOn =
-			KeyManager.includeNumbers =
+		practiceNumbers.isOn = KeyManager.includeNumbers =
 			PlayerPrefs.GetInt("includeNumbers", KeyManager.includeNumbers ? 1 : 0) == 1;
-		practiceSymbols.isOn =
-			KeyManager.includeSymbols =
+		practiceSymbols.isOn = KeyManager.includeSymbols =
 			PlayerPrefs.GetInt("includeSymbols", KeyManager.includeSymbols ? 1 : 0) == 1;
-		charVarietySlider.value =
-			KeyManager.charPracticeDifficulty =
+		charVarietySlider.value = KeyManager.charPracticeDifficulty =
 			PlayerPrefs.GetFloat("charPracticeDifficulty", KeyManager.charPracticeDifficulty);
 		charVarietySlider.value *= charVarietySlider.value;
-		quoteDifficultySlider.value =
-			KeyManager.quoteDifficulty =
+		quoteDifficultySlider.value = KeyManager.quoteDifficulty =
 			PlayerPrefs.GetFloat("quoteDifficulty", KeyManager.quoteDifficulty);
 		quoteDifficultySlider.value *= quoteDifficultySlider.value;
-		modeBiasSlider.value =
-			KeyManager.modeBias =
+		modeBiasSlider.value = KeyManager.modeBias =
 			PlayerPrefs.GetFloat("practiceModeBias", KeyManager.modeBias);
-		showIncorrectCharacters.isOn =
-			PlayerPrefs.GetInt("showTypos", showIncorrectCharacters.isOn ? 1 : 0) == 1;
+		errorMode.value = PlayerPrefs.GetInt("errorMode", 0);
 	}
 	
 	public void UpdateTheme() {
@@ -594,59 +586,93 @@ public class Typing : MonoBehaviour {
 	
 	bool lastFrameIncorrect = true;
 	void SetTextColor() {
+
+		// TODO: Option to erase word on error
+		// This could be shown to the user as a dropdown,
+		// instead of the 'Show Typos' toggle:
+		// Error Mode:
+		// - Show mistakes
+		// - Highlight mistakes
+		// - Erase mistakes
+		// - Erase full word
+		//if (incorrect) 
+
 		int cappedLoc = Mathf.Min(loc + 1,text.Length);
 		string content = $"{(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)}{text.Insert(cappedLoc, "</color>")}";
 		if (incorrect) {
-			int lengthDiff = content.Length-text.Length;
+			int lengthDiff = content.Length - text.Length;
 			
-			if (showIncorrectCharacters.isOn) {
-				if (input.Length <=  loc)	return;
-				char[] chars = input.Remove(0,loc+1).ToCharArray();
-				for (int i = 0;i<chars.Length;i++) {
-					switch (chars[i]) {
-						default: {
-							continue;
-						}
-						case ' ': {
-							chars[i] = '␣';
-							break;
-						}
-						case '\t': {
-							chars[i] = '↹';
-							break;
-						}
-						case '\n': {
-							chars[i] = '↵';
-							break;
-						}
-					}
-				}
-				content = content.Insert(cappedLoc+lengthDiff,$"{themes[selectedTheme].textColorErrorTag}<u>{new string(chars)}</u></color>");
-			} else {
-				int incorrectStart = cappedLoc + lengthDiff,
-				    incorrectEnd = Mathf.Min(input.Length, text.Length) + lengthDiff;
-				char[] chars = content.ToCharArray();
-				for (int i = Mathf.Max(incorrectStart - 1, 0); i < incorrectEnd; i++) {
-					switch (chars[i]) {
-						default: {
-							continue;
-						}
-						case ' ': {
-							chars[i] = '␣';
-							break;
-						}
-						case '\t': {
-							chars[i] = '↹';
-							break;
-						}
-						case '\n': {
-							chars[i] = '↵';
-							break;
+			const int
+				showTypos = 0,
+				highlightTypos = 1,
+				eraseErrors = 2,
+				eraseWords = 3;
+				
+			switch (errorMode.value) {
+				case showTypos: {
+					if (input.Length <=  loc)	return;
+					char[] chars = input.Remove(0, loc + 1).ToCharArray();
+					for (int i = 0; i < chars.Length; i++) {
+						switch (chars[i]) {
+							default: {
+								continue;
+							}
+							case ' ': {
+								chars[i] = '␣';
+								break;
+							}
+							case '\t': {
+								chars[i] = '↹';
+								break;
+							}
+							case '\n': {
+								chars[i] = '↵';
+								break;
+							}
 						}
 					}
+					content = content.Insert(
+						cappedLoc + lengthDiff,
+						$"{themes[selectedTheme].textColorErrorTag}<u>{new string(chars)}</u></color>"
+					);
+					break;
 				}
-				content = new string(chars);
-				content = content.Insert(incorrectEnd, "</u></color>").Insert(incorrectStart, "<color=red><u>");
+				case highlightTypos: {
+					int incorrectStart = cappedLoc + lengthDiff,
+					    incorrectEnd = Mathf.Min(input.Length, text.Length) + lengthDiff;
+					char[] chars = content.ToCharArray();
+					for (int i = Mathf.Max(incorrectStart - 1, 0); i < incorrectEnd; i++) {
+						switch (chars[i]) {
+							default: {
+								continue;
+							}
+							case ' ': {
+								chars[i] = '␣';
+								break;
+							}
+							case '\t': {
+								chars[i] = '↹';
+								break;
+							}
+							case '\n': {
+								chars[i] = '↵';
+								break;
+							}
+						}
+					}
+					content = new string(chars)
+						.Insert(incorrectEnd, "</u></color>")
+						.Insert(incorrectStart, "<color=red><u>");
+					break;
+				}
+				case eraseErrors: {
+					EraseInputCharacter(false);
+					break;
+				}
+				case eraseWords: {
+					EraseInputCharacter(true);
+					break;
+				}
 			}
 		}
 		textDisplay.text = content;
@@ -695,7 +721,7 @@ public class Typing : MonoBehaviour {
 			switch ((byte)inputChar) {
 				case 8:		// Backspace
 					#if !BACKSPACE_KEY_WORKAROUND
-						EraseInputCharacter();
+						EraseInputCharacter(false);
 					#endif
 					break;
 				case 9:     // Tab
@@ -717,10 +743,10 @@ public class Typing : MonoBehaviour {
 		};
 	}
 	
-	void EraseInputCharacter() {
+	void EraseInputCharacter(bool word) {
 		if (done || settingsOpen || !inputFieldFocused) return;
 		int rm = 1;
-		if ((!Keyboard.current.ctrlKey.isPressed &&
+		if ((!word && !Keyboard.current.ctrlKey.isPressed &&
 			!Keyboard.current.leftAppleKey.isPressed) ||
 			input.Length < 2
 		) {
@@ -728,9 +754,10 @@ public class Typing : MonoBehaviour {
 		}
 		for (rm = 2; rm < input.Length; rm++) {
 			switch (input[^rm]) {
-				case '\n':case ' ':case '\t':
+				case '\n': case ' ': case '\t': {
 					rm--;
 					goto set_input;
+				}
 			}
 		}
 		set_input: {
@@ -751,7 +778,7 @@ public class Typing : MonoBehaviour {
 	void Update() {
 		#if BACKSPACE_KEY_WORKAROUND
 			if (Keyboard.current.backspaceKey.wasPressedThisFrame){
-				EraseInputCharacter();
+				EraseInputCharacter(false);
 				backspaceHeld = true;
 			}
 			if (Keyboard.current.backspaceKey.wasReleasedThisFrame){
@@ -765,7 +792,7 @@ public class Typing : MonoBehaviour {
 				if (backspaceRepeatTimer >= backspaceRepeatInterval &&
 					backspaceHeldTime >= backspaceRepeatDelay
 				) {
-					EraseInputCharacter();
+					EraseInputCharacter(false);
 					backspaceRepeatTimer = 0;
 				}
 			}
@@ -805,11 +832,13 @@ public class Typing : MonoBehaviour {
 			lastMousePos = InputHandler.mousePosition;
 		}
 	}
+
 	void LateUpdate() {
 		graph.SetVerticesDirty();
-		incorrect =! text.StartsWith(input);
+		incorrect = !text.StartsWith(input);
+		
 		switch (lastMaxLength) {
-			case >= 0 when input.Length < text.Length || incorrect:{
+			case >= 0 when input.Length < text.Length || incorrect: {
 				started = true;
 				seekTime += Time.deltaTime;
 				wordTime += Time.deltaTime;
@@ -817,7 +846,7 @@ public class Typing : MonoBehaviour {
 				graph.timeScale = totalTestTime;
 				break;
 			}
-			case > 0 when done:{
+			case > 0 when done: {
 				return;
 			}
 		}
