@@ -7,6 +7,7 @@ Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Three-dimensional space
 Content/Wikipedia/Wikipedia - Habit
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Liquid
@@ -35,6 +36,7 @@ Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Disk (mathematics)
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Hexadecimal
@@ -56,6 +58,7 @@ Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
@@ -64,6 +67,7 @@ Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Quantum
@@ -76,6 +80,7 @@ Content/Wikipedia/Wikipedia - Color
 Content/Wikipedia/Wikipedia - Polygon
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Sequence
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Mathematical structure
@@ -84,10 +89,12 @@ Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Statement (computer science)

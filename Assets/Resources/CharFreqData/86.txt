@@ -23,6 +23,7 @@ Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Rotational symmetry
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Plasma (physics)
@@ -62,6 +63,7 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Thermodynamics
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Light
@@ -80,6 +82,7 @@ Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Retrograde and prograde motion
@@ -186,6 +189,7 @@ Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Affine space
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Gas
@@ -200,6 +204,7 @@ Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Concept
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Effervescence
@@ -241,6 +246,7 @@ Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Culture
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Musical tone
@@ -276,6 +282,7 @@ Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Vergence (optics)
 Content/Wikipedia/Wikipedia - Constellation
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Parallel (geometry)
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
@@ -293,6 +300,7 @@ Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Travel
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Music
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Mirror
@@ -314,10 +322,12 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Dynamics (music)
 Content/Wikipedia/Wikipedia - Wing
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - Innovation
@@ -360,6 +370,8 @@ Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Scalar (physics)
+Content/Wikipedia/Wikipedia - Optical resolution
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Compiler
@@ -387,6 +399,7 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Complexity
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Unimodality
@@ -405,10 +418,12 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Glyph
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Idiom
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Learning
@@ -423,6 +438,7 @@ Content/Wikipedia/Wikipedia - Foam
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Fluid dynamics
 Content/Wikipedia/Wikipedia - Procedural knowledge
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Number

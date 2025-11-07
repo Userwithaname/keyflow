@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Light

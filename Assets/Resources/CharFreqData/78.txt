@@ -6,17 +6,22 @@ Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Parallel (geometry)
+Content/Wikipedia/Wikipedia - Polar regions of Earth
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Abstract algebra
+Content/Wikipedia/Wikipedia - Visible spectrum
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Foam
@@ -31,10 +36,13 @@ Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Paradox
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Linearity
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Dwarf planet
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Skew lines
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Galaxy
@@ -94,6 +102,7 @@ Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Sequence
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Idiom
@@ -109,6 +118,7 @@ Content/Wikipedia/Wikipedia - Melting
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Travel
 Content/Wikipedia/Wikipedia - Algorithm
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
@@ -149,6 +159,7 @@ Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Procedural knowledge
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Fungus
 Content/Wikipedia/Wikipedia - Proton
@@ -216,6 +227,7 @@ Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Error detection and correction
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Bay
 Content/Wikipedia/Wikipedia - Arity
@@ -281,6 +293,7 @@ Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Anthropology
@@ -322,6 +335,7 @@ Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - String theory
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Projection plane
@@ -363,6 +377,7 @@ Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Dynamics (music)
@@ -395,6 +410,7 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Extended ASCII
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - System

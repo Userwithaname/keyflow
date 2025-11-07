@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Ocean
@@ -16,6 +17,7 @@ Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Seismic wave
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Typewriter

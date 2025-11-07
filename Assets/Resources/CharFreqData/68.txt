@@ -27,6 +27,7 @@ Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Potential energy
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
@@ -45,6 +46,7 @@ Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Disk (mathematics)
 Content/Wikipedia/Wikipedia - Chemical energy
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Sunbeam
@@ -65,6 +67,7 @@ Content/Wikipedia/Wikipedia - Randomness
 Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Absolute value
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Structure
@@ -74,6 +77,7 @@ Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Anthropology
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Liquid
 Content/Wikipedia/Wikipedia - Bit
@@ -156,6 +160,7 @@ Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Writing
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Computational geometry
@@ -178,11 +183,13 @@ Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Attention
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Goal
@@ -222,6 +229,7 @@ Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - Net force
@@ -244,6 +252,7 @@ Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Software
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Abstract Art
@@ -322,9 +331,11 @@ Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Character encoding
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Crystal
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Fluid
@@ -335,6 +346,7 @@ Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Isotropy
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Skew lines

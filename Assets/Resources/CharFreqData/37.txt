@@ -6,7 +6,9 @@ Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Color
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Idiom
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Liquid-crystal display

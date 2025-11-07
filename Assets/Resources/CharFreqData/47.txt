@@ -11,6 +11,7 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Moon

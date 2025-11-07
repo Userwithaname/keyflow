@@ -5,6 +5,7 @@ Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Foam
 Content/Wikipedia/Wikipedia - Tesseract
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Cosmos
@@ -33,6 +34,7 @@ Content/Wikipedia/Wikipedia - Fluid
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Transmission medium
@@ -65,8 +67,10 @@ Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Musical note
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Website
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Sunbeam
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Isometry
@@ -154,6 +158,7 @@ Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Plan
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Notation
@@ -203,6 +208,7 @@ Content/Wikipedia/Wikipedia - Font
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Distance
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Geography
@@ -210,6 +216,7 @@ Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Subject (grammar)
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Zebra
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Archaeology
@@ -227,6 +234,7 @@ Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Three-dimensional space
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Chemical reaction
 Content/Wikipedia/Wikipedia - Mirror
@@ -234,6 +242,7 @@ Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Net force
 Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Attention
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Elastic energy
@@ -313,8 +322,11 @@ Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Commutative property
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Mathematical structure
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Imaging
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Absolute value
 Content/Wikipedia/Wikipedia - Condensation
@@ -343,6 +355,7 @@ Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Wing
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Fraction
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Vector field
@@ -351,6 +364,7 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Linearity
@@ -388,6 +402,7 @@ Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Light
@@ -395,6 +410,7 @@ Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Data binning
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - ASCII

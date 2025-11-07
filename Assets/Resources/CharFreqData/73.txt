@@ -18,7 +18,9 @@ Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Statement (computer science)
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Flight
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Convex geometry
 Content/Wikipedia/Wikipedia - Light
@@ -29,6 +31,7 @@ Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Engineering
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Seismic wave
@@ -41,6 +44,7 @@ Content/Wikipedia/Wikipedia - Glyph
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Roof
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Creativity
@@ -56,17 +60,22 @@ Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Biology
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Absolute value
 Content/Wikipedia/Wikipedia - Signal
+Content/Wikipedia/Wikipedia - Tropics
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Chemical energy
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Unimodality
@@ -186,6 +195,7 @@ Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
 Content/Wikipedia/Wikipedia - Morpheme
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Vector field
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Tidal acceleration
@@ -216,6 +226,7 @@ Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Projection plane
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Travel
@@ -229,8 +240,10 @@ Content/Wikipedia/Wikipedia - Unicode
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Subject (grammar)
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Virus
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Isomorphism
@@ -256,6 +269,7 @@ Content/Wikipedia/Wikipedia - Refractive index
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Station point
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - System
@@ -349,12 +363,14 @@ Content/Wikipedia/Wikipedia - Sun
 Content/Wikipedia/Wikipedia - Musical note
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Condensation
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Quantum

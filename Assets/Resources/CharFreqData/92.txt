@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Puzzle
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Effervescence
 Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Zebra
@@ -10,12 +11,14 @@ Content/Wikipedia/Wikipedia - Nozzle
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Lake
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Angle
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Font
@@ -25,11 +28,14 @@ Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Skewness
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Computer graphics
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Structure
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Number
 Content/Wikipedia/Wikipedia - Fluid

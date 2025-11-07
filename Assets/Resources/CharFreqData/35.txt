@@ -22,9 +22,11 @@ Content/Wikipedia/Wikipedia - Information
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Atmosphere

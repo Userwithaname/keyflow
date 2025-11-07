@@ -7,6 +7,7 @@ Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Loudness
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Harmony
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Triple product
@@ -32,6 +33,7 @@ Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Pascal (unit)
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Flux
@@ -86,6 +88,7 @@ Content/Wikipedia/Wikipedia - Line integral
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Inverse-square law
@@ -117,6 +120,7 @@ Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Arithmetic Mean
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Chart
@@ -139,12 +143,14 @@ Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Causality
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Melody
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Byte
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - Memory
@@ -246,6 +252,7 @@ Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Field (mathematics)
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Diffraction
@@ -255,6 +262,7 @@ Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Mathematical object
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Identity (mathematics)
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Vaporization
@@ -266,9 +274,11 @@ Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - HTTP cookie
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Disk (mathematics)
 Content/Wikipedia/Wikipedia - Convention (norm)
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
@@ -278,6 +288,7 @@ Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Wind wave
 Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Condensation
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Wavefront
@@ -311,6 +322,7 @@ Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Wing
 Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Skill
 Content/Wikipedia/Wikipedia - Glyph
 Content/Wikipedia/Wikipedia - Idiom
@@ -320,6 +332,7 @@ Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Elastic energy
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
@@ -330,6 +343,7 @@ Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Acceleration
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Foam
@@ -342,6 +356,7 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Chemical reaction
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Analytic geometry
@@ -376,6 +391,7 @@ Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Vergence (optics)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Ocean
