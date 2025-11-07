@@ -25,9 +25,11 @@ Content/Wikipedia/Wikipedia - Aperture
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Skew lines
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Ink
 Content/Wikipedia/Wikipedia - Absolute value
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Power (physics)
@@ -100,6 +102,7 @@ Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Nozzle
 Content/Wikipedia/Wikipedia - Melting
 Content/Wikipedia/Wikipedia - Pattern
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Font
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Morpheme
@@ -117,6 +120,7 @@ Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Data
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Computer font
@@ -124,6 +128,7 @@ Content/Wikipedia/Wikipedia - Pitch (resin)
 Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Histogram
@@ -138,6 +143,7 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Interpolation
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Loudness
 Content/Wikipedia/Wikipedia - Measurement
 Content/Wikipedia/Wikipedia - Maze
@@ -207,6 +213,7 @@ Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Geometry
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Memory
@@ -239,6 +246,7 @@ Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Computer mouse
 Content/Wikipedia/Wikipedia - Time
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Base (geometry)
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Distance
@@ -262,6 +270,7 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Thermodynamics
 Content/Wikipedia/Wikipedia - Physics
 Content/Wikipedia/Wikipedia - Order theory
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Language
@@ -270,7 +279,9 @@ Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Computational geometry
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Pangram
@@ -289,6 +300,7 @@ Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Diffraction
 Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Weather
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Barometer
@@ -323,8 +335,11 @@ Content/Wikipedia/Wikipedia - Sunbeam
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - Punctuation
+Content/Wikipedia/Wikipedia - Precipitation
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Linguistics
 Content/Wikipedia/Wikipedia - Order of operations
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Vanishing point
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -403,6 +418,7 @@ Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Quaternion
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Expression (mathematics)

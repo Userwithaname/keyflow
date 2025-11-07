@@ -7,10 +7,12 @@ Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Zigzag
 Content/Wikipedia/Wikipedia - Sound
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Channel (geography)
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Mantle (geology)
@@ -21,6 +23,7 @@ Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Point
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Algebra
@@ -50,6 +53,7 @@ Content/Wikipedia/Wikipedia - Map
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Idiom
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Serial comma
@@ -79,6 +83,7 @@ Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Tidal acceleration
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Mathematics
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Glossary of mathematical symbols
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Structure
@@ -146,6 +151,7 @@ Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Lens
@@ -189,6 +195,7 @@ Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Axiomatic system
 Content/Wikipedia/Wikipedia - Inverse-square law
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Order of operations
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
@@ -247,6 +254,7 @@ Content/Wikipedia/Wikipedia - Language
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Barye
@@ -256,6 +264,7 @@ Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Goal
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Condensation
@@ -277,6 +286,7 @@ Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Fruit
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Pareidolia
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Vanishing point
@@ -294,6 +304,7 @@ Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Three-dimensional space
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Liquid
@@ -306,6 +317,7 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Tension (physics)
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Theory
 Content/Wikipedia/Wikipedia - History
@@ -346,6 +358,7 @@ Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Projection plane
 Content/Wikipedia/Wikipedia - Room temperature
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Ink
 Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Unicode
@@ -369,6 +382,7 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Electrical engineering
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Space
@@ -386,6 +400,7 @@ Content/Wikipedia/Wikipedia - Network analysis (electrical circuits)
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Disk (mathematics)
 Content/Wikipedia/Wikipedia - Isotropy
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Time
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Freezing
@@ -426,6 +441,7 @@ Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Harmony
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Semantics
 Content/Wikipedia/Wikipedia - Attention

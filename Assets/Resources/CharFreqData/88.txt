@@ -17,6 +17,7 @@ Content/Wikipedia/Wikipedia - Vanishing point
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Euclidean vector
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Learning
@@ -61,6 +62,7 @@ Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Signal
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Order of operations
@@ -69,8 +71,10 @@ Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Asymptote
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Water
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Frequency
@@ -91,6 +95,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Roof
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Field (mathematics)
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Storage (memory)
@@ -102,6 +107,7 @@ Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Variable (mathematics)
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Distance
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Linguistics
@@ -117,6 +123,7 @@ Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Lens
@@ -162,6 +169,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Astronomy
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Hydrostatic equilibrium
 Content/Wikipedia/Wikipedia - Mantle (geology)
 Content/Wikipedia/Wikipedia - Computer keyboard
@@ -169,6 +177,7 @@ Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Polyhedron
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dynamics (music)
 Content/Wikipedia/Wikipedia - Hypothesis
@@ -178,6 +187,7 @@ Content/Wikipedia/Wikipedia - Biology
 Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Artificial intelligence
 Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
@@ -190,6 +200,7 @@ Content/Wikipedia/Wikipedia - Unimodality
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Set (mathematics)
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - DNA
@@ -201,6 +212,7 @@ Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Applied science
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Chemical reaction
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Quantum

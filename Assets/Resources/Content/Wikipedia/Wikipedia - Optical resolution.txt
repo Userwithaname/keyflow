@@ -1,0 +1,1 @@
+Optical resolution describes the ability of an imaging system to resolve detail, in the object that is being imaged. An imaging system may have many individual components, including one or more lenses, and/or recording and display components.

@@ -24,6 +24,7 @@ Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Paradox
 Content/Wikipedia/Wikipedia - Russell's paradox
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Arithmetic
@@ -48,6 +49,7 @@ Content/Wikipedia/Wikipedia - Solid
 Content/Wikipedia/Wikipedia - Void (astronomy)
 Content/Wikipedia/Wikipedia - Trade
 Content/Wikipedia/Wikipedia - Art
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Flux
@@ -107,6 +109,7 @@ Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Byte
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Game
@@ -134,6 +137,7 @@ Content/Wikipedia/Wikipedia - Space
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - ASCII
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Number

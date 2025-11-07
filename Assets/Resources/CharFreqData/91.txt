@@ -39,10 +39,13 @@ Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Simplicity
 Content/Wikipedia/Wikipedia - Leaf
+Content/Wikipedia/Wikipedia - Tropics
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Cosmos
 Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Dimension
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Unimodality
@@ -74,6 +77,7 @@ Content/Wikipedia/Wikipedia - Chemical energy
 Content/Wikipedia/Wikipedia - Atom
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Liquid-crystal display
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Ideogram
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Microscope
@@ -132,6 +136,7 @@ Content/Wikipedia/Wikipedia - Resonance
 Content/Wikipedia/Wikipedia - Interface (matter)
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Crystal
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Inverse-square law
@@ -167,6 +172,7 @@ Content/Wikipedia/Wikipedia - Force
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Snow
 Content/Wikipedia/Wikipedia - Ocean
@@ -195,6 +201,7 @@ Content/Wikipedia/Wikipedia - Recall (memory)
 Content/Wikipedia/Wikipedia - Isometry
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Software
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Pitch (music)
@@ -232,6 +239,7 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Memory
 Content/Wikipedia/Wikipedia - Telescope
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Image
 Content/Wikipedia/Wikipedia - Jitter
 Content/Wikipedia/Wikipedia - Timbre
@@ -250,6 +258,7 @@ Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Attention
 Content/Wikipedia/Wikipedia - Universe
 Content/Wikipedia/Wikipedia - Earth's inner core
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Projection plane
@@ -257,6 +266,7 @@ Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Literal and figurative language
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Bit
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Food
@@ -291,6 +301,7 @@ Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Morpheme
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Electrical engineering
@@ -304,6 +315,7 @@ Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dot product
@@ -323,6 +335,7 @@ Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Signal chain
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Velocity
@@ -344,6 +357,7 @@ Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Chemical reaction
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Time
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Homeomorphism
@@ -374,6 +388,7 @@ Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Perception
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Deep learning
@@ -382,6 +397,7 @@ Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Character encoding
 Content/Wikipedia/Wikipedia - Spectrum
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Ratio
 Content/Wikipedia/Wikipedia - Histogram
 Content/Wikipedia/Wikipedia - Improvement

@@ -1,14 +1,19 @@
+Content/Wikipedia/Wikipedia - Temperate climate
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Euclid
 Content/Wikipedia/Wikipedia - Trade
 Content/Wikipedia/Wikipedia - Angle
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Earth's outer core
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Atmospheric pressure
@@ -21,6 +26,7 @@ Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Synonym
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Sleep
 Content/Wikipedia/Wikipedia - Elastic energy
 Content/Wikipedia/Wikipedia - Bacteria

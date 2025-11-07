@@ -16,6 +16,7 @@ Content/Wikipedia/Wikipedia - Thermodynamics
 Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Travel
 Content/Wikipedia/Wikipedia - Vertex (geometry)
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Culture
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
@@ -43,6 +44,7 @@ Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Pareidolia
 Content/Wikipedia/Wikipedia - Engineering
 Content/Wikipedia/Wikipedia - Musical tone
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Mathematical structure
@@ -52,6 +54,7 @@ Content/Wikipedia/Wikipedia - Coefficient
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Isometry
@@ -84,6 +87,8 @@ Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Apex (geometry)
+Content/Wikipedia/Wikipedia - Polar regions of Earth
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Weather
@@ -106,6 +111,7 @@ Content/Wikipedia/Wikipedia - Map
 Content/Wikipedia/Wikipedia - Structure of Earth
 Content/Wikipedia/Wikipedia - Applied mathematics
 Content/Wikipedia/Wikipedia - Wind wave
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Chart
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Font
@@ -113,6 +119,7 @@ Content/Wikipedia/Wikipedia - Food
 Content/Wikipedia/Wikipedia - Finitary
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Distance
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Room temperature
 Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Pascal (unit)
@@ -170,6 +177,7 @@ Content/Wikipedia/Wikipedia - Optics
 Content/Wikipedia/Wikipedia - Line (geometry)
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Line integral
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Alphabet
 Content/Wikipedia/Wikipedia - Syntax
 Content/Wikipedia/Wikipedia - Power law
@@ -203,6 +211,7 @@ Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Attention
 Content/Wikipedia/Wikipedia - Earth's inner core
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Gravity
@@ -250,6 +259,7 @@ Content/Wikipedia/Wikipedia - Class (set theory)
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Deflection (engineering)
 Content/Wikipedia/Wikipedia - Correlation
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Mathematics
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
@@ -364,6 +374,7 @@ Content/Wikipedia/Wikipedia - Error detection and correction
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Kinetic energy
 Content/Wikipedia/Wikipedia - Music genre
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Newton's laws of motion
@@ -390,6 +401,7 @@ Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Hypothesis
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Inverse-square law
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Visual language

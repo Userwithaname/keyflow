@@ -23,6 +23,7 @@ Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - ASCII
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - System
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Procedural knowledge
@@ -31,6 +32,7 @@ Content/Wikipedia/Wikipedia - Thermodynamics
 Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Dimension
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Universe
@@ -52,6 +54,7 @@ Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Drag (physics)
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Convention (norm)
@@ -68,6 +71,7 @@ Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Vegetable
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Elasticity (physics)
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Literature
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
@@ -97,6 +101,7 @@ Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Absolute value
 Content/Wikipedia/Wikipedia - HTTP cookie
 Content/Wikipedia/Wikipedia - Edge (geometry)
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Bay
 Content/Wikipedia/Wikipedia - Ray (optics)
 Content/Wikipedia/Wikipedia - Galaxy
@@ -109,6 +114,7 @@ Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Correlation
 Content/Wikipedia/Wikipedia - Abstract Art
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Structure
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Game
@@ -157,6 +163,7 @@ Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Sunbeam
 Content/Wikipedia/Wikipedia - Writing
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Anthropology
@@ -186,6 +193,7 @@ Content/Wikipedia/Wikipedia - Wave
 Content/Wikipedia/Wikipedia - Imagination
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Computing
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Roof
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Chart
@@ -226,6 +234,7 @@ Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Frequency
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Mathematical notation
 Content/Wikipedia/Wikipedia - Chemistry
 Content/Wikipedia/Wikipedia - Transmission medium
@@ -265,6 +274,7 @@ Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Topology
 Content/Wikipedia/Wikipedia - Atom
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Theorem
@@ -275,6 +285,7 @@ Content/Wikipedia/Wikipedia - Dwarf planet
 Content/Wikipedia/Wikipedia - Serial comma
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Byte
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Energy
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
@@ -284,6 +295,7 @@ Content/Wikipedia/Wikipedia - Flux
 Content/Wikipedia/Wikipedia - Spectrum
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Union (set theory)
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Resonance
@@ -316,6 +328,7 @@ Content/Wikipedia/Wikipedia - Emergence
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Fiction
 Content/Wikipedia/Wikipedia - Microscope
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Floating-point arithmetic
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Water
@@ -332,6 +345,7 @@ Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Virus
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Archaea
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
@@ -388,6 +402,7 @@ Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Glyph
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Vaporization
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Reference
 Content/Wikipedia/Wikipedia - Coefficient
@@ -402,6 +417,7 @@ Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Information
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Signal
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Dyson sphere
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Variable (mathematics)

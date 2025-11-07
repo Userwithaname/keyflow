@@ -4,10 +4,12 @@ Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Set (mathematics)
 Content/Wikipedia/Wikipedia - Noise (electronics)
 Content/Wikipedia/Wikipedia - Subject (grammar)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Temperature
 Content/Wikipedia/Wikipedia - Weight
 Content/Wikipedia/Wikipedia - Vanishing point
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Vertex (geometry)
 Content/Wikipedia/Wikipedia - Procedural knowledge
 Content/Wikipedia/Wikipedia - Affine space
@@ -77,6 +79,7 @@ Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Measurement
 Content/Wikipedia/Wikipedia - Pascal (unit)
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Edge (geometry)
 Content/Wikipedia/Wikipedia - Perception
 Content/Wikipedia/Wikipedia - Correlation
@@ -111,6 +114,7 @@ Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Mathematical optimization
 Content/Wikipedia/Wikipedia - Scale (music)
 Content/Wikipedia/Wikipedia - Number
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Dynamics (music)
 Content/Wikipedia/Wikipedia - Complexity
 Content/Wikipedia/Wikipedia - Hypothesis
@@ -124,6 +128,7 @@ Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Mathematical structure
 Content/Wikipedia/Wikipedia - Chemical reaction
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Asymptote
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Isometry
@@ -146,6 +151,7 @@ Content/Wikipedia/Wikipedia - Extended ASCII
 Content/Wikipedia/Wikipedia - Dew
 Content/Wikipedia/Wikipedia - Photosynthesis
 Content/Wikipedia/Wikipedia - Causality
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Power law
@@ -247,9 +253,11 @@ Content/Wikipedia/Wikipedia - Conservation law
 Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Sunbeam
 Content/Wikipedia/Wikipedia - Computer font
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Ability
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Character encoding
@@ -281,7 +289,9 @@ Content/Wikipedia/Wikipedia - Literal and figurative language
 Content/Wikipedia/Wikipedia - Illusion
 Content/Wikipedia/Wikipedia - Dimension
 Content/Wikipedia/Wikipedia - Vacuum
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Expression (computer science)
 Content/Wikipedia/Wikipedia - Land
@@ -297,6 +307,7 @@ Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Melting point
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - Writing
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Inverse-square law
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Transmission medium
@@ -366,8 +377,10 @@ Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Archaeology
 Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Galaxy
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Station point
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - Timbre
 Content/Wikipedia/Wikipedia - Axiomatic system
@@ -384,11 +397,13 @@ Content/Wikipedia/Wikipedia - Prism (optics)
 Content/Wikipedia/Wikipedia - Field (mathematics)
 Content/Wikipedia/Wikipedia - Algebra
 Content/Wikipedia/Wikipedia - Dwarf planet
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Ratio
@@ -404,6 +419,7 @@ Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Arithmetic
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Liquid-crystal display
 Content/Wikipedia/Wikipedia - Library

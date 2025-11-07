@@ -7,6 +7,7 @@ Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Wikipedia
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Knowledge
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Skill
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Science
@@ -64,6 +65,7 @@ Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Viscosity
 Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Stream
@@ -87,6 +89,7 @@ Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - Character encoding
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Glyph
@@ -95,6 +98,7 @@ Content/Wikipedia/Wikipedia - Attenuation
 Content/Wikipedia/Wikipedia - Musical note
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Average
 Content/Wikipedia/Wikipedia - Star
 Content/Wikipedia/Wikipedia - DNA

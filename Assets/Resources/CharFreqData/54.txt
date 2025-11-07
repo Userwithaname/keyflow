@@ -38,9 +38,11 @@ Content/Wikipedia/Wikipedia - DNA
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Skew lines
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Graphene
 Content/Wikipedia/Wikipedia - Radiant energy
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Photograph
 Content/Wikipedia/Wikipedia - Maze

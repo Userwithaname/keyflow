@@ -1,4 +1,7 @@
+Content/Wikipedia/Wikipedia - Tropics
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Subject (grammar)
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Information
 Content/Wikipedia/Wikipedia - Geography
 Content/Wikipedia/Wikipedia - Light
@@ -11,6 +14,7 @@ Content/Wikipedia/Wikipedia - Weather
 Content/Wikipedia/Wikipedia - Median
 Content/Wikipedia/Wikipedia - Atmosphere
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Wavefront
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Jellyfish
@@ -20,6 +24,7 @@ Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Theorem
 Content/Wikipedia/Wikipedia - Condensation
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Software
 Content/Wikipedia/Wikipedia - Bicameral mentality
 Content/Wikipedia/Wikipedia - Aperture
@@ -60,6 +65,7 @@ Content/Wikipedia/Wikipedia - Sound
 Content/Wikipedia/Wikipedia - Typing
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Neutron
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Melting point
@@ -229,6 +235,7 @@ Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Robotics
 Content/Wikipedia/Wikipedia - Philosophy
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Rainbow
 Content/Wikipedia/Wikipedia - Fourier transform
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
@@ -329,6 +336,7 @@ Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Ink
@@ -364,8 +372,10 @@ Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Isotropy
 Content/Wikipedia/Wikipedia - Skewness
 Content/Wikipedia/Wikipedia - Perception
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Pascal (unit)
 Content/Wikipedia/Wikipedia - Triple product
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Coefficient
@@ -374,6 +384,7 @@ Content/Wikipedia/Wikipedia - Computing
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Game
 Content/Wikipedia/Wikipedia - Jungle
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Integer sequence
 Content/Wikipedia/Wikipedia - Dither
 Content/Wikipedia/Wikipedia - Vegetable
@@ -389,11 +400,13 @@ Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Scalar (physics)
 Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - General relativity
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Ring (mathematics)
 Content/Wikipedia/Wikipedia - Convex combination
 Content/Wikipedia/Wikipedia - Drag (physics)
 Content/Wikipedia/Wikipedia - Signal
 Content/Wikipedia/Wikipedia - Number
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - Notation
@@ -417,8 +430,10 @@ Content/Wikipedia/Wikipedia - Sampling (signal processing)
 Content/Wikipedia/Wikipedia - Telescope
 Content/Wikipedia/Wikipedia - Computer font
 Content/Wikipedia/Wikipedia - Expression (computer science)
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Lens
 Content/Wikipedia/Wikipedia - Fiction
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Statement (computer science)
 Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Perspectivity

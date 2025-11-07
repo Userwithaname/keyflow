@@ -31,6 +31,7 @@ Content/Wikipedia/Wikipedia - Writing
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Computational geometry
 Content/Wikipedia/Wikipedia - Fungus
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Homeomorphism
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Arity
@@ -74,6 +75,7 @@ Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Storage (memory)
 Content/Wikipedia/Wikipedia - Dream
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Improvement
 Content/Wikipedia/Wikipedia - Algae
 Content/Wikipedia/Wikipedia - Elastic energy
@@ -87,6 +89,8 @@ Content/Wikipedia/Wikipedia - Bacteria
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Pixel
 Content/Wikipedia/Wikipedia - Temperature
+Content/Wikipedia/Wikipedia - Imaging
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Photography
 Content/Wikipedia/Wikipedia - Dynamics (music)
@@ -99,6 +103,7 @@ Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Rock (geology)
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Algorithm
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Symmetry
 Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Information
@@ -114,6 +119,7 @@ Content/Wikipedia/Wikipedia - Convention (norm)
 Content/Wikipedia/Wikipedia - Geometry
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Effervescence
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Perspectivity
 Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Euclidean vector
@@ -133,6 +139,7 @@ Content/Wikipedia/Wikipedia - Trade
 Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Vacuum
 Content/Wikipedia/Wikipedia - Quiz
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Library
 Content/Wikipedia/Wikipedia - Ray tracing (physics)
@@ -176,6 +183,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Altitude
 Content/Wikipedia/Wikipedia - Barometer
 Content/Wikipedia/Wikipedia - Thermodynamics
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Quantum
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Sun
@@ -191,6 +199,7 @@ Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - Dispersion (optics)
 Content/Wikipedia/Wikipedia - Conditional (computer programming)
 Content/Wikipedia/Wikipedia - Syntax
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Computer keyboard
 Content/Wikipedia/Wikipedia - Field (mathematics)
@@ -271,7 +280,9 @@ Content/Wikipedia/Wikipedia - Innovation
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Notation
 Content/Wikipedia/Wikipedia - Resonance
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - History
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Distance
 Content/Wikipedia/Wikipedia - Interface (matter)
@@ -329,8 +340,10 @@ Content/Wikipedia/Wikipedia - N-sphere
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Elasticity (physics)
 Content/Wikipedia/Wikipedia - Energy
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Natural science
 Content/Wikipedia/Wikipedia - Moon
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Knowledge
 Content/Wikipedia/Wikipedia - Edge (geometry)
@@ -416,6 +429,7 @@ Content/Wikipedia/Wikipedia - Gravity
 Content/Wikipedia/Wikipedia - Nozzle
 Content/Wikipedia/Wikipedia - Puzzle
 Content/Wikipedia/Wikipedia - Projection plane
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Psychoacoustics
 Content/Wikipedia/Wikipedia - Disk (mathematics)
 Content/Wikipedia/Wikipedia - Font
@@ -423,5 +437,6 @@ Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Causality
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Hypothesis
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Power law
 Content/Wikipedia/Wikipedia - PI curve

@@ -2,9 +2,11 @@ Content/Wikipedia/Wikipedia - Creativity
 Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Density
 Content/Wikipedia/Wikipedia - Weight
+Content/Wikipedia/Wikipedia - Tropics
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Knowledge
+Content/Wikipedia/Wikipedia - Silt
 Content/Wikipedia/Wikipedia - Element (mathematics)
 Content/Wikipedia/Wikipedia - Exercise
 Content/Wikipedia/Wikipedia - Prioritization
@@ -23,10 +25,12 @@ Content/Wikipedia/Wikipedia - Habit
 Content/Wikipedia/Wikipedia - Friction
 Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - Universe
+Content/Wikipedia/Wikipedia - Imaging
 Content/Wikipedia/Wikipedia - Leaf
 Content/Wikipedia/Wikipedia - Curve
 Content/Wikipedia/Wikipedia - Absolute value
 Content/Wikipedia/Wikipedia - Cosmos
+Content/Wikipedia/Wikipedia - Temperate climate
 Content/Wikipedia/Wikipedia - Bay
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Sea
@@ -38,6 +42,7 @@ Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Structure (mathematical logic)
+Content/Wikipedia/Wikipedia - Electric battery
 Content/Wikipedia/Wikipedia - Optical axis
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Polyhedron
@@ -79,10 +84,12 @@ Content/Wikipedia/Wikipedia - Feedback
 Content/Wikipedia/Wikipedia - Angle
 Content/Wikipedia/Wikipedia - Art
 Content/Wikipedia/Wikipedia - Writing
+Content/Wikipedia/Wikipedia - State of matter
 Content/Wikipedia/Wikipedia - Anthropology
 Content/Wikipedia/Wikipedia - Analytic geometry
 Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Disk (mathematics)
+Content/Wikipedia/Wikipedia - Visible spectrum
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Interpolation
 Content/Wikipedia/Wikipedia - Zigzag
@@ -105,6 +112,7 @@ Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Goal
 Content/Wikipedia/Wikipedia - Coin
 Content/Wikipedia/Wikipedia - Median
+Content/Wikipedia/Wikipedia - Gravel
 Content/Wikipedia/Wikipedia - Constellation
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Hyperlink
@@ -140,16 +148,20 @@ Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Computer graphics
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Aperture
+Content/Wikipedia/Wikipedia - Polar regions of Earth
 Content/Wikipedia/Wikipedia - Dream
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Plan
+Content/Wikipedia/Wikipedia - Optical resolution
 Content/Wikipedia/Wikipedia - Equator
+Content/Wikipedia/Wikipedia - Phonetics
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
+Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Probability
 Content/Wikipedia/Wikipedia - Sampling (signal processing)
@@ -169,6 +181,7 @@ Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Land
 Content/Wikipedia/Wikipedia - Music genre
 Content/Wikipedia/Wikipedia - Three-dimensional space
+Content/Wikipedia/Wikipedia - Color appearance model
 Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Euclidean vector
 Content/Wikipedia/Wikipedia - Average
@@ -183,6 +196,7 @@ Content/Wikipedia/Wikipedia - Channel (geography)
 Content/Wikipedia/Wikipedia - Triple product
 Content/Wikipedia/Wikipedia - Synonym
 Content/Wikipedia/Wikipedia - Projection plane
+Content/Wikipedia/Wikipedia - Satellite
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - Theorem
@@ -194,6 +208,7 @@ Content/Wikipedia/Wikipedia - Data
 Content/Wikipedia/Wikipedia - Frequency
 Content/Wikipedia/Wikipedia - Radiant energy
 Content/Wikipedia/Wikipedia - Byte
+Content/Wikipedia/Wikipedia - Precipitation
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Gravity wave
 Content/Wikipedia/Wikipedia - Fluid dynamics
@@ -264,6 +279,7 @@ Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Material
 Content/Wikipedia/Wikipedia - ASCII
 Content/Wikipedia/Wikipedia - Inverse-square law
+Content/Wikipedia/Wikipedia - Sand
 Content/Wikipedia/Wikipedia - Near and far field
 Content/Wikipedia/Wikipedia - Pitch (music)
 Content/Wikipedia/Wikipedia - Musical tone
