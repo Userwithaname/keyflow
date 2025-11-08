@@ -6,7 +6,6 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Typing : MonoBehaviour {
@@ -607,17 +606,6 @@ public class Typing : MonoBehaviour {
 	
 	bool lastFrameIncorrect = true;
 	void SetTextColor() {
-
-		// TODO: Option to erase word on error
-		// This could be shown to the user as a dropdown,
-		// instead of the 'Show Typos' toggle:
-		// Error Mode:
-		// - Show mistakes
-		// - Highlight mistakes
-		// - Erase mistakes
-		// - Erase full word
-		//if (incorrect) 
-
 		int cappedLoc = Mathf.Min(loc + 1,text.Length);
 		string content = $"{(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)}{text.Insert(cappedLoc, "</color>")}";
 		if (incorrect) {
@@ -774,12 +762,17 @@ public class Typing : MonoBehaviour {
 			goto set_input;
 		}
 		for (rm = 2; rm < input.Length; rm++) {
-			switch (input[^rm]) {
-				case '\n': case ' ': case '\t': {
-					rm--;
-					goto set_input;
-				}
+			if (!KeyManager.IsAlphanumericCharacter(input[^rm])) {
+				rm--;
+				goto set_input;
 			}
+			
+			// switch (input[^rm]) {
+			// 	case '\n': case ' ': case '\t': {
+			// 		rm--;
+			// 		goto set_input;
+			// 	}
+			// }
 		}
 		set_input: {
 			rm = Mathf.Min(rm, input.Length);
