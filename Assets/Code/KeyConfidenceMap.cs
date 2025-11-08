@@ -180,35 +180,16 @@ public class KeyConfidenceMap : MonoBehaviour {
 		}
 	}
 	public void Cleanup() {
-		if (buttons == null)
-			return;
+		if (buttons == null) return;
 		foreach (Transform button in buttons) {
 			Destroy(button.gameObject);
 		}
 	}
 	public void UpdateTheme() {
-		if (buttons != null) {
-			foreach (Transform t in buttons) {
-				t.Find("Outline").GetComponent<Image>().color =
-					Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
-			}
-		}
-
-		foreach (var img in layoutsDropdown.GetComponentsInChildren<Image>(true)) {
-			switch(img.name) {
-				case "Arrow":case "Item Checkmark": {
-					img.color = Typing.instance.themes[Typing.instance.selectedTheme].textColorUI;
-					continue;
-				}
-				default: {
-					img.color = Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
-					continue;
-				}
-			}
-		}
-
-		foreach (var text in layoutsDropdown.GetComponentsInChildren<TMP_Text>(true)) {
-			text.color = Typing.instance.themes[Typing.instance.selectedTheme].textColorUI;
+		if (buttons == null) return;
+		foreach (Transform t in buttons) {
+			t.Find("Outline").GetComponent<Image>().color =
+				Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
 		}
 	}
 }

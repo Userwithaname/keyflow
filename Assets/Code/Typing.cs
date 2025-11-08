@@ -6,6 +6,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Typing : MonoBehaviour {
@@ -155,7 +156,8 @@ public class Typing : MonoBehaviour {
 	RectTransform caretTransform;
 	Vector3 initialTextPos, initialCaretPos;
 	
-	[Serializable]public struct Theme{
+	[Serializable]
+	public struct Theme {
 		public string name;
 		public Color backgroundColor,
 		             textColorUI,
@@ -170,6 +172,8 @@ public class Typing : MonoBehaviour {
 		             mildRegressionColor,
 		             buttonColor,
 		             iconColor;
+		public Color tooltipBackgroundColor,
+		             tooltipTextColor;
 		[NonSerialized]
 		public string textColorErrorTag,
 		              textColorWarningTag,
@@ -180,10 +184,8 @@ public class Typing : MonoBehaviour {
 	}
 	public int selectedTheme,lastSelectedTheme;
 	public Theme[] themes;
-	public Image[] themeableButtons,
-	               themeableIcons;
-	public TMP_Text[] themeableUIText;
-	public Image[] themeableTooltipBackgrounds;
+	public GameObject[] themeableElements;
+	public Image[] themableTooltips;
 	
 	public bool showGraphWhenDone=true;
 	
@@ -286,35 +288,54 @@ public class Typing : MonoBehaviour {
 		themes[selectedTheme].mildRegressionColorTag =
 			"<color=#" + ColorUtility.ToHtmlStringRGB(themes[selectedTheme].mildRegressionColor) + ">";
 
-		WPMInfo.text=WPMInfo.text
+		WPMInfo.text = WPMInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
 			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
-		averageWPMInfo.text=averageWPMInfo.text
+		averageWPMInfo.text = averageWPMInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
 			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
-		lessonInfo.text=lessonInfo.text
+		lessonInfo.text = lessonInfo.text
 			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
 			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
 			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
-		textDisplay.text=textDisplay.text
+		textDisplay.text = textDisplay.text
 			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
 		
 		if (KeyConfidenceMap.instance)
 			KeyConfidenceMap.instance.UpdateTheme();
-		foreach (Image button in themeableButtons) {
-			button.color = currentTheme.buttonColor;
+		
+		foreach (var tooltip in themableTooltips){
+			tooltip.color = currentTheme.tooltipBackgroundColor;
+			foreach (var text in tooltip.GetComponentsInChildren<Text>(true)) {
+				text.color = currentTheme.tooltipTextColor;
+			}
+			foreach (var text in tooltip.GetComponentsInChildren<TMP_Text>(true)){
+				text.color = currentTheme.tooltipTextColor;
+			}
 		}
-		foreach (Image icon in themeableIcons) {
-			icon.color = currentTheme.iconColor;
+		foreach (var element in themeableElements) {
+			foreach (var img in element.GetComponentsInChildren<Image>(true)) {
+				switch(img.name) {
+					case "Arrow": case "Item Checkmark": {
+						img.color = currentTheme.textColorUI;
+						continue;
+					}
+					case "Icon": {
+						img.color = currentTheme.iconColor;
+						continue;
+					}
+					default: {
+						img.color = currentTheme.buttonColor;
+						continue;
+					}
+				}
+			}
+			foreach (var text in element.GetComponentsInChildren<TMP_Text>(true)) {
+				text.color = currentTheme.textColorUI;
+			}
 		}
-		// foreach (TMP_Text uiText in themeableUIText) {
-		// 	uiText.color = currentTheme.textColorUI;
-		// }
-		// foreach (Image tooltipBackground in themeableTooltipBackgrounds) {
-		// 	tooltipBackground.color = currentTheme.backgroundColor*new Color(1, 1, 1, .1f);
-		// }
 	}
 	public void ChangeTheme(int theme) {
 		if (theme != selectedTheme) lastSelectedTheme = selectedTheme;
