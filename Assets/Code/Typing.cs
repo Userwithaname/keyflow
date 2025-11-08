@@ -1210,11 +1210,13 @@ public class Typing : MonoBehaviour {
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateCharDifficulty() {
-		KeyManager.charPracticeDifficulty = Mathf.Sqrt(charVarietySlider.value);
+		float value = quoteDifficultySlider.value;
+		KeyManager.charPracticeDifficulty = value > 0 ? Mathf.Sqrt(value) : 0;
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateQuoteDifficulty() {
-		KeyManager.quoteDifficulty = Mathf.Sqrt(quoteDifficultySlider.value);
+		float value = quoteDifficultySlider.value;
+		KeyManager.quoteDifficulty = value > 0 ? Mathf.Sqrt(value) : 0;
 		KeyManager.unsavedPrefs = true;
 	}
 	public void UpdateModeBias() {
