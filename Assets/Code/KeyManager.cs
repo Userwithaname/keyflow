@@ -219,6 +219,12 @@ public class KeyManager : MonoBehaviour {
 			   _ => false
 		};
 	}
+	public static bool IsAlphanumericCharacter(char character) {
+		return character
+			is >= 'a' and <= 'z'
+			or >= 'A' and <= 'Z'
+			or >= '0' and <= '9';
+	}
 	
 	public static float SeekTimeToWPM(float seekTime) {
 		return 60f / seekTime / 5;
