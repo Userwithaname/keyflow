@@ -32,10 +32,10 @@ public class DrawGraph : Graphic {
 		Vector2 resolution =
 			new(Screen.currentResolution.width, Screen.currentResolution.height);
        
-		// Return the monitor width if screen DPI information is available
+		// Return the screen DPI if information is available
 		if (Screen.dpi > 0) return Screen.dpi;
        
-		// Return calculated dimensions based on the monitor name if possible
+		// Calculate DPI based on the monitor name if possible
 		string[] displayInfo = Screen.mainWindowDisplayInfo.name.Split(' ');
 		for (int i = displayInfo.Length - 1; i > 0; i--) {
 			if (displayInfo[i][^1] == '"' &&
