@@ -57,37 +57,10 @@ public class Typing : MonoBehaviour {
 	 *		- Speed Mode
 	 *		- Guided Mode
 	 */
-	
+ 
 	/*
-	 * Idea: game modes:
-	 *		Stay in flight:
-	 *			A 2D rendered plane is flying as you type.
-	 *			If you slow down, the plane starts to dip.
-	 *			If you speed up, it starts to rise.
-	 *			If you get too slow, the plane crashes into the ground.
-	 *		Solo Office Worker:
-	 *			First-person game where you jump from computer to computer and have to type out as many quotes as you can in a certain time limit before the boss comes
-	 *		Gibberish Mode:
-	 *			A string of random characters for the user to type out
-	 * 
-	 *		top speed mode: Words are shown one after another, and become active after a countdown. You're supposed to type out the word as fast as possible
-	 *		consistency mode: The text starts scrolling at your average speed, and you must take care to not fall behind, or the text will go offscreen
-	 *		accuracy mode: Similar to consistency, but the scrolling speed follows yours, and increases even with errors 
-	 *		hard words mode: Picks random words containing letters and letter combos you're not as good with
-	 */
-	 
-	/*
-	 * TODO: Attempt to select quotes that the user can type in under a minute (or a chosen timeframe)
+	 * IDEA: Attempt to select quotes that the user can type in under a minute (or a chosen timeframe)
 	 * or allow trimming the text to still practice the letters/characters chosen for the lesson
-	 * TODO: Idea: Instead of pre-determined quotes, download the full Wikipedia articles and automatically select a few sentences for practice
-	 * This could still use the same indexing system for counting characters and selecting the quote file,
-	 * but additional code would be needed which would then decide which sentences are worth practicing the most.
-	 * Note that this could mean extracting text which seems irrelevant or misleading out of context
-	 * TODO: If the above is implemented, it could also make sense to allow users to select a folder with text to practice on
-         *
-	 * TODO: Progress tracking (save the average accuracy/speed for each day, draw a graph that the user can check whenever they want)
-	 *
-	 * TODO: Create a UI to make all colors configurable
 	 */
 
 	public static Typing instance;
