@@ -87,7 +87,6 @@ public class Typing : MonoBehaviour {
 
 	public GameObject keyboardOverlay;
 	
-	// public Font interfaceFont;
 	string text = "If you're seeing this text, it means something went wrong with the application",
 	       input = "",
 	       lastInput = "";
@@ -154,7 +153,7 @@ public class Typing : MonoBehaviour {
 		              regressionColorTag,
 		              mildRegressionColorTag;
 	}
-	public int selectedTheme,lastSelectedTheme;
+	public int selectedTheme, lastSelectedTheme;
 	public Theme[] themes;
 	public GameObject[] themeableElements;
 	public Image[] themableTooltips;
@@ -181,7 +180,6 @@ public class Typing : MonoBehaviour {
 
 		textDisplayText = textDisplay.GetComponentInChildren<TMP_Text>();
 		
-		// graphTransform = graph.rectTransform;
 		graphTransform = graph.transform.parent.GetComponent<RectTransform>();
 		defaultGraphHeight = graphTransform.rect.height;
 		defaultGraphPos = graphTransform.anchoredPosition;
@@ -739,13 +737,6 @@ public class Typing : MonoBehaviour {
 				rm--;
 				goto set_input;
 			}
-			
-			// switch (input[^rm]) {
-			// 	case '\n': case ' ': case '\t': {
-			// 		rm--;
-			// 		goto set_input;
-			// 	}
-			// }
 		}
 		set_input: {
 			rm = Mathf.Min(rm, input.Length);
@@ -868,9 +859,7 @@ public class Typing : MonoBehaviour {
 						graph.speedValueScale = wpm;
 					}
 					
-					// graph.SetVerticesDirty();
 					if (KeyManager.IsWhitespaceIndex(keyIndex) || input.Length == text.Length) {
-						//BUG: Can result in infinity WPM and wrong words being registered, if not typing at the end of the field (eg. pressing left arrow key)
 						if (loc > 0) {
 							graph.wordSpeedValues[wordIndex] =
 								KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
@@ -906,7 +895,8 @@ public class Typing : MonoBehaviour {
 						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(compareChar));
 
 						// Don't register a miss for the input character if it's correct in the next position
-						if (text.Length > lastLength + 1 && text[lastLength + 1] == inputChar) break;
+						if (text.Length > lastLength + 1 && text[lastLength + 1] == inputChar)
+							break;
 
 						KeyManager.RegisterKeyMiss(KeyManager.GetKeyIndex(inputChar));
 					}
@@ -940,7 +930,6 @@ public class Typing : MonoBehaviour {
 		if (showGraphWhenDone)
 			ToggleGraphUI(true);
 		UnfocusInputField();
-		// KeyManager.Save();
 	}
 	void FadeUpdate() {
 		if (fade != lastFade) {
@@ -1026,7 +1015,6 @@ public class Typing : MonoBehaviour {
 		 * Remember to hide the text/background of the tooltips when nothing is selected
 		 */
 
-		// Rect graphRect = graphOutlineTransform.rect;
 		Rect graphRect = graph.rectTransform.rect;
 		graphRect.height = targetGraphHeight;
 		float tooltipHeight = graphTooltipSpeed.rect.height;
@@ -1196,7 +1184,4 @@ public class Typing : MonoBehaviour {
 		KeyManager.modeBias = modeBiasSlider.value;
 		KeyManager.unsavedPrefs = true;
 	}
-	
-	//TODO: Make a proper UI plan and redesign the settings menu(?)
-	// Also consider where the progress graph will be drawn, if that is to be implemented
 }

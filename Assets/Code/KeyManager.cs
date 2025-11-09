@@ -38,20 +38,12 @@ public class KeyManager : MonoBehaviour {
 	public static int numbersStart, numbersEnd,
 	                  capitalStart, capitalEnd,
 	                  lowercaseStart, lowercaseEnd;
+
 	public static bool includeUppercase = false,
 	                   includeNumbers = false,
 	                   includeSymbols = false,
 	                   includeWhitespace = false;
-	// [Serializable]
-	// public struct DailyData{	//TODO: Idea: Save the averages for each day
-	// 	public int year,
-	// 	           month,
-	// 	           day;
-	// 	public float topSpeed,
-	// 	             averageSpeed,
-	// 	             averageAcc;
-	// }
-	// List<DailyData> dailyData = new List<DailyData>();
+
 	public static float averageAccuracy, averageWPM, topWPM;
 	public static float charPracticeDifficulty = .71f; // 1: Only the lowest confidence characters, 0: Completely random
 	public static float quoteDifficulty = .85f; // 1: only the quote with most frequent occurrence of the selected character, 0: unbiased
@@ -347,7 +339,6 @@ public class KeyManager : MonoBehaviour {
 			);
 		}
 		// Debug.Log($"The word \"{word}\" was typed at {wpm} WPM (took {time} seconds)");
-		//TODO: Track top-speed(?)
 		return wpm;
 	}
 	
@@ -480,14 +471,14 @@ public class KeyManager : MonoBehaviour {
 				}
 			}
 		}
-		return Random.Range(0f, 1f) switch{
+		return Random.Range(0f, 1f) switch {
 			<.2f	=> lowestWPMIndex,
 			<.55f	=> bestImprovementTrendIndex,
 			<.9f	=> instance.confidenceDatabase[highestNextSeekTimeIndex].speedTrend >
-			         instance.confidenceDatabase[highestSeekTimeIndex].speedTrend &&
-			         Random.Range(0f, 1f) > difficulty * .45f + .1f?
-			         	highestNextSeekTimeIndex:
-			         	highestSeekTimeIndex,
+			           instance.confidenceDatabase[highestSeekTimeIndex].speedTrend &&
+			           Random.Range(0f, 1f) > difficulty * .45f + .1f?
+			                highestNextSeekTimeIndex:
+			                highestSeekTimeIndex,
 			_		=> lowestAccIndex
 		};
 	}
@@ -561,10 +552,6 @@ public class KeyManager : MonoBehaviour {
 			targetQuote = quotes[Random.Range(0, quotes.Length)];
 		}
 		quoteTitle = targetQuote.Split('/')[^1];
-		//TODO: Allow skipping categories (eg. ignore 'Content/Code/...')
-		// (increase index until a different category is found, loop over if not, select different
-		// character if same index is reached) (check if an appropriate file exists in the 'while'
-		// loop above)
 		targetQuote = RemoveTrailingNewline(Resources.Load<TextAsset>(targetQuote).text);	
 		return targetQuote;
 	}
@@ -590,7 +577,7 @@ public class KeyManager : MonoBehaviour {
 		float lowestAcc = 2,
 		      highestSeekTime = -1,
 		      highestNextKeySeekTime = -1,
-		      bestTrendingSeekTime = -1,	//TODO: For the difficulty options, there could be a 'worst' variant as well
+		      bestTrendingSeekTime = -1,
 		      lowestFullWordSpeed = 99999;
 		int   lowestAccIndex = Random.Range(0, numCandidates - 1),
 		      highestSeekTimeIndex = Random.Range(0, numCandidates - 1),
@@ -628,16 +615,13 @@ public class KeyManager : MonoBehaviour {
 		//TODO: Idea: Function for selecting easy quotes (maybe an option in the settings to insert
 		// intermittent easy quotes to help with motivation when fatigue/regression is detected?)
 
-		int finalIndex = Random.Range(0f, 1f) switch{
+		int finalIndex = Random.Range(0f, 1f) switch {
 			<.15f => highestSeekTimeIndex,
 			<.3f => highestNextKeySeekTimeIndex,
 			<.6f => bestTrendingSeekTimeIndex,
 			<.875f => lowestFullWordSpeedIndex,
 			_ => lowestAccIndex
 		};
-		// if (Random.Range(0f,1f)>.125f)	finalIndex=lowestFullWordSpeedIndex;
-		// if (Random.Range(0f,1f)>.25f)	finalIndex=highestNextKeySeekTimeIndex;
-		// if (Random.Range(0f,1f)>.333f)	finalIndex=highestSeekTimeIndex;
 		
 		quoteTitle = quoteCandidateTitles[finalIndex];
 		quoteConfidenceData = averageConfidence[finalIndex];
@@ -728,22 +712,13 @@ public class KeyManager : MonoBehaviour {
 		}
 		return timeEstimate;
 	}
-	
-	/*
-	 * TODO: If code snippets are to be implemented, the following could work for online selection (or they could be added offline):
-	 * 
-	 *		1: Download an X number of random code snippets (like SpeedTyper.dev, but multiple at once)
-	 *		2: Sort alphabetically (in a new variable), check each character and remember the overall average seek time/accuracy/etc and index for each snippet
-	 *		3: Pick the hardest of the bunch (using any of the following: )
-	 */
 
 	public static string RemoveTrailingNewline(string text) {
 		if (text.Length <= 0) return text;
 		while (text[^1] is '\n' or ' ') {
-			text = text.Remove(text.Length - 1,1);
+			text = text.Remove(text.Length - 1, 1);
 		}
 		return text;
-		// return text[^1] == '\n' ? text.Remove(text.Length - 1,1) : text;
 	}
 	
 	private void OnApplaicationQuit() {
