@@ -58,23 +58,23 @@ public class DrawGraph : Graphic {
 			if (!scaler)
 				scaler = (CanvasScaler) FindAnyObjectByType(typeof(CanvasScaler));
 			
-			switch (scaler.uiScaleMode) {
-				case CanvasScaler.ScaleMode.ScaleWithScreenSize:
+			// switch (scaler.uiScaleMode) {
+			// 	case CanvasScaler.ScaleMode.ScaleWithScreenSize:
 					pixelScale = Mathf.Lerp(
 						Screen.width / scaler.referenceResolution.x,
 						Screen.height / scaler.referenceResolution.y,
 						scaler.matchWidthOrHeight
 					);
-					break;
-				case CanvasScaler.ScaleMode.ConstantPixelSize:
-					// NOTE: This also applies scaling to the UI
-					pixelScale = scaler.scaleFactor = GetDPI() / scaler.referencePixelsPerUnit;
-					//pixelScale = scaler.scaleFactor;
-					break;
-				default:
-					Debug.LogWarning("Unsupported scaling mode");
-					break;
-			}
+			// 		break;
+			// 	case CanvasScaler.ScaleMode.ConstantPixelSize:
+			// 		// NOTE: This also applies scaling to the UI
+			// 		pixelScale = scaler.scaleFactor = GetDPI() / scaler.referencePixelsPerUnit;
+			// 		//pixelScale = scaler.scaleFactor;
+			// 		break;
+			// 	default:
+			// 		Debug.LogWarning("Unsupported scaling mode");
+			// 		break;
+			// }
 			
 			lastWidth = width;
 			lastHeight = height;
