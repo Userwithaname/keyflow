@@ -10,6 +10,7 @@ Assets_Excluded/butler*/
 Assets/Scenes/*/*/Lightmap*.png*
 Assets/Scenes/*/*/Lightmap*.exr*
 Assets/Resources/PerformanceTest*
+Assets/TextMesh*
 UIElementsSchema/
 UserSettings/
 obj/
