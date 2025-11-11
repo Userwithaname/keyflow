@@ -118,7 +118,7 @@ public class KeyConfidenceMap : MonoBehaviour {
 				key++;
 				continue;
 			}
-			buttons[buttonIndex] = Instantiate(keyPrefab,rows[row],true).transform;
+			buttons[buttonIndex] = Instantiate(keyPrefab, rows[row], true).transform;
 			buttons[buttonIndex].Find("Outline").GetComponent<Image>().color =
 				Typing.instance.themes[Typing.instance.selectedTheme].buttonColor;
 			for (int i = 0; i < 2; i++) {

@@ -91,9 +91,9 @@ public class Typing : MonoBehaviour {
 	       input = "",
 	       lastInput = "";
 	int loc = -1;
-	int lastLength,lastMaxLength = -1;
-	float seekTime,wordTime,totalTestTime;
-	bool incorrect,done,started = true;
+	int lastLength, lastMaxLength = -1;
+	float seekTime, wordTime, totalTestTime;
+	bool incorrect, done, started = true;
 	public static int curPracticeIndex;
 	public static string quoteTitle;
 	public TMP_InputField textDisplay;
@@ -117,7 +117,7 @@ public class Typing : MonoBehaviour {
 	public GameObject lightModeButton,
 	                  darkModeButton;
 	
-	public Image backgroundImage,fadeImage;
+	public Image backgroundImage, fadeImage;
 	[Range(0, 1)]public float defaultFade = 0f, fadeAmount = .5f;
 	float backgroundFade;	// 0 to 1
 	bool fade, lastFade;
@@ -162,12 +162,12 @@ public class Typing : MonoBehaviour {
 	
 	RectTransform graphTransform;
 	int lastHoverIndex = -1;
-	bool showGraph,lastShowGraph;
+	bool showGraph, lastShowGraph;
 	float graphBlend;
 	float defaultGraphHeight;
 	Vector3 defaultGraphPos;
 	
-	int hitCount,missCount;
+	int hitCount, missCount;
 	string[] words;
 	int wordIndex;
 	
@@ -191,7 +191,7 @@ public class Typing : MonoBehaviour {
 		NextLesson();
 		
 		UpdateTheme();
-		ChangeTheme(PlayerPrefs.GetInt("selectedTheme",selectedTheme));
+		ChangeTheme(PlayerPrefs.GetInt("selectedTheme", selectedTheme));
 		lightModeButton.SetActive(selectedTheme == 0);
 		darkModeButton.SetActive(selectedTheme != 0);
 		
@@ -259,19 +259,19 @@ public class Typing : MonoBehaviour {
 			"<color=#" + ColorUtility.ToHtmlStringRGB(themes[selectedTheme].mildRegressionColor) + ">";
 
 		WPMInfo.text = WPMInfo.text
-			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
-			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
+			.Replace(themes[lastSelectedTheme].improvementColorTag, themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag, themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag, themes[selectedTheme].mildRegressionColorTag);
 		averageWPMInfo.text = averageWPMInfo.text
-			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
-			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
+			.Replace(themes[lastSelectedTheme].improvementColorTag, themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag, themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag, themes[selectedTheme].mildRegressionColorTag);
 		lessonInfo.text = lessonInfo.text
-			.Replace(themes[lastSelectedTheme].improvementColorTag,themes[selectedTheme].improvementColorTag)
-			.Replace(themes[lastSelectedTheme].regressionColorTag,themes[selectedTheme].regressionColorTag)
-			.Replace(themes[lastSelectedTheme].mildRegressionColorTag,themes[selectedTheme].mildRegressionColorTag);
+			.Replace(themes[lastSelectedTheme].improvementColorTag, themes[selectedTheme].improvementColorTag)
+			.Replace(themes[lastSelectedTheme].regressionColorTag, themes[selectedTheme].regressionColorTag)
+			.Replace(themes[lastSelectedTheme].mildRegressionColorTag, themes[selectedTheme].mildRegressionColorTag);
 		textDisplay.text = textDisplay.text
-			.Replace(themes[lastSelectedTheme].textColorCorrectTag,themes[selectedTheme].textColorCorrectTag);
+			.Replace(themes[lastSelectedTheme].textColorCorrectTag, themes[selectedTheme].textColorCorrectTag);
 		
 		if (KeyConfidenceMap.instance)
 			KeyConfidenceMap.instance.UpdateTheme();
@@ -480,7 +480,7 @@ public class Typing : MonoBehaviour {
 				$"{themes[selectedTheme].regressionColorTag + curCharacterNextSeekTime} (+{diff})</color>";
 			diff = (float)Math.Round(updatedCharPractice.wordSpeed - curCharPractice.wordSpeed, 3);
 			if (updatedCharPractice.speedTrend != 0) {
-				curCharacterSpeedTrend=$"{(updatedCharPractice.speedTrend<Mathf.Min(0,curCharPractice.speedTrend)?themes[selectedTheme].regressionColorTag:(updatedCharPractice.speedTrend>0?themes[selectedTheme].improvementColorTag:themes[selectedTheme].mildRegressionColorTag))}{curCharacterSpeedTrend}</color>";
+				curCharacterSpeedTrend=$"{(updatedCharPractice.speedTrend<Mathf.Min(0, curCharPractice.speedTrend)?themes[selectedTheme].regressionColorTag:(updatedCharPractice.speedTrend>0?themes[selectedTheme].improvementColorTag:themes[selectedTheme].mildRegressionColorTag))}{curCharacterSpeedTrend}</color>";
 			}
 			curCharacterWPM = diff >= 0 ?
 				$"{themes[selectedTheme].improvementColorTag + curCharacterWPM} (+{diff})</color>":
@@ -577,7 +577,7 @@ public class Typing : MonoBehaviour {
 	
 	bool lastFrameIncorrect = true;
 	void SetTextColor() {
-		int cappedLoc = Mathf.Min(loc + 1,text.Length);
+		int cappedLoc = Mathf.Min(loc + 1, text.Length);
 		string content = $"{(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)}{text.Insert(cappedLoc, "</color>")}";
 		if (incorrect) {
 			int lengthDiff = content.Length - text.Length;
@@ -740,7 +740,7 @@ public class Typing : MonoBehaviour {
 		}
 		set_input: {
 			rm = Mathf.Min(rm, input.Length);
-			input = input.Remove(input. Length - rm, rm);
+			input = input.Remove(input.Length - rm, rm);
 		}
 		if (input.Length == 0) ResetLesson();
 	}
@@ -752,7 +752,7 @@ public class Typing : MonoBehaviour {
 		float backspaceRepeatTimer = Mathf.Infinity;
 		bool backspaceHeld = false;
 	#endif
-	float accuracy,wpm,estimatedTime;
+	float accuracy, wpm, estimatedTime;
 	void Update() {
 		#if BACKSPACE_KEY_WORKAROUND
 			if (Keyboard.current.backspaceKey.wasPressedThisFrame){
@@ -862,7 +862,7 @@ public class Typing : MonoBehaviour {
 					if (KeyManager.IsWhitespaceIndex(keyIndex) || input.Length == text.Length) {
 						if (loc > 0) {
 							graph.wordSpeedValues[wordIndex] =
-								KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input,loc),wordTime);
+								KeyManager.UpdateWordSpeed(KeyManager.GetLastWord(input, loc), wordTime);
 							graph.wordTimes[wordIndex] = totalTestTime;
 							// Maybe skip scaling for the first word? Maybe only if it's less than some length?
 							if (graph.wordSpeedValues[wordIndex] > graph.wordSpeedScale) {
@@ -1111,8 +1111,8 @@ public class Typing : MonoBehaviour {
 		);
 		tooltipOffset.y =
 			tooltipOffset.y < seekTimeTooltipY&&seekTimeTooltipY - tooltipHeight * 2 >= verticalPadding ?
-				Mathf.Min(seekTimeTooltipY - tooltipHeight * 2 - verticalPadding,tooltipOffset.y):
-				Mathf.Max(seekTimeTooltipY + tooltipHeight * 2 + verticalPadding,tooltipOffset.y);
+				Mathf.Min(seekTimeTooltipY - tooltipHeight * 2 - verticalPadding, tooltipOffset.y):
+				Mathf.Max(seekTimeTooltipY + tooltipHeight * 2 + verticalPadding, tooltipOffset.y);
 		graphTooltipWordSpeedTargetPos = baseTooltipPos + tooltipOffset;
 	}
 	

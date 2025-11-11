@@ -79,33 +79,33 @@ private static string buildPath;
 		if (HasArgument("--clean") || HasArgument("--full-clean") || HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/PlayerDataCache'");
 			try {
-				System.IO.Directory.Delete(projectPath+"/Library/PlayerDataCache",true);
+				System.IO.Directory.Delete(projectPath + "/Library/PlayerDataCache", true);
 			} catch {}
 		}
 		if (HasArgument("--full-clean") || HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/il2cpp_cache'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/il2cpp_cache",true);
+				System.IO.Directory.Delete(projectPath + "/Library/il2cpp_cache", true);
 			} catch {}
 
 			Debug.Log("Removing directory: 'Library/PlayerScriptAssemblies'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/PlayerScriptAssemblies",true);
+				System.IO.Directory.Delete(projectPath + "/Library/PlayerScriptAssemblies", true);
 			} catch {}
 
 			Debug.Log("Removing directory: 'Library/PlayerAssemblies'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/PlayerAssemblies",true);
+				System.IO.Directory.Delete(projectPath + "/Library/PlayerAssemblies", true);
 			} catch {}
 
 			Debug.Log("Removing directory: 'Library/ShaderCache'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/ShaderCache",true);
+				System.IO.Directory.Delete(projectPath + "/Library/ShaderCache", true);
 			} catch {}
 
 			Debug.Log("Removing directory: 'Library/SplashScreenCache'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/SplashScreenCache",true);
+				System.IO.Directory.Delete(projectPath + "/Library/SplashScreenCache", true);
 			} catch {}
 
 			Debug.Log("Removing file: 'Library/ShaderCache.db'");
@@ -114,7 +114,7 @@ private static string buildPath;
 		if (HasArgument("--reimport")) {
 			Debug.Log("Removing directory: 'Library/Artifacts'");
 			try {
-				System.IO.Directory.Delete(projectPath + "/Library/Artifacts",true);
+				System.IO.Directory.Delete(projectPath + "/Library/Artifacts", true);
 			} catch {}
 
 			Debug.Log("Removing file: 'Library/ArtifactDB'");
@@ -153,7 +153,7 @@ private static string buildPath;
 		if (HasArgument("--clean")) {
 			Debug.Log($"Removing existing build: '{buildDir}'");
 			try { System.IO.File.Delete($"{buildDir}.x86_64"); } catch {}
-			try { System.IO.Directory.Delete($"{buildDir}_Data",true); } catch {}
+			try { System.IO.Directory.Delete($"{buildDir}_Data", true); } catch {}
 			while (System.IO.Directory.Exists(buildDir)) {
 				System.Threading.Thread.Sleep(500);
 				Debug.Log("Directory not deleted yet, retrying in 0.5 seconds...");
@@ -181,7 +181,7 @@ private static string buildPath;
 		Debug.Log("Switching build target... (Mac OS 64-bit+ARM)");
 		string buildDir = $"{buildPath}{PlayerSettings.productName}-Mac-ARM+x64/{PlayerSettings.productName}.app";
 		if (HasArgument("--clean")) {
-			System.IO.Directory.Delete(buildDir,true);
+			System.IO.Directory.Delete(buildDir, true);
 		}
 		targetPlatform = BuildTarget.StandaloneOSX;
 		targetPlatformGroup = BuildTargetGroup.Standalone;
@@ -206,7 +206,7 @@ private static string buildPath;
 		string buildDir = $"{buildPath}{PlayerSettings.productName}-Windows-x64/{PlayerSettings.productName}/{PlayerSettings.productName}";
 		if (HasArgument("--clean")) {
 			System.IO.File.Delete($"{buildDir}.exe");
-			System.IO.Directory.Delete($"{buildDir}_Data",true);
+			System.IO.Directory.Delete($"{buildDir}_Data", true);
 		}
 		targetPlatform = BuildTarget.StandaloneWindows64;
 		targetPlatformGroup = BuildTargetGroup.Standalone;
@@ -230,7 +230,7 @@ private static string buildPath;
 		Debug.Log("Switching build target... (WebGL)");
 		targetPlatform = BuildTarget.WebGL;
 		targetPlatformGroup = BuildTargetGroup.WebGL;
-		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup,targetPlatform);
+		EditorUserBuildSettings.SwitchActiveBuildTarget(targetPlatformGroup, targetPlatform);
 
 		string buildDir = $"{buildPath}{PlayerSettings.productName}-WebGL/";
 		buildOptions.locationPathName = buildDir;

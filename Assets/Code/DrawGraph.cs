@@ -21,8 +21,8 @@ public class DrawGraph : Graphic {
 	[System.NonSerialized] public int hoverWordIndex = -1;
 	[System.NonSerialized] public float expandedBlend;
 	public bool mouseOverGraph;
-	float width,height;
-	float lastWidth,lastHeight;
+	float width, height;
+	float lastWidth, lastHeight;
 	float pixelScale;
 	CanvasScaler scaler;
 
@@ -99,7 +99,7 @@ public class DrawGraph : Graphic {
 
 		float topWPM = Mathf.Lerp(
 			speedValueScale,
-			Mathf.Max(speedValueScale,wordSpeedScale),
+			Mathf.Max(speedValueScale, wordSpeedScale),
 			expandedBlend
 		);
 		
@@ -127,14 +127,14 @@ public class DrawGraph : Graphic {
 			
 			// Top left		 (0)
 			Vector3 topLeft = vertex.position = new Vector3(
-				previousPosX,height * speedValues[i - 1] / topWPM
+				previousPosX, height * speedValues[i - 1] / topWPM
 			);
 			if (i == 1) {
 				vh.AddVert(vertex);
 			}
 			
 			// Top right	 (1) (0) (0)
-			vertex.position = new Vector3(currentPosX,height * speedValues[i] / topWPM);
+			vertex.position = new Vector3(currentPosX, height * speedValues[i] / topWPM);
 			vh.AddVert(vertex);
 			
 			Vector3 offsetDir = Vector3.Cross(
@@ -153,7 +153,7 @@ public class DrawGraph : Graphic {
 			// Bottom right (3) (2) (1)
 			vertex.position = fillArea ?
 				new Vector3(currentPosX,0):
-				new Vector3(currentPosX,height * speedValues[i] / topWPM) - offsetDir;
+				new Vector3(currentPosX, height * speedValues[i] / topWPM) - offsetDir;
 			vh.AddVert(vertex);
 
 			switch (i) {
