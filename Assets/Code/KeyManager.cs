@@ -139,7 +139,7 @@ public class KeyManager : MonoBehaviour {
 		foreach(KeyConfidenceData kcd in instance.confidenceDatabase) {
 			fileContents += JsonUtility.ToJson(kcd) + "\n";
 		}
-		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data",fileContents);
+		System.IO.File.WriteAllText($"{Application.persistentDataPath}/key-confidence-data", fileContents);
 		PlayerPrefs.Save();
 
 		unsavedData = false;
@@ -245,7 +245,7 @@ public class KeyManager : MonoBehaviour {
 	/// <summary>
 	/// Sets the previous key seek time (the time between the two previous keypress)
 	/// </summary>
-	public static void UpdatePreviousKeySeekTime(int index,float previousKeySeekTime) {
+	public static void UpdatePreviousKeySeekTime(int index, float previousKeySeekTime) {
 		float oldSeekTime = instance.confidenceDatabase[index].previousKeySeekTime;
 		if (oldSeekTime is <10000 and >0) {
 			instance.confidenceDatabase[index].previousKeySeekTime = Mathf.Lerp(
@@ -366,10 +366,10 @@ public class KeyManager : MonoBehaviour {
 	}
 	
 	public static string GetLastWord(string text) {
-		return GetLastWord(text,text.Length - 1);
+		return GetLastWord(text, text.Length - 1);
 	}
 	
-	public static string GetLastWord(string text,int trimIndex) {
+	public static string GetLastWord(string text, int trimIndex) {
 		for (int i = trimIndex; i > -1; i--) {
 			if (i == trimIndex && IsWhitespaceCharacter(text[i])) i--;
 			if (!IsWhitespaceCharacter(text[i])) continue;
@@ -640,7 +640,7 @@ public class KeyManager : MonoBehaviour {
 		bool skipChar = false;
 		foreach(char c in sortedQuote) {
 			if (c != lastC) {
-				keyIndex = GetKeyIndex(c,keyIndex);
+				keyIndex = GetKeyIndex(c, keyIndex);
 				lastC = c;
 				if (CharWithinFilters(keyIndex)) {
 					skipChar = false;
