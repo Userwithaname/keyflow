@@ -401,7 +401,7 @@ public class Typing : MonoBehaviour {
 		}
 	}
 	
-	public string TimeFormattedString(float time, bool keepMinutes = false, bool keepFractions = false) {
+	public static string TimeFormattedString(float time, bool keepMinutes = false, bool keepFractions = false) {
 		bool negative = time < 0;
 		time = Mathf.Abs(time);
 		int seconds = Mathf.FloorToInt(time % 60);
@@ -510,7 +510,7 @@ public class Typing : MonoBehaviour {
 		
 		//TODO: Idea: Show practice difficulty (could be a slider (with a gradient background), a bar with representative colors (red/orange/green), a star system, pre-defined words (e.g. "easy", "mildly difficult", "very difficult"), etc.)
 		
-		wpm = loc / totalTestTime * 60 / 5;
+		wpm = KeyManager.WPMFromTime(totalTestTime, loc);
 		accuracy = (float)hitCount / (hitCount + missCount) * 100;
 		float oldAverageAccuracy = KeyManager.averageAccuracy;
 		float oldAverageSpeed = KeyManager.averageWPM;
@@ -794,8 +794,8 @@ public class Typing : MonoBehaviour {
 			if (!started) return;
 			started = false;
 		}
-		accuracy = (float)hitCount / (hitCount+missCount) * 100;
-		wpm = loc / totalTestTime * 60 / 5;
+		accuracy = (float) hitCount / (hitCount+missCount) * 100;
+		wpm = KeyManager.WPMFromTime(totalTestTime, loc);
 		if (hitCount + missCount == 0) accuracy = 100;
 		WPMInfo.text =
 			$"Accuracy: {Mathf.RoundToInt(accuracy)}%\nSpeed: {(totalTestTime==0?"-":Mathf.RoundToInt(wpm))} WPM\nTime: {TimeFormattedString(totalTestTime,true)}";
@@ -850,7 +850,7 @@ public class Typing : MonoBehaviour {
 					lastMaxLength = loc;
 					int index = Mathf.Max(0, loc - 1);
 					graph.accuracy[index] = accuracy = (float)hitCount / (hitCount + missCount) * 100;
-					graph.speedValues[index] = wpm = loc / totalTestTime * 60 / 5;
+					graph.speedValues[index] = wpm = KeyManager.WPMFromTime(totalTestTime, loc);
 					graph.times[index] = totalTestTime;
 					graph.seekTimes[index] = seekTime;
 					graph.timeScale = totalTestTime;
@@ -906,7 +906,7 @@ public class Typing : MonoBehaviour {
 				break;
 			}
 		}
-		wpm = loc / totalTestTime * 60 / 5;
+		wpm = KeyManager.WPMFromTime(totalTestTime, loc);
 		lastLength = input.Length;
 		lastInput = input;
 		

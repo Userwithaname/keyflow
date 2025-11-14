@@ -6,8 +6,8 @@ Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Jungle
 Content/Wikipedia/Wikipedia - Orbit
 Content/Wikipedia/Wikipedia - Reference
-Content/Wikipedia/Wikipedia - Property (philosophy)
 Content/Wikipedia/Wikipedia - Element (mathematics)
+Content/Wikipedia/Wikipedia - Property (philosophy)
 Content/Wikipedia/Wikipedia - Potential energy
 Content/Wikipedia/Wikipedia - Decorative arts
 Content/Wikipedia/Wikipedia - Telescope
