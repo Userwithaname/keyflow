@@ -1,4 +1,5 @@
 Content/Wikipedia/Wikipedia - Procedural knowledge
+Content/Wikipedia/Wikipedia - Novel
 Content/Wikipedia/Wikipedia - Learning
 Content/Wikipedia/Wikipedia - Hyperlink
 Content/Wikipedia/Wikipedia - HTTP cookie
@@ -14,6 +15,7 @@ Content/Wikipedia/Wikipedia - Science
 Content/Wikipedia/Wikipedia - Matter
 Content/Wikipedia/Wikipedia - Earth's outer core
 Content/Wikipedia/Wikipedia - Trade
+Content/Wikipedia/Wikipedia - Play (theatre)
 Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Plant
 Content/Wikipedia/Wikipedia - Disk (mathematics)
@@ -22,6 +24,7 @@ Content/Wikipedia/Wikipedia - Drawing
 Content/Wikipedia/Wikipedia - Ability
 Content/Wikipedia/Wikipedia - Bay
 Content/Wikipedia/Wikipedia - Operation (mathematics)
+Content/Wikipedia/Wikipedia - Short story
 Content/Wikipedia/Wikipedia - Rotational symmetry
 Content/Wikipedia/Wikipedia - Bottleneck (engineering)
 Content/Wikipedia/Wikipedia - Temperature
@@ -46,8 +49,10 @@ Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Molecule
 Content/Wikipedia/Wikipedia - Thermodynamics
 Content/Wikipedia/Wikipedia - Theory
+Content/Wikipedia/Wikipedia - Flow (psychology)
 Content/Wikipedia/Wikipedia - Pattern
 Content/Wikipedia/Wikipedia - Kinetic energy
+Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Fraction
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Rock (geology)
@@ -63,6 +68,7 @@ Content/Wikipedia/Wikipedia - Sequence
 Content/Wikipedia/Wikipedia - Myth
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Viscosity
+Content/Wikipedia/Wikipedia - Stanza
 Content/Wikipedia/Wikipedia - Concept
 Content/Wikipedia/Wikipedia - History
 Content/Wikipedia/Wikipedia - Gravel
@@ -72,19 +78,21 @@ Content/Wikipedia/Wikipedia - Stream
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Water
 Content/Wikipedia/Wikipedia - Philosophy
+Content/Wikipedia/Wikipedia - Prose
 Content/Wikipedia/Wikipedia - Black Hole
 Content/Wikipedia/Wikipedia - Arity
 Content/Wikipedia/Wikipedia - Zipf's law
 Content/Wikipedia/Wikipedia - Randomness
-Content/Wikipedia/Wikipedia - Poetry
 Content/Wikipedia/Wikipedia - Pangram
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Seismic wave
+Content/Wikipedia/Wikipedia - Leisure
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Code point
 Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Chemical energy
+Content/Wikipedia/Wikipedia - Awareness
 Content/Wikipedia/Wikipedia - River
 Content/Wikipedia/Wikipedia - Velocity
 Content/Wikipedia/Wikipedia - Equator

@@ -15,8 +15,11 @@ Content/Wikipedia/Wikipedia - Website
 Content/Wikipedia/Wikipedia - Adjective
 Content/Wikipedia/Wikipedia - Variable (mathematics)
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Abstraction
+Content/Wikipedia/Wikipedia - Property (philosophy)
 Content/Wikipedia/Wikipedia - Polyhedron
 Content/Wikipedia/Wikipedia - Deflection (engineering)
+Content/Wikipedia/Wikipedia - Quantifier (linguistics)
 Content/Wikipedia/Wikipedia - Light
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Earth's outer core
@@ -46,9 +49,12 @@ Content/Wikipedia/Wikipedia - Font
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Compiler
 Content/Wikipedia/Wikipedia - Convex combination
+Content/Wikipedia/Wikipedia - Positive psychology
 Content/Wikipedia/Wikipedia - Force
+Content/Wikipedia/Wikipedia - Glass
 Content/Wikipedia/Wikipedia - Universal algebra
 Content/Wikipedia/Wikipedia - Procedural knowledge
+Content/Wikipedia/Wikipedia - Broadcasting
 Content/Wikipedia/Wikipedia - Percentage
 Content/Wikipedia/Wikipedia - Vitamin
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
@@ -59,6 +65,7 @@ Content/Wikipedia/Wikipedia - Musical tone
 Content/Wikipedia/Wikipedia - Speed
 Content/Wikipedia/Wikipedia - Music
 Content/Wikipedia/Wikipedia - Polar regions of Earth
+Content/Wikipedia/Wikipedia - Awareness
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Deep learning
 Content/Wikipedia/Wikipedia - Umbra, penumbra and antumbra
@@ -67,6 +74,7 @@ Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Abstract algebra
 Content/Wikipedia/Wikipedia - Dot product
 Content/Wikipedia/Wikipedia - Elastic modulus
+Content/Wikipedia/Wikipedia - Novella
 Content/Wikipedia/Wikipedia - Graupel
 Content/Wikipedia/Wikipedia - Cartography
 Content/Wikipedia/Wikipedia - Tradition

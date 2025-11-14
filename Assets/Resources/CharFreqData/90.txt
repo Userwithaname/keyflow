@@ -2,6 +2,7 @@ Content/Wikipedia/Wikipedia - Absolute value
 Content/Wikipedia/Wikipedia - Gas
 Content/Wikipedia/Wikipedia - Station point
 Content/Wikipedia/Wikipedia - Refractive index
+Content/Wikipedia/Wikipedia - Novel
 Content/Wikipedia/Wikipedia - Soil
 Content/Wikipedia/Wikipedia - Singleton (mathematics)
 Content/Wikipedia/Wikipedia - Exercise
@@ -19,6 +20,7 @@ Content/Wikipedia/Wikipedia - Expression (mathematics)
 Content/Wikipedia/Wikipedia - Galaxy
 Content/Wikipedia/Wikipedia - Sea
 Content/Wikipedia/Wikipedia - Formal system
+Content/Wikipedia/Wikipedia - Textile
 Content/Wikipedia/Wikipedia - Map
 Content/Wikipedia/Wikipedia - Matrix (mathematics)
 Content/Wikipedia/Wikipedia - Perspectivity
@@ -31,9 +33,12 @@ Content/Wikipedia/Wikipedia - Arithmetic
 Content/Wikipedia/Wikipedia - Tesseract
 Content/Wikipedia/Wikipedia - Hexadecimal
 Content/Wikipedia/Wikipedia - Ocean
+Content/Wikipedia/Wikipedia - Abstraction
+Content/Wikipedia/Wikipedia - Property (philosophy)
 Content/Wikipedia/Wikipedia - Point
 Content/Wikipedia/Wikipedia - Lever
 Content/Wikipedia/Wikipedia - Cartesian Coordinate System
+Content/Wikipedia/Wikipedia - Consciousness
 Content/Wikipedia/Wikipedia - Abstract Art
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Science
@@ -77,12 +82,15 @@ Content/Wikipedia/Wikipedia - Loudness
 Content/Wikipedia/Wikipedia - Philosophy
 Content/Wikipedia/Wikipedia - Arithmetic Mean
 Content/Wikipedia/Wikipedia - Seismic wave
+Content/Wikipedia/Wikipedia - Leisure
 Content/Wikipedia/Wikipedia - Isomorphism
 Content/Wikipedia/Wikipedia - Punctuation
 Content/Wikipedia/Wikipedia - Typing
+Content/Wikipedia/Wikipedia - Awareness
 Content/Wikipedia/Wikipedia - Signal chain
 Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Mathematical notation
+Content/Wikipedia/Wikipedia - Means of communication
 Content/Wikipedia/Wikipedia - Backlash (engineering)
 Content/Wikipedia/Wikipedia - Engram (neuropsychology)
 Content/Wikipedia/Wikipedia - Mechanical equilibrium

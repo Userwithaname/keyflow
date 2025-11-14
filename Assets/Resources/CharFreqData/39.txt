@@ -18,6 +18,7 @@ Content/Wikipedia/Wikipedia - Manifold
 Content/Wikipedia/Wikipedia - Seismic wave
 Content/Wikipedia/Wikipedia - Atmospheric pressure
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Novella
 Content/Wikipedia/Wikipedia - Electric field
 Content/Wikipedia/Wikipedia - Bar (unit)
 Content/Wikipedia/Wikipedia - Sun
