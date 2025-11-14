@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 
 public class KeyManager : MonoBehaviour {
 	public static KeyManager instance;
+	public const float DefaultWPM = 34;
 	[Serializable]public struct KeyConfidenceData{
 		#if UNITY_EDITOR
 			[NonSerialized]public string name;
@@ -221,6 +222,12 @@ public class KeyManager : MonoBehaviour {
 	public static float SeekTimeToWPM(float seekTime) {
 		return 60f / seekTime / 5;
 	}
+	public static float WPMToSeekTime(float wpm) {
+		return 60f / (wpm * 5);
+	}
+	public static float WPMFromTime(float timeSeconds, int textLength){
+		return textLength / timeSeconds * 60 / 5;
+	}
 
 	//TODO: Function for lowering the hit/miss count without changing the ratio (e.g. divide by the same value, ratio might still change a bit because the numbers are integers)
 	public static void RemoveHitsAndMisses(int keyIndex, int amount = 1) {
@@ -406,7 +413,7 @@ public class KeyManager : MonoBehaviour {
 		float lowestAcc = 2;
 		int bestImprovementTrendIndex = Random.Range(lowercaseStart, lowercaseEnd);
 		float bestImprovementTrend = -10000;
-		float averageSeekTime = 60f / (averageWPM * 5);
+		float averageSeekTime = WPMToSeekTime(averageWPM);
 		for(int i = 0; i < instance.confidenceDatabase.Length; i++) {
 			if (!CharWithinFilters(i))	continue;
 			if (instance.confidenceDatabase[i].hits < 4) {
@@ -705,10 +712,10 @@ public class KeyManager : MonoBehaviour {
 				keyIndex = GetKeyIndex(c, keyIndex);
 				lastC = c;
 			}
-			timeEstimate+= 
-				instance.confidenceDatabase[keyIndex].seekTime<1000?
+			timeEstimate +=
+				instance.confidenceDatabase[keyIndex].seekTime < 1000?
 					instance.confidenceDatabase[keyIndex].seekTime:
-					.35f;
+					WPMToSeekTime(DefaultWPM);
 		}
 		return timeEstimate;
 	}

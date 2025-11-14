@@ -38,18 +38,35 @@ public class QuoteDataGenerator : EditorWindow {
 		foreach (string path in quotePaths) {
 			foreach (TextAsset t in Resources.LoadAll<TextAsset>(path)) {
 				quoteFiles.Add(path + "/" + t.name);
-				char[] text = t.text.ToCharArray();
-				if (text.Length > 0)
-					text[0] = ' ';	// Ignore the first character, as it isn't tracked
+				char[] text = t.text.Trim().ToCharArray();
+
+				if (text.Length == 0) {
+					Debug.LogWarning($"{t.name}: Empty file", t);
+					continue;
+				}
+
+				text[0] = ' ';	// Ignore the first character, as it isn't tracked
+
+				// Warn if the quote would take too long to type
+				const float MaxTime = 120; // Maximum typing time at default WPM
+				float quoteTypingTime = text.Length * KeyManager.WPMToSeekTime(KeyManager.DefaultWPM);
+				if (quoteTypingTime > MaxTime) {
+					Debug.LogWarning(
+						$"'{t.name}' would take {Typing.TimeFormattedString(quoteTypingTime, true)}" +
+						$" to type at {KeyManager.DefaultWPM} WPM" +
+						$" (expected {Typing.TimeFormattedString(MaxTime, true)} or less)"
+					);
+				}
+
 				Array.Sort(text);
 				sortedQuoteContents.Add(new string(text.ToArray()));
 			}
 		}
-		
-		// Use as such: keyFrequencyInfo[characterIndex][quoteNameIndex] 
+
+		// Use as such: keyFrequencyInfo[characterIndex][quoteNameIndex]
 		List<string>[] quoteKeyFrequencyInfo = new List<string>[trackedKeys.Count];
 		int[] charProgress = new int[quoteFiles.Count];
-		
+
 		for (int i = 0; i < trackedKeys.Count; i++) {
 			quoteKeyFrequencyInfo[i] = new List<string>();
 			for (int j = 0; j < quoteFiles.Count; j++) {
@@ -62,8 +79,7 @@ public class QuoteDataGenerator : EditorWindow {
 					charCount++;
 				}
 				if (charCount == 0) continue;
-				
-				// string charCountPrefix = charCount.ToString();
+
 				char[] prefix = { '0', '0', '0', '0', '0', '0', '0', '0' };	// 8 characters
 				string charCountPrefix = Mathf.CeilToInt(
 					(float)(charCount + 1) / sortedQuoteContents[j].Length * 99999999
@@ -73,17 +89,20 @@ public class QuoteDataGenerator : EditorWindow {
 				}
 				quoteKeyFrequencyInfo[i].Add(new string(prefix) + quoteFiles[j]);
 			}
-			// Reverse-sort it, which will put highest frequency quotes for that character to the top of the list
+
+			// Reverse-sort it, so quotes with more occurrences of that character are higher in the list
 			quoteKeyFrequencyInfo[i].Sort();
 			quoteKeyFrequencyInfo[i].Reverse();
-			// Then you can remove those first [x] characters of each element to get the actual filenames
+
+			// Remove the prefix characters from the filenames
 			for (int j = 0; j < quoteKeyFrequencyInfo[i].Count; j++) {
 				quoteKeyFrequencyInfo[i][j] = quoteKeyFrequencyInfo[i][j].Remove(0, 8);
 			}
-			// Finally, write the contents to a file named by the current index + .txt
+
+			// Write the list to a file named by the current index
 			File.WriteAllLines($"Assets/Resources/CharFreqData/{i}.txt", quoteKeyFrequencyInfo[i]);
 		}
-		
+
 		// Warn if there are untracked characters in the file
 		for (int i = 0; i < charProgress.Length; i++) {
 			if (charProgress[i] == sortedQuoteContents[i].Length)
@@ -95,7 +114,7 @@ public class QuoteDataGenerator : EditorWindow {
 				);
 			}
 		}
-		
+
 		Debug.Log("Quote character frequency data updated");
 	}
 }

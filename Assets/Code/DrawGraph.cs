@@ -145,14 +145,14 @@ public class DrawGraph : Graphic {
 			// Bottom left	 (2) (1)
 			if (!fillArea || i == 1){
 				vertex.position = fillArea ?
-					new Vector3(previousPosX,0):
+					new Vector3(previousPosX, 0):
 					topLeft-offsetDir;
 				vh.AddVert(vertex);
 			}
 			
 			// Bottom right (3) (2) (1)
 			vertex.position = fillArea ?
-				new Vector3(currentPosX,0):
+				new Vector3(currentPosX, 0):
 				new Vector3(currentPosX, height * speedValues[i] / topWPM) - offsetDir;
 			vh.AddVert(vertex);
 
