@@ -8,13 +8,17 @@ Content/Wikipedia/Wikipedia - Freezing
 Content/Wikipedia/Wikipedia - Maze
 Content/Wikipedia/Wikipedia - Prioritization
 Content/Wikipedia/Wikipedia - Nozzle
+Content/Wikipedia/Wikipedia - Generalization
 Content/Wikipedia/Wikipedia - Leaf
+Content/Wikipedia/Wikipedia - Stanza
 Content/Wikipedia/Wikipedia - Enzyme kinetics
 Content/Wikipedia/Wikipedia - Lake
 Content/Wikipedia/Wikipedia - Polar regions of Earth
+Content/Wikipedia/Wikipedia - Abstraction
 Content/Wikipedia/Wikipedia - Mechanical equilibrium
 Content/Wikipedia/Wikipedia - Quiz
 Content/Wikipedia/Wikipedia - Science
+Content/Wikipedia/Wikipedia - Flow (psychology)
 Content/Wikipedia/Wikipedia - Jellyfish
 Content/Wikipedia/Wikipedia - Neuron
 Content/Wikipedia/Wikipedia - Angle
@@ -24,6 +28,7 @@ Content/Wikipedia/Wikipedia - Ice
 Content/Wikipedia/Wikipedia - Font
 Content/Wikipedia/Wikipedia - Operation (mathematics)
 Content/Wikipedia/Wikipedia - Coin
+Content/Wikipedia/Wikipedia - Verse (poetry)
 Content/Wikipedia/Wikipedia - Quantization (signal processing)
 Content/Wikipedia/Wikipedia - Vaporization
 Content/Wikipedia/Wikipedia - Philosophy

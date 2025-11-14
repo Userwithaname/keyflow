@@ -8,6 +8,7 @@ Content/Wikipedia/Wikipedia - Russell's paradox
 Content/Wikipedia/Wikipedia - Ocean
 Content/Wikipedia/Wikipedia - Zebra
 Content/Wikipedia/Wikipedia - Earth's outer core
+Content/Wikipedia/Wikipedia - Consciousness
 Content/Wikipedia/Wikipedia - Mass
 Content/Wikipedia/Wikipedia - Apex (geometry)
 Content/Wikipedia/Wikipedia - HTTP cookie
@@ -22,6 +23,7 @@ Content/Wikipedia/Wikipedia - Visual language
 Content/Wikipedia/Wikipedia - Tradition
 Content/Wikipedia/Wikipedia - Typewriter
 Content/Wikipedia/Wikipedia - Structure of Earth
+Content/Wikipedia/Wikipedia - Hobby
 Content/Wikipedia/Wikipedia - Idiom
 Content/Wikipedia/Wikipedia - Inertia
 Content/Wikipedia/Wikipedia - Rotational symmetry

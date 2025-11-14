@@ -1,0 +1,1 @@
+A generalization is a form of abstraction whereby common properties of specific instances are formulated as general concepts or claims.

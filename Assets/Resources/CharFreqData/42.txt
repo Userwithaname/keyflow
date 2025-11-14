@@ -1,6 +1,9 @@
+Content/Wikipedia/Wikipedia - Verse (poetry)
 Content/Wikipedia/Wikipedia - Humidity
 Content/Wikipedia/Wikipedia - Egyptian hieroglyphs
 Content/Wikipedia/Wikipedia - Dream
+Content/Wikipedia/Wikipedia - Consciousness
+Content/Wikipedia/Wikipedia - Hobby
 Content/Wikipedia/Wikipedia - Quaternion
 Content/Wikipedia/Wikipedia - Byte
 Content/Wikipedia/Wikipedia - History

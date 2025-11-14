@@ -1,0 +1,1 @@
+In poetry, a stanza is a group of lines within a poem, usually set off from others by a blank line or indentation. Stanzas can have regular rhyme and metrical schemes, but they are not required to have either.

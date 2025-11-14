@@ -11,9 +11,11 @@ Content/Wikipedia/Wikipedia - Comics
 Content/Wikipedia/Wikipedia - Barye
 Content/Wikipedia/Wikipedia - Torque
 Content/Wikipedia/Wikipedia - Attention
+Content/Wikipedia/Wikipedia - Mass media
 Content/Wikipedia/Wikipedia - Earth's inner core
 Content/Wikipedia/Wikipedia - Orbital inclination
 Content/Wikipedia/Wikipedia - Sun
+Content/Wikipedia/Wikipedia - Short story
 Content/Wikipedia/Wikipedia - Optical medium
 Content/Wikipedia/Wikipedia - Plasma (physics)
 Content/Wikipedia/Wikipedia - Temperature
@@ -25,6 +27,7 @@ Content/Wikipedia/Wikipedia - Plan
 Content/Wikipedia/Wikipedia - Equator
 Content/Wikipedia/Wikipedia - PI curve
 Content/Wikipedia/Wikipedia - Dot product
+Content/Wikipedia/Wikipedia - Novella
 Content/Wikipedia/Wikipedia - Distance
 Content/Wikipedia/Wikipedia - Glyph
 Content/Wikipedia/Wikipedia - Melody

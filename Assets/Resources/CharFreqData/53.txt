@@ -9,6 +9,7 @@ Content/Wikipedia/Wikipedia - Moon
 Content/Wikipedia/Wikipedia - Ecliptic coordinate system
 Content/Wikipedia/Wikipedia - Power (physics)
 Content/Wikipedia/Wikipedia - Finitary
+Content/Wikipedia/Wikipedia - Stanza
 Content/Wikipedia/Wikipedia - Sunbeam
 Content/Wikipedia/Wikipedia - Transmission medium
 Content/Wikipedia/Wikipedia - Skill
