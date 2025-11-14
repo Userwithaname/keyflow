@@ -492,16 +492,20 @@ public class KeyManager : MonoBehaviour {
 	
 	public static int GetNumberOfQuotesForKey(int keyIndex) {
 		// Key quote data files end with a newline
-		return Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text.Split('\n').Length - 1;
+		return Resources.Load<TextAsset>($"CharFreqData/{keyIndex}")
+			.text
+			.Split('\n')
+			.Length - 1;
 	}
 	public static int GetNumberOfQuotesForKey(char key) {
 		return GetNumberOfQuotesForKey(GetKeyIndex(key));
 	}
 	
 	public static string[] GetQuoteTitlesForKeyIndex(ref int keyIndex) {
-		string[] quotes = RemoveTrailingNewline(
-			Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text
-		).Split('\n');
+		string[] quotes = Resources.Load<TextAsset>($"CharFreqData/{keyIndex}")
+			.text
+			.Trim()
+			.Split('\n');
 		int invalidCount = 0;
 		while (quotes[0].Length == 0) {
 			const int maxRetries = 10;
@@ -513,9 +517,10 @@ public class KeyManager : MonoBehaviour {
 				keyIndex = Mathf.Max(5, keyIndex % trackedKeys.Length);
 			}
 			invalidCount++;
-			quotes = RemoveTrailingNewline(
-				Resources.Load<TextAsset>($"CharFreqData/{keyIndex}").text
-			).Split('\n');
+			quotes = Resources.Load<TextAsset>($"CharFreqData/{keyIndex}")
+				.text
+				.Trim()
+				.Split('\n');
 		}
 		return quotes;
 	}
@@ -559,7 +564,7 @@ public class KeyManager : MonoBehaviour {
 			targetQuote = quotes[Random.Range(0, quotes.Length)];
 		}
 		quoteTitle = targetQuote.Split('/')[^1];
-		targetQuote = RemoveTrailingNewline(Resources.Load<TextAsset>(targetQuote).text);	
+		targetQuote = Resources.Load<TextAsset>(targetQuote).text.Trim();
 		return targetQuote;
 	}
 	public static string GetQuoteByOverallScore(ref string quoteTitle, ref KeyConfidenceData quoteConfidenceData) {
@@ -700,7 +705,7 @@ public class KeyManager : MonoBehaviour {
 		
 		return averageConfidence;
 	}
-	
+
 	public static float GetEstimatedTypingTimeSeconds(string quote) {
 		List<char> sortedQuote = quote.ToList();
 		sortedQuote.Sort();
@@ -720,14 +725,6 @@ public class KeyManager : MonoBehaviour {
 		return timeEstimate;
 	}
 
-	public static string RemoveTrailingNewline(string text) {
-		if (text.Length <= 0) return text;
-		while (text[^1] is '\n' or ' ') {
-			text = text.Remove(text.Length - 1, 1);
-		}
-		return text;
-	}
-	
 	private void OnApplaicationQuit() {
 	 	 Save();
 	}
