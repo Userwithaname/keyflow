@@ -5471,10 +5471,10 @@ MonoBehaviour:
     - m_Text: Highlight Typos
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: Erase Typos
+    - m_Text: Reject Typos
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: Erase Misstyped Words
+    - m_Text: Reject Misstyped Words
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
