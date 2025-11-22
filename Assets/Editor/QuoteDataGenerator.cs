@@ -47,6 +47,13 @@ public class QuoteDataGenerator : EditorWindow {
 
 				text[0] = ' ';	// Ignore the first character, as it isn't tracked
 
+				// IDEA: Split quotes into multiple `quotePaths`, each with its own
+				// file (same as the folder, maybe 'Wikipedia.rules'), which specify
+				// how long a quote in that directory should be. This would allow
+				// both short and long quotes, and they could each enforce their own
+				// rules, for example: short quotes between 0-120 seconds at default
+				// speed, and long quotes at 120-300 seconds.
+
 				// Warn if the quote would take too long to type
 				const float MaxTime = 120; // Maximum typing time at default WPM
 				float quoteTypingTime = text.Length * KeyManager.WPMToSeekTime(KeyManager.DefaultWPM);

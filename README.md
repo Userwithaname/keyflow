@@ -103,8 +103,8 @@ The settings menu includes:
 - _Mistakes_ - Adjusts how typos are handled:
   - _Show Typos_ - Inserts typos into the quote text
   - _Highlight Typos_ - Highlights the correct character at the position of the typo
-  - _Erase Typos_ - Any incorrect character you enter is automatically removed
-  - _Erase Misstyped Words_ - The entire word is erased if you enter a typo
+  - _Reject Typos_ - Only correctly entered characters appear on-screen
+  - _Reject Misstyped Words_ - Incorrectly spelled words must be re-typed
 - _Show Confidence Data_ - Opens the key confidence map
 - _Switch To Light/Dark Theme_ - Switches between the light and dark themes
 - _Remove Saved Data_ - Opens a menu where you can remove key data, scores, or both

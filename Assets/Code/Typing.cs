@@ -576,17 +576,16 @@ public class Typing : MonoBehaviour {
 	}
 	
 	bool lastFrameIncorrect = true;
-	void SetTextColor() {
+	void HandleTypos() {
 		int cappedLoc = Mathf.Min(loc + 1, text.Length);
 		string content = $"{(incorrect?themes[selectedTheme].textColorWarningTag:themes[selectedTheme].textColorCorrectTag)}{text.Insert(cappedLoc, "</color>")}";
 		if (incorrect) {
 			int lengthDiff = content.Length - text.Length;
 			
-			const int
-				showTypos = 0,
-				highlightTypos = 1,
-				eraseErrors = 2,
-				eraseWords = 3;
+			const int showTypos      = 0,
+			          highlightTypos = 1,
+			          rejectErrors   = 2,
+			          rejectWords    = 3;
 				
 			switch (errorMode.value) {
 				case showTypos: {
@@ -645,11 +644,11 @@ public class Typing : MonoBehaviour {
 						.Insert(incorrectStart, "<color=red><u>");
 					break;
 				}
-				case eraseErrors: {
+				case rejectErrors: {
 					EraseInputCharacter(false);
 					break;
 				}
-				case eraseWords: {
+				case rejectWords: {
 					EraseInputCharacter(true);
 					break;
 				}
@@ -776,7 +775,7 @@ public class Typing : MonoBehaviour {
 			}
 		#endif
 		
-		SetTextColor();
+		HandleTypos();
 		GraphUpdate();
 		UpdateTooltipPos();
 		
