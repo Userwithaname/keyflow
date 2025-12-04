@@ -2,12 +2,14 @@
   "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ide.rider": "3.0.38",
-    "com.unity.inputsystem": "1.14.2",
+    "com.unity.inputsystem": "1.16.0",
     "com.unity.toolchain.linux-x86_64": "2.0.11",
     "com.unity.ugui": "2.0.0",
     "com.unity.modules.accessibility": "1.0.0",
+    "com.unity.modules.adaptiveperformance": "1.0.0",
     "com.unity.modules.jsonserialize": "1.0.0",
     "com.unity.modules.ui": "1.0.0",
-    "com.unity.modules.uielements": "1.0.0"
+    "com.unity.modules.uielements": "1.0.0",
+    "com.unity.modules.vectorgraphics": "1.0.0"
   }
 }

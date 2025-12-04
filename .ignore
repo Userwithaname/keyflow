@@ -1,0 +1,15 @@
+Assets/Resources/CharFreqData
+Assets/Resources/Content
+ProjectSettings
+Packages
+*.inputactions
+*.prefab
+*.unity
+*.blend
+*.asset
+*.meta
+*.webp
+*.png
+*.kra
+*.ttf
+*.mat
