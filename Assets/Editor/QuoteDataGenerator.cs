@@ -1,4 +1,6 @@
 using UnityEditor;
+using UnityEditor.Build;
+using UnityEditor.Build.Reporting;
 using UnityEngine;
 using System;
 using System.IO;
@@ -12,6 +14,13 @@ using System.Collections.Generic;
  *			- Allow multiple sources for quotes to be accessed from (for example, Resources folder, user-provided quotes in the build directory, quotes obtained from the web (and likely cached to disk), etc)
  *			- Re-indexing at any time (opens doors to user-provided content, content from the web, etc)
  */
+
+class QuoteDataBuildPreprocessor : IPreprocessBuildWithContext {
+	public int callbackOrder { get { return 0; } }
+	public void OnPreprocessBuild(BuildCallbackContext context) {
+		QuoteDataGenerator.GenerateData();
+    }
+}
 
 public class QuoteDataGenerator : EditorWindow {
 	[MenuItem("Window/Quote Data Generator")]

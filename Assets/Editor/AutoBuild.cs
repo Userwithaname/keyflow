@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 public static class AutoBuild {
-/*
+	/*
 	This can be used in the terminal as such:
 
 		/opt/Unity/Editor/Unity -quit -batchmode -projectPath '/path/to/project' -executeMethod AutoBuild.Build [arguments]
@@ -17,14 +17,14 @@ public static class AutoBuild {
 			--debug             - Allow live debugging
 			--fast              - Only build scripts
 			--clean             - Remove old files before building
-			--final             - Disables build options: development build, debugging, --profiler, --fast
+			--final             - Disables build options: development build, --debug, --profiler, --fast
 			--build-path [path] - Override the default build path ('[current]/Builds')
-*/
+	*/
 
-private static BuildPlayerOptions	buildOptions;
-private static BuildTargetGroup		targetPlatformGroup;
-private static BuildTarget			targetPlatform;
-private static string buildPath;
+	private static BuildPlayerOptions	buildOptions;
+	private static BuildTargetGroup		targetPlatformGroup;
+	private static BuildTarget			targetPlatform;
+	private static string buildPath;
 	
 	public static void Build() {
 		PrepareForBuild();

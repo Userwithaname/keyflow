@@ -1,4 +1,0 @@
-Content/Wikipedia/Wikipedia - Vertex (geometry)
-Content/Wikipedia/Wikipedia - Quiz
-Content/Wikipedia/Wikipedia - Quantization (signal processing)
-Content/Wikipedia/Wikipedia - Quaternion
